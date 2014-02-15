@@ -1,0 +1,2562 @@
+#container {
+	background: #ede7e1
+}
+
+#footer_container {
+	margin-top: 0
+}
+
+.location {
+	width: 938px;
+	padding-left: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	font-family: "宋体";
+	font-weight: 700;
+	border: 1px solid #e2e2e2;
+	border-bottom: 0;
+	margin: 0 auto;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.location a {
+	color: #333
+}
+
+.location a:hover {
+	color: #ed145b
+}
+
+.location span {
+	color: #ed145b
+}
+
+#reportwrap .deal_con_content {
+	margin-left: 10px
+}
+
+#detail_top .title {
+	font-size: 20px;
+	padding: 12px 40px 20px 20px;
+	text-shadow: 0 1px 3px #ccc;
+	line-height: 150%;
+	position: relative
+}
+
+#d_t_l {
+	float: left;
+	display: inline;
+	width: 458px
+}
+
+#albums {
+	height: 352px
+}
+
+.product_info .firstcolor {
+	color: #000
+}
+
+.product_info .info {
+	width: 460px;
+	overflow: hidden;
+	float: left
+}
+
+.product_info .info .koubei span a {
+	color: #ee0d5b;
+	text-decoration: underline
+}
+
+.product_info .info .koubei span a:hover {
+	color: #ED145B
+}
+
+.product_info .firstcolor {
+	width: 50px;
+	margin-right: 8px
+}
+
+.product_info .info .koubei {
+	color: #666;
+	margin-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: solid 1px #efefef
+}
+
+.product_info .info .actnotic {
+	overflow: hidden;
+	margin-top: 18px;
+	border-bottom: solid 1px #efefef
+}
+
+.product_info .info .actnotic .actwrap {
+	height: 25px;
+	overflow: hidden
+}
+
+.product_info .info .actnotic .actwrap .acttit {
+	height: 16px;
+	width: 30px;
+	text-align: center;
+	line-height: 16px;
+	color: #fff;
+	float: left;
+	background: #0abdde;
+	margin-top: 2px
+}
+
+.product_info .info .actnotic .actwrap .actword {
+	height: 20px;
+	width: 230px;
+	white-space: nowrap;
+	line-height: 20px;
+	text-align: left;
+	float: left;
+	margin: 0 35px 0 5px;
+	color: #ed145b;
+	overflow: hidden
+}
+
+.product_info .info .actnotic .actwrap .sale_countdown {
+	float: left;
+	display: inline;
+	color: #ed145a
+}
+
+.product_info .info .koubei .service_rating {
+	margin-left: 0;
+	margin-right: 5px;
+	margin-bottom: 5px
+}
+
+.service_rating {
+	margin: 5px 0;
+	*margin-top: 0
+}
+
+.service_rating label {
+	width: 80px;
+	float: left
+}
+
+.service_rating .hint {
+	float: left;
+	margin-left: 5px
+}
+
+.service_rating .rating.editable {
+	cursor: pointer
+}
+
+.service_rating .rating {
+	float: left;
+	line-height: 16px;
+	background: url(http://images.jumei.com/templates/jumei/images/mall/rating_small_v2.png) repeat-x 0 -16px;
+	width: 85px;
+	height: 16px
+}
+
+.service_rating .rating .value {
+	height: 16px;
+	background: url(http://images.jumei.com/templates/jumei/images/mall/rating_small_v2.png) repeat-x 0 0
+}
+
+.service_rating .rating .cf_val {
+	background: url(http://images.jumei.com/templates/jumei/images/mall/rating_small_v2.png) repeat-x 0 -32px
+}
+
+.service_rating.small .koubei {
+	float: left;
+	color: #999;
+	margin-right: 3px;
+	width: 75px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.service_rating.small .koubei a {
+	color: #999;
+	text-decoration: none
+}
+
+.service_rating.small .koubei a:hover {
+	color: #ED145B;
+	text-decoration: none
+}
+
+.service_rating.small .rating,.service_rating.small .rating .value {
+	background: url(http://images.jumei.com/templates/jumei/images/newmall/rating_small_v3.jpg?v=1) repeat-x
+}
+
+.service_rating.small .rating {
+	float: left;
+	line-height: 10px;
+	margin-top: 1px;
+	background-position: 0 -14px;
+	width: 75px;
+	height: 12px;
+	overflow: hidden
+}
+
+.service_rating.small .rating .value {
+	background-position: 0 0;
+	width: 75px;
+	height: 12px;
+	_font-size: 0
+}
+
+.product_info .info .timesale {
+	width: 60px;
+	height: 15px;
+	background: #d4b496;
+	float: left;
+	line-height: 15px;
+	margin-top: 10px;
+	color: #fff;
+	text-align: center;
+	margin-right: 10px
+}
+
+.product_info .info .size {
+	margin-top: 15px;
+	overflow: hidden
+}
+
+.product_info .info .sale_out_hove {
+	background: #fff8ed
+}
+
+.fit_list .trans,.plus,.buy_zone .buy_btn a,#buy_number_input,.add_cart.buyer_button .unsellable,#add_to_shoppingcart,.subscribe,#btnilike,.albums_control .ac_prev,.albums_control .ac_next {
+	background: url(http://images.jumei.com/templates/jumei/images/newmall/mall_product_v4.png?v=2) no-repeat
+}
+
+#buy_number_input {
+	height: 28px;
+	background-position: -198px 0;
+	float: left;
+	width: 105px;
+	display: inline;
+	margin-left: 5px
+}
+
+#buy_number_input span {
+	display: inline;
+	float: left;
+	height: 28px;
+	width: 28px;
+	cursor: pointer
+}
+
+#buy_number_input input {
+	float: left;
+	display: inline;
+	width: 49px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	border: 0 none;
+	overflow: hidden;
+	background: transparent;
+	margin-top: 1px;
+	font-size: 14px
+}
+
+#product_size .add_cart {
+	padding-top: 10px
+}
+
+.add_cart.buyer_button .unsellable,#add_to_shoppingcart {
+	display: block;
+	width: 165px;
+	height: 40px;
+	float: left;
+	display: inline
+}
+
+#add_to_shoppingcart {
+	background-position: 0 -40px
+}
+
+#add_to_shoppingcart:hover {
+	background-position: 0 -200px
+}
+
+.add_cart.buyer_button .unsellable {
+	background-position: 0 -80px
+}
+
+.outsale {
+	margin-top: 20px
+}
+
+.subscribe {
+	float: left;
+	display: inline;
+	width: 125px;
+	height: 40px;
+	background-position: 0 -120px;
+	text-align: center;
+	font-family: "微软雅黑";
+	line-height: 40px;
+	color: #ed145b;
+	text-decoration: none;
+	font-size: 14px
+}
+
+.subscribe:hover {
+	text-decoration: none;
+	background-position: 0 -240px
+}
+
+#btnilike {
+	float: left;
+	display: inline;
+	width: 125px;
+	height: 40px;
+	background-position: 0 -120px;
+	text-align: center;
+	font-family: "微软雅黑";
+	line-height: 40px;
+	color: #333;
+	text-decoration: none;
+	font-size: 14px;
+	margin-left: 20px
+}
+
+#btnilike:hover {
+	text-decoration: none
+}
+
+.product_info .info .size .renbuynum {
+	height: 20px;
+	margin: 5px 0 0 65px;
+	color: #666
+}
+
+#warp_left {
+	width: 700px;
+	overflow: hidden;
+	float: right
+}
+
+#mall_sidebar {
+	width: 240px;
+	overflow: hidden;
+	float: left;
+	display: inline
+}
+
+#mall_sidebar .box_v1 {
+	background: #fff
+}
+
+#mall_sidebar .all_categories {
+	width: 238px
+}
+
+#mall_sidebar .all_categories .tit {
+	width: 238px
+}
+
+.belongs_brand {
+	width: 238px
+}
+
+.belongs_brand_num {
+	width: 238px
+}
+
+.belongs_brand_num_all {
+	width: 238px
+}
+
+.belongs_brand_num .proname {
+	width: 220px
+}
+
+#mall_sidebar .title {
+	width: 240px;
+	background: #2b2b2b;
+	padding-left: 10px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight: 700
+}
+
+#mall_sidebar .title em {
+	font-size: 10px;
+	margin-left: 4px
+}
+
+#mall_sidebar .right_part {
+	width: 125px
+}
+
+#mall_sidebar .all_categories .tit {
+	font-size: 16px;
+	padding-top: 8px;
+	font-weight: 400
+}
+
+#mall_sidebar .bottom_part {
+}
+
+#mall_sidebar .product_container {
+	height: auto;
+	width: 100%;
+	margin: 0
+}
+
+#mall_sidebar .bottom_part .pinglun {
+	height: 20px;
+	color: #f8a3bf;
+	float: left;
+	margin-left: 10px
+}
+
+.product_info {
+	padding-left: 22px;
+	padding-bottom: 10px
+}
+
+.pink,.buy_zone span {
+	font-family: Arial,Helvetica,sans-serif
+}
+
+.pink {
+	color: #ed145b;
+	font-weight: 700
+}
+
+.fit {
+	font-size: 12px;
+	margin-bottom: 20px;
+	background: #fbfbfb
+}
+
+.fit_awoke {
+	float: right;
+	font-size: 12px;
+	color: #676767;
+	padding-right: 20px
+}
+
+.fit_list,.deal_box {
+	float: left;
+	display: inline
+}
+
+.fit_list {
+	width: 510px;
+	background-color: #FFF;
+	position: relative
+}
+
+.fit_list .trans {
+	width: 10px;
+	height: 20px;
+	display: inline-block;
+	background-position: -14px -160px;
+	position: absolute;
+	top: 45%;
+	right: -9px;
+	z-index: 1
+}
+
+.deal_box {
+	width: 102px;
+	margin: 0 5px;
+	overflow: hidden;
+	_display: inline
+}
+
+.deal_box p {
+	padding: 0;
+	margin-top: 10px
+}
+
+.deal_box .pic,.deal_box .pic img {
+	width: 100px;
+	height: 100px;
+	display: block
+}
+
+.deal_hover .pic {
+	padding: 0;
+	border: 1px solid #ec145d
+}
+
+.deal_box .name {
+	height: 32px;
+	line-height: 16px;
+	overflow: hidden
+}
+
+.deal_box .name a {
+	font-size: 12px;
+	text-decoration: none;
+	color: #333
+}
+
+.deal_hover .name a {
+	color: #ed145b
+}
+
+.deal_box .pink span {
+	display: inline-block;
+	margin: -1px 0 0 5px;
+	*margin-top: 2px
+}
+
+.deal_box .pink input {
+	float: left;
+	margin-right: 5px;
+	_display: inline
+}
+
+.deal_box .type {
+	margin: 0 0 10px
+}
+
+.deal_box .type select {
+	width: 100px
+}
+
+.plus {
+	float: left;
+	width: 13px;
+	height: 13px;
+	background-position: 0 -160px;
+	margin-top: 60px
+}
+
+.buy_zone {
+	float: left;
+	display: inline;
+	padding: 20px 0;
+	padding-left: 20px;
+	width: 137px;
+	overflow: hidden;
+	background: #eee
+}
+
+.buy_zone p {
+	margin-top: 5px;
+	padding: 0;
+	color: #444
+}
+
+.buy_zone .buy_btn a {
+	width: 110px;
+	height: 40px;
+	display: inline-block;
+	margin: 0;
+	background-position: -125px -120px;
+	margin-top: 20px
+}
+
+#koubei_container {
+	overflow: hidden;
+	_zoom: 1
+}
+
+.recommended_reason {
+	height: 42px;
+	background: url(http://images2.jumei.com/mall/reason.jpg) no-repeat;
+	display: block;
+	margin-left: 20px;
+	width: 490px;
+	overflow: hidden;
+	margin-bottom: 20px
+}
+
+.recommended_reason_wrap {
+	width: 505px;
+	padding-left: 5px;
+	overflow: hidden
+}
+
+.recommended_reason_inter {
+	height: 42px;
+	line-height: 42px;
+	margin-left: 55px;
+	background: #eee
+}
+
+.product_desc {
+	line-height: 1.5;
+	background: #fff
+}
+
+.authorization_description,#product_parameter,#real_photo,#story {
+	line-height: 2
+}
+
+textarea.lazyload {
+	visibility: hidden
+}
+
+.product_desc .deal_contents {
+	padding: 0 14px
+}
+
+#detail_info_box {
+	padding-top: 20px
+}
+
+.product_desc .deal_contents {
+	width: 100%;
+}
+
+.product_desc ul.new_tabs {
+	width: 680px;
+	padding-left: 20px;
+	height: 40px;
+	background: #313131;
+	z-index: 1000;
+	border: 0;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.product_info .info .size .size_box {
+	margin-bottom: 15px
+}
+
+.product_info .info .size .size_box span {
+	color: #666;
+	margin: 0 5px;
+	margin-bottom: 5px;
+	cursor: pointer;
+	display: inline-block;
+	padding: 5px 14px;
+	border: 1px solid #eee
+}
+
+.product_info .info .size .size_box span.disabled {
+	background: #ececec;
+	cursor: default
+}
+
+.product_info .info .size .size_box span.selected {
+	border: 1px solid #ed145b;
+	background: url(http://images.jumei.com/templates/jumei/images/newmall/typechoosicon.jpg) no-repeat right bottom
+}
+
+.detail_service {
+	padding: 20px 0;
+	border-top: solid 1px #efefef;
+	margin-top: 20px
+}
+
+.detail_service label {
+	display: inline-block;
+	padding: 5px 5px 5px 0;
+	margin: 2px 0;
+	color: #666
+}
+
+.detail_service a {
+	display: inline-block;
+	padding: 5px;
+	color: #666;
+	margin: 2px
+}
+
+.detail_service a.con {
+	color: #888;
+	border: solid 1px #eee
+}
+
+#detail_top {
+	width: 958px;
+	border: 1px solid #e2e2e2;
+	background: #fff;
+	margin: 0 auto;
+	margin-bottom: 20px
+}
+
+#detail_warp {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden
+}
+
+.zhenpin_deal {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0
+}
+
+#detail_warp {
+	width: 960px;
+	margin: 0 auto
+}
+
+.tootime_wrap {
+	width: 213px;
+	border: 1px solid #d7d7d7;
+	float: left;
+	margin: 72px 0 0 12px
+}
+
+.tootime_wrap .tit {
+	width: 203px;
+	height: 35px;
+	background: #e1e1e1;
+	padding-left: 10px;
+	line-height: 35px;
+	font-size: 14px;
+	font-family: "Microsoft YaHei"
+}
+
+.tootime_wrap .pic_wrap {
+	width: 65px;
+	height: 65px;
+	border: 1px solid #d7d7d7;
+	float: left;
+	margin: 9px;
+	_display: inline
+}
+
+.tootime_wrap .pic_num {
+	width: 120px;
+	height: 65px;
+	float: left;
+	margin-top: 5px
+}
+
+.tootime_wrap .hum_pic {
+	width: 183px;
+	margin-left: 15px;
+	margin-bottom: 10px
+}
+
+.tootime_wrap .hum_pic ul {
+	list-style: none
+}
+
+.tootime_wrap .hum_pic ul li {
+	float: left;
+	margin: 0 1px 1px 0;
+	width: 25px;
+	height: 25px;
+	overflow: hidden
+}
+
+.tootime_wrap .truewrap {
+	float: left;
+	margin-right: 7px
+}
+
+.top_wrap_shadow {
+	width: 960px;
+	height: 5px;
+	background: url(http://images2.jumei.com/mall/down_showdown.jpg) no-repeat;
+	margin-bottom: 15px
+}
+
+.mtsBanner {
+	width: 223px;
+	margin: 10px 6px
+}
+
+.mtsBanner .bannerWrap {
+	height: 304px
+}
+
+#yk_video_bottom {
+	height: 60px;
+	padding-top: 10px
+}
+
+#yk_video_bottom p {
+	line-height: 25px
+}
+
+.mall_main {
+	width: 700px
+}
+
+.info_box {
+	background: #fff
+}
+
+.ilike_iknow {
+	margin: 5px 0 0 65px;
+	cursor: pointer
+}
+
+#activity_timer {
+	float: none;
+	color: #ED145B
+}
+
+.mall_saleout {
+	border: solid 1px #ccc;
+	overflow: hidden;
+	zoom: 1;
+	margin: 10px 0
+}
+
+.mall_saleout .word {
+	padding: 5px
+}
+
+.mall_saleout .picwarp {
+	display: block;
+	float: left;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 105px;
+	margin: 10px
+}
+
+.picwarp .pic {
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	border: solid 1px #ccc
+}
+
+.mall_saleout .name {
+	padding-top: 10px;
+	width: 105px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
+}
+
+.efficacy_wrap {
+	float: left;
+	width: 250px;
+	display: inline
+}
+
+.efficacy_wrap span {
+	background: #fff;
+	display: inline-block;
+	margin: 0 5px 3px 0
+}
+
+.product_info .info .size .number_box {
+	height: 28px;
+	line-height: 28px;
+	margin: 10px 0
+}
+
+.product_info .info .price .yen {
+	color: #ed145b;
+	font-weight: 700;
+	font-size: 16px
+}
+
+.product_info .info .price .label {
+	font-family: "微软雅黑";
+	font-size: 15px;
+	font-weight: 700;
+	margin-left: 4px
+}
+
+.product_info .info label.caption {
+	float: left;
+	display: inline;
+	color: #666;
+	margin-right: 10px
+}
+
+.product_info .info .sale_count {
+	color: #666;
+	margin-top: 15px
+}
+
+.product_info .info .sale_count label {
+	margin-right: 10px
+}
+
+#mall_price {
+	color: #ed145b;
+	font-size: 30px
+}
+
+.product_info .ilikewrap .thankylm_d {
+	width: 187px;
+	height: 111px;
+	padding-top: 10px;
+	background: #eee;
+	position: absolute;
+	z-index: 2;
+	display: none
+}
+
+#btnilike.ilikewrap:hover {
+	background-position: 0 -240px
+}
+
+#btnilike.liked:hover {
+	background-position: 0 -120px
+}
+
+.notification_center {
+	margin: 0
+}
+
+.product_desc ul.new_tabs li {
+	font-size: 14px;
+	line-height: 36px;
+	overflow: hidden;
+	width: 80px;
+	height: 39px;
+	text-align: center;
+	float: left;
+	margin-top: 2px;
+	display: inline;
+	font-weight: 700
+}
+
+.product_desc ul.new_tabs li a {
+	width: 80px;
+	height: 39px;
+	line-height: 35px;
+	font-size: 14px;
+	color: #FFF;
+	font-family: "微软雅黑";
+	display: inline-block
+}
+
+.product_desc ul.new_tabs li.on a {
+	background: #fff;
+	color: #313131;
+	text-decoration: none
+}
+
+.product_desc ul.new_tabs .buy_tab {
+	float: right;
+	background: url(http://images.jumei.com/templates/jumei/images/newmall/mall_product_v4.png) no-repeat 0 0;
+	width: 177px;
+	height: 40px;
+	margin-top: 0
+}
+
+.product_desc ul.new_tabs .buy_tab .buy_tab_a {
+	float: right;
+	width: 57px;
+	height: 26px;
+	float: right;
+	margin: 8px 10px 0 0;
+	display: block;
+	cursor: pointer;
+	background: url(about:blank)
+}
+
+.product_desc ul.new_tabs .buy_tab.unsell {
+	background-position: -24px -160px
+}
+
+.product_desc ul.new_tabs .buy_tab .price {
+	width: 80px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	margin-left: 19px;
+	display: inline-block;
+	overflow: hidden;
+	_display: inline;
+	color: #FFF;
+	font-size: 24px;
+	font-weight: 400
+}
+
+#share_content {
+	padding: 20px 0 10px 180px;
+	height: 20px;
+	overflow: hidden
+}
+
+#share_content.no_albums_control {
+	padding: 20px 0 10px 120px
+}
+
+.product_desc ul.new_tabs .buy_tab .price em {
+	font-size: 16px
+}
+
+.sidebar_box {
+	background: #fff;
+	box-shadow: 0 1px 4px #e2e2e2;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.sidebar_fs {
+	text-align: center
+}
+
+.sidebar_fs .s_fs_img {
+	padding-top: 20px
+}
+
+.sidebar_fs .s_fs_tit {
+	padding: 15px 0
+}
+
+.sidebar_fs .s_fs_btn {
+	padding-bottom: 20px
+}
+
+.jqzoom {
+	border: 1px solid #efefef;
+	float: left;
+	display: inline;
+	width: 350px;
+	height: 350px;
+	position: relative;
+	padding: 0;
+	margin-left: 20px
+}
+
+.jqzoom img {
+	float: left
+}
+
+.jqzoom .zoom_icon {
+	display: none;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(/templates/jumei/images/newmall/zoomicon.jpg);
+	right: 0;
+	bottom: 0
+}
+
+div.zoomdiv {
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 200px;
+	background: #fff;
+	border: 1px solid #CCC;
+	display: none;
+	text-align: center;
+	overflow: hidden
+}
+
+div.jqZoomPup {
+	z-index: 10;
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	opacity: .5;
+	-moz-opacity: .5;
+	-khtml-opacity: .5;
+	filter: alpha(Opacity=50);
+	background: url(/templates/jumei/images/newmall/zoompup.png)
+}
+
+.albums_control {
+	width: 68px;
+	float: left;
+	display: inline
+}
+
+.albums_control .ac_prev,.albums_control .ac_next {
+	cursor: pointer;
+	display: block;
+	width: 60px;
+	height: 17px
+}
+
+.albums_control .ac_prev {
+	background-position: -225px -40px;
+	margin-bottom: 10px
+}
+
+.albums_control .ac_next {
+	background-position: -225px -57px;
+	margin-top: 10px
+}
+
+.albums_control .ac_prev:hover {
+	background-position: -165px -74px
+}
+
+.albums_control .ac_next:hover {
+	background-position: -165px -91px
+}
+
+.albums_control .ac_prev.disabled {
+	background-position: -165px -40px;
+	cursor: default
+}
+
+.albums_control .ac_next.disabled {
+	background-position: -165px -57px;
+	cursor: default
+}
+
+.albums_control .ac_container {
+	position: relative;
+	overflow: hidden;
+	height: 288px
+}
+
+.albums_control .ac_container ul {
+	position: absolute
+}
+
+.albums_control .ac_container ul li {
+	float: left;
+	display: inline;
+	margin: 5px 0;
+	width: 62px;
+	height: 62px;
+	position: relative
+}
+
+.albums_control .ac_container ul li img {
+	border: solid 1px #eee;
+	display: block
+}
+
+.albums_control .ac_container ul li.hover img {
+	border: solid 1px #ed145a
+}
+
+.albums_control .ac_container ul li.hover b.arrow {
+	display: block;
+	border-style: dashed dashed dashed solid;
+	border-width: 5px;
+	border-color: transparent transparent transparent #ed145b;
+	font-size: 0;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	_zoom: 1;
+	position: absolute;
+	top: 25px;
+	right: -10px
+}
+
+.product_desc #story {
+	font-size: 14px
+}
+
+.search_table {
+	padding: 5px 0
+}
+
+.search_table .td1 {
+	width: 60px;
+	text-align: right
+}
+
+.search_table td {
+	padding: 10px 5px;
+	font-size: 12px
+}
+
+.search_table input.text {
+	height: 23px;
+	line-height: 23px;
+	border: solid 1px #eee;
+	width: 145px
+}
+
+.search_table input.price {
+	width: 53px;
+	height: 23px;
+	line-height: 23px;
+	border: solid 1px #eee
+}
+
+.rank_content {
+	margin: 10px 6px;
+	border: solid 1px #eee;
+	width: 224px
+}
+
+.rank_tab {
+	overflow: hidden;
+	_zoom: 1
+}
+
+.rank_tab {
+	background: #dddcdc;
+	padding: 2px 0 0
+}
+
+.rank_tab li {
+	float: left;
+	display: inline;
+	color: #666;
+	width: 112px;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	background: 0 0;
+	font-weight: 700
+}
+
+.rank_tab li.hover {
+	background: #fff
+}
+
+.rank_tab_con div {
+	display: none;
+	overflow: hidden
+}
+
+.rank_tab_con a {
+	display: block;
+	width: 210px;
+	height: 90px;
+	padding-top: 17px;
+	border-bottom: dashed 1px #ccc;
+	margin: 0 auto;
+	color: #333;
+	margin-bottom: -1px
+}
+
+.rank_tab_con a .pic {
+	float: left;
+	display: inline
+}
+
+.rank_tab_con a .tit {
+	float: left;
+	display: inline;
+	height: 40px;
+	width: 120px;
+	line-height: 20px;
+	overflow: hidden;
+	margin-left: 15px
+}
+
+.rank_tab_con a .price {
+	color: #ed145a;
+	float: left;
+	display: inline;
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 15px
+}
+
+.rank_tab_con a .buycount {
+	color: #999;
+	float: left;
+	display: inline;
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 75px
+}
+
+#browse_history {
+	margin: 20px 0;
+	background: #fff
+}
+
+#browse_history .title {
+	background: #2b2b2b;
+	padding-left: 20px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	font-weight: 700
+}
+
+.bh_content {
+	padding: 15px;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.browse_list_wrap {
+	width: 232px
+}
+
+.browse_list {
+	background: #fff;
+	border: solid 1px #eee;
+	padding: 0 10px;
+	overflow: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 210px;
+	height: 301px
+}
+
+.browse_list div {
+	width: 200px;
+	height: 90px;
+	padding-top: 10px;
+	border-bottom: dashed 1px #ccc;
+	margin: 0 auto;
+	color: #333;
+	margin-bottom: -1px
+}
+
+.browse_list div .pic {
+	float: left;
+	display: inline;
+	margin-top: 10px
+}
+
+.browse_list div .tit {
+	float: left;
+	overflow-y: hidden;
+	display: inline;
+	height: 40px;
+	width: 120px;
+	line-height: 20px;
+	margin-left: 15px;
+	color: #333
+}
+
+.browse_list div .price {
+	color: #ed145a;
+	float: left;
+	display: inline;
+	width: 120px;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 15px
+}
+
+.browse_list div .buycount {
+	color: #999;
+	float: left;
+	display: inline;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 15px
+}
+
+.browse_tit {
+	background: #eee;
+	color: #666;
+	height: 30px;
+	line-height: 30px;
+	text-indent: 12px;
+	position: relative
+}
+
+.browse_Recommend {
+	width: 680px;
+	border: solid 1px #eee
+}
+
+.browse_Recommend .browse_tit span {
+	position: absolute;
+	color: #919191;
+	font-weight: 400;
+	right: 10px;
+	top: 0
+}
+
+.br_slide_container {
+	padding: 20px 20px 0;
+	position: relative;
+	width: 640px
+}
+
+.br_slide {
+	height: 280px;
+	width: 640px;
+	position: relative;
+	overflow: hidden
+}
+
+.br_slide ul {
+	position: absolute;
+	width: 20000px
+}
+
+.br_slide ul li {
+	float: left;
+	display: inline;
+	width: 160px;
+	height: 240px
+}
+
+.br_slide ul li a {
+}
+
+.br_slide ul li p.tit {
+	height: 40px;
+	overflow: hidden;
+	line-height: 18px;
+	padding: 0 10px;
+	padding-top: 10px
+}
+
+.br_slide ul li p.tit a {
+	color: #333
+}
+
+.br_slide ul li p.price {
+	color: #ed145a;
+	font-weight: 700;
+	padding-left: 10px
+}
+
+.br_slide ul li p.count {
+	color: #888;
+	padding: 4px 0 0 10px
+}
+
+.slidearrow {
+	position: absolute;
+	cursor: pointer;
+	width: 20px;
+	height: 50px;
+	opacity: .3;
+	top: 45%;
+	background: #000;
+	display: block;
+	filter: alpha(opacity=30);
+	color: #fff;
+	text-align: center;
+	font: 700 24px \5b8b\4f53,Hei;
+	line-height: 50px;
+	z-index: 99
+}
+
+.slidearrow:hover {
+	opacity: .7;
+	cursor: pointer
+}
+
+.slidearrow_l {
+	left: 0
+}
+
+.slidearrow_r {
+	right: 0
+}
+
+.flagship_category {
+	padding: 10px
+}
+
+.flagship_category h3 {
+	font-size: 14px;
+	border-bottom: dashed 1px #ccc;
+	padding-bottom: 10px
+}
+
+.flagship_category ul {
+	padding: 10px 0
+}
+
+.flagship_category ul li {
+	height: 25px;
+	line-height: 25px;
+	margin: 2px 0;
+	padding-left: 8px
+}
+
+.flagship_category ul li a {
+	color: #444
+}
+
+.flagship_category ul li.hover {
+	background: #ccc
+}
+
+.flagship_category ul li.hover a {
+	color: #fff
+}
+
+#detail_recommend h2 {
+	border-bottom: solid 1px #eee
+}
+
+#detail_recommend h2 div {
+	background: #eee;
+	color: #8b8a8a;
+	width: 175px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 400
+}
+
+#detail_recommend ul {
+	overflow: hidden;
+	_zoom: 1
+}
+
+#detail_recommend ul li {
+	float: left;
+	display: inline;
+	width: 120px;
+	height: 200px;
+	margin: 10px 23px
+}
+
+#detail_recommend ul li .pic {
+	text-align: center
+}
+
+#detail_recommend ul li .tit {
+	height: 40px;
+	line-height: 18px;
+	overflow: hidden
+}
+
+#detail_recommend ul li .tit a {
+	color: #333
+}
+
+#detail_recommend ul li .price {
+	color: #ed145a
+}
+
+#detail_recommend ul li .count {
+	color: #999
+}
+
+.deatal_ad2 {
+	border: solid 1px #eee;
+	margin-bottom: 20px
+}
+
+.deatal_ad2 h2 {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	border-bottom: solid 1px #eee;
+	height: 50px;
+	line-height: 50px;
+	text-indent: 10px
+}
+
+.deatal_ad2 .da_con {
+	padding-top: 10px
+}
+
+.deatal_ad2 .da_con ul {
+	overflow: hidden;
+	_zoom: 1;
+	margin-right: -10px
+}
+
+.deatal_ad2 .da_con ul li {
+	float: left;
+	display: inline;
+	width: 315px;
+	height: 248px;
+	margin: 10px
+}
+
+.deatal_ad2 .da_con .da_wrap {
+	background: #eee;
+	width: 295px;
+	height: 228px;
+	padding: 10px
+}
+
+.deatal_ad2.widthhead .da_con ul li {
+	height: 288px
+}
+
+.deatal_ad2 .da_con ul li .pic {
+	background: #fff;
+	text-align: center;
+	height: 181px
+}
+
+.deatal_ad2 .da_con ul li .da_con_info {
+	position: relative;
+	color: #333;
+	padding-left: 10px;
+	height: 43px
+}
+
+.deatal_ad2 .da_con ul li .da_con_info .tit {
+	height: 20px;
+	overflow: hidden;
+	padding-top: 5px;
+	width: 210px
+}
+
+.deatal_ad2 .da_con ul li .da_con_info .tit a {
+	color: #333
+}
+
+.deatal_ad2 .da_con ul li .da_con_info .tit a:hover {
+	text-decoration: none
+}
+
+.deatal_ad2 .da_con ul li .da_con_info .price {
+	font-weight: 700
+}
+
+.deatal_ad2 .da_con ul li .da_con_info .button {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	display: block;
+	color: #fff;
+	background: #f6266a;
+	font-weight: 700;
+	text-align: center;
+	width: 58px;
+	height: 24px;
+	line-height: 24px
+}
+
+.deatal_ad2 .da_con .da_head {
+	background: #ffebf2;
+	width: 200px;
+	color: #f73273;
+	font-family: "微软雅黑";
+	margin-bottom: 10px;
+	padding: 3px
+}
+
+.deatal_ad2 .da_con .da_head span {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	line-height: 18px;
+	color: #fff;
+	background: #f84d85;
+	border-radius: 20px;
+	margin-left: 15px;
+	margin-right: 10px
+}
+
+.soldout_rec {
+	margin-top: 20px;
+	border: solid 1px #eee;
+	width: 910px;
+	margin-bottom: 10px
+}
+
+.sr_tit {
+	background: #eee;
+	text-indent: 10px;
+	color: #666;
+	height: 25px;
+	line-height: 25px
+}
+
+.sr_slide_container {
+	position: relative;
+	height: 200px
+}
+
+.sr_slide_container .sr_slide {
+	overflow: hidden;
+	position: relative;
+	_zoom: 1;
+	height: 200px;
+	width: 864px;
+	margin: 0 auto
+}
+
+.sr_slide_container .sr_slide ul {
+	position: absolute;
+	width: 100000px
+}
+
+.sr_slide_container .sr_slide ul li {
+	float: left;
+	display: inline;
+	width: 120px;
+	height: 160px;
+	margin: 0 12px;
+	padding-top: 20px
+}
+
+.sr_slide_container .sr_slide ul li .pic {
+	text-align: center;
+	display: block;
+	width: 120px;
+	height: 100px
+}
+
+.sr_slide_container .sr_slide ul li .tit {
+	height: 40px;
+	overflow: hidden;
+	line-height: 18px
+}
+
+.sr_slide_container .sr_slide ul li .tit a {
+	color: #333
+}
+
+.sr_slide_container .sr_slide ul li .price {
+	color: #ed145a
+}
+
+#home_nav_bar {
+	width: 102px;
+	position: fixed;
+	*position: absolute;
+	*top: expression( (-540 + (document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop )) + 'px');
+	bottom: 60px;
+	_zoom: 1;
+	z-index: 99998;
+	left: 50%;
+	margin-left: 495px;
+	padding-top: 220px
+}
+
+#home_nav_bar .home_nav_border {
+	border-bottom: 0;
+	width: 62px;
+	position: relative
+}
+
+#home_nav_bar a,#recent_deals_container .btns_container span.arrow {
+	background: url(/templates/jumei/images/home/home_nav_bar_v9.png) no-repeat top center
+}
+
+#home_nav_bar .home_nav_border a {
+	width: 62px;
+	height: 61px;
+	display: inline-block;
+	overflow: hidden
+}
+
+#home_nav_bar .home_nav_border .nav_cart {
+	background-position: 0 0;
+	position: relative;
+	overflow: visible
+}
+
+#home_nav_bar .nav_cart:hover {
+	background-position: -62px 0
+}
+
+#home_nav_bar .nav_recent_deals {
+	background-position: 0 -61px
+}
+
+#home_nav_bar .nav_recent_deals:hover,#home_nav_bar .recent_now {
+	background-position: -62px -61px
+}
+
+.abtest_style #home_nav_bar .nav_recent_deals {
+	background: url(/templates/jumei/images/home/dx_sidebar.jpg) no-repeat top center
+}
+
+.abtest_style #home_nav_bar .nav_recent_deals {
+	background-position: -3px -82px
+}
+
+.abtest_style #home_nav_bar .nav_recent_deals:hover,.abtest_style #home_nav_bar .recent_now {
+	background-position: -109px -82px
+}
+
+#home_nav_bar .nav_service {
+	background-position: 0 -183px
+}
+
+#home_nav_bar .nav_service:hover {
+	background-position: -62px -183px
+}
+
+#home_nav_bar .nav_service.leave {
+	background-position: 0 -237px
+}
+
+#home_nav_bar .nav_service.leave:hover {
+	background-position: -78px -237px
+}
+
+#home_nav_bar .home_nav_border .nav_backtotop {
+	height: 63px;
+	background-position: 0 -244px
+}
+
+#home_nav_bar .nav_backtotop:hover {
+	background-position: -62px -244px
+}
+
+#home_nav_bar .nav_survey {
+	background-position: 0 -407px
+}
+
+#home_nav_bar .nav_survey:hover {
+	background-position: -78px -407px
+}
+
+#home_nav_bar .nav_collect {
+	background-position: 0 -486px
+}
+
+#home_nav_bar .nav_collect:hover {
+	background-position: -78px -486px
+}
+
+#home_nav_bar .nav_wishdeal {
+	background-position: 0 -565px
+}
+
+#home_nav_bar .nav_wishdeal:hover {
+	background-position: -78px -565px
+}
+
+#home_nav_bar .button_bookmark {
+	height: 36px;
+	background-position: 0 -176px
+}
+
+#home_nav_bar .button_bookmark:hover {
+	background-position: -101px -176px
+}
+
+#home_nav_bar .nav_all {
+	height: 37px;
+	background-position: 0 -138px
+}
+
+#home_nav_bar .nav_all:hover {
+	background-position: -101px -138px
+}
+
+#home_nav_bar .nav_all.on {
+	background-position: 0 -323px;
+	border-bottom: 0
+}
+
+#home_nav_bar .nav_all.on:hover {
+	background-position: -101px -323px
+}
+
+.home_nav_phone {
+	position: absolute;
+	z-index: 99999;
+	display: none;
+	top: 0;
+	left: 0
+}
+
+#home_nav_bar .phone_load {
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	top: 110px;
+	right: 10px;
+	background: url(about:blank)
+}
+
+#home_nav_bar a.home_nav_erweima {
+	width: 102px;
+	height: 210px;
+	display: block;
+	background: url(/templates/jumei/images/home/home_phone_v6.png) no-repeat top center;
+	_background: transparent none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.jumei.com/templates/jumei/images/home/home_phone_v6.png');
+	cursor: pointer
+}
+
+#home_nav_bar a.phone_close {
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: absolute;
+	top: 65px;
+	right: 0;
+	background: url(about:blank);
+	cursor: pointer
+}
+
+.abtest_style #home_nav_bar .sorts_list {
+	margin-top: 30px;
+	float: left;
+	border: 1px solid #ccc;
+	border-bottom: 0
+}
+
+.abtest_style #home_nav_bar .top_part {
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	overflow: hidden
+}
+
+#recent_deals_container {
+	width: 337px;
+	position: absolute;
+	top: 0;
+	right: 61px;
+	display: none;
+	_overflow: hidden
+}
+
+.abtest_style #recent_deals_container {
+	top: -11px;
+	right: 104px;
+	_right: 168px
+}
+
+#recent_deals_container .recent_deals_strangle {
+	width: 2px;
+	height: 60px;
+	display: inline-block;
+	position: absolute;
+	right: -1px;
+	top: 61px;
+	_zoom: 1;
+	overflow: hidden;
+	background: #FFF
+}
+
+#recent_deals_container a {
+	background: 0 0;
+	width: auto;
+	height: auto;
+	border: 0
+}
+
+#recent_deals_container .tips a {
+	display: inline
+}
+
+.abtest_style #home_nav_bar .tips a {
+	float: none;
+	display: inline;
+	background: 0 0;
+	border-bottom: 0
+}
+
+#recent_deals_container .item_box {
+	width: 335px;
+	border: 1px solid #d6cfc9;
+	border-bottom: 0;
+	border-top: 0;
+	background: #fff;
+	overflow: auto;
+	overflow-x: hidden;
+	_overflow: hidden;
+	_overflow-y: scroll
+}
+
+#recent_deals_container .item_box .item_container {
+	width: 335px
+}
+
+#recent_deals_container .item_box .single_item {
+	height: 61px;
+	padding: 9px 0;
+	border-bottom: 1px dotted #d6cfc9;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	_zoom: 1;
+	*position: static
+}
+
+#recent_deals_container .item_box .pic {
+	width: 58px;
+	height: 58px;
+	display: inline-block;
+	overflow: hidden;
+	float: left;
+	margin-left: 5px
+}
+
+#recent_deals_container .item_box .info {
+	width: 246px;
+	padding: 0 14px 0 10px;
+	float: left;
+	line-height: 16px;
+	display: inline-block
+}
+
+#recent_deals_container .item_box .info .title {
+	width: 205px;
+	font-size: 12px;
+	color: #333;
+	font-family: "宋体";
+	height: 32px;
+	overflow: hidden;
+	background: 0 0;
+	border-bottom: 0
+}
+
+#recent_deals_container .item_box .info .grey {
+	color: #919191
+}
+
+#recent_deals_container .item_box .info .add_to_cart {
+	float: right;
+	margin-top: 5px
+}
+
+#recent_deals_container .btns_container {
+	height: 52px;
+	width: 335px;
+	background: #f7f7f7;
+	border: 1px solid #d6cfc9;
+	border-top: 0;
+	_position: relative
+}
+
+#recent_deals_container .btns_container a {
+	width: 71px;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	*text-align: left;
+	*width: 63px;
+	_width: 66px;
+	*padding-left: 5px;
+	display: inline-block
+}
+
+#recent_deals_container .price {
+	font-family: Arial;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	color: #999
+}
+
+#recent_deals_container .btns_container a:hover {
+	text-decoration: none
+}
+
+#recent_deals_container .btns_container .clear_cart,.abtest_style #recent_deals_container .btns_container .clear_cart {
+	width: 130px;
+	padding-left: 16px;
+	color: #919191;
+	text-align: left;
+	background: 0 0
+}
+
+#recent_deals_container .btns_container .clear_cart {
+	color: #333
+}
+
+#recent_deals_container .btns_container .clear_cart:hover,.abtest_style #recent_deals_container .btns_container .clear_cart:hover {
+	color: #ed145b;
+	text-decoratin: none;
+	background: #f7f7f7
+}
+
+#recent_deals_container .btns_container .next,.abtest_style #recent_deals_container .btns_container .next {
+	*width: 55px;
+	*padding-left: 15px;
+	background: 0 0
+}
+
+#recent_deals_container .btns_container .arrow {
+	width: 12px;
+	height: 8px;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 5px;
+	*margin-top: 15px
+}
+
+.abtest_style #recent_deals_container .btns_container .prev {
+	width: 71px;
+	background: 0 0
+}
+
+#recent_deals_container .btns_container .prev .arrow {
+	background-position: -8px -395px;
+	*float: left;
+	*margin-left: 5px
+}
+
+#recent_deals_container .btns_container .next .arrow {
+	background-position: -21px -395px;
+	*float: right;
+	*margin: 0;
+	*margin: 15px 15px 0 0
+}
+
+#recent_deals_container .btns_container .prev_disabled,#recent_deals_container .btns_container .next_disabled,.abtest_style #recent_deals_container .btns_container .prev_disabled,.abtest_style #recent_deals_container .btns_container .next_disabled {
+	color: #919191;
+	background: 0 0
+}
+
+#recent_deals_container .btns_container .prev_disabled .arrow {
+	background-position: -60px -395px
+}
+
+#recent_deals_container .btns_container .next_disabled .arrow {
+	background-position: -72px -395px
+}
+
+#recent_deals_container .no_items {
+	line-height: 19px;
+	font-size: 12px;
+	text-align: center;
+	height: 115px;
+	color: #333;
+	padding: 82px 0 0 130px;
+	display: none;
+	background: url(/templates/jumei/images/home/nav_null_cart.jpg) no-repeat 15px 44px
+}
+
+#recent_deals_container .tips {
+	position: absolute;
+	padding: 10px;
+	font-size: 12px;
+	background: #FFFFD1;
+	display: none;
+	right: 10px;
+	top: 0;
+	z-index: 9999;
+	box-shadow: 0 0 3px #DDD
+}
+
+#recent_deals_container a.btn_pink_mid,.abtest_style #recent_deals_container a.btn_pink_mid {
+	float: right;
+	display: block;
+	background: url(/templates/jumei/images/cart/btn_pink_big_v2.jpg) no-repeat 0 0;
+	width: 90px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	color: #fff
+}
+
+#recent_deals_container .btn_pink_mid:hover,.abtest_style #recent_deals_container .btn_pink_mid:hover {
+	text-decoration: none
+}
+
+#recent_deals_container .sold_out,.abtest_style #recent_deals_container .sold_out {
+	background-image: url(/templates/jumei/images/home/btn_grey_mid.png)
+}
+
+#recent_deals_container .sku_box {
+	width: 110px;
+	height: 22px;
+	background: #fff;
+	color: #919191;
+	float: right;
+	display: inline-block
+}
+
+#recent_deals_container .sku_box .sku_select {
+	display: none;
+	width: 110px
+}
+
+#recent_deals_container .sku_box a {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 1px solid #f3f3f3;
+	color: #919191;
+	text-indent: 10px;
+	_zoom: 1
+}
+
+#recent_deals_container .sku_box a:hover {
+	text-decoration: none;
+	background: #f69dbb;
+	color: #fff
+}
+
+#recent_deals_container .sku_box .sku_title {
+	overflow: hidden;
+	border-bottom: 1px solid #f69dbb
+}
+
+#recent_deals_container .sku_box .sku_title .arrow {
+	width: 23px;
+	height: 22px;
+	display: block;
+	float: right;
+	background: url(/templates/jumei/images/home/top_corn_v2.png) no-repeat -12px -94px transparent
+}
+
+.cart_content .recent_deals_strangle {
+	width: 2px;
+	height: 60px;
+	display: inline-block;
+	position: absolute;
+	right: -1px;
+	top: 0;
+	_zoom: 1;
+	overflow: hidden;
+	background: #FFF
+}
+
+#cart_content span.f_color,#recent_deals_container .price span.f_color {
+	font-size: 18px;
+	color: #ed145b;
+	margin-right: 12px;
+	font-family: Arial,"宋体";
+	position: relative;
+	bottom: -2px;
+	*position: static
+}
+
+#recent_cart_container .btn_delete {
+	float: right;
+	display: block;
+	width: 72px;
+	height: 24px;
+	line-height: 21px;
+	text-align: center;
+	background: 0 0;
+	color: #999
+}
+
+#nav_cart_num {
+	display: block;
+	width: 35px;
+	height: 24px;
+	line-height: 22px;
+	position: absolute;
+	top: 0;
+	right: -10px;
+	background: url(/templates/jumei/images/home/top_corn_v2.png) no-repeat 0 -69px;
+	text-align: center;
+	color: #fff;
+	font-weight: 700
+}
+
+#home_nav_bar .cart_content {
+	width: 337px;
+	position: absolute;
+	top: 0;
+	right: 61px;
+	display: none;
+	border: 0
+}
+
+#home_nav_bar .cart_content .cart_content_null {
+	width: 205px;
+	line-height: 19px;
+	font-size: 12px;
+	text-align: center;
+	height: 121px;
+	color: #333;
+	padding: 78px 0 0 130px;
+	border: 1px solid #d6cfc9;
+	background: url(/templates/jumei/images/home/nav_null_cart.jpg) #fff no-repeat 15px 44px;
+	border-top: 0
+}
+
+#home_nav_bar .cart_content .cart_content_all,#home_nav_bar .cart_content .cart_content_center {
+	width: 335px;
+	_zoom: 1
+}
+
+#home_nav_bar .cart_content .cart_content_all {
+	display: none;
+	border: 1px solid #d6cfc9;
+	background: #fff;
+	border-top: 0
+}
+
+#home_nav_bar .cart_content .cart_content_center {
+	max-height: 240px;
+	_height: 240px;
+	overflow: auto;
+	margin-bottom: -1px
+}
+
+#home_nav_bar .cart_content .cart_con_single {
+	height: 61px;
+	padding: 9px 12px;
+	border-bottom: 1px dotted #d6cfc9;
+	overflow: hidden
+}
+
+#home_nav_bar .cart_content .single_hover {
+	background: #f2f2f2
+}
+
+#home_nav_bar .cart_content .single_pic {
+	width: 62px;
+	height: 62px;
+	float: left;
+	overflow: hidden
+}
+
+#home_nav_bar .cart_content .single_pic a,.cart_content .single_pic a img {
+	width: 60px;
+	height: 60px;
+	display: inline-block
+}
+
+#home_nav_bar .cart_content .single_pic a {
+	border: 0;
+	background: 0 0
+}
+
+#home_nav_bar .cart_content .single_pic a:hover {
+	border: 0
+}
+
+#home_nav_bar .cart_content .single_info {
+	width: 221px;
+	padding-left: 10px;
+	float: left;
+	overflow: hidden
+}
+
+#home_nav_bar .cart_content .single_info a.name,#home_nav_bar .cart_content .price_all .delete,#home_nav_bar .cart_content .con_all .price_whole,#home_nav_bar .cart_content .con_all .num_two {
+	font-size: 12px;
+	font-family: "宋体";
+	text-decoration: none;
+	color: #333
+}
+
+#home_nav_bar .cart_content .single_info a.name {
+	display: block;
+	height: 36px;
+	width: 228px;
+	overflow: hidden;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	background: 0 0
+}
+
+#home_nav_bar .cart_content .single_info a.name:hover,.cart_content .price_all .delete:hover,#home_nav_bar .cart_content .price_all .price,.cart_content .con_all .price_gongji span,#home_nav_bar .cart_content .con_all .price_gongji em,.cart_content .con_all .num_all {
+	color: #ed145b
+}
+
+#home_nav_bar .cart_content .price_all,.cart_content .con_all .price_whole,.cart_content .con_all .num_two {
+	height: 30px;
+	line-height: 30px;
+	display: inline-block
+}
+
+#home_nav_bar .cart_content .price_all {
+	width: 236px;
+	color: #999
+}
+
+#home_nav_bar .cart_content .price_all .delete {
+	float: right;
+	color: #919191;
+	background: 0 0;
+	width: 40px
+}
+
+#home_nav_bar .cart_content .price_all .price,#home_nav_bar .cart_content .con_all .price_gongji em,#home_nav_bar .cart_content .con_all .num_all,#home_nav_bar .cart_content .con_all .price_gongji span {
+	font-size: 14px;
+	font-weight: 700;
+	font-family: arial
+}
+
+#home_nav_bar .cart_content .price_all .price_plus {
+	padding: 0 4px
+}
+
+#home_nav_bar .cart_content .con_all {
+	padding: 20px 15px;
+	width: 305px;
+	border-top: 1px dotted #d6cfc9;
+	background: #f7f7f7;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	height: 28px
+}
+
+#home_nav_bar .cart_content .con_all .price_whole {
+	width: 200px;
+	float: left
+}
+
+#home_nav_bar .cart_content .con_all .price_gongji {
+	float: right
+}
+
+#home_nav_bar .cart_content .con_all .price_gongji span {
+	font-size: 18px
+}
+
+#home_nav_bar .cart_content .con_all .price_gongji em {
+	font-weight: 400;
+	padding: 0 2px 0 5px
+}
+
+#home_nav_bar .cart_content .con_all .cart_btn {
+	float: right;
+	display: block;
+	background: url(/templates/jumei/images/cart/btn_pink_big_v2.jpg) no-repeat 0 0;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff
+}
+
+#home_nav_bar .cart_content .con_all .cart_btn:hover {
+	text-decoration: none
+}
+
+#home_nav_bar .cart_content .con_all .num_all {
+	text-align: center;
+	padding: 0 3px
+}
+
+#home_nav_bar .cart_content .con_all .price_gongji {
+	float: none
+}
+
+#home_nav_bar .cart_content {
+	border: 0;
+	background: 0 0
+}
+
+.cart_membership,.mall_membership_box {
+	width: auto;
+	height: 16px;
+	line-height: 15px;
+	position: relative;
+	display: inline-block;
+	top: -6px;
+	font-size: 12px
+}
+
+.cart_membership {
+	background: #ed145b;
+	border-radius: 8px;
+	color: #FFF;
+	padding: 0 16px 0 8px;
+	cursor: pointer;
+	font-weight: 400
+}
+
+.cart_membership i.icon,.cart_membership .membership_box .corn,.cart_membership .membership_box .corn i {
+	width: 0;
+	height: 0;
+	font-size: 0
+}
+
+.cart_membership i.icon,.cart_membership .membership_box .corn i {
+	position: absolute;
+	overflow: hidden;
+	z-index: 1
+}
+
+.cart_membership i.icon {
+	border-width: 4px 4px 0;
+	border-style: solid dashed dashed;
+	border-color: #FFF transparent transparent;
+	top: 7px;
+	right: 6px
+}
+
+.cart_membership .membership_box {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	z-index: 2;
+	padding-top: 2px;
+	display: none
+}
+
+.cart_membership .membership_box .corn {
+	border-width: 0 5px 5px;
+	border-color: transparent transparent #ccc;
+	position: relative;
+	margin-left: 15%;
+	display: inline-block
+}
+
+.cart_membership .membership_box .corn,.cart_membership .membership_box .corn i {
+	border-style: dashed dashed solid
+}
+
+.cart_membership .membership_box .corn i {
+	border-width: 0 4px 4px;
+	border-color: transparent transparent #FFF;
+	top: 1px;
+	left: -4px
+}
+
+.cart_membership .membership_box .con {
+	width: auto;
+	padding: 5px 10px;
+	border: 1px solid #CCC;
+	margin-top: -1px;
+	background: #FFF;
+	line-height: 18px;
+	overflow: hidden;
+	color: #666;
+	white-space: nowrap;
+	word-break: keep-all;
+	text-align: left;
+	display: inline-block
+}
+
+#cart .cart_membership .membership_box .con .num {
+	color: #000;
+	font-family: arial;
+	font-size: 12px
+}
+
+.cart_member_nologin .membership_box .con {
+	width: 100px;
+	white-space: normal
+}
+
+.mall_membership_box {
+	overflow: hidden;
+	color: #000
+}
+
+.mall_membership_box .p_num {
+	color: #ed145b;
+	text-decoration: line-through
+}
+
+.mall_membership_box i {
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	display: inline-block;
+	background: url(/templates/jumei/images/newdeal/newdeal_pic_v5.png) no-repeat;
+	float: left;
+	margin: 0 5px
+}
+
+.member_first i {
+	background-position: -416px 0
+}
+
+.member_second i {
+	background-position: -433px 0
+}
+
+.member_third i {
+	background-position: -450px 0
+}
+
+.mem_noglogin {
+	position: relative;
+	top: -5px
+}
+
+.mem_member {
+	display: block
+}

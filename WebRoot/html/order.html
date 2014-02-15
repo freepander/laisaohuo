@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>化妆品商城</title>
+	<link rel="stylesheet" href="../fontassets/css/jumei.css">
+	<link rel="stylesheet" href="../fontassets/css/jumei_cart_new.css">
+    <style type="text/css">
+    #cart .cart_left .option p{margin-bottom: 0;}
+    #cboxContent {background: none;border: none;overflow: visible;}
+    #cboxLoadedContent {margin-top: 0;}
+    #cboxClose {width: 23px;height: 23px;overflow: hidden;text-indent: 99em;padding: 0;margin: 0;display: none;color: #ED145B;top: -12px;right: -12px;background: url(http://p0.jmstatic.com/templates/jumei/images/cart_v2/cart_pop_close.png) no-repeat 0 0 transparent;_background:none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://p0.jmstatic.com/templates/jumei/images/cart_v2/cart_pop_close.png');}
+    #cboxClose:hover {background: url(http://p0.jmstatic.com/templates/jumei/images/cart_v2/cart_pop_close.png) no-repeat 0 0 transparent;_background:none;_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://p0.jmstatic.com/templates/jumei/images/cart_v2/cart_pop_close.png');}
+    #cart .cart_products input.input_promo_card,#cart .cart_products input.input_red_card{color:#999;border: 1px solid #ccc;height: 22px;line-height: 24px;padding-left: 5px;display: none;}
+    input.input_promo_card.focus,input.input_red_card.focus{color:#000;}
+    .gateway_list li.type_name{color: #959595;margin:0;padding:0;}
+    #cart .cart_left .gateway_list li.aplipay_more{margin: 0;padding:0;width:100%;clear:both;}
+    .gateway_list li.aplipay_more a{float:right;margin-right:58px;}
+    #cart #address_selector{padding-bottom: 15px;}
+    #cart .cart_left .option .content .selected .btnEditAddress_new,#cart .cart_left .option .content .selected .btnEditAddress_del{display: inline;}
+    #cart .cart_left .paytype_gateway_after ul.gateway_ul_nobefore{border: none;width: 868px;}
+    #cart .cart_left .gateway_list #else_choose_box{margin-bottom: 0;}
+    #cart .cart_products table .sale_tag_con{background: #0abede;padding: 1px 6px 2px;margin-right: 3px;color: #fff;width:auto;}
+    #cart .cart_products table .reduce{background: #ff6f0f;}
+    #cart .option_box .express_tit{width: auto}
+    :focus{outline: none;}
+    .cart_popd_yj {display: none;}
+    .cart_pop_tlt {height: 52px;padding-left: 22px;
+        background: #faf7f8;
+        border-bottom: 1px solid #ede9ea;
+        font: 18px/52px Microsoft Yahei;
+        color: #e31256;
+    }
+    .cart_pop_wrap .cart_pop_form {
+        padding: 25px 0 0 25px;
+    }
+    .cart_pop_wrap .cart_pop_form p {
+        width: 100%;
+        margin-bottom: 14px;
+        overflow: hidden;
+        _zoom: 1;
+    }
+    .cart_pop_form p label,
+    .cart_pop_form p textarea,
+    .cart_pop_form p .cart_popd_text,
+    .cart_pop_form p img,
+    .cart_pop_form p span {
+        float: left;
+    }
+    .cart_pop_form p textarea,
+    .cart_pop_form p .cart_popd_text {
+        box-shadow: 2px 2px 3px rgba(81,68,68,.08) inset;
+    }
+    .cart_pop_form p label {
+        width: 66px;
+        display: inline-block;
+        font-size: 14px;
+        color: #231916;
+        margin-top: 8px;
+    }
+    .cart_pop_form p textarea {
+        width: 340px;
+        height: 130px;
+        resize: none;
+        padding: 10px;
+        border: 1px solid #cfcfcf;
+        font: 12px/22px '宋体';
+        color: #ccc;
+    }
+    .cart_pop_form p .cart_popd_text {
+        width: 100px;
+        height: 34px;
+        overflow: hidden;
+        padding-left: 4px;
+        border: 1px solid #cfcfcf;
+        font: 12px/34px '宋体';
+        color: #333;
+        margin-right: 10px;
+    }
+    .cart_pop_form p img {
+        width: 88px;
+        height: 34px;
+        border: 1px solid #cfcfcf;
+        margin-right: 10px;
+    }
+    .cart_pop_form p span {
+        font: 12px/34px '宋体';
+        color: #7f7f7f;
+        cursor: pointer;
+    }
+    .cart_pop_form p span b {
+        color: #e7306b;
+        font-weight: normal;
+    }
+    .cart_pop_form p .btn_pink_big {
+        width: 107px;
+        overflow: hidden;
+        float: left;
+        margin-left: 0;
+    }
+    .cart_pop_tip {
+        margin-top: 10px;
+        margin-left: 89px;
+        color:#ed145b;
+
+    }
+    .editAddressForm{
+                position: relative;
+                background: #fff;
+                display:none;
+            }
+</style>
+</head>
+<body>
+
+<!--  使用新地址  -->
+<div id="colorbox" class="" style="display:none; padding-bottom: 50px; padding-right: 50px; width: 650px; height: 380px; top: 169px; left: 361.5px; opacity: 1; cursor: auto;">
+    <div id="cboxWrapper" style="height: 430px; width: 700px;">
+        <div>
+            <div id="cboxTopLeft" style="float: left;"></div>
+            <div id="cboxTopCenter" style="float: left; width: 650px;"></div>
+            <div id="cboxTopRight" style="float: left;"></div>
+        </div>
+        <div style="clear:left">
+            <div id="cboxMiddleLeft" style="float: left; height: 380px;"></div>
+            <div id="cboxContent" style="float: left; width: 650px; height: 380px;">
+                <div id="cboxLoadedContent" style="width: 650px; overflow: auto; height: 380px;">
+                    <div class="add_newlight selected_newlight" style="padding-left: 0">
+                        <div class="cart_pop_tlt">使用新地址</div>
+                        <table id="address_table02" class="order-table">
+                            <tbody>
+                            <tr>
+                                <td style="text-align:right"><span class="pink">*</span>收件人</td>
+                                <td style="text-align:left"><input type="text" size="20" name="receiver_name" id="receiver_name_new" class="f-input" maxlength="14"></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right"><span class="pink">*</span>所在地区</td>
+                                <td style="text-align:left">
+                                    <select class="f-input editProvince" id="province_new" name="province"><option value="">请选择</option><option value="110000">北京市</option><option value="120000">天津市</option><option value="130000">河北省</option><option value="140000">山西省</option><option value="150000">内蒙古自治区</option><option value="210000">辽宁省</option><option value="220000">吉林省</option><option value="230000">黑龙江省</option><option value="310000">上海市</option><option value="320000">江苏省</option><option value="330000">浙江省</option><option value="340000">安徽省</option><option value="350000">福建省</option><option value="360000">江西省</option><option value="370000">山东省</option><option value="410000">河南省</option><option value="420000">湖北省</option><option value="430000">湖南省</option><option value="440000">广东省</option><option value="450000">广西壮族自治区</option><option value="460000">海南省</option><option value="500000">重庆市</option><option value="510000">四川省</option><option value="520000">贵州省</option><option value="530000">云南省</option><option value="540000">西藏自治区</option><option value="610000">陕西省</option><option value="620000">甘肃省</option><option value="630000">青海省</option><option value="640000">宁夏回族自治区</option><option value="650000">新疆维吾尔自治区</option></select>
+                                    <select class="f-input editCity" id="city" name="city"><option value="">请选择</option></select>
+                                    <select class="f-input editCounty" id="county" name="county"><option value="">请选择</option></select>
+                                    <input type="hidden" name="area" id="area_new" value="">
+                                    <input type="hidden" id="select_province" name="select_province" value="">
+                                    <input type="hidden" id="select_city" name="select_city" value="">
+                                    <input type="hidden" id="select_county" name="select_county" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right"><span class="pink">*</span>街道地址</td>
+                                <td>
+                                    <input type="text" size="70" name="address_" id="address_new" class="f-input" maxlength="50">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">邮编</td>
+                                <td style="text-align:left" colspan="5"><input type="text" size="10" name="postalcode" id="postalcode_new" class="f-input" maxlength="6"></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right"><span class="pink">*</span>手机号码</td>
+                                <td style="text-align:left"><input type="text" size="20" name="hp" id="hp_new" class="f-input" maxlength="11">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    或固定电话
+                                    <input type="text" size="5" name="phone_area" id="phone_area_new" class="f-input" maxlength="4"> -
+                                    <input type="text" size="10" name="phone_number" id="phone_number_new" class="f-input" maxlength="8"> -
+                                    <input type="text" size="5" name="phone_ext" id="phone_ext_new" class="f-input" maxlength="8">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right;"></td>
+                                <td style="text-align:left;color:#999;">两者至少填一项</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="act" style="font-size: 14px; padding: 5px;padding-left: 0px;">
+                                        <input type="submit" value="确定" name="commit" id="new_address_submit_new" class="formbutton"><a id="add_cancel" href="#">取消</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="cboxLoadingOverlay" class="" style="height: 380px; display: none;"></div>
+                <div id="cboxLoadingGraphic" class="" style="height: 380px; display: none;"></div>
+                <div id="cboxTitle" class="" style="display: block;"></div>
+                <div id="cboxCurrent" class="" style="display: none;"></div>
+                <div id="cboxNext" class="" style="display: none;"></div>
+                <div id="cboxPrevious" class="" style="display: none;"></div>
+                <div id="cboxSlideshow" class="" style="display: none;"></div>
+                <div id="cboxClose" class="" style="display: block;">关闭</div>
+            </div>
+            <div id="cboxMiddleRight" style="float: left; height: 380px;"></div>
+        </div>
+        <div style="clear:left">
+            <div id="cboxBottomLeft" style="float: left;"></div>
+            <div id="cboxBottomCenter" style="float: left; width: 650px;"></div>
+            <div id="cboxBottomRight" style="float: left;"></div>
+        </div>
+    </div>
+    <div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div>
+</div><!-- 使用新地址  end -->
+
+
+<div id="header_container">
+    <div id="logo">
+        <a href="#" target="_blank" id="home">
+            <img src="img/cart_logo_new.jpg" alt="化妆品团购">
+        </a>
+        <div id="user_header">
+            <ul class="login_header">
+                <li class="user">欢迎您，<span style="color: #ED145B;">frepander</span><span style="padding:0 5px;">[<a href="" style="padding:0;">退出</a>]</span><em>|</em></li>
+            </ul>
+            <div class="clear"></div>
+            <div class="header_logo_all">
+                <div style="float:right;">
+                    <img src="img/cart_step2_v1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div><!--  headercontaner  -->
+<div id="container">
+    <div id="cart">
+        <form action="#" method="post">
+            <div class="cart_left" style="*overflow: hidden">
+                <div class="option" id="address_selector">
+                    <div class="title">1 地址选择</div>
+                    <div id="first_add_address_wrap" style="display:none;">
+                        <table id="address_table02" class="order-table">
+                            <tbody>
+                            <tr>
+                                <td style="text-align:right"><span class="pink">*</span>收件人</td>
+                                <td style="text-align:left"><input type="text" size="20" name="receiver_name" id="receiver_name_new" class="f-input" maxlength="14"></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right"><span class="pink">*</span>所在地区</td>
+                                <td style="text-align:left">
+                                    <select class="f-input editProvince" id="province_new" name="province">
+                                        <option value="">请选择</option>
+                                        <option value="110000">北京市</option>
+                                        <option value="120000">天津市</option>
+                                        <option value="130000">河北省</option>
+                                        <option value="140000">山西省</option>
+                                        <option value="150000">内蒙古自治区</option>
+                                        <option value="210000">辽宁省</option>
+                                        <option value="220000">吉林省</option>
+                                        <option value="230000">黑龙江省</option>
+                                        <option value="310000">上海市</option>
+                                        <option value="320000">江苏省</option>
+                                        <option value="330000">浙江省</option>
+                                        <option value="340000">安徽省</option>
+                                        <option value="350000">福建省</option>
+                                        <option value="360000">江西省</option>
+                                        <option value="370000">山东省</option>
+                                        <option value="410000">河南省</option>
+                                        <option value="420000">湖北省</option>
+                                        <option value="430000">湖南省</option>
+                                        <option value="440000">广东省</option>
+                                        <option value="450000">广西壮族自治区</option>
+                                        <option value="460000">海南省</option>
+                                        <option value="500000">重庆市</option>
+                                        <option value="510000">四川省</option>
+                                        <option value="520000">贵州省</option>
+                                        <option value="530000">云南省</option>
+                                        <option value="540000">西藏自治区</option>
+                                        <option value="610000">陕西省</option>
+                                        <option value="620000">甘肃省</option>
+                                        <option value="630000">青海省</option>
+                                        <option value="640000">宁夏回族自治区</option>
+                                        <option value="650000">新疆维吾尔自治区</option>
+                                    </select>
+                                    <select class="f-input editCity" id="city" name="city">
+                                        <option value="">请选择</option>
+                                        <option value="110100">市辖区</option>
+                                        <option value="110200">县</option>
+                                    </select>
+                                    <select class="f-input editCounty" id="county" name="county">
+                                        <option value="">请选择</option>
+                                        <option value="110101">东城区</option>
+                                        <option value="110102">西城区</option>
+                                        <option value="110103">崇文区</option>
+                                        <option value="110104">宣武区</option>
+                                        <option value="110105">朝阳区</option>
+                                        <option value="110106">丰台区</option>
+                                        <option value="110107">石景山区</option>
+                                        <option value="110108">海淀区</option>
+                                        <option value="110109">门头沟区</option>
+                                        <option value="110111">房山区</option>
+                                        <option value="110112">通州区</option>
+                                        <option value="110113">顺义区</option>
+                                        <option value="110114">昌平区</option>
+                                        <option value="110115">大兴区</option>
+                                        <option value="110116">怀柔区</option>
+                                        <option value="110117">平谷区</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right"><span class="pink">*</span>街道地址</td>
+                                <td>
+                                    <input type="text" size="70" name="address_" id="address_new" class="f-input" maxlength="50">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right">邮编</td>
+                                <td style="text-align:left" colspan="5"><input type="text" size="10" name="postalcode" id="postalcode_new" class="f-input" maxlength="6"></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right"><span class="pink">*</span>手机号码</td>
+                                <td style="text-align:left"><input type="text" size="20" name="hp" id="hp_new" class="f-input" maxlength="11">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    或固定电话
+                                    <input type="text" size="5" name="phone_area" id="phone_area_new" class="f-input" maxlength="4"> -
+                                    <input type="text" size="10" name="phone_number" id="phone_number_new" class="f-input" maxlength="8"> -
+                                    <input type="text" size="5" name="phone_ext" id="phone_ext_new" class="f-input" maxlength="8">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align:right;"></td>
+                                <td style="text-align:left;color:#999;">两者至少填一项</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="act" style="font-size: 14px; padding: 5px;padding-left: 0px;">
+                                        <input type="submit" value="确定" name="commit" id="new_address_submit_new" class="formbutton">
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="default_address_wrap" style="display:block;">
+                        <div class="content" id="address_wrap">
+                            <div class="option_box selected" selector="old_address">
+                                <input type="radio" id="address_29584327" value="29584327" name="address_id" class="rdoAddress">
+                                <label for="address_29584327" data_address="黑龙江省-哈尔滨市-南岗区 黑龙江大学" class="address_lbl">
+                                    <span>
+                                        <span class="addr_name">唐铭员</span>
+                                        <span class="addr_con">黑龙江省-哈尔滨市-南岗区 黑龙江大学,150080</span>
+                                        <span class="addr_num">18644060531&nbsp;</span>
+                                    </span>
+                                    <span class="btnEditAddress_new" title="修改地址" addressid="29584327">修改</span>
+                                    <span class="btnEditAddress_del" title="删除地址" addressid="29584327">删除</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="address_btns_wrap">
+                            <div class="address_more" style="display:none">
+                                <a href="javascript:void(0)" class="stri_open"><span></span>展开收货地址</a>
+                            </div>
+                            <a class="add_address_btn" href="javascript:void(0)">使用新地址</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="num_border"></div>
+            <div class="cart_left">
+                <div class="option" id="prefer_delivery_day">
+                    <div class="title">
+                        2 送货时间 <span style="color:#666666;font-size:12px;font-weight:normal;font-family:'宋体';">送货时间仅作参考，快递公司会尽量满足您的要求</span>
+                    </div>
+                    <div class="content">
+                        <div class="option_box selected">
+                            <input id="delivery_day_weekday" name="prefer_delivery_day" type="radio" value="weekday">
+                            <label for="delivery_day_weekday" style="margin-top: -26px; margin-left: 14px;">仅工作日送货</label>
+                            <div class="clear"></div>
+                        </div>
+                                    <div class="option_box">
+                            <input id="delivery_day_weekend" name="prefer_delivery_day" type="radio" value="weekend">
+                            <label for="delivery_day_weekend" style="margin-top: -26px; margin-left: 14px;">仅周末送货</label>
+                            <div class="clear"></div>
+                        </div>
+                                    <div class="option_box">
+                            <input id="delivery_day_" name="prefer_delivery_day" type="radio" value="">
+                            <label for="delivery_day_" style="margin-top: -26px; margin-left: 14px;">工作日/周末/假日均可</label>
+                            <div class="clear"></div>
+                        </div>
+                                    <div class="clb"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="num_border"></div>
+            <div class="cart_left" style="*z-index: 5">
+                <div class="option cart_products">
+                    <div class="title">3 商品清单</div>
+                    <div class="cart_products_v2" cart_key="product/804/">
+                        <table border="0" cellpadding="1" cellspacing="0" id="cart_products" width="100%">
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col class="align_right">
+                                <col class="align_right">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th width="400" class="text_left padd_left">商品</th>
+                                <th width="110">数量</th>
+                                <th width="140">单价</th>
+                                <th width="140">小计</th>
+                            </tr>
+                            <tr id="100176_bj140117p323" class="cart_item" deal_hash_id="bj140117p323">
+                                <td class="name text_left padd_left">
+                                    <div style="width:320px;position: relative;line-height: 21px">
+                                        <a href="http://bj.jumei.com/i/deal/bj140117p323.html?_new" target="_blank" class="name_hover">婵真银杏天然泡沫洁面霜 200g</a>
+                                        <div class="pic_hover">
+                                            <img src="http://p2.jmstatic.com/deal_product/b3/j2/bj140117p323/bj140117p323-thumb.jpg" alt="婵真银杏天然泡沫洁面霜 200g">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="number_box">
+                                    1                    </td>
+                                <td class="price_box">
+                                    ¥<span id="item-buy-price-100176_bj140117p323">49.90</span>
+                                </td>
+                                <td class="count_price_box bold">
+                                    ¥<span id="item-buy-total-100176_bj140117p323">49.90</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="count" style="padding:10px 0 10px 30px;">
+                                    <div class="content">
+                                        <div class="option_box">
+                                            <input id="Express_product/804/" type="radio" value="Express" class="choose_delivery J_Express" name="logistic_preference[product/804/]" delivery_fee="5" checked="checked">
+                                            <label for="Express_product/804/" id="label_express" class="J_label_express">快递（5元，系统自动判断选择快递）</label>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="option_box" style="display: none;">
+                                            <input id="EMS_product/804/" type="radio" value="EMS" class="choose_delivery J_EMS" name="logistic_preference[product/804/]" delivery_fee="15">
+                                            <label for="EMS_product/804/">EMS（15元，可能需要较长时间送达，新疆、西藏、宁夏、青海、内蒙古只支持EMS）</label>
+                                            <div class="clear"></div>
+                                        </div>
+                                        <span class="express_num">¥<span class="exp_num J_Final_Delivery">5</span></span>
+                                        <span class="express_tit">运费：</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="display:none">
+                                <td colspan="4" class="count" style="padding:10px 0 10px 30px;">
+                                    <div class="content">
+                                        <div class="option_box express_wrap">
+                                            <span class="express_num" id="final_delivery_fee_redunction_notice_product/804/" delivery_reduce="5">-¥<b class="J_Delivery_reduction">0</b></span>
+                                            <span class="express_tit"><span>运费减免</span><b class="blue" style="font-size: 12px;font-weight: normal;">（已享受包邮）</b>：</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="order_amount">
+                                <td colspan="4" style="padding:0;">
+                                    <div class="order_amount_container">
+                                        <a class="use_promo_card" id="use_promo_card" href="#"><span class="corn">+</span>使用现金券和红包</a>
+                                        <div class="promo_card_box" style="display:none">
+                                            <div class="hongbao_box" style="*z-index: 10">
+                                                <div>
+                                                    <div class="tr_promo_card" style="display:none;">
+                                                        <span id="promo_card_reduction_notice_product/804/" class="express_num">- ¥<span class="exp_num promo_card_amount">10</span></span>
+                                                        <span class="express_tit">现金券抵扣</span>
+                                                    </div>
+                                                    <span class="promo_card_text">使用现金券：</span>
+                                                    <a href="#" class="choose_promo_card">请选择您的现金券</a><span class="or">或</span><span class="pink direct_input">直接输入券号</span><input type="text" size="25" maxlength="25" class="input_promo_card" value="输入现金券号">
+                                                    <a class="btn_con_small confirm_promo_card" type="button" cancel="false">使用</a>
+                                                </div>
+                                                <div class="choose_promo_card_box" style="display: none;">
+                                                    <p class="no_card">您没有现金券可用</p>
+                                                </div>
+                                            </div>
+                                            <div class="hongbao_box" style="*z-index: 5">
+                                                <div>
+                                                    <div class="tr_red_card" style="display:none;">
+                                                        <span id="promo_red_reduction_notice_product/804/" class="express_num">- ¥<span class="exp_num promo_red_amount"></span></span>
+                                                        <span class="express_tit">红包抵扣</span>
+                                                    </div>
+                                                    <span class="promo_red_text">使用红包：</span>
+                                                    <a href="#" class="choose_red_card">请选择您的红包</a>
+                                                    <span class="or">或</span>
+                                                    <span class="pink direct_input">直接输入券号</span>
+                                                    <input type="text" size="25" maxlength="25" class="input_red_card" value="输入红包号">
+                                                    <a class="btn_con_small confirm_red_card" type="button" cancel="false">使用</a>
+                                                </div>
+                                                <div class="choose_red_card_box" style="display: none;">
+                                                    <p class="no_card">您没有红包可用</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="price_count express_num">
+                                            <div class="price">
+                                                ¥<span id="total_amount_product/804/" class="total_amount">54.90                                                                            </span>
+                                            </div>
+                                        </div>
+                                        <span class="express_tit">本单应付：</span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    <div class="orders_total_amount">
+                        应付总额：<span class="total_count">¥<span id="cart_total">54.90</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="num_border"></div>
+            <div class="cart_left cart_left_last">
+                <div class="option">
+                    <div class="paytype">
+                        <div id="paytype_gateway" class="paytype_gateway_after">
+                            <div id="gateway_list" class="gateway_list" style="_height: 1%">
+                                <div class="title">4 支付方式</div>        
+                                <div class="gateway_ul_box" style="background-color:#FAFAFA;">
+                                    <ul class="gateway_ul gateway_ul_nobefore" style=" display:block;">
+                                        <li cname="支付宝" class="selected">
+                                            <input type="radio" value="Alipay" name="gateway" id="check-Alipay">
+                                            <label class="desc" for=""></label>
+                                        </li>
+                                        <li class="desc"><p>可银行卡支付，推荐使用。</p></li>                                    
+                                        <li id="gateway_COD" class="J_COD">
+                                            <input type="radio" value="COD" name="gateway" id="check-cod">
+                                            <label class="COD" for="check-COD"></label>
+                                        </li>
+                                        <li class="desc"></li>                        
+                                        <div class="clear"></div>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 72px; background: #fff">
+                <div class="confirm_pay_box">
+                    <div class="confirm_pay">
+                        <a href="/i/cart/show/?from=confirmation_modify_cart_new" class="btn_grey_small">返回修改购物车</a>
+                        <input type="submit" id="btn_confirm_pay" class="btn_pink_big" value="确认订单" onclick="return check_pay();">
+                        <div class="price_sum">
+                            应付总额：<span class="total_count">¥<span id="cart_total2">54.90</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</form>
+</div>
+
+</body>
+</html>

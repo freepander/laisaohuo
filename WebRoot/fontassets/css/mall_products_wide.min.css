@@ -1,0 +1,128 @@
+#user_header #user_control,#top_menu #top_nav,#logo {
+	width: 1200px
+}
+
+.mall_nav .mall_nav_box {
+	width: 1198px
+}
+
+.location {
+	width: 1200px
+}
+
+#warp {
+	width: 1200px
+}
+
+#logo a.persent {
+	left: 558px
+}
+
+#logo a.credit {
+	left: 680px
+}
+
+#logo a.gild {
+	left: 793px
+}
+
+#logo a.lightning {
+	left: 905px
+}
+
+#warp_left {
+	width: 942px
+}
+
+#warp_left_top {
+	width: 940px
+}
+
+.next_selected {
+	width: 940px
+}
+
+.next_selected_second {
+	width: 780px
+}
+
+.num_tit {
+	width: 940px
+}
+
+.num_warp {
+	width: 940px
+}
+
+.line {
+	width: 770px;
+	background: 0 0;
+	border-bottom: dashed 1px #ddd
+}
+
+#pListContainer {
+	width: 942px
+}
+
+#pListContainer .pList-item {
+	width: 202px;
+	margin: 5px 13px
+}
+
+.num_warp_list_top_white {
+	width: 202px;
+	height: 359px
+}
+
+.num_warp_list_pic_mall {
+	width: 200px;
+	height: 200px
+}
+
+#pListContainer .num_warp_list_pic_mall a {
+	width: 200px;
+	height: 200px;
+	display: block
+}
+
+.num_warp_list_pic_mall a img {
+	width: 200px;
+	height: 200px
+}
+
+.num_warp_list_pic_top {
+	width: 200px;
+	height: 206px
+}
+
+.pList-item .tipbox {
+	left: 220px
+}
+
+.num_warp_list_name {
+	width: 185px
+}
+
+.item_nextpage a {
+	float: left;
+	display: inline;
+	width: 206px;
+	height: 359px;
+	background: url(http://images.jumei.com/templates/jumei/images/search/search_nextpage_v2.png) no-repeat
+}
+
+.num_warp_list_name_mall {
+	width: 185px
+}
+
+.item_nextpage a:hover {
+	background-position: 0 0
+}
+
+.floor_AD {
+	width: 1200px
+}
+
+.floor_AD a img {
+	margin-left: 0
+}

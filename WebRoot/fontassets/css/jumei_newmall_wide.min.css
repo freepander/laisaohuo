@@ -1,0 +1,178 @@
+.mall_hide {
+	display: inline
+}
+
+#user_header #user_control,#top_menu #top_nav,#logo {
+	width: 1200px
+}
+
+.mall_nav .mall_nav_box {
+	width: 1198px
+}
+
+#logo a.persent {
+	left: 558px
+}
+
+#logo a.credit {
+	left: 680px
+}
+
+#logo a.gild {
+	left: 793px
+}
+
+#logo a.lightning {
+	left: 905px
+}
+
+.mallTopScreen {
+	width: 1200px
+}
+
+.mts_right {
+	width: 960px
+}
+
+.mtsBanner ul .banner_main_con {
+	width: 1200px
+}
+
+.right_shadow.wide {
+	width: 950px;
+	background: url(http://images.jumei.com/templates/jumei/images/newmall/shadow_950.png) no-repeat
+}
+
+.left_shadow {
+	width: 240px;
+	background: url(http://images.jumei.com/templates/jumei/images/newmall/shadow_950.png) no-repeat
+}
+
+.mts_right .right_shadow {
+	width: 240px;
+	background-position: right center;
+	width: 230px;
+	margin-left: 10px
+}
+
+#authorize_floor {
+	width: 950px
+}
+
+.mtsBanner .slide_control {
+	margin-left: -350px
+}
+
+#authorize_floor .af_con ul {
+	margin-right: -5px
+}
+
+#authorize_floor .af_con ul li {
+	padding: 10px
+}
+
+.mtsBanner .bannerWrap .banner_main_con {
+	width: 1200px
+}
+
+.mtsBanner .bannerWrap .banner_main_con .main_banner_a {
+	width: 770px
+}
+
+.floor {
+	width: 1198px
+}
+
+.floor_con .fc_main {
+	width: 935px
+}
+
+.floor_con .fc_sale_rank {
+	width: 240px
+}
+
+.floor_con .fc_sale_rank ul .item .tit a {
+	width: 185px
+}
+
+.floor_AD {
+	width: 1198px
+}
+
+.floor_AD a img {
+	margin-left: 0
+}
+
+.floor_bottom {
+	width: 1194px;
+	padding-left: 4px
+}
+
+.floor_bottom a {
+	margin: 2px 4px
+}
+
+.floor_con_koubei ul li .item {
+	width: 275px
+}
+
+.floor_shadow {
+	background: url(http://images.jumei.com/templates/jumei/images/newmall/brandsshadowbg_wide.png) no-repeat
+}
+
+.koubei .tit {
+	width: 216px
+}
+
+.koubei .con {
+	width: 216px
+}
+
+.fk_right {
+	width: 1000px
+}
+
+.fk_main ul li {
+	margin: 0 36px 10px 10px
+}
+
+#search_result_wrap {
+	width: 1200px
+}
+
+.section .mall_hide {
+	display: inline
+}
+
+.search_crumb {
+	width: 1200px
+}
+
+.search_no_result_tip {
+	width: 1200px
+}
+
+#search_result_wrap .br_slide ul li {
+	margin: 0 5px
+}
+
+#search_result_wrap .br_slide {
+	width: 850px
+}
+
+#search_result_wrap .br_slide_container {
+	width: 850px
+}
+
+#search_result_wrap .browse_Recommend {
+	width: 890px;
+	margin-right: 5px
+}
+
+#search_result_wrap .browse_list {
+	width: 220px
+}
+
+#search_result_wrap .browse_list_wrap {
+	width: 242px
+}

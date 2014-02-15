@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="admin" namespace="/admin" extends="struts-default">
+		<action name="*_*" class="{1}Action" method="{2}">
+			<result name="list" type="chain">{1}_list</result>
+			<result name="success">/admin/{1}_{2}.jsp</result>
+			
+			<result name="qianglist" type="chain">{1}_qianglist</result>
+			<result name="mallCarouselinput">/admin/mallCarousel_input.jsp</result>
+		</action>
+	</package>
+	<package name="admin2" namespace="/admin2" extends="struts-default">
+		<action name="*_*" class="{1}Action" method="{2}">
+			<result name="list" type="chain">{1}_list</result>
+			<result name="success">/admin/{1}_{2}.jsp</result>
+			<result name="oneList" type="chain">article_oneList</result>
+			<result name="twoList" type="chain">article_twoList</result>
+			<result name="threeList" type="chain">article_threeList</result>
+		</action>
+	</package>
+	<package name="defaul" namespace="/" extends="struts-default">
+		<interceptors>
+			<interceptor name="islogin" class="com.myivcre.ga.interceptor.IsLogin"/>
+			<interceptor-stack name="islogin_stack">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="islogin"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<action name="index_*" class="indexAction" method="{1}">
+			<result name="index_index">index2.jsp</result>
+			<result name="index">/index.jsp</result>
+			<result name="success">/{1}.jsp</result>
+			<interceptor-ref name="islogin_stack"></interceptor-ref>
+		</action>
+		<action name="articles_*" class="articlesAction" method="{1}">
+			<result name="article">/article.jsp</result>
+			<result name="success">/{1}.jsp</result>
+			<interceptor-ref name="islogin_stack"></interceptor-ref>
+		</action>
+		<action name="good_*" class="goodAction" method="{1}">
+			<result name="success">/{1}.jsp</result>
+			<interceptor-ref name="islogin_stack"></interceptor-ref>
+		</action>
+		<action name="group_*" class="groupAction" method="{1}">
+			<result name="success">/{1}.jsp</result>
+			<interceptor-ref name="islogin_stack"></interceptor-ref>
+		</action>
+		<action name="products_*" class="productsAction" method="{1}">
+			<result name="products">/products.jsp</result>
+			<result name="success">/{1}.jsp</result>
+			<interceptor-ref name="islogin_stack"></interceptor-ref>
+		</action>
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="index_index">/index2.jsp</result>
+			<result name="register">/register.jsp</result>
+			<result name="login">/login.jsp</result>
+			<result name="user">/user_order.jsp</result>
+			<result name="user_order">/user_order.jsp</result>
+			<result name="user_order2">/user_order2.jsp</result>
+			<result name="user_order3">/user_order3.jsp</result>
+			<result name="user_order4">/user_order4.jsp</result>
+			<result name="user_order5">/user_order5.jsp</result>
+			<result name="user_collection">/user_collection.jsp</result>
+			<result name="user_wish">/user_wish.jsp</result>
+			<result name="user_vip">/user_vip.jsp</result>
+			<result name="user_red">/user_red.jsp</result>
+			<result name="user_message">/user_message.jsp</result>
+			<result name="user_password">/user_password.jsp</result>
+			<result name="user_address">/user_address.jsp</result>
+			<result name="user_returnGoods">/user_returnGoods.jsp</result>
+			<interceptor-ref name="islogin_stack"></interceptor-ref>
+		</action>
+		<action name="carts_*" class="cartsAction" method="{1}">
+			<result name="cart">/cart.jsp</result>
+		</action>
+		<action name="file_*" class="fileAction" method="{1}">
+			<result name="a">/index.jsp</result>
+		</action>
+	</package>
+</struts>
+	

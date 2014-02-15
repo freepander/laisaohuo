@@ -1,0 +1,6794 @@
+@charset "utf-8";
+
+.timer .icon,#main .sort .new_product,.home_deal_list .deal_box .time_box .icon,.home_deal_list .deal_box .num_box .icon,.home_deal_list .deal_box .price_box,.home_deal_list .new,.main_pagination a.current,.deal_info .deal_info_box .shadow_triangle,.main_up .main_up_corn,.main_up .main_down_corn,.main_up:hover .main_up_corn,.main_up:hover .main_down_corn,#sort_bottom .sort .new_product,.sort_filter .sort .new_product,.deal_filter .parent_filter li.switch span.arrow,.deal_brief_trigger .arrow,.deal_info .ribbon .bg,.sort_all .sort_new a.J_NewProduct .new_products,.body_all .home_deal_list .new {
+	background: url(/templates/jumei/images/home/home_bg_v7.png?v=4) no-repeat 0 0 transparent;
+	_background: url(/templates/jumei/images/home/home_bg_v7_ie6.png) no-repeat 0 0 transparent
+}
+
+.body_all #sort_bottom,.body_all .home_deal_list_container .deal_box .go,.body_all .home_deal_list_container .deal_box .deal_oper_tip {
+	background: url(/templates/jumei/images/home/sort_bottom_bg.png) repeat-x top center
+}
+
+body {
+	background: #f2f2f2
+}
+
+#container {
+	margin: 0 auto
+}
+
+#header_container {
+	background: #fff
+}
+
+#container.grid_v2 {
+	width: auto
+}
+
+#body {
+	width: 960px;
+	margin: 0 auto
+}
+
+.top_deal_filter_box {
+	height: 40px;
+	width: 960px;
+	display: inline-block
+}
+
+.deal_filter {
+	width: 958px;
+	position: relative;
+	border-left: 1px solid #d0d0d0;
+	border-right: 1px solid #d0d0d0;
+	box-shadow: 0 3px 6px #e2e2e2;
+	z-index: 10000
+}
+
+.deal_filter .parent_filter,.deal_filter .parent_filter li {
+	background: url(/templates/jumei/images/home/filter_bg.png) no-repeat 0 0 transparent
+}
+
+.deal_filter .parent_filter,.deal_filter .parent_filter li,.deal_filter .parent_filter li a,.deal_filter .children_filter ul li,.deal_filter .children_filter .filter_box .filter_tit {
+	height: 40px
+}
+
+.deal_filter .parent_filter {
+	border-bottom: 1px solid #b6b6b6;
+	background-repeat: repeat-x;
+	background-color: #f7f7f7;
+	overflow: hidden;
+	position: relative
+}
+
+.deal_filter .parent_filter li {
+	float: left;
+	display: inline;
+	text-align: center;
+	font-size: 12px;
+	font-family: "宋体";
+	overflow: hidden;
+	position: relative;
+	background-position: right -40px
+}
+
+.deal_filter .parent_filter li a {
+	color: #919191;
+	text-decoration: none;
+	line-height: 40px;
+	padding: 0 15px;
+	display: inline-block
+}
+
+.filter_more {
+	color: #cacaca;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px;
+	display: inline-block;
+	float: left
+}
+
+.deal_filter .parent_filter li a:hover,.deal_filter .parent_filter li.selected a,.deal_filter .parent_filter li.switch a,.deal_filter .parent_filter li.switch a:hover,.deal_filter .children_filter ul li a:hover,.deal_filter .children_filter ul li.more a,.filter_more a,.filter_more a:hover {
+	color: #ed145b;
+	text-decoration: none
+}
+
+.deal_filter .parent_filter li.selected {
+	position: relative;
+	bottom: -1px;
+	line-height: 36px;
+	font-weight: 700;
+	height: 36px;
+	border-bottom: 4px solid #ed145b
+}
+
+.deal_filter .parent_filter li.switch,.deal_filter .parent_filter li.switch a {
+	width: 40px;
+	line-height: normal
+}
+
+.deal_filter .parent_filter li.switch {
+	float: right;
+	border: 0;
+	font-size: 12px;
+	text-align: left;
+	background: 0 0;
+	padding-right: 12px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: url(/templates/jumei/images/home/filter_bg.png) repeat-x 0 0 transparent
+}
+
+.deal_filter .parent_filter li.switch a {
+	display: inline-block;
+	padding: 13px 0 0
+}
+
+.deal_filter .parent_filter li.switch span.arrow {
+	width: 13px;
+	height: 7px;
+	display: inline-block;
+	float: right;
+	margin-top: 4px;
+	_margin-top: 3px;
+	overflow: hidden
+}
+
+.deal_filter .parent_filter li.switch_on span.arrow {
+	background-position: -407px -122px
+}
+
+.deal_filter .parent_filter li.switch_off span.arrow {
+	background-position: -393px -122px
+}
+
+.deal_filter .children_filter {
+	border-bottom: 1px solid #d0d0d0;
+	position: relative;
+	padding: 0 10px;
+	background: #fff;
+	display: inline-block
+}
+
+.deal_filter .children_filter span.filter_corner {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	display: inline-block;
+	bottom: -1px;
+	z-index: 2;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.deal_filter .children_filter span.filter_corner_left {
+	left: -1px
+}
+
+.deal_filter .children_filter span.filter_corner_right {
+	right: -1px
+}
+
+.deal_filter .children_filter .filter_box {
+	width: 938px;
+	height: 40px;
+	border-bottom: 1px solid #e6e6e6;
+	display: inline-block;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.deal_filter .children_filter .filter_box .filter_tit {
+	font-weight: 700;
+	float: left;
+	line-height: 40px;
+	padding: 0 10px
+}
+
+.deal_filter .children_filter ul {
+	width: 800px;
+	display: inline-block;
+	float: left;
+	_zoom: 1
+}
+
+.deal_filter .children_filter ul.alt {
+	background: #ececec
+}
+
+.deal_filter .children_filter ul li {
+	float: left;
+	line-height: 40px;
+	padding-right: 10px
+}
+
+.deal_filter .children_filter ul li a {
+	padding: 5px;
+	word-break: keep-all;
+	color: #000;
+	text-decoration: none;
+	white-space: nowrap
+}
+
+.deal_filter .children_filter ul li.selected a {
+	background: #ed145b;
+	color: #FFF
+}
+
+.deal_filter .children_filter ul li .filter_intro {
+	color: #ed145b
+}
+
+.img_box .row_soldout {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background: transparent url(/templates/jumei/css_pics/i/abt/row_soldout.png);
+	_background: transparent none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images2.jumei.com/templates/jumei/css_pics/i/abt/row_soldout.png')
+}
+
+.home_deal_list .deal_box {
+	width: 698px;
+	_width: 697px;
+	height: 211px;
+	border-top: 1px solid #f2f2f2;
+	background: #fff
+}
+
+.home_deal_list_container,#sale_top10 {
+	position: relative;
+	border: 1px solid #d8d4d5;
+	box-shadow: 0 1px 5px #ccc;
+	border-top: 0;
+	_zoom: 1;
+	_z-index: 200
+}
+
+.home_deal_list .deal_box .deal_link {
+	display: block;
+	float: left;
+	width: 370px;
+	height: 200px;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.home_deal_list .deal_box .deal_link:hover {
+	text-decoration: none;
+	cursor: pointer
+}
+
+.home_deal_list .deal_box .title_box {
+	width: 337px;
+	height: 45px;
+	line-height: 24px;
+	padding: 0 10px 0 23px;
+	font-size: 16px;
+	margin-top: 15px;
+	float: left;
+	overflow: hidden;
+	color: #333;
+	text-decoration: none;
+	font-weight: 700;
+	font-family: '微软雅黑',YaHei,Tahoma,Helvetica,arial,sans-serif
+}
+
+.home_deal_list .deal_box .title_box:hover {
+	color: #666
+}
+
+.home_deal_list .deal_box .img_box {
+	float: right;
+	width: 320px;
+	height: 200px;
+	position: relative;
+	background: url(/templates/jumei/images/loading.gif) no-repeat center
+}
+
+.home_deal_list .deal_box .img_box img {
+	width: 320px;
+	height: 200px;
+	display: inline
+}
+
+.home_deal_list .deal_box .img_box .row_soldout {
+	width: 158px;
+	height: 158px;
+	overflow: hidden;
+	background: url(http://p0.jmstatic.com/templates/jumei/images/home/deal_soldout_end1.png) no-repeat top center;
+	_background: transparent none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://p0.jmstatic.com/templates/jumei/images/home/deal_soldout_end1.png');
+	right: 70px;
+	top: 40px
+}
+
+.home_deal_list .deal_box .img_box .mobile_tag,.home_deal_list .deal_box .img_box .app_first_tag {
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	display: block;
+	width: 95px;
+	height: 32px;
+	background: url(/templates/jumei/images/activity/baijia0114/mobile_tag.jpg) no-repeat 0 0 transparent
+}
+
+.home_deal_list .deal_box .img_box .app_first_tag {
+	background: url(/templates/jumei/images/activity/baijia0114/app_first_tag.jpg) no-repeat 0 0 transparent
+}
+
+.home_deal_list .deal_box .disc_box {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-size: 36px;
+	color: #ed145b;
+	font-family: arial
+}
+
+.home_deal_list .deal_box .disc_box span {
+	font-size: 16px;
+	padding-left: 2px
+}
+
+.home_deal_list .deal_box .koubei_box {
+	margin-top: 8px;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	width: 347px;
+	padding-left: 23px;
+	font-family: Helvetica,arial,sans-serif;
+	font-size: 12px
+}
+
+.home_deal_list .deal_box .koubei_box,.home_deal_list .deal_box .koubei_box a {
+	color: #333
+}
+
+.home_deal_list .deal_box .koubei_box .link,.home_deal_list .deal_box .koubei_box .v_line,.home_deal_list .deal_box .koubei_box .koubei_link {
+	float: left;
+	line-height: 18px;
+	font-weight: 400
+}
+
+.home_deal_list .deal_box .koubei_box .v_line {
+	margin: 0 5px
+}
+
+.home_deal_list .deal_box .koubei_box .koubei_link {
+	*line-height: 22px
+}
+
+.deal_box .koubei_box .service_rating {
+	float: left;
+	margin: 1px 0 0 5px
+}
+
+.home_deal_list .deal_box .price_box {
+	width: 377px;
+	height: 65px;
+	background-position: 0 0;
+	margin: 6px 0 0;
+	float: left;
+	position: relative;
+	left: -7px
+}
+
+.home_deal_list .soldout .price_box {
+	background-position: 0 -65px
+}
+
+.home_deal_list .deal_box .price_box .p {
+	width: 122px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 34px;
+	font-weight: 500;
+	padding: 5px 0 0 28px;
+	float: left;
+	overflow: hidden;
+	font-family: Arial
+}
+
+.home_deal_list .deal_box .price_box .p,.home_deal_list .soldout .price_box .p {
+	color: #fff
+}
+
+.home_deal_list .deal_box .price_box .p span {
+	font-size: 18px
+}
+
+.home_deal_list .deal_box .price_box .button,.home_deal_list .deal_box .price_box a {
+	float: left;
+	_display: inline
+}
+
+.home_deal_list .deal_box .price_box .button {
+	padding: 2px 15px 0 0
+}
+
+.home_deal_list .deal_box .price_box a {
+	width: 65px;
+	height: 30px;
+	margin: 14px 10px 0 2px;
+	display: block
+}
+
+.home_deal_list .deal_box .price_box .p_detail {
+	float: left;
+	font-size: 12px;
+	color: #333;
+	margin: 10px 0 0 108px;
+	width: 110px;
+	overflow: hidden;
+	line-height: 18px
+}
+
+.home_deal_list .deal_box .time_box,.home_deal_list .deal_box .num_box {
+	height: 23px;
+	float: left;
+	_display: inline;
+	_zoom: 1;
+	font-size: 12px;
+	color: #333
+}
+
+.home_deal_list .deal_box .time_box {
+	line-height: 29px;
+	margin: 1px 0 0 23px;
+	color: #333;
+	font-weight: 700
+}
+
+.home_deal_list .deal_box .time_box em {
+	font-weight: 400;
+	color: #333
+}
+
+.home_deal_list .deal_box .time_box .icon,.home_deal_list .deal_box .num_box .icon {
+	display: block;
+	float: left;
+	width: 15px;
+	height: 15px;
+	line-height: 29px;
+	overflow: hidden;
+	margin: 6px 3px 0 0
+}
+
+.home_deal_list .deal_box .time_box .icon {
+	background-position: -420px -31px
+}
+
+.home_deal_list .deal_box .num_box .icon {
+	background-position: -420px -47px
+}
+
+.home_deal_list .deal_box .num_box {
+	line-height: 29px;
+	margin: 1px 0 0 20px
+}
+
+.home_deal_list .deal_box .num_box span {
+	color: #e31b53;
+	font-size: 12px;
+	font-family: Tahoma
+}
+
+.home_deal_list .deal_box .shadow {
+	float: left;
+	width: 698px;
+	height: 10px;
+	background: url(/templates/jumei/images/home/boxshadow.png) center top repeat-x #f2f2f2;
+	overflow: hidden;
+	border-top: 1px solid #CCC
+}
+
+.home_deal_list .price_box em {
+	font-family: Arial,Helvetica,sans-serif
+}
+
+.home_deal_list .new {
+	background-position: -377px -63px;
+	width: 60px;
+	height: 58px;
+	position: absolute;
+	right: -1px;
+	top: 0;
+	overflow: hidden
+}
+
+.home_deal_list .new_add {
+	width: 60px;
+	height: 58px;
+	position: absolute;
+	right: -1px;
+	top: 0;
+	overflow: hidden;
+	background: url(/templates/jumei/images/home/new.png) 0 0 transparent no-repeat;
+	_background: url(/templates/jumei/images/home/new_ie6.png) 0 0 transparent no-repeat
+}
+
+.sort {
+	position: relative;
+	height: 37px;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	background: #dadada
+}
+
+.sort a {
+	float: left;
+	width: 108px;
+	height: 37px;
+	line-height: 37px;
+	_padding-top: 10px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #464646;
+	display: block;
+	text-align: center
+}
+
+.sort a:hover {
+	text-decoration: none
+}
+
+.sort a.desc_enable,.sort a.asc_enable {
+	width: 113px;
+	background: #fff
+}
+
+.sort a.desc_enable .asc_shadow,.sort a.asc_enable .asc_shadow {
+	width: 5px;
+	height: 37px;
+	background: url(/templates/jumei/images/home/asc_shadow.jpg) no-repeat 0 0 transparent;
+	float: right;
+	_margin-top: -10px
+}
+
+.sort a.desc_enable .arrow,.sort a.desc .arrow,.sort a.asc_enable .arrow,.sort a.asc .arrow {
+	display: inline-block;
+	width: 9px;
+	height: 5px;
+	overflow: hidden;
+	margin: 0 8px 2px -21px;
+	*margin-bottom: 5px;
+	background: url(/templates/jumei/images/home/arrows_v2.gif) no-repeat 0 -5px transparent
+}
+
+.sort a.asc_enable .arrow,.sort a.asc .arrow {
+	background-position: 0 0
+}
+
+#deal_info {
+	float: left;
+	width: 231px;
+	_width: 233px;
+	min-height: 300px
+}
+
+#deal_info .ribbon {
+	position: relative;
+	height: 78px;
+	background: #eee;
+	border-right: 1px solid #ccc
+}
+
+#deal_info .ribbon .bg {
+	position: absolute;
+	left: -9px;
+	width: 287px;
+	height: 78px;
+	background: url(/templates/jumei/images/home/home_main_price_v2.png) no-repeat 0 0 transparent;
+	_background: url(/templates/jumei/images/home/home_main_price_v2_ie6.png) no-repeat 0 0 transparent;
+	overflow: hidden
+}
+
+#deal_info .ribbon .sold_out {
+	background: url(/templates/jumei/images/home/home_main_price_v2.png) no-repeat 0 0 transparent;
+	_background: url(/templates/jumei/images/home/home_main_price_v2_ie6.png) no-repeat 0 0 transparent
+}
+
+#deal_info .buyit {
+	width: 255px;
+	height: 78px;
+	line-height: 78px;
+	position: absolute;
+	left: -9px;
+	font-family: Arial,Helvetica,sans-serif;
+	color: #ed145b
+}
+
+#deal_info .buyit a {
+	width: 95px;
+	height: 44px;
+	position: absolute;
+	top: 13px;
+	right: 2px;
+	display: block;
+	overflow: hidden
+}
+
+#deal_info .buyit strong {
+	width: 155px;
+	height: 80px;
+	display: block;
+	float: left;
+	font-size: 46px;
+	text-align: left;
+	padding-left: 15px;
+	font-weight: 400;
+	color: #fff;
+	overflow: hidden;
+	font-family: arial
+}
+
+#deal_info .buyit strong em {
+	margin-right: 2px;
+	font-size: 24px
+}
+
+#deal_info .deal_info_box {
+	position: relative;
+	_zoom: 1
+}
+
+#sidebar .sidebar_new {
+	width: 240px;
+	overflow: hidden
+}
+
+#sidebar .sidebar_new .sidebar_new_title {
+	height: 40px;
+	color: #000;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	display: none
+}
+
+#sidebar .sidebar_new .sidebar_new_title em {
+	font-size: 22px;
+	font-family: arial;
+	font-weight: 700
+}
+
+#sidebar .comment {
+	background: #fff;
+	height: 243px;
+	overflow: hidden;
+	position: relative
+}
+
+#sidebar .comment .comment_container {
+	position: absolute
+}
+
+#sidebar .comment .comment_content {
+	padding: 10px;
+	height: 60px;
+	border-bottom: 1px solid #e9e9e9
+}
+
+#sidebar .comment .quote {
+	margin-top: 10px;
+	background: url(/templates/jumei/css_pics/i/quote.gif) no-repeat;
+	padding: 10px 0 0 25px;
+	word-wrap: break-word
+}
+
+#sidebar .comment .comment_info {
+	overflow: hidden
+}
+
+#sidebar .comment .comment_title {
+	width: 215px;
+	height: 16px;
+	margin-bottom: 10px;
+	_margin-bottom: 7px;
+	overflow: hidden
+}
+
+#sidebar .comment a {
+	color: #999
+}
+
+#sidebar .comment a:hover {
+	color: #ED145B;
+	text-decoration: none
+}
+
+#sidebar .comment .comment_info .intro {
+	width: 160px;
+	height: 30px;
+	line-height: 15px;
+	float: left;
+	overflow: hidden;
+	color: #6d6d6d;
+	word-break: break-all;
+	word-wrap: break-word
+}
+
+#sidebar .comment .comment_info .avatar,#sidebar .comment .comment_info .avatar img {
+	width: 30px;
+	height: 30px
+}
+
+#sidebar .comment .comment_info .avatar {
+	float: left;
+	display: block;
+	overflow: hidden;
+	margin-right: 10px
+}
+
+#sidebar .comment .comment_info .avatar img {
+	margin: 0
+}
+
+#home_commodity_banner {
+	width: 698px;
+	overflow: hidden;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc
+}
+
+.body_w1215 #home_commodity_banner {
+	width: 960px;
+	border: 0
+}
+
+.body_w960 #home_commodity_banner {
+	width: 675px;
+	border: 0
+}
+
+#home_commodity_banner .box_shadow {
+	height: 244px;
+	background: url(/templates/jumei/images/loading.gif) no-repeat center center #fff
+}
+
+#main .sort .new_product,#sort_bottom .sort .new_product,.sort_filter .sort .new_product {
+	display: block;
+	position: absolute;
+	top: 11px;
+	right: 30px;
+	width: 47px;
+	height: 14px;
+	line-height: 37px;
+	display: block;
+	position: absolute;
+	overflow: hidden;
+	background-position: -420px 0;
+	color: #464646;
+	cursor: pointer
+}
+
+#main .on .new_product,#sort_bottom .on .new_product,.sort_filter .on .new_product {
+	background-position: -420px -15px
+}
+
+#home_nav_bar {
+	width: 102px;
+	position: fixed;
+	*position: absolute;
+	*top: expression( (-560 + (document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop )) + 'px');
+	bottom: 60px;
+	_zoom: 1;
+	z-index: 999999;
+	left: 50%;
+	margin-left: 495px;
+	padding-top: 220px
+}
+
+#home_nav_bar .home_nav_border {
+	background: #fff;
+	border: 4px solid #e2e2e2;
+	width: 70px;
+	position: relative
+}
+
+#home_nav_bar a,#recent_deals_container .btns_container span.arrow {
+	background: url(/templates/jumei/images/home_nav_bar_v10.png) no-repeat top center
+}
+
+#home_nav_bar .home_nav_border a {
+	width: 70px;
+	height: 42px;
+	display: block
+}
+
+#home_nav_bar .home_nav_border .nav_cart:hover,#home_nav_bar .home_nav_border .nav_recent_deals:hover,#home_nav_bar .home_nav_border .nav_service:hover,#home_nav_bar .home_nav_border .nav_backtotop:hover {
+	background: #ed145b
+}
+
+#home_nav_bar .home_nav_border .nav_cart span,#home_nav_bar .home_nav_border .nav_recent_deals span,#home_nav_bar .home_nav_border .nav_service span,#home_nav_bar .home_nav_border .nav_backtotop span {
+	width: 70px;
+	height: 42px;
+	display: none;
+	line-height: 42px;
+	text-align: center
+}
+
+#home_nav_bar .home_nav_border .nav_cart:hover span,#home_nav_bar .home_nav_border .nav_recent_deals:hover span,#home_nav_bar .home_nav_border .nav_service:hover span,#home_nav_bar .home_nav_border .nav_backtotop:hover span {
+	display: inline-block;
+	color: #fff
+}
+
+#home_nav_bar .home_nav_border .nav_cart {
+	background-position: 0 -149px;
+	position: relative;
+	overflow: visible
+}
+
+#home_nav_bar .nav_cart:hover {
+}
+
+#home_nav_bar .nav_recent_deals {
+	background-position: 0 -233px
+}
+
+#home_nav_bar .nav_recent_deals:hover,#home_nav_bar .recent_now {
+}
+
+.abtest_style #home_nav_bar .nav_recent_deals {
+	background: url(/templates/jumei/images/home/dx_sidebar.jpg) no-repeat top center
+}
+
+.abtest_style #home_nav_bar .nav_recent_deals {
+	background-position: -3px -82px
+}
+
+.abtest_style #home_nav_bar .nav_recent_deals:hover,.abtest_style #home_nav_bar .recent_now {
+	background-position: -109px -82px
+}
+
+#home_nav_bar .nav_service {
+	background-position: 0 -191px
+}
+
+#home_nav_bar .nav_service:hover {
+}
+
+#home_nav_bar .nav_service.leave {
+}
+
+#home_nav_bar .nav_service.leave:hover {
+}
+
+#home_nav_bar .home_nav_border .nav_backtotop {
+	background-position: 0 -275px
+}
+
+#home_nav_bar .nav_backtotop:hover {
+}
+
+#home_nav_bar .nav_survey {
+	background-position: 0 -407px
+}
+
+#home_nav_bar .nav_survey:hover {
+	background-position: -78px -407px
+}
+
+#home_nav_bar .nav_collect {
+	background-position: 0 -486px
+}
+
+#home_nav_bar .nav_collect:hover {
+	background-position: -78px -486px
+}
+
+#home_nav_bar .nav_wishdeal {
+	background-position: 0 -565px
+}
+
+#home_nav_bar .nav_wishdeal:hover {
+	background-position: -78px -565px
+}
+
+#home_nav_bar .button_bookmark {
+	height: 36px;
+	background-position: 0 -176px
+}
+
+#home_nav_bar .button_bookmark:hover {
+	background-position: -101px -176px
+}
+
+#home_nav_bar .nav_all {
+	height: 37px;
+	background-position: 0 -138px
+}
+
+#home_nav_bar .nav_all:hover {
+	background-position: -101px -138px
+}
+
+#home_nav_bar .nav_all.on {
+	background-position: 0 -323px;
+	border-bottom: 0
+}
+
+#home_nav_bar .nav_all.on:hover {
+	background-position: -101px -323px
+}
+
+#home_nav_bar .nav_investigation {
+	background-position: 0 -122px
+}
+
+#home_nav_bar .nav_investigation:hover {
+	background-position: -62px -122px
+}
+
+#home_nav_bar #nav_today_block {
+	background: #fff;
+	height: 34px;
+	width: 70px
+}
+
+#home_nav_bar #nav_today_block span {
+	display: inline-block;
+	height: 34px;
+	width: 57px;
+	margin: 0 6px;
+	line-height: 34px;
+	color: #333;
+	text-align: center
+}
+
+#home_nav_bar #nav_today_block.act,#home_nav_bar #nav_today_block:hover {
+	background: #ed145b
+}
+
+#home_nav_bar #nav_today_block.act span,#home_nav_bar #nav_today_block:hover span {
+	color: #fff;
+	text-decoration: none
+}
+
+#home_nav_bar #nav_yestoday_block {
+	background: #fff;
+	height: 34px;
+	width: 70px;
+	border-top: 1px dashed #ccc
+}
+
+#home_nav_bar #nav_yestoday_block span {
+	display: inline-block;
+	height: 34px;
+	width: 57px;
+	margin: 0 6px;
+	line-height: 34px;
+	color: #333;
+	text-align: center
+}
+
+#home_nav_bar #nav_yestoday_block.act,#home_nav_bar #nav_yestoday_block:hover {
+	background: #ed145b
+}
+
+#home_nav_bar #nav_yestoday_block.act span,#home_nav_bar #nav_yestoday_block:hover span {
+	color: #fff;
+	text-decoration: none
+}
+
+#home_nav_bar .yes_guide {
+	position: absolute;
+	background: url(/templates/jumei/images/yesguide.png) no-repeat;
+	width: 196px;
+	height: 77px;
+	left: -200px;
+	top: 0;
+	display: none
+}
+
+#home_nav_bar .yes_guide a {
+	display: inline;
+	color: #ed145b;
+	background: 0 0
+}
+
+.home_nav_phone {
+	position: absolute;
+	z-index: 99999;
+	display: none;
+	top: 0;
+	left: 0
+}
+
+#home_nav_bar .phone_load {
+	width: 100px;
+	height: 40px;
+	position: absolute;
+	top: 110px;
+	right: 10px;
+	background: url(about:blank)
+}
+
+#home_nav_bar a.home_nav_erweima {
+	width: 102px;
+	height: 210px;
+	display: block;
+	background: url(/templates/jumei/images/home/home_phone_v6.png) no-repeat top center;
+	_background: transparent none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.jumei.com/templates/jumei/images/home/home_phone_v6.png');
+	cursor: pointer
+}
+
+#home_nav_bar a.phone_close {
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: absolute;
+	top: 65px;
+	right: 0;
+	background: url(about:blank);
+	cursor: pointer
+}
+
+.abtest_style #home_nav_bar .sorts_list {
+	margin-top: 30px;
+	float: left;
+	border: 1px solid #ccc;
+	border-bottom: 0
+}
+
+.abtest_style #home_nav_bar .top_part {
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	overflow: hidden
+}
+
+#recent_deals_container {
+	width: 337px;
+	position: absolute;
+	top: 0;
+	right: 70px;
+	display: none;
+	_overflow: hidden
+}
+
+.abtest_style #recent_deals_container {
+	top: -11px;
+	right: 104px;
+	_right: 168px
+}
+
+#recent_deals_container .recent_deals_strangle {
+	width: 2px;
+	height: 42px;
+	display: inline-block;
+	position: absolute;
+	right: -1px;
+	top: 59px;
+	_zoom: 1;
+	overflow: hidden;
+	background: #FFF
+}
+
+#recent_deals_container a {
+	background: 0 0;
+	width: auto;
+	height: auto;
+	border: 0
+}
+
+#recent_deals_container .tips a {
+	display: inline
+}
+
+.abtest_style #home_nav_bar .tips a {
+	float: none;
+	display: inline;
+	background: 0 0;
+	border-bottom: 0
+}
+
+#recent_deals_container .item_box {
+	width: 335px;
+	border: 1px solid #d6cfc9;
+	border-bottom: 0;
+	background: #fff;
+	overflow: auto;
+	overflow-x: hidden;
+	_overflow: hidden;
+	_overflow-y: scroll
+}
+
+#recent_deals_container .item_box .item_container {
+	width: 335px
+}
+
+#recent_deals_container .item_box .single_item {
+	height: 61px;
+	padding: 9px 0;
+	border-bottom: 1px dotted #d6cfc9;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	_zoom: 1;
+	*position: static
+}
+
+#recent_deals_container .item_box .pic {
+	width: 58px;
+	height: 58px;
+	display: inline-block;
+	overflow: hidden;
+	float: left;
+	margin-left: 5px
+}
+
+#recent_deals_container .item_box .info {
+	width: 246px;
+	padding: 0 14px 0 10px;
+	float: left;
+	line-height: 16px;
+	display: inline-block
+}
+
+#recent_deals_container .item_box .info .title {
+	width: 205px;
+	font-size: 12px;
+	color: #333;
+	font-family: "宋体";
+	height: 32px;
+	overflow: hidden;
+	background: 0 0;
+	border-bottom: 0
+}
+
+#recent_deals_container .item_box .info .grey {
+	color: #919191
+}
+
+#recent_deals_container .item_box .info .add_to_cart {
+	float: right;
+	margin-top: 5px
+}
+
+#recent_deals_container .btns_container {
+	height: 52px;
+	width: 335px;
+	background: #f7f7f7;
+	border: 1px solid #d6cfc9;
+	border-top: 0;
+	_position: relative
+}
+
+#recent_deals_container .btns_container a {
+	width: 71px;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	*text-align: left;
+	*width: 63px;
+	_width: 66px;
+	*padding-left: 5px;
+	display: inline-block
+}
+
+#recent_deals_container .price {
+	font-family: Arial;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	color: #999
+}
+
+#recent_deals_container .btns_container a:hover {
+	text-decoration: none
+}
+
+#recent_deals_container .btns_container .clear_cart,.abtest_style #recent_deals_container .btns_container .clear_cart {
+	width: 130px;
+	padding-left: 16px;
+	color: #919191;
+	text-align: left;
+	background: 0 0
+}
+
+#recent_deals_container .btns_container .clear_cart {
+	color: #333
+}
+
+#recent_deals_container .btns_container .clear_cart:hover,.abtest_style #recent_deals_container .btns_container .clear_cart:hover {
+	color: #ed145b;
+	text-decoratin: none;
+	background: #f7f7f7
+}
+
+#recent_deals_container .btns_container .next,.abtest_style #recent_deals_container .btns_container .next {
+	*width: 55px;
+	*padding-left: 15px;
+	background: 0 0
+}
+
+#recent_deals_container .btns_container .arrow {
+	width: 12px;
+	height: 8px;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 5px;
+	*margin-top: 15px
+}
+
+.abtest_style #recent_deals_container .btns_container .prev {
+	width: 71px;
+	background: 0 0
+}
+
+#recent_deals_container .btns_container .prev .arrow {
+	background-position: -8px -395px;
+	*float: left;
+	*margin-left: 5px
+}
+
+#recent_deals_container .btns_container .next .arrow {
+	background-position: -21px -395px;
+	*float: right;
+	*margin: 0;
+	*margin: 15px 15px 0 0
+}
+
+#recent_deals_container .btns_container .prev_disabled,#recent_deals_container .btns_container .next_disabled,.abtest_style #recent_deals_container .btns_container .prev_disabled,.abtest_style #recent_deals_container .btns_container .next_disabled {
+	color: #919191;
+	background: 0 0
+}
+
+#recent_deals_container .btns_container .prev_disabled .arrow {
+	background-position: -60px -395px
+}
+
+#recent_deals_container .btns_container .next_disabled .arrow {
+	background-position: -72px -395px
+}
+
+#recent_deals_container .no_items {
+	line-height: 19px;
+	font-size: 12px;
+	text-align: center;
+	height: 115px;
+	color: #333;
+	padding: 82px 0 0 130px;
+	display: none;
+	background: url(/templates/jumei/images/home/nav_null_cart.jpg) no-repeat 15px 44px
+}
+
+#recent_deals_container .tips {
+	position: absolute;
+	padding: 10px;
+	font-size: 12px;
+	background: #FFFFD1;
+	display: none;
+	right: 10px;
+	top: 0;
+	z-index: 9999;
+	box-shadow: 0 0 3px #DDD
+}
+
+#recent_deals_container a.btn_pink_mid,.abtest_style #recent_deals_container a.btn_pink_mid {
+	float: right;
+	display: block;
+	background: url(/templates/jumei/images/cart/btn_pink_big_v2.jpg) no-repeat 0 0;
+	width: 90px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+	color: #fff
+}
+
+#recent_deals_container .btn_pink_mid:hover,.abtest_style #recent_deals_container .btn_pink_mid:hover {
+	text-decoration: none
+}
+
+#recent_deals_container .sold_out,.abtest_style #recent_deals_container .sold_out {
+	background-image: url(/templates/jumei/images/home/btn_grey_mid.png)
+}
+
+#recent_deals_container .sku_box {
+	width: 110px;
+	height: 22px;
+	background: #fff;
+	color: #919191;
+	float: right;
+	display: inline-block
+}
+
+#recent_deals_container .sku_box .sku_select {
+	display: none;
+	width: 110px
+}
+
+#recent_deals_container .sku_box a {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	border-bottom: 1px solid #f3f3f3;
+	color: #919191;
+	text-indent: 10px;
+	_zoom: 1
+}
+
+#recent_deals_container .sku_box a:hover {
+	text-decoration: none;
+	background: #f69dbb;
+	color: #fff
+}
+
+#recent_deals_container .sku_box .sku_title {
+	overflow: hidden;
+	border-bottom: 1px solid #f69dbb
+}
+
+#recent_deals_container .sku_box .sku_title .arrow {
+	width: 23px;
+	height: 22px;
+	display: block;
+	float: right;
+	background: url(/templates/jumei/images/home/top_corn_v2.png) no-repeat -12px -94px transparent
+}
+
+.cart_content .recent_deals_strangle {
+	width: 1px;
+	height: 44px;
+	display: inline-block;
+	position: absolute;
+	right: -1px;
+	top: 57px;
+	_zoom: 1;
+	overflow: hidden;
+	background: #FFF
+}
+
+#cart_content span.f_color,#recent_deals_container .price span.f_color {
+	font-size: 18px;
+	color: #ed145b;
+	margin-right: 12px;
+	font-family: Arial,"宋体";
+	position: relative;
+	bottom: -2px;
+	*position: static
+}
+
+#recent_cart_container .btn_delete {
+	float: right;
+	display: block;
+	width: 72px;
+	height: 24px;
+	line-height: 21px;
+	text-align: center;
+	background: 0 0;
+	color: #999
+}
+
+#nav_cart_num {
+	display: block;
+	width: 20px;
+	height: 21px;
+	position: absolute;
+	top: -2px;
+	left: 30px;
+	background: url(/templates/jumei/images/nav_bar_cart_icon.png) no-repeat;
+	text-align: center;
+	color: #fff;
+	font-weight: 700
+}
+
+#home_nav_bar .sorts_list {
+	_zoom: 1
+}
+
+#home_nav_bar .sorts_list .icon1,#home_nav_bar .sorts_list .icon2,#home_nav_bar .sorts_list .icon3,#home_nav_bar .sorts_list .icon4,#home_nav_bar .sorts_list .icon5,#home_nav_bar .sorts_list .icon6 {
+	width: 25px;
+	height: 24px;
+	float: left;
+	display: inline;
+	margin-top: 3px;
+	margin-left: 10px;
+	background: url(/templates/jumei/images/sidebar_icons.png) no-repeat 0 0 transparent;
+	overflow: hidden
+}
+
+#home_nav_bar .sorts_list a {
+	_zoom: 1;
+	height: 30px;
+	background: 0 0;
+	text-indent: 8px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	font-family: "Microsoft YaHei";
+	color: #000;
+	background: #f8f6f7
+}
+
+#home_nav_bar .sorts_list .hover {
+	color: #ed145b;
+	text-decoration: none
+}
+
+#home_nav_bar .sorts_list .selected {
+	background: #F4718B;
+	color: #fff;
+	font-weight: 700
+}
+
+#home_nav_bar .sorts_list .icon1 {
+	background-position: 0 0
+}
+
+#home_nav_bar .sorts_list .hover .icon1 {
+	background-position: 0 -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon1 {
+	background-position: 0 -50px
+}
+
+#home_nav_bar .sorts_list .icon2 {
+	background-position: -25px 0
+}
+
+#home_nav_bar .sorts_list .hover .icon2 {
+	background-position: -25px -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon2 {
+	background-position: -25px -50px
+}
+
+#home_nav_bar .sorts_list .icon3 {
+	background-position: -50px 0
+}
+
+#home_nav_bar .sorts_list .hover .icon3 {
+	background-position: -50px -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon3 {
+	background-position: -50px -50px
+}
+
+#home_nav_bar .sorts_list .icon4 {
+	background-position: -75px 0
+}
+
+#home_nav_bar .sorts_list .hover .icon4 {
+	background-position: -75px -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon4 {
+	background-position: -75px -50px
+}
+
+#home_nav_bar .sorts_list .icon5 {
+	background-position: -100px 0
+}
+
+#home_nav_bar .sorts_list .hover .icon5 {
+	background-position: -100px -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon5 {
+	background-position: -100px -50px
+}
+
+#home_nav_bar .sorts_list .icon6 {
+	background-position: -125px 0
+}
+
+#home_nav_bar .sorts_list .hover .icon6 {
+	background-position: -125px -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon6 {
+	background-position: -125px -50px
+}
+
+#home_nav_bar .cart_content {
+	width: 337px;
+	position: absolute;
+	top: 0;
+	right: 70px;
+	display: none;
+	background: 0 0;
+	border: 0
+}
+
+#home_nav_bar .cart_content .cart_content_null {
+	width: 205px;
+	line-height: 19px;
+	font-size: 12px;
+	text-align: center;
+	height: 121px;
+	color: #333;
+	padding: 78px 0 0 130px;
+	border: 1px solid #d6cfc9;
+	background: url(/templates/jumei/images/home/nav_null_cart.jpg) #fff no-repeat 15px 44px
+}
+
+#home_nav_bar .cart_content .cart_content_all,#home_nav_bar .cart_content .cart_content_center {
+	width: 335px;
+	_zoom: 1
+}
+
+#home_nav_bar .cart_content .cart_content_all {
+	display: none;
+	border: 1px solid #d6cfc9;
+	background: #fff
+}
+
+#home_nav_bar .cart_content .cart_content_center {
+	max-height: 240px;
+	_height: 240px;
+	overflow: auto;
+	margin-bottom: -1px
+}
+
+#home_nav_bar .cart_content .cart_con_single {
+	height: 61px;
+	padding: 9px 12px;
+	border-bottom: 1px dotted #d6cfc9;
+	overflow: hidden
+}
+
+#home_nav_bar .cart_content .single_hover {
+	background: #f2f2f2
+}
+
+#home_nav_bar .cart_content .single_pic {
+	width: 62px;
+	height: 62px;
+	float: left;
+	overflow: hidden
+}
+
+#home_nav_bar .cart_content .single_pic a,.cart_content .single_pic a img {
+	width: 60px;
+	height: 60px;
+	display: inline-block
+}
+
+#home_nav_bar .cart_content .single_pic a {
+	border: 0;
+	background: 0 0
+}
+
+#home_nav_bar .cart_content .single_pic a:hover {
+	border: 0
+}
+
+#home_nav_bar .cart_content .single_info {
+	width: 220px;
+	padding-left: 10px;
+	float: left;
+	overflow: hidden
+}
+
+#home_nav_bar .cart_content .single_info a.name,#home_nav_bar .cart_content .price_all .delete,#home_nav_bar .cart_content .con_all .price_whole,#home_nav_bar .cart_content .con_all .num_two {
+	font-size: 12px;
+	font-family: "宋体";
+	text-decoration: none;
+	color: #333
+}
+
+#home_nav_bar .cart_content .single_info a.name {
+	display: block;
+	height: 36px;
+	width: 228px;
+	overflow: hidden;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	background: 0 0
+}
+
+#home_nav_bar .cart_content .single_info a.name:hover,.cart_content .price_all .delete:hover,#home_nav_bar .cart_content .price_all .price,.cart_content .con_all .price_gongji span,#home_nav_bar .cart_content .con_all .price_gongji em,.cart_content .con_all .num_all {
+	color: #ed145b
+}
+
+#home_nav_bar .cart_content .price_all,.cart_content .con_all .price_whole,.cart_content .con_all .num_two {
+	height: 30px;
+	line-height: 30px;
+	display: inline-block
+}
+
+#home_nav_bar .cart_content .price_all {
+	width: 236px;
+	color: #999
+}
+
+#home_nav_bar .cart_content .price_all .delete {
+	float: right;
+	color: #919191;
+	background: 0 0;
+	width: 40px
+}
+
+#home_nav_bar .cart_content .price_all .price,#home_nav_bar .cart_content .con_all .price_gongji em,#home_nav_bar .cart_content .con_all .num_all,#home_nav_bar .cart_content .con_all .price_gongji span {
+	font-size: 14px;
+	font-weight: 700;
+	font-family: arial
+}
+
+#home_nav_bar .cart_content .price_all .price_plus {
+	padding: 0 4px
+}
+
+#home_nav_bar .cart_content .con_all {
+	padding: 20px 15px;
+	width: 305px;
+	border-top: 1px dotted #d6cfc9;
+	background: #f7f7f7;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	height: 28px
+}
+
+#home_nav_bar .cart_content .con_all .price_whole {
+	width: 200px;
+	float: left
+}
+
+#home_nav_bar .cart_content .con_all .price_gongji {
+	float: right
+}
+
+#home_nav_bar .cart_content .con_all .price_gongji span {
+	font-size: 18px
+}
+
+#home_nav_bar .cart_content .con_all .price_gongji em {
+	font-weight: 400;
+	padding: 0 2px 0 5px
+}
+
+#home_nav_bar .cart_content .con_all .cart_btn {
+	float: right;
+	display: block;
+	background: url(/templates/jumei/images/cart/btn_pink_big_v2.jpg) no-repeat 0 0;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff
+}
+
+#home_nav_bar .cart_content .con_all .cart_btn:hover {
+	text-decoration: none
+}
+
+#home_nav_bar .cart_content .con_all .num_all {
+	text-align: center;
+	padding: 0 3px
+}
+
+#home_nav_bar .cart_content .con_all .price_gongji {
+	float: none
+}
+
+#home_nav_bar .sorts_list {
+	_zoom: 1
+}
+
+#home_nav_bar .sorts_list .icon1,#home_nav_bar .sorts_list .icon2,#home_nav_bar .sorts_list .icon3,#home_nav_bar .sorts_list .icon4,#home_nav_bar .sorts_list .icon5,#home_nav_bar .sorts_list .icon6 {
+	width: 25px;
+	height: 24px;
+	float: left;
+	display: inline;
+	margin-top: 3px;
+	margin-left: 10px;
+	background: url(/templates/jumei/images/sidebar_icons.png) no-repeat 0 0 transparent;
+	overflow: hidden
+}
+
+#home_nav_bar .sorts_list a {
+	_zoom: 1;
+	height: 30px;
+	background: 0 0;
+	text-indent: 8px;
+	line-height: 30px;
+	letter-spacing: 1px;
+	font-family: "Microsoft YaHei";
+	color: #000;
+	background: #f8f6f7
+}
+
+#home_nav_bar .sorts_list .hover {
+	color: #ed145b;
+	text-decoration: none
+}
+
+#home_nav_bar .sorts_list .selected {
+	background: #F4718B;
+	color: #fff;
+	font-weight: 700
+}
+
+#home_nav_bar .sorts_list .icon1 {
+	background-position: 0 0
+}
+
+#home_nav_bar .sorts_list .hover .icon1 {
+	background-position: 0 -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon1 {
+	background-position: 0 -50px
+}
+
+#home_nav_bar .sorts_list .icon2 {
+	background-position: -25px 0
+}
+
+#home_nav_bar .sorts_list .hover .icon2 {
+	background-position: -25px -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon2 {
+	background-position: -25px -50px
+}
+
+#home_nav_bar .sorts_list .icon3 {
+	background-position: -50px 0
+}
+
+#home_nav_bar .sorts_list .hover .icon3 {
+	background-position: -50px -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon3 {
+	background-position: -50px -50px
+}
+
+#home_nav_bar .sorts_list .icon4 {
+	background-position: -75px 0
+}
+
+#home_nav_bar .sorts_list .hover .icon4 {
+	background-position: -75px -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon4 {
+	background-position: -75px -50px
+}
+
+#home_nav_bar .sorts_list .icon5 {
+	background-position: -100px 0
+}
+
+#home_nav_bar .sorts_list .hover .icon5 {
+	background-position: -100px -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon5 {
+	background-position: -100px -50px
+}
+
+#home_nav_bar .sorts_list .icon6 {
+	background-position: -125px 0
+}
+
+#home_nav_bar .sorts_list .hover .icon6 {
+	background-position: -125px -25px
+}
+
+#home_nav_bar .sorts_list .selected .icon6 {
+	background-position: -125px -50px
+}
+
+#home_nav_bar .home_nav_border .newdeal_control {
+	background: url(/templates/jumei/images/home_nav_bar_v10.png) no-repeat;
+	width: 70px
+}
+
+#home_nav_bar .home_nav_border #nav_newdeal_prev {
+	background-position: 0 0;
+	height: 41px
+}
+
+#home_nav_bar .home_nav_border #nav_newdeal_next {
+	background-position: 0 -42px;
+	height: 42px
+}
+
+.main_pagination {
+	text-align: center;
+	padding: 30px 0
+}
+
+.main_pagination a {
+	display: inline-block;
+	width: 24px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border: 1px solid #bbb;
+	text-decoration: none;
+	background: #fafafa;
+	color: #333;
+	overflow: hidden
+}
+
+.main_pagination a:hover {
+	border: 1px solid #e42f6b;
+	background-color: #f9f9f9;
+	color: #e42f6b;
+	text-decoration: none
+}
+
+.main_pagination a.current,.main_pagination a.current:hover {
+	border: 1px solid #e42f6b;
+	color: #fff;
+	text-decoration: none;
+	background-position: -440px -65px
+}
+
+.main_pagination a.main_up {
+	width: 75px;
+	_height: 20px;
+	_margin-bottom: -7px;
+	_padding-top: 5px
+}
+
+.main_up .main_up_corn,.main_up .main_down_corn,.main_up:hover .main_up_corn,.main_up:hover .main_down_corn {
+	width: 6px;
+	height: 9px;
+	display: inline-block;
+	overflow: hidden;
+	_margin-bottom: 3px
+}
+
+.main_up .main_up_corn {
+	background-position: -466px -65px
+}
+
+.main_up .main_down_corn {
+	margin-left: 5px;
+	background-position: -466px -74px
+}
+
+.main_up:hover .main_up_corn {
+	background-position: -466px -83px
+}
+
+.main_up:hover .main_down_corn {
+	background-position: -466px -92px
+}
+
+.main_pagination .main_next {
+	width: 68px;
+	height: 57px;
+	background: url(/templates/jumei/images/detail/main_pagination_bg_v2.jpg) no-repeat top right;
+	display: inline-block;
+	margin-left: 20px
+}
+
+.bold {
+	font-weight: 700
+}
+
+#top_collect_main {
+	border: 1px solid #ccc;
+	background: #fff;
+	box-shadow: 0 1px 2px #ccc
+}
+
+#top_collect {
+	position: relative;
+	width: 990px;
+	height: 38px;
+	line-height: 38px;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px
+}
+
+#top_collect .collect_pic,#top_collect .mac_img {
+	cursor: pointer;
+	vertical-align: middle
+}
+
+#top_collect .collect_close {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	cursor: pointer
+}
+
+.clear {
+	clear: both;
+	font-size: 0
+}
+
+#sort_bottom {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc
+}
+
+#sort_bottom .sort {
+	border-top: 0
+}
+
+#mall_brands {
+	overflow: hidden
+}
+
+#mall_brands .content {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	width: 238px;
+	zoom: 1
+}
+
+#mall_brands a {
+	float: left;
+	display: inline-block;
+	width: 118px;
+	height: 119px;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	text-indent: -9999px
+}
+
+#mall_brands a.left {
+	width: 119px;
+	border-left: 0
+}
+
+#mall_brands .third_row {
+	height: 59px
+}
+
+#mall_brands a.loreal:hover {
+	background-position: -238px 0
+}
+
+#mall_brands a.cetaphil {
+	background-position: -118px 0
+}
+
+#mall_brands a.cetaphil:hover {
+	background-position: -357px 0
+}
+
+#mall_brands a.fyr {
+	background-position: 0 -120px
+}
+
+#mall_brands a.fyr:hover {
+	background-position: -238px -120px
+}
+
+#mall_brands a.tsubaki {
+	background-position: -118px -120px
+}
+
+#mall_brands a.tsubaki:hover {
+	background-position: -357px -120px
+}
+
+#mall_brands a.clinique {
+	background-position: 0 -480px
+}
+
+#mall_brands a.clinique:hover {
+	background-position: -238px -480px
+}
+
+#mall_brands a.estee {
+	background-position: -118px -480px
+}
+
+#mall_brands a.estee:hover {
+	background-position: -357px -480px
+}
+
+#mall_brands a.aaskincare {
+	background-position: 0 -240px
+}
+
+#mall_brands a.aaskincare:hover {
+	background-position: -238px -240px
+}
+
+#mall_brands a.maxfactor {
+	background-position: -118px -240px
+}
+
+#mall_brands a.maxfactor:hover {
+	background-position: -357px -240px
+}
+
+#mall_brands a.charmzone {
+	background-position: 0 -360px
+}
+
+#mall_brands a.charmzone:hover {
+	background-position: -238px -360px
+}
+
+#mall_brands a.thefaceshop {
+	background-position: -118px -360px
+}
+
+#mall_brands a.thefaceshop:hover {
+	background-position: -357px -360px
+}
+
+#mall_brands a.more_brands {
+	width: 240px;
+	_width: 238px;
+	height: 37px;
+	border: 0;
+	background-position: 0 -540px
+}
+
+#home_top_banner {
+	width: 960px;
+	margin-top: 20px;
+	overflow: hidden;
+	box-shadow: 0 1px 6px #CCC
+}
+
+#home_top_banner ul.img_slider {
+	overflow: hidden;
+	float: left
+}
+
+.body {
+	width: 965px;
+	overflow: hidden;
+	margin: 0 auto
+}
+
+.home_deal_list_container textarea {
+	display: none
+}
+
+.home_deal_list .deal_box {
+	position: relative
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	overflow: hidden
+}
+
+.deal_oper {
+	position: absolute;
+	right: 0;
+	top: 10px;
+	width: 150px;
+	z-index: 9999;
+	display: none
+}
+
+.deal_oper li {
+	float: left;
+	display: inline;
+	margin-right: 8px;
+	position: relative
+}
+
+.deal_share,.deal_subscribe {
+	display: block;
+	background: url(/templates/jumei/images/dealaddcart.png) no-repeat
+}
+
+.deal_share {
+	width: 41px;
+	height: 31px
+}
+
+.share_pannel {
+	width: 119px;
+	height: 119px;
+	background: #eee;
+	position: absolute;
+	border: solid 1px #ccc;
+	display: none
+}
+
+.share_pannel a {
+	float: left;
+	display: inline;
+	height: 30px;
+	line-height: 30px;
+	width: 119px;
+	color: #000
+}
+
+.share_pannel a span {
+	background: url(/templates/jumei/images/dealaddcart.png) no-repeat;
+	float: left;
+	display: inline;
+	width: 16px;
+	height: 16px;
+	margin-left: 12px;
+	margin-top: 6px;
+	margin-right: 9px
+}
+
+.share_pannel .wb {
+	background-position: 0 -66px
+}
+
+.share_pannel .rr {
+	background-position: -18px -66px
+}
+
+.share_pannel .tx {
+	background-position: -36px -66px
+}
+
+.share_pannel .kj {
+	background-position: -54px -66px
+}
+
+.share_pannel a:hover {
+	color: #ed245b;
+	background: #ccc;
+	text-decoration: none
+}
+
+.deal_oper .hover .share_pannel {
+	display: block
+}
+
+.deal_share:hover {
+	background-position: 0 -32px
+}
+
+.deal_addcart,.deal_lottery {
+	width: 79px;
+	height: 26px;
+	background: url(/templates/jumei/images/home/addtocart.png) no-repeat top center;
+	display: block
+}
+
+.deal_addcart:hover,.deal_lottery:hover {
+	text-decoration: none
+}
+
+.deal_oper .sku_pannel {
+	position: absolute;
+	border: solid 1px #ccc;
+	background: #eee;
+	width: 120px;
+	display: none;
+	overflow: hidden
+}
+
+.deal_oper .sku_pannel a {
+	float: left;
+	display: inline;
+	height: 33px;
+	width: 120px;
+	overflow: hidden;
+	text-indent: 10px;
+	line-height: 33px;
+	color: #000
+}
+
+.deal_oper .sku_pannel a:hover {
+	background: #ccc;
+	color: #ed245b;
+	text-decoration: none
+}
+
+.deal_subscribe {
+	width: 91px;
+	height: 31px;
+	background-position: -133px 0
+}
+
+.deal_subscribe:hover {
+	background-position: -133px -32px
+}
+
+.deal_oper_tip {
+	padding: 20px 10px;
+	font-size: 14px;
+	background: #ffffd1;
+	position: absolute;
+	display: none;
+	left: 516px;
+	top: 48px;
+	z-index: 9999;
+	box-shadow: 0 0 3px #ddd
+}
+
+.hid_hashid {
+	display: none
+}
+
+.home_deal_list_container textarea {
+	display: none
+}
+
+.info_collect {
+	display: none;
+	position: absolute;
+	top: 0;
+	width: 242px;
+	padding: 10px;
+	background: #ededed;
+	z-index: 1000;
+	border-left: 1px solid #c4c4c4;
+	border-top: 1px solid #bdbdbd;
+	border-right: 1px solid #d1d1d1;
+	border-bottom: 1px solid #c3c3c3;
+	box-shadow: 0 0 10px #979797;
+	font-size: 12px
+}
+
+.info_collect .loading {
+	margin: 15px 0;
+	text-align: center
+}
+
+.info_collect .guarantee {
+	margin: 5px 0;
+	height: 56px;
+	width: 242px
+}
+
+.info_collect .guarantee span {
+	width: 56px;
+	height: 56px;
+	float: left;
+	display: block;
+	margin-right: 6px;
+	background: url(http://images.jumei.com/templates/jumei/images/mall/zhengpinbaozheng.jpg) no-repeat 0 0 #f9a3bf
+}
+
+.info_collect .guarantee .thirty_days {
+	background-position: -62px 0
+}
+
+.info_collect .guarantee .electric {
+	background-position: -247px 0
+}
+
+.info_collect .guarantee .free_delivery {
+	background-position: -315px 0;
+	margin-right: 0
+}
+
+.info_collect .sale_info {
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #e4e4e4;
+	margin-bottom: 10px;
+	display: none
+}
+
+.info_collect .sale_info dl {
+	overflow: hidden;
+	margin-bottom: 5px
+}
+
+.info_collect .sale_info dt,.info_collect .sale_info dd {
+	float: left
+}
+
+.info_collect .sale_info dt {
+	width: 20px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	margin-right: 5px;
+	color: #fff
+}
+
+.info_collect .sale_info dd {
+	width: 180px;
+	line-height: 15px
+}
+
+.info_collect .sale_info .zeng {
+	background: #ff7e7e
+}
+
+.info_collect .sale_info .fan {
+	background: #bdb602
+}
+
+.info_collect .sale_info .zhe {
+	background: #59c4d0
+}
+
+.info_collect .sale_info .jian {
+	background: #ff9b5f
+}
+
+.info_collect .func_intro {
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #e4e4e4
+}
+
+.info_collect .func_rate {
+	overflow: hidden;
+	_zoom: 1
+}
+
+.info_collect .func_rate span {
+	float: left;
+	margin-top: 10px
+}
+
+.info_collect .func_rate .pink {
+	font-size: 24px;
+	margin: 0 0 0 5px
+}
+
+.info_collect .func_intro {
+	display: none
+}
+
+.info_collect .func_intro .text {
+	line-height: 18px;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e5e5e5
+}
+
+.info_collect .func_intro .text ul li {
+	list-style-position: inside;
+	list-style-type: disc;
+	font-size: 12px
+}
+
+.info_collect .func_intro .func_box {
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e5e5e5;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.info_collect .func_intro .func_box span {
+	float: left;
+	display: block;
+	margin: 0 5px 5px 0;
+	color: #ED145B;
+	padding: 5px;
+	border: 1px solid #dbdbdb;
+	white-space: nowrap
+}
+
+.info_collect .func_rate .service_rating {
+	float: right;
+	margin-top: 10px
+}
+
+.info_collect .collect_arrow {
+	width: 11px;
+	height: 13px;
+	position: absolute;
+	top: 90px;
+	left: -11px;
+	background: url(/templates/jumei/images/home/info_collect_arrow.png) no-repeat 0 0 transparent;
+	_background: 0 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.jumei.com/templates/jumei/images/home/info_collect_arrow.png')
+}
+
+.left_side .collect_arrow {
+	left: 262px;
+	background: url(/templates/jumei/images/home/info_collect_arrow_right.png) no-repeat 0 0 transparent;
+	_background: 0 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.jumei.com/templates/jumei/images/home/info_collect_arrow_right.png')
+}
+
+.info_collect .report_charts {
+	overflow: hidden
+}
+
+.info_collect .report_charts .star_rate {
+	margin-bottom: 5px;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.info_collect .report_chart {
+	margin-left: 5px;
+	float: left;
+	position: relative;
+	height: 13px;
+	width: 190px;
+	overflow: hidden
+}
+
+.info_collect .report_chart .chart_bg {
+	height: 11px;
+	width: 188px;
+	border: 1px solid #ccc;
+	background: url(/templates/jumei/images/detail/deal_report_chart.jpg) repeat-x 0 0 transparent;
+	overflow: hidden
+}
+
+.info_collect .report_chart .chart_val {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 13px;
+	background: url(/templates/jumei/images/detail/deal_report_chart.jpg) repeat-x 0 -11px transparent
+}
+
+.info_collect .report_charts .rating_text {
+	float: left;
+	height: 18px
+}
+
+.img_box .stock_tension {
+	width: 320px;
+	text-align: center;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 3px 0 5px;
+	color: #fff;
+	background: #ecae37;
+	font-weight: 700;
+	font-size: 12px
+}
+
+.info_collect .now_users {
+	margin-top: 10px
+}
+
+.info_collect .now_users .pink {
+	margin-right: 5px
+}
+
+.today_soldout_deals {
+	float: left
+}
+
+.today_soldout_deals .soldout_deals_title,#sale_top10 .sale_top10_title {
+	width: 958px;
+	border: 1px solid #d8d8d8;
+	background: #FFF;
+	margin: 10px 0
+}
+
+#sale_top10 .sale_top10_title {
+	width: 698px
+}
+
+#body .today_soldout_deals h2,#sale_top10 .sale_top10_title h2 {
+	height: 60px;
+	line-height: 60px;
+	text-indent: 1.5em;
+	border-bottom: 1px solid #cbcbcb;
+	color: #333;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	background: #FFF;
+	margin: 0
+}
+
+#body .today_soldout_deals h2 {
+	color: #000;
+	font-size: 18px;
+	font-weight: 400
+}
+
+.today_soldout_deals .deal_box {
+	float: left;
+	width: 228px;
+	height: 285px;
+	border: 1px solid #e0e0e0;
+	border-bottom: 2px solid #e0e0e0;
+	background: #FFF;
+	margin: 0 13px 10px 0
+}
+
+.today_soldout_deals .last {
+	margin-right: 0
+}
+
+.today_soldout_deals .deal_box .deal_link {
+	display: block;
+	width: 228px;
+	height: 285px;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.today_soldout_deals .deal_box .deal_link:hover {
+	text-decoration: none;
+	cursor: pointer
+}
+
+.today_soldout_deals .deal_box .title_box {
+	float: none;
+	display: block;
+	width: 208px;
+	height: 32px;
+	overflow: hidden;
+	padding: 10px;
+	font-size: 12px;
+	line-height: 20px;
+	margin-top: 0
+}
+
+.today_soldout_deals .deal_box .img_box {
+	float: none;
+	width: 228px;
+	height: 160px;
+	text-align: center;
+	border: 0;
+	background-color: #fff
+}
+
+.today_soldout_deals .deal_box .img_box .row_soldout {
+	width: 71px;
+	height: 71px;
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: transparent url(/templates/jumei/images/home/deal_soldout_v1.png);
+	_background: transparent none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.jumei.com/templates/jumei/images/home/deal_soldout_v1.png');
+	overflow: hidden
+}
+
+.today_soldout_deals .deal_box .img_box img {
+	width: 160px;
+	height: 160px
+}
+
+.today_soldout_deals .deal_box .deal_end_timer {
+	height: 40px;
+	line-height: 40px;
+	background: #a6a6a6;
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: "微软雅黑"
+}
+
+.today_soldout_deals .deal_box .deal_end_timer .end_timer {
+	font-family: arial;
+	padding: 0 10px;
+	display: inline-block
+}
+
+.today_soldout_deals .deal_box .deal_end_timer .sold_out {
+	width: 73px;
+	height: 32px;
+	margin: 4px 10px 0 0;
+	float: right;
+	background: url(/templates/jumei/images/home/deal_btn_go.jpg) no-repeat 0 0 transparent
+}
+
+.today_soldout_deals .deal_box .price_box {
+	width: 208px;
+	height: auto;
+	padding: 0 10px;
+	background: 0 0;
+	left: 0;
+	margin-top: 0
+}
+
+.today_soldout_deals .deal_box .price_box .p_detail {
+	width: 208px;
+	margin: 0;
+	line-height: 30px;
+	font-family: Arial
+}
+
+.today_soldout_deals .deal_box .price_box .p_detail .pink {
+	font-size: 24px;
+	float: right
+}
+
+.deal_box .price_box .line_through {
+	text-decoration: line-through
+}
+
+.today_soldout_deals .deal_box .price_box .grey {
+	color: #999
+}
+
+.today_soldout_deals .deal_box .price_box .sold_out {
+	width: 83px;
+	height: 30px;
+	margin: 3px 0 0;
+	float: right;
+	background: url(/templates/jumei/images/home/deal_btn_soldout.jpg) no-repeat 0 0 transparent
+}
+
+.today_other_deals .hover,.today_soldout_deals .hover {
+	border: 1px solid #ED145B
+}
+
+.home_deal_list_container .hover {
+	border: 1px solid #ED145B;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -1px;
+	_margin-right: -1px
+}
+
+.home_deal_list_container .hover .img_box {
+	border-right: 1px solid #ED145B;
+	margin-right: -1px
+}
+
+.home_deal_list_container .hover .shadow {
+	position: relative;
+	left: -1px;
+	border-top: 1px solid #ED145B;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	clear: both
+}
+
+.home_breed {
+	overflow: hidden;
+	margin-bottom: 9px;
+	_margin-bottom: 0
+}
+
+.home_breed .home_breed_main {
+	width: 698px;
+	display: inline-block;
+	border: 1px solid #e2e2e2;
+	background: url(/templates/jumei/images/home/home_breed_bg.jpg) repeat-y top center transparent
+}
+
+.home_breed .home_breed_logo {
+	width: 180px;
+	height: 60px;
+	display: block;
+	padding: 30px;
+	float: left
+}
+
+.home_breed .home_breed_info {
+	float: left;
+	padding: 20px 10px;
+	_padding-bottom: 0;
+	width: 435px;
+	overflow: hidden
+}
+
+.home_breed .home_breed_title,.home_breed_story .home_breed_title {
+	font-size: 24px;
+	color: #ed145b;
+	font-weight: 700;
+	font-family: "微软雅黑";
+	overflow: hidden
+}
+
+.home_breed .home_breed_title span.en,.home_breed_story .home_breed_title span.en {
+	color: #000;
+	font-family: arial;
+	padding-left: 10px
+}
+
+.home_breed ul.home_breed_content {
+	display: inline-block;
+	padding-top: 10px
+}
+
+.home_breed ul.home_breed_content li {
+	width: 143px;
+	color: #666;
+	font-size: 12px;
+	font-family: "宋体";
+	float: left;
+	overflow: hidden;
+	height: 20px;
+	line-height: 20px
+}
+
+.home_breed_bottom {
+	height: 6px;
+	background: url(/templates/jumei/images/home/home_breed_bottom.jpg) no-repeat top center transparent
+}
+
+.home_mall_breed {
+	padding: 20px 0 14px;
+	_padding-bottom: 0
+}
+
+.home_mall_breed .mall_breed_title,.home_mall_breed ul.mall_breed_center li .price {
+	font-size: 18px;
+	font-family: "微软雅黑"
+}
+
+.home_mall_breed .mall_breed_title {
+	height: 40px;
+	line-height: 40px;
+	background: #000;
+	color: #fff;
+	font-weight: 700
+}
+
+.home_mall_breed .mall_breed_title span {
+	padding-left: 20px
+}
+
+.home_mall_breed .mall_breed_con,.home_breed_story {
+	width: 698px;
+	background: #FFF;
+	display: inline-block;
+	padding-bottom: 10px;
+	border: 1px solid #e3e3e3
+}
+
+.home_mall_breed ul.mall_breed_center {
+	padding: 20px 0 0 20px;
+	display: inline-block;
+	margin-bottom: 10px
+}
+
+.home_mall_breed ul.mall_breed_center li {
+	width: 200px;
+	float: left;
+	margin-right: 25px;
+	padding-bottom: 30px;
+	position: relative;
+	_zoom: 1;
+	_display: inline
+}
+
+.home_mall_breed ul.mall_breed_center li form {
+	font-size: 12px
+}
+
+.home_mall_breed ul.mall_breed_center li .pic {
+	width: 198px;
+	height: 198px;
+	border: 1px solid #b3b3b3;
+	overflow: hidden;
+	cursor: pointer
+}
+
+.home_mall_breed ul.mall_breed_center li .name,.home_mall_breed ul.mall_breed_center li .rencent,.home_mall_breed .mall_breed_btn a,.home_breed_story .breed_story_content {
+	font-size: 12px;
+	font-family: "宋体"
+}
+
+.home_mall_breed ul.mall_breed_center li .name {
+	margin-top: 15px;
+	height: 40px;
+	line-height: 20px;
+	overflow: hidden;
+	word-break: break-all;
+	white-space: normal;
+	cursor: pointer
+}
+
+.home_mall_breed ul.mall_breed_center li .name a {
+	color: #000
+}
+
+.home_mall_breed ul.mall_breed_center li .price {
+	color: #ed145b;
+	text-align: center;
+	padding: 5px 0
+}
+
+.home_mall_breed ul.mall_breed_center li .price span.zhe {
+	font-size: 14px;
+	color: #000;
+	padding-left: 5px
+}
+
+.home_mall_breed ul.mall_breed_center li .rencent,.home_mall_breed ul.mall_breed_center li .btns,.home_mall_breed .mall_breed_btn {
+	text-align: center
+}
+
+.home_mall_breed ul.mall_breed_center li .rencent {
+	color: #b3b3b3;
+	height: 14px;
+	line-height: 14px;
+	text-align: center
+}
+
+.home_mall_breed ul.mall_breed_center li .btns {
+	padding-top: 10px;
+	height: 42px;
+	overflow: hidden
+}
+
+.home_mall_breed ul.mall_breed_center li .btns a {
+	padding-right: 20px
+}
+
+.home_mall_breed ul.mall_breed_center li .btns a:hover {
+	text-decoration: none
+}
+
+.home_mall_breed .mall_breed_btn a {
+	width: 687px;
+	height: 42px;
+	line-height: 42px;
+	display: inline-block;
+	background: url(/templates/jumei/images/home/mall_breed_btn.jpg) no-repeat top center transparent;
+	color: #666;
+	font-size: 14px
+}
+
+.home_mall_breed .mall_breed_btn a:hover {
+	text-decoration: none
+}
+
+.home_breed_story {
+	width: 638px;
+	padding: 30px
+}
+
+.home_breed_story .home_breed_title span.breed_story {
+	color: #b3b3b3;
+	padding-left: 10px
+}
+
+.home_breed_story .breed_story_content {
+	padding-top: 20px;
+	color: #000;
+	text-indent: 24px;
+	line-height: 18px;
+	word-break: break-all;
+	white-space: normal
+}
+
+.expand_others {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	background: url(/templates/jumei/images/home/click_more.jpg) no-repeat 0 0 transparent;
+	text-align: center;
+	font-family: Arial;
+	color: #fff;
+	font-weight: 700;
+	box-shadow: 2px 2px 3px #ccc
+}
+
+.expand_others:hover {
+	background-position: 0 -50px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700
+}
+
+.expand_tips {
+	color: #666;
+	font-size: 12px;
+	padding: 10px 0;
+	text-align: center
+}
+
+.home_guarantee {
+	width: 240px;
+	overflow: hidden
+}
+
+.home_guarantee a {
+	float: left;
+	display: inline;
+	width: 119px;
+	overflow: hidden;
+	height: 52px;
+	background: url(http://images.jumei.com/templates/jumei/images/home/guarantee.jpg) no-repeat
+}
+
+.home_guarantee .persent {
+	background-position: -240px 0
+}
+
+.home_guarantee .persent:hover {
+	background-position: 0 0
+}
+
+.home_guarantee .credit {
+	background-position: -360px 0
+}
+
+.home_guarantee .credit:hover {
+	background-position: -120px 0
+}
+
+.home_guarantee .gild {
+	background-position: -240px -52px
+}
+
+.home_guarantee .gild:hover {
+	background-position: 0 -52px
+}
+
+.home_guarantee .lightning {
+	background-position: -360px -52px
+}
+
+.home_guarantee .lightning:hover {
+	background-position: -120px -52px
+}
+
+.home_brand_sale {
+	width: 698px;
+	border: 1px solid #D8D4D5;
+	box-shadow: 0 1px 5px #CCC;
+	position: relative;
+	margin-bottom: 20px;
+	background: #f2f2f2;
+	overflow: hidden
+}
+
+.home_brand_sale h2 {
+	height: 40px;
+	background: url(http://images.jumei.com/brandsale/home_brand_sale_top.png) no-repeat 26px 8px #fff
+}
+
+.home_brand_sale ul {
+	margin-top: -10px
+}
+
+.home_brand_sale ul li {
+	width: 698px;
+	height: 243px;
+	margin-top: 10px;
+	position: relative;
+	float: left;
+	display: inline;
+	background: #fff
+}
+
+.body_w1215 .home_brand_sale,.body_w1215 .home_brand_sale ul li {
+	width: 958px
+}
+
+.body_w960 .home_brand_sale,.body_w960 .home_brand_sale ul li {
+	width: 675px
+}
+
+.home_brand_sale ul li a {
+	position: absolute;
+	left: -7px
+}
+
+.home_brand_sale ul li .brandsale_time {
+	position: absolute;
+	top: 210px;
+	left: 20px
+}
+
+.home_brand_sale ul li .brandsale_time .icon {
+	background: url(/templates/jumei/images/home/home_bg_v4.png) no-repeat 0 0 transparent;
+	_background: url(/templates/jumei/images/home/home_bg_v4_ie6.png) no-repeat 0 0 transparent;
+	background-position: -420px -31px;
+	display: block;
+	float: left;
+	width: 15px;
+	height: 15px;
+	line-height: 29px;
+	overflow: hidden;
+	margin: 2px 4px 0 0
+}
+
+.breadcrumbs_wrap {
+	background: #FFF;
+	height: 38px;
+	border: 1px solid #E2E2E2;
+	border-bottom: 0;
+	overflow: hidden
+}
+
+.breadcrumbs_wrap_word {
+	height: 38px;
+	line-height: 38px;
+	margin-left: 15px;
+	color: #ED145B;
+	font-size: 12px;
+	float: left;
+	display: inline
+}
+
+.breadcrumbs_line {
+	width: 12px;
+	height: 38px;
+	background: url(/templates/jumei/images/breadcrumbs_line.jpg) no-repeat;
+	float: left;
+	margin: 0 10px 0 5px
+}
+
+.breadcrumbs_wrap_word_a {
+	height: 38px;
+	line-height: 38px;
+	color: #ED145B;
+	font-size: 12px;
+	float: left
+}
+
+.breadcrumbs_wrap_word_b {
+	height: 38px;
+	line-height: 38px;
+	color: #000;
+	font-size: 12px;
+	float: left;
+	font-weight: bolder
+}
+
+.breadcrumbs_wrap_word_b a {
+	color: #000
+}
+
+.breadcrumbs_wrap_word_b a:hover {
+	color: #000
+}
+
+#home_slides_deals {
+	overflow: hidden;
+	height: 330px;
+	width: 958px;
+	border: 1px solid #ccc;
+	margin-top: 20px;
+	_zoom: 1
+}
+
+#home_slides_deals .home_main_deal {
+	float: right;
+	width: 810px;
+	height: 330px;
+	overflow: hidden;
+	background: #fff;
+	display: none;
+	position: relative
+}
+
+#home_slides_deals .on {
+	display: block
+}
+
+#home_slides_deals .deal_filter_object {
+	height: 330px;
+	width: 810px;
+	position: relative
+}
+
+#home_slides_deals .home_main_slides {
+	float: left;
+	width: 148px;
+	overflow: hidden
+}
+
+#home_slides_deals .home_main_deal .link {
+	display: block;
+	_zoom: 1;
+	color: #333
+}
+
+#home_slides_deals .home_main_deal .link:hover {
+	text-decoration: none;
+	cursor: pointer
+}
+
+#home_slides_deals .home_main_slides a {
+	display: block;
+	width: 148px;
+	height: 81px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #fff;
+	overflow: hidden;
+	text-align: center;
+	color: #333;
+	font-size: 14px;
+	font-family: "宋体"
+}
+
+#home_slides_deals .home_main_slides a:hover {
+	text-decoration: none
+}
+
+#home_slides_deals .home_main_slides a span.corn,#home_slides_deals .home_main_slides .selectednext,#home_slides_deals .home_main_slides a {
+	background: url(/templates/jumei/images/home/home_main_deal_side_v1.png) no-repeat 0 0 transparent
+}
+
+#home_slides_deals .home_main_slides a {
+	background-position: 0 -216px;
+	background-color: #efefef
+}
+
+#home_slides_deals .home_main_slides a span.corn {
+	width: 33px;
+	display: block;
+	overflow: hidden;
+	margin: 0 auto 7px
+}
+
+#home_slides_deals .home_main_slides .slide01 span.corn {
+	height: 36px;
+	margin-top: 9px
+}
+
+#home_slides_deals .home_main_slides .slide02 span.corn {
+	height: 31px;
+	background-position: 0 -37px;
+	margin-top: 17px
+}
+
+#home_slides_deals .home_main_slides .slide03 span.corn {
+	height: 33px;
+	background-position: 0 -69px;
+	margin-top: 14px
+}
+
+#home_slides_deals .home_main_slides .slide04 span.corn {
+	height: 28px;
+	background-position: 0 -103px;
+	margin-top: 14px
+}
+
+#home_slides_deals .home_main_slides .selectednext {
+	background-position: 0 -132px
+}
+
+#home_slides_deals .home_main_slides .selected0,#home_slides_deals .home_main_slides .selected1,#home_slides_deals .home_main_slides .selected2,#home_slides_deals .home_main_slides .selected3 {
+	border-bottom: 1px solid #FFF;
+	height: 81px;
+	background: #FFF
+}
+
+#home_slides_deals .deal_info {
+	float: left;
+	width: 450px;
+	height: 285px;
+	overflow: hidden;
+	padding: 15px 30px 0 0
+}
+
+#home_slides_deals .deal_info .ribbon {
+	position: relative;
+	height: 57px
+}
+
+#home_slides_deals .deal_info .ribbon .bg {
+	width: 455px;
+	height: 57px;
+	background-position: 0 -233px;
+	overflow: hidden
+}
+
+#home_slides_deals .deal_info .ribbon .sold_out {
+	background-position: 0 -78px
+}
+
+#home_slides_deals .deal_info .ribbon .price {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	width: 100px;
+	height: 40px;
+	line-height: 20px;
+	font-family: arial
+}
+
+#home_slides_deals .deal_info .buyit {
+	width: 285px;
+	height: 57px;
+	line-height: 57px;
+	position: absolute;
+	top: 0;
+	left: 170px;
+	font-family: Arial,Helvetica,sans-serif;
+	color: #ed145b
+}
+
+#home_slides_deals .deal_info .buyit a {
+	width: 95px;
+	height: 44px;
+	position: absolute;
+	top: 13px;
+	right: 2px;
+	display: block;
+	overflow: hidden
+}
+
+#home_slides_deals .deal_info .buyit strong {
+	width: 190px;
+	height: 57px;
+	display: block;
+	font-size: 36px;
+	text-align: left;
+	font-weight: 400;
+	color: #fff;
+	overflow: hidden;
+	font-family: arial
+}
+
+#home_slides_deals .deal_info .buyit strong em {
+	margin-right: 2px;
+	font-size: 20px
+}
+
+#home_slides_deals .deal_info .buyit strong i {
+	width: 53px;
+	height: 16px;
+	background: url(/templates/jumei/images/home/pic_huiyuantejia_slide.jpg) no-repeat 0 0;
+	display: inline-block;
+	overflow: hidden;
+	font-size: 12px;
+	text-indent: 99em;
+	position: relative;
+	top: -10px;
+	*top: -26px
+}
+
+#home_slides_deals .deal_info .deal_info_box {
+	position: relative;
+	margin-top: 5px;
+	font-family: Tahoma
+}
+
+#home_slides_deals .deal_info .deal_info_box .service_rating {
+	float: left;
+	height: 20px;
+	margin: 8px 0 0 5px
+}
+
+#home_slides_deals .deal_info .deal_info_box .deal_rating {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	font-family: arial;
+	font-weight: 700;
+	color: #ed145b
+}
+
+#home_slides_deals .deal_info .countdown {
+	color: #333;
+	height: 34px;
+	background: #f9f9f9;
+	padding-left: 15px
+}
+
+#home_slides_deals .deal_info .deal_end {
+	background: url(/templates/jumei/css_pics/dashboard/finsihed_hourglass_v2.png) no-repeat 130px 10px transparent;
+	text-align: left;
+	padding-left: 15px
+}
+
+#home_slides_deals .deal_info .deal_end p {
+	margin-top: 15px;
+	font-size: 12px;
+	color: #333
+}
+
+#home_slides_deals .deal_info .soldout {
+	height: 100px;
+	line-height: 100px;
+	background-position: center;
+	font-size: 36px;
+	font-weight: 700;
+	color: #ed145b;
+	text-align: center
+}
+
+#home_slides_deals .deal_info .finished {
+	height: 100px;
+	background: url(/templates/jumei/css_pics/dashboard/success_background.png) no-repeat;
+	background-position: center
+}
+
+#home_slides_deals .deal_highlight {
+	float: left;
+	width: 330px;
+	overflow: hidden
+}
+
+#home_slides_deals .deal_note {
+	padding: 10px 0 0 10px;
+	color: #959595;
+	font-size: 12px;
+	line-height: 18px;
+	height: 55px;
+	margin-bottom: 10px;
+	overflow: hidden
+}
+
+#home_slides_deals .deal_short_name_pic,#home_slides_deals .deal_short_name_pic img {
+	width: 300px;
+	height: 300px;
+	overflow: hidden
+}
+
+#home_slides_deals .deal_brief {
+	overflow: hidden;
+	width: 810px;
+	height: 330px;
+	position: relative
+}
+
+#home_slides_deals .deal_brief .title {
+	font-family: '微软雅黑',YaHei,'黑体',Tahoma,Helvetica,arial,sans-serif;
+	font-size: 18px;
+	line-height: 26px;
+	margin: 10px 0;
+	height: 128px;
+	overflow: hidden
+}
+
+#home_slides_deals .deal_brief .title a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 700
+}
+
+.deal_brief .title a:hover {
+	color: #666
+}
+
+#home_slides_deals .deal_brief .title span {
+	color: #ed145b
+}
+
+#home_slides_deals .deal_info strong {
+	padding: 0
+}
+
+#home_slides_deals .timer {
+	font-family: Tahoma,Geneva,sans-serif;
+	font-size: 20px;
+	height: 34px;
+	color: #0abede;
+	padding: 0;
+	font-weight: 700;
+	overflow: hidden
+}
+
+#home_slides_deals .timer em {
+	color: #0abede;
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0 3px;
+	letter-spacing: 1px
+}
+
+#home_slides_deals .timer .tit {
+	color: #999;
+	font-size: 12px;
+	font-weight: 400;
+	margin-right: 5px
+}
+
+#home_slides_deals .timer .icon {
+	display: inline-block;
+	width: 27px;
+	height: 30px;
+	overflow: hidden;
+	background-position: -389px -143px;
+	vertical-align: middle;
+	margin: 4px 10px 0 0
+}
+
+#home_slides_deals .timer .time {
+	position: relative;
+	top: 2px
+}
+
+#home_slides_deals .deal_brief_trigger {
+	overflow: hidden;
+	float: left;
+	width: 820px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1
+}
+
+#home_slides_deals .deal_brief_trigger .trigger {
+	width: 272px;
+	_width: 271px;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	float: left;
+	margin-right: 1px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	background: rgba(51,51,51,.8)!important;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#CC333333', EndColorStr='#CC333333')
+}
+
+:root #home_slides_deals .deal_brief_trigger .trigger {
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00333333', EndColorStr='#00333333')
+}
+
+#home_slides_deals .deal_brief_trigger .current {
+	background: rgba(237,20,91,.85)!important;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#D9ed145b', EndColorStr='#D9ed145b')
+}
+
+:root #home_slides_deals .deal_brief_trigger .current {
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00f7f5f5', EndColorStr='#00f7f5f5')
+}
+
+#home_slides_deals .deal_brief_trigger .last {
+	margin-right: 0;
+	width: 274px
+}
+
+#home_slides_deals .dbt_1 .trigger,#home_slides_deals .dbt_1 .last {
+	width: 100%;
+	margin-right: 0
+}
+
+#home_slides_deals .dbt_2 .trigger {
+	width: 404px
+}
+
+#home_slides_deals .dbt_2 .last {
+	width: 405px
+}
+
+#home_slides_deals .dbt_4 .trigger {
+	width: 201px
+}
+
+#home_slides_deals .dbt_4 .last {
+	width: 202px
+}
+
+#home_slides_deals .dbt_5 .trigger {
+	width: 161px
+}
+
+#home_slides_deals .dbt_5 .last {
+	width: 162px
+}
+
+#home_slides_deals .deal_brief_trigger .arrow {
+	display: none;
+	position: absolute;
+	top: -8px;
+	left: 130px;
+	width: 15px;
+	height: 8px;
+	background-position: -377px -122px;
+	overflow: hidden
+}
+
+#home_slides_deals .deal_brief_trigger .current .arrow {
+	display: block
+}
+
+#home_slides_deals .purhcase_number {
+	float: right;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	color: #959595;
+	margin-right: 60px
+}
+
+#home_slides_deals .purhcase_number .pink {
+	font-weight: 700;
+	font-size: 18px;
+	font-family: arial;
+	color: #0abede;
+	padding-left: 5px;
+	float: right;
+	line-height: 32px
+}
+
+.featured_box {
+	width: 958px;
+	height: 310px;
+	border: 1px solid #e8e2dd;
+	overflow: hidden;
+	box-shadow: 0 2px 2px #e8e2dd;
+	background: #FFF;
+	margin-top: 20px
+}
+
+.featured_box .featured_box_title {
+	height: 60px;
+	line-height: 60px;
+	color: #333;
+	font-size: 20px;
+	font-family: "微软雅黑";
+	padding-left: 24px
+}
+
+.featured_box .featured_box_title .en {
+	font-size: 24px;
+	font-family: arial;
+	font-weight: 700;
+	letter-spacing: -1px
+}
+
+.featured_box .featured_box_con,.featured_box .featured_con_box {
+	height: 250px;
+	display: inline-block
+}
+
+.featured_box .featured_box_con {
+	width: 958px;
+	position: relative
+}
+
+.featured_box .featured_con_box {
+	width: 930px;
+	margin: 0 14px;
+	overflow: hidden;
+	position: relative
+}
+
+.featured_box .featured_con {
+	width: 10000px;
+	height: 250px;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.featured_box .featured_con_single {
+	width: 290px;
+	height: 250px;
+	float: left;
+	overflow: hidden;
+	margin: 0 10px;
+	_display: inline;
+	cursor: pointer
+}
+
+.featured_box .featured_con_single:hover {
+	text-decoration: none
+}
+
+.featured_box .featured_con_single .pic,.featured_box .featured_con_single .pic img {
+	width: 290px;
+	height: 180px;
+	overflow: hidden;
+	background: #F2F2F2
+}
+
+.featured_box .featured_con_single .pic img {
+	display: inline;
+	background: url(/templates/jumei/images/loading.gif) no-repeat center
+}
+
+.featured_box .featured_con_single .name_box {
+	width: 290px;
+	height: 50px;
+	padding: 10px 0;
+	overflow: hidden;
+	font-size: 12px;
+	font-family: "宋体";
+	display: inline-block
+}
+
+.featured_box .featured_con_single .name_con {
+	width: 195px;
+	height: 50px;
+	float: left
+}
+
+.featured_box .featured_con_single .name_con .name {
+	width: 195px;
+	height: 26px;
+	line-height: 26px;
+	overflow: hidden;
+	color: #010305;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	display: inline-block
+}
+
+.featured_box .featured_con_single .name_con .tit {
+	width: 195px;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	color: #999;
+	display: inline-block
+}
+
+.featured_box .featured_con_single .price_con {
+	height: 50px;
+	line-height: 50px;
+	color: #666;
+	width: 95px;
+	float: right;
+	overflow: hidden;
+	text-align: right
+}
+
+.featured_box .featured_con_single .price_con .zhek {
+	font-size: 36px;
+	color: #ed145b;
+	font-family: arial
+}
+
+.featured_box .featured_btns,.featured_box .featured_btns_bg,.featured_box .featured_btns_con {
+	width: 40px;
+	height: 90px;
+	display: inline-block
+}
+
+.featured_box .featured_btns {
+	position: absolute;
+	top: 45px;
+	cursor: pointer;
+	z-index: 100;
+	font-size: 38px;
+	color: #FFF;
+	font-family: "宋体";
+	display: none
+}
+
+.featured_box .featured_btns:hover {
+	color: #FFF;
+	text-decoration: none
+}
+
+.featured_box .featured_btns_bg {
+	background: #444;
+	opacity: .3;
+	filter: alpha(opacity=30);
+	position: relative
+}
+
+.featured_box .featured_btns:hover .featured_btns_bg {
+	background: #ed145b;
+	opacity: .3;
+	filter: alpha(opacity=30)
+}
+
+.featured_box .featured_btns_con {
+	line-height: 90px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	overflow: hidden
+}
+
+.featured_box .featured_left_btn {
+	left: 0
+}
+
+.featured_box .featured_right_btn {
+	right: 0
+}
+
+#featured_corn {
+	display: inline-block;
+	position: absolute;
+	height: 31px;
+	right: 24px;
+	top: -20px;
+	display: none
+}
+
+#featured_corn li {
+	width: 11px;
+	height: 11px;
+	float: left;
+	background: url(/templates/jumei/images/home/featured_corn.png) no-repeat 0 -11px;
+	overflow: hidden;
+	margin-left: 10px;
+	cursor: pointer
+}
+
+#featured_corn li.now {
+	background-position: 0 0
+}
+
+.body_w1215 #body,.body_w1215 #user_header #user_control {
+	width: 1215px;
+	overflow: hidden
+}
+
+.body_w1215 #top_menu #top_nav,.body_w1215 #logo {
+	width: 1215px
+}
+
+.body_all #container {
+	background: #ede7e1;
+	padding-bottom: 20px
+}
+
+.body_all #footer_container {
+	margin-top: 0
+}
+
+.body_all #container.grid_v2 #sidebar,.body_all #home_slides_deals,.body_all #container.grid_v2 #main {
+	margin-top: 15px
+}
+
+.body_w1215 .leftAll_box {
+	width: 960px;
+	float: left
+}
+
+.body_w1215 .deal_filter {
+	width: 1213px
+}
+
+.body_w1215 .deal_filter .children_filter .filter_box {
+	width: 1193px
+}
+
+.body_w1215 .deal_filter .children_filter ul {
+	width: 1055px
+}
+
+.sort_all {
+	width: 930px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 15px;
+	overflow: hidden;
+	background: #FFF
+}
+
+.body_w960 .sort_all {
+	width: 100%;
+	margin-bottom: 15px
+}
+
+.sort_all,.body_all #home_main_new .home_main_new_title {
+	color: #000;
+	font-size: 18px;
+	font-family: "微软雅黑"
+}
+
+.sort_all {
+	font-size: 12px
+}
+
+.sort_all.old {
+	background: url(../img/home_today_bg.jpg) no-repeat
+}
+
+.sort_all em,#body .today_soldout_deals h2 em,.body_all #home_main_new .home_main_new_title em {
+	font-size: 22px;
+	font-family: arial;
+	font-weight: 700
+}
+
+.sort_all .sort_new {
+	float: right;
+	height: 50px;
+	*width: 405px;
+	overflow: hidden
+}
+
+.sort_all .sort_new a {
+	width: auto;
+	*width: 50px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 15px;
+	border-left: 1px dashed #ddd;
+	font-size: 14px;
+	color: #666;
+	float: left;
+	font-family: "宋体";
+	display: inline-block;
+	overflow: hidden
+}
+
+.sort_all .sort_new a:hover,.sort_all .sort_new a.asc_enable,.sort_all .sort_new a.desc_enable {
+	text-decoration: none;
+	color: #ed145b
+}
+
+.sort_all .sort_new a span.arrow {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	overflow: hidden;
+	float: right;
+	margin-top: 20px;
+	_margin-top: 18px;
+	margin-left: 5px
+}
+
+.sort_all .sort_new a span.arrow .arrow_stri {
+	width: 0;
+	height: 0;
+	display: inline-block;
+	overflow: hidden;
+	font-size: 0
+}
+
+.sort_all .sort_new a span.arrow .arrow_top,.sort_all .sort_new a.asc_enable span.arrow_two .arrow_top {
+	border-width: 0 4px 4px;
+	*border-width: 0 5px 5px;
+	border-style: dashed dashed solid;
+	border-color: transparent transparent #666
+}
+
+.sort_all .sort_new a span.arrow .arrow_bottom {
+	border-width: 4px 4px 0;
+	border-style: solid dashed dashed;
+	border-color: #666 transparent transparent;
+	margin-top: 2px;
+	*margin-left: 1px
+}
+
+.sort_all .sort_new a.asc_enable span.arrow_two .arrow_top {
+	width: 0;
+	height: 0;
+	background: 0 0;
+	margin: 0;
+	border-width: 0 5px 5px;
+	*border-width: 0 6px 6px
+}
+
+.sort_all .sort_new a span.arrow_two .arrow_top,.sort_all .sort_new a.asc_enable span.arrow_two .arrow_bottom {
+	width: 4px;
+	height: 5px;
+	background: #666;
+	margin-left: 3px;
+	*margin-left: 4px;
+	border: 0;
+	_display: inline
+}
+
+.sort_all .sort_new a span.arrow_two .arrow_bottom {
+	border-width: 5px 5px 0;
+	margin-top: 0
+}
+
+.sort_all .sort_new a.asc_enable span.arrow_two .arrow_top,.sort_all .sort_new a.asc_enable span.arrow .arrow_top {
+	border-color: transparent transparent #ed145b
+}
+
+.sort_all .sort_new a.desc_enable,.sort_all .sort_new a.asc_enable {
+	background: #f9f9f9
+}
+
+.sort_all .sort_new a.desc_enable span.arrow_two .arrow_top,.sort_all .sort_new a:hover span.arrow_two .arrow_top,.sort_all .sort_new a.asc_enable span.arrow_two .arrow_bottom {
+	background: #ed145b
+}
+
+.sort_all .sort_new a.asc_enable:hover span.arrow_two .arrow_top {
+	background: 0 0
+}
+
+.sort_all .sort_new a.desc_enable span.arrow_two .arrow_bottom,.sort_all .sort_new a:hover span.arrow_two .arrow_bottom,.sort_all .sort_new a.desc_enable span.arrow .arrow_bottom {
+	border-color: #ed145b transparent transparent
+}
+
+.sort_all .sort_new a.J_NewProduct {
+}
+
+.sort_all .sort_new a.J_NewProduct .new_products {
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	background-position: -459px -102px;
+	overflow: hidden;
+	float: left;
+	margin-top: 19px;
+	_margin-top: 18px;
+	margin-right: 5px;
+	_display: inlien
+}
+
+.sort_all .on a.J_NewProduct .new_products {
+	background-position: -459px -115px
+}
+
+.body_all #sort_bottom {
+	width: 960px;
+	padding: 0;
+	background-color: #efefef;
+	border-top: 0;
+	position: relative
+}
+
+.body_w960 #sort_bottom {
+	width: 675px
+}
+
+.body_all #sort_bottom .sort_new {
+	*width: 500px;
+	float: left
+}
+
+.body_all #sort_bottom .sort_new a {
+	font-size: 16px;
+	padding: 0 25px;
+	_width: 55px
+}
+
+.body_all #sort_bottom .sort_new .J_NewProduct {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	z-index: 1;
+	border: 0
+}
+
+.body_w1215 #container.grid_v2 #main {
+	width: 960px
+}
+
+.body_w1215 .home_deal_list_container {
+	width: 960px;
+	background: #FFF;
+	border: 0;
+	border-bottom: 1px solid #d5cfca;
+	display: inline-block;
+	margin-bottom: 1px
+}
+
+.body_all .home_deal_list_container .deal_box {
+	width: 312px;
+	height: 340px;
+	padding: 1px;
+	border: 3px solid #FFF;
+	float: left;
+	margin: 0 0 15px
+}
+
+.body_all .home_deal_list_container .hover {
+	border: 3px solid #ff548e
+}
+
+.body_all .home_deal_list_container .deal_box .img_box,.body_all .home_deal_list_container .hover .img_box,.body_all .home_deal_list_container .deal_box .img_box img {
+	width: 312px;
+	height: 200px;
+	border: 0;
+	margin: 0
+}
+
+.body_all .home_deal_list_container .deal_box .img_box a:hover {
+	text-decoration: none
+}
+
+.body_all .home_deal_list_container .deal_box .img_box .new,.body_all .home_deal_list .new {
+	width: 51px;
+	height: 45px;
+	background: url(/templates/jumei/images/home/home_new_pro_bg.png) no-repeat 0 0 transparent;
+	top: -9px;
+	left: 10px
+}
+
+.body_all .home_deal_list_container .deal_box .deal_link {
+	width: 300px;
+	height: 147px;
+	overflow: hidden;
+	padding-left: 6px
+}
+
+.body_all .home_deal_list_container .deal_box .title_box {
+	width: 300px;
+	height: 44px;
+	font-size: 14px;
+	line-height: 22px;
+	padding: 0;
+	color: #000;
+	font-family: "宋体";
+	font-weight: 400;
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+.body_all .home_deal_list_container .deal_box .title_box .pink {
+	font-weight: 700;
+	font-family: tahoma
+}
+
+.body_all .home_deal_list_container .deal_box .price_box {
+	width: 300px;
+	margin: 0 0 10px;
+	background: 0 0;
+	left: 0;
+	height: 34px;
+	overflow: hidden;
+	float: none
+}
+
+.body_all .home_deal_list_container .deal_box .price_box .p,.body_all .home_deal_list_container .deal_box .p_detail {
+	width: auto;
+	padding: 0;
+	height: auto;
+	line-height: normal;
+	margin: 0
+}
+
+.body_all .home_deal_list_container .deal_box .price_box .p {
+	color: #ed145b;
+	font-family: arial;
+	font-size: 30px
+}
+
+.body_all .home_deal_list_container .deal_box .price_box .p em {
+	font-size: 16px
+}
+
+.body_all .home_deal_list_container .deal_box .p_detail {
+	min-width: 60px;
+	_width: 60px;
+	display: inline-block;
+	float: none;
+	color: #999;
+	padding: 18px 5px 0;
+	background: url(/templates/jumei/images/home/pic_huiyuantejia.jpg) 5px 2px no-repeat
+}
+
+.body_all .home_deal_list_container .deal_box .p_detail span {
+	font-size: 13px;
+	font-family: arial
+}
+
+.body_all .home_deal_list_container .deal_box .go {
+	width: 80px;
+	height: 31px;
+	line-height: 31px;
+	color: #FFF;
+	text-align: center;
+	display: inline-block;
+	float: right;
+	background-position: 0 -57px;
+	background-color: #ed145b
+}
+
+.body_all .home_deal_list_container .deal_box .numtimer_box {
+	width: 300px;
+	height: 24px;
+	overflow: hidden;
+	display: block;
+	clear: both
+}
+
+.body_all .home_deal_list_container .deal_box .time_box,.body_all .home_deal_list_container .deal_box .num_box .buy_num,.body_all .home_deal_list_container .deal_box .time_box_souldout {
+	font-size: 14px;
+	font-family: "微软雅黑";
+	font-weight: 700
+}
+
+.body_all .home_deal_list_container .deal_box .time_box,.body_all .home_deal_list_container .deal_box .time_box_souldout {
+	margin: 0;
+	color: #666;
+	overflow: hidden;
+	font-family: airal
+}
+
+.body_all .home_deal_list_container .deal_box .time_box em,.body_all .home_deal_list_container .deal_box .time_box_souldout em {
+	font-family: "宋体";
+	font-size: 12px;
+	padding: 0 4px;
+	color: #666
+}
+
+.body_all .home_deal_list_container .deal_box .time_box .icon,.body_all .home_deal_list_container .deal_box .time_box_souldout .icon {
+	display: none
+}
+
+.body_all .home_deal_list_container .deal_box .time_box_souldout {
+	float: left;
+	line-height: 26px
+}
+
+.body_all .home_deal_list_container .deal_box .num_box {
+	float: right;
+	color: #999;
+	overflow: hidden;
+	margin: 0
+}
+
+.body_all .home_deal_list_container .deal_box .num_box .buy_num {
+	color: #0abede;
+	padding-right: 2px;
+	font-family: airal
+}
+
+.home_deal_list_container .deal_box .koubei_box_all {
+	display: none
+}
+
+.home_deal_list_container .hover .koubei_box_all {
+	display: block
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box_all,.body_all .home_deal_list_container .deal_box .koubei_box_bg {
+	width: 312px;
+	height: 30px;
+	overflow: hidden
+}
+
+.body_w960 .home_deal_list_container .deal_box .koubei_box_all,.body_w960 .home_deal_list_container .deal_box .koubei_box_bg {
+	width: 320px
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box_all,.body_all .home_deal_list_container .deal_box .koubei_box {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	cursor: pointer
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box_bg {
+	background: #000;
+	opacity: .75;
+	filter: alpha(opacity=75);
+	position: relative
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box {
+	width: 292px;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	top: 0;
+	z-index: 10;
+	color: #FFF;
+	margin: 0
+}
+
+.body_w960 .home_deal_list_container .deal_box .koubei_box {
+	width: 300px
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box:hover,.body_all .home_deal_list_container .deal_box .koubei_box .koubei_link:hover {
+	text-decoration: none
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box .koubei_link,.body_all .home_deal_list_container .deal_box .koubei_box .link {
+	line-height: 30px;
+	overflow: hidden
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box .link {
+	float: right;
+	padding-left: 10px
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box .link .num {
+	padding-left: 2px;
+	font-family: arial
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box .rating_num {
+	float: left;
+	line-height: 30px
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box .service_rating.small .rating,.body_all .home_deal_list_container .deal_box .koubei_box .service_rating.small .rating .value {
+	height: 15px;
+	background: url(../img/rating_small_v4.png) repeat-x top center;
+	overflow: hidden
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box .service_rating.small .rating {
+	background-position: 0 -39px;
+	margin: 6px 0 0 5px
+}
+
+.body_all .home_deal_list_container .deal_box .koubei_box .service_rating.small .rating .value {
+	background-position: 0 -54px
+}
+
+.body_all .home_deal_list_container .deal_box .img_box .stock_tension,.body_all .home_deal_list_container .deal_box .img_box .stock_tension_bg,.body_all .home_deal_list_container .deal_box .img_box .stock_tension span {
+	width: 312px;
+	height: 30px;
+	padding: 0;
+	background: 0 0
+}
+
+.body_w960 .home_deal_list_container .deal_box .img_box .stock_tension,.body_w960 .home_deal_list_container .deal_box .img_box .stock_tension_bg,.body_w960 .home_deal_list_container .deal_box .img_box .stock_tension span {
+	width: 320px;
+	height: 30px;
+	padding: 0;
+	background: 0 0
+}
+
+.body_all .home_deal_list_container .deal_box .img_box .stock_tension_bg {
+	background: #ed145b;
+	opacity: .8;
+	filter: alpha(opacity=80);
+	position: relative
+}
+
+.body_all .home_deal_list_container .deal_box .img_box .stock_tension span {
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block
+}
+
+.body_all .home_deal_list_container .deal_box .deal_oper_tip {
+	width: 146px;
+	line-height: 18px;
+	text-align: center;
+	top: 47px;
+	left: 200px;
+	color: #333;
+	font-size: 12px;
+	background-position: 0 -95px;
+	background-color: #efefef;
+	padding: 5px 0
+}
+
+.body_all .home_deal_list_container .deal_box .deal_oper_tip span.corn,.body_all .home_deal_list_container .deal_box .li_addCart .sku_pannel span.corn {
+	height: 0;
+	width: 0;
+	font-size: 0;
+	border-width: 0 5px 5px;
+	border-style: dashed dashed solid;
+	border-color: transparent transparent #f1f1f1;
+	display: inline-block;
+	clear: both;
+	position: absolute;
+	left: 85px;
+	top: -5px
+}
+
+.body_all .home_deal_list_container .deal_box .li_addCart .sku_pannel span.corn {
+	left: 45px
+}
+
+.body_all .home_deal_list_container .deal_box .deal_oper {
+	width: 100px;
+	right: 9px;
+	top: 9px
+}
+
+.body_all .home_deal_list_container .deal_box .deal_oper .li_deal_oper,.body_all #today_soldout_deals .li_deal_oper {
+	display: none
+}
+
+.body_all .home_deal_list_container .deal_box .li_addCart,.body_all #today_soldout_deals .deal_oper li {
+	float: right;
+	margin-right: 0
+}
+
+.body_all .home_deal_list_container .deal_box .deal_oper .sku_pannel {
+	width: 90px;
+	border: 0;
+	background: #f2f2f2;
+	top: 37px
+}
+
+.body_all .home_deal_list_container .deal_box .deal_oper .sku_pannel a {
+	width: 80px;
+	padding-left: 10px;
+	height: 26px;
+	line-height: 26px;
+	border-bottom: 1px solid #fcfcfc
+}
+
+.body_all .home_deal_list_container .deal_box .deal_oper .sku_pannel a:hover {
+	background: #fcfcfc
+}
+
+.body_all .today_soldout_deals .soldout_deals_title {
+	border: 0
+}
+
+.body_all #body .today_soldout_deals h2 {
+	height: 50px;
+	line-height: 50px
+}
+
+.body_w960 .today_soldout_deals .soldout_deals_title {
+	width: 960px
+}
+
+.body_w1215 .today_soldout_deals .soldout_deals_title {
+	width: 1215px;
+	margin: 0;
+	border: 0
+}
+
+.body_all .today_soldout_deals .today_soldout_deals_box {
+	background: #FFF;
+	overflow: hidden;
+	padding: 22px;
+	display: block;
+	_display: inline-block
+}
+
+.body_w1215 .today_soldout_deals .today_soldout_deals_box {
+	_width: 1215px
+}
+
+.body_all .today_soldout_deals .deal_box {
+	width: 220px;
+	height: 290px;
+	border: 0;
+	margin: 0 7px;
+	overflow: hidden
+}
+
+.body_all .today_soldout_deals .deal_box .deal_link {
+	width: 200px;
+	height: 270px;
+	padding: 7px;
+	float: none;
+	border: 3px solid #FFF
+}
+
+.body_all .today_soldout_deals .deal_box .deal_link:hover {
+	padding: 7px;
+	border: 3px solid #ff548e
+}
+
+.body_all .today_soldout_deals .deal_box .img_box {
+	width: 200px;
+	height: 160px;
+	overflow: hidden
+}
+
+.body_all .today_soldout_deals .deal_box .deal_end_timer {
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	font-family: "宋体";
+	overflow: hidden
+}
+
+.body_all .today_soldout_deals .deal_box .deal_end_timer .end_timer {
+	font-size: 14px;
+	padding: 0 4px 0 10px;
+	float: left
+}
+
+.body_all .today_soldout_deals .deal_box .title_box {
+	width: 200px;
+	padding: 0;
+	font-size: 12px;
+	font-family: "宋体";
+	height: 36px;
+	line-height: 18px;
+	margin: 10px 0;
+	font-weight: 700
+}
+
+.body_all .today_soldout_deals .deal_box .price_box,.body_all .today_soldout_deals .deal_box .price_box .p_detail {
+	width: 200px;
+	padding: 0;
+	float: none;
+	overflow: hidden
+}
+
+.body_all .deal_oper {
+	right: 10px
+}
+
+.body_w960 #container.grid_v2 #main {
+	width: 100%;
+}
+
+.body_w960 .home_deal_list_container {
+	width: 100%;
+	background: 0 0;
+	border: 0;
+	box-shadow: none;
+	*padding-bottom: 15px;
+	_padding-bottom: 0
+}
+
+.body_w960 .home_deal_list_container .deal_box {
+	padding: 2px 2px 4px;
+	margin-right: 15px;
+	border-bottom: 1px solid #d6cfc9;
+	width: 320px;
+	float: left;
+}
+
+.body_w960 .home_deal_list_container .deal_box .img_box,.body_w960 .home_deal_list_container .hover .img_box,.body_w960 .home_deal_list_container .deal_box .img_box img {
+	width: 320px;
+	height: 200px;
+	border: 0;
+	margin: 0
+}
+
+.body_w960 .home_deal_list_container .deal_box .deal_link {
+	padding-left: 10px
+}
+
+.body_w960 .home_deal_list_container .next {
+	margin-right: 0
+}
+
+.body_w960 .home_deal_list_container .hover {
+	padding: 2px;
+	border-bottom: 3px solid #ff5490
+}
+
+.body_w960 #container.grid_v2 #sidebar {
+	width: 270px
+}
+
+.body_w960 #container.grid_v2 #sidebar .sidebar_new {
+	padding: 15px 15px 0;
+	background: #FFF;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #d6cfc9
+}
+
+.body_w960 #container.grid_v2 #sidebar .sidebar_new .sidebar_new_title {
+	display: block
+}
+
+.body_w960 .today_soldout_deals .today_soldout_deals_box {
+	padding: 20px 8px;
+	_width: 944px
+}
+
+.body_w960 .today_soldout_deals .deal_box {
+	margin: 0 8px
+}
+
+.body_w1215 #container.grid_v2 #sidebar .sidebar_new .home_guarantee {
+	margin-bottom: 15px
+}
+
+#home_main_bottom {
+	margin-top: 20px;
+	overflow: hidden
+}
+
+#home_main_new {
+	margin-top: 15px;
+	background: #FFF;
+	padding: 0 0 10px 15px;
+	overflow: hidden;
+	border-bottom: 1px solid #d6cfc9
+}
+
+#home_main_new .home_main_new_title {
+	height: 50px;
+	line-height: 50px
+}
+
+#home_main_new .home_main_new_title a {
+	float: right;
+	font-size: 12px;
+	font-family: "宋体";
+	margin-right: 15px
+}
+
+.body_w1215 .home_deal_list_container .deal_box {
+	margin: 10px 0
+}
+
+.body_w1215 #home_main_new {
+	width: 1200px
+}
+
+.body_w960 #home_main_new {
+	width: 945px
+}
+
+#home_main_new .home_main_new_box {
+	height: 127px;
+	overflow: hidden;
+	float: left;
+	margin-bottom: 10px
+}
+
+.body_w1215 #home_main_new .home_main_new_box {
+	width: 585px;
+	margin-right: 15px
+}
+
+.body_w960 #home_main_new .home_main_new_box {
+	width: 460px;
+	margin-right: 10px
+}
+
+#home_main_new a {
+	color: #666;
+	font-size: 12px;
+	font-family: "宋体"
+}
+
+#home_main_new a:hover {
+	text-decoration: none;
+	color: #ed145b
+}
+
+#home_main_new .home_main_con_title {
+	width: 60px;
+	height: 127px;
+	float: left;
+	overflow: hidden;
+	background: #efefef;
+	color: #000;
+	vertical-align: middle;
+	text-align: center
+}
+
+#home_main_new .home_main_con_title .corn {
+	width: 16px;
+	display: block;
+	background: url(/templates/jumei/images/home/home_mall_corn_v2.png) no-repeat top center;
+	overflow: hidden;
+	clear: both;
+	margin: 40px auto 14px
+}
+
+#home_main_new .home_main_con_title .corn_hf {
+	background-position: 0 -120px;
+	height: 19px
+}
+
+#home_main_new .home_main_con_title .corn_cz {
+	background-position: 0 -140px;
+	height: 20px
+}
+
+#home_main_new .home_main_con_title .corn_xs {
+	background-position: 0 -161px;
+	height: 16px
+}
+
+#home_main_new .home_main_con_title .corn_hl {
+	background-position: 0 -178px;
+	height: 18px
+}
+
+#home_main_new .home_main_con_title .corn_my {
+	background-position: 0 -199px;
+	height: 19px
+}
+
+#home_main_new .home_main_con_title .corn_ns {
+	background-position: 0 -219px;
+	height: 16px
+}
+
+#home_main_new .home_main_new_con {
+	height: 115px;
+	border: 1px solid #efefef;
+	border-left: 0;
+	padding: 10px 0 0 13px;
+	float: left
+}
+
+.body_w1215 #home_main_new .home_main_new_con {
+	width: 511px
+}
+
+.body_w960 #home_main_new .home_main_new_con {
+	width: 386px
+}
+
+#home_main_new .home_main_new_link {
+	line-height: 30px;
+	display: block;
+	overflow: hidden;
+	color: #d2d2d2;
+	font-size: 12px
+}
+
+#home_main_new .home_main_new_link a {
+	padding: 0 3px;
+	display: inline-block
+}
+
+.body_w1215 #home_main_new .home_main_new_link {
+	width: 470px
+}
+
+.body_w960 #home_main_new .home_main_new_link {
+	width: 370px
+}
+
+#home_main_new .home_main_new_link01 {
+	height: 56px;
+	border-bottom: 1px dashed #e5e5e5;
+	padding-bottom: 10px
+}
+
+#home_main_new .home_main_new_link02 {
+	height: 40px;
+	line-height: 40px
+}
+
+.body_all .hrline {
+	display: none;
+	padding: 0;
+	margin: 0;
+	width: 958px;
+	height: 1px;
+	background: #e5e5e5;
+	float: left;
+	overflow: hidden
+}
+
+.body_all .breadcrumbs_wrap {
+	border: 0;
+	border-bottom: 1px solid #CCC
+}
+
+.body_w1215 .home_breed .home_breed_main {
+	width: 958px;
+	background-position: top right;
+	background-color: #FFF
+}
+
+.body_all .home_breed_bottom {
+	display: none
+}
+
+.body_w1215 .home_mall_breed .mall_breed_con {
+	width: 958px
+}
+
+.body_w1215 .home_breed_story {
+	width: 898px
+}
+
+.body_w1215 .home_mall_breed ul.mall_breed_center {
+	padding: 20px 0 0 31px
+}
+
+.body_w1215 .home_mall_breed ul.mall_breed_center li {
+	margin-right: 31px
+}
+
+.body_w960 .home_breed .home_breed_main,.body_w960 .home_mall_breed .mall_breed_con {
+	width: 673px
+}
+
+.body_w960 .home_breed_story {
+	width: 613px
+}
+
+.body_w960 .home_mall_breed ul.mall_breed_center li {
+	margin-right: 16px
+}
+
+.body_w960 .home_breed .home_breed_logo {
+	padding: 29px
+}
+
+.body_w960 .home_breed .home_breed_info {
+	padding: 20px 0
+}
+
+.body_w960 .home_mall_breed .mall_breed_btn a {
+	width: 610px;
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #CCC
+}
+
+.body_all .today_soldout_deals .deal_box .img_box .row_soldout {
+	bottom: 10px;
+	right: 10px;
+	top: auto;
+	left: auto
+}
+
+.body_all .home_deal_list .new {
+}
+
+.zhenpin_new_home {
+	width: 67px;
+	height: 67px;
+	display: inline-block;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+	background: url(/templates/jumei/images/home/zhenpin_new.png) no-repeat top center;
+	_background: 0 0;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://images.jumei.com/templates/jumei/images/home/zhenpin_new.png", sizingMethod="crop");
+	cursor: pointer
+}
+
+.zhenpin_icon {
+	display: block;
+	position: absolute;
+	width: 66px;
+	height: 66px;
+	top: 0;
+	left: 0;
+	z-index: 99
+}
+
+.zhenpin_icon1 {
+	background: url(http://images.jumei.com/templates/jumei/images/zhenpin_for_list1.png);
+	_background: none transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.jumei.com/templates/jumei/images/zhenpin_for_list1.png')
+}
+
+.zhenpin_icon2 {
+	background: url(http://images.jumei.com/templates/jumei/images/zhenpin_for_list2.png);
+	_background: none transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.jumei.com/templates/jumei/images/zhenpin_for_list2.png')
+}
+
+.zhenpin_deal {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 101
+}
+
+.zhenpin_deal_new {
+	display: block;
+	position: absolute;
+	top: -3px;
+	right: -3px;
+	z-index: 1000
+}
+
+.icon11 {
+	position: absolute;
+	display: block;
+	width: 48px;
+	height: 40px;
+	right: 5px;
+	top: 5px;
+	background: url(http://images.jumei.com/templates/jumei/images/1311/icon11.png);
+	_background: none transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.jumei.com/templates/jumei/images/1311/icon11.png')
+}
+
+.deal_box.hover .icon11 {
+	display: none
+}
+
+.body_w960 #container.grid_v2 #sidebar .sidebar_bao {
+	padding: 0;
+	width: 270px
+}
+
+#sidebar .sidebar_bao .sidebar_new_title {
+	height: 50px;
+	line-height: 50px;
+	padding-left: 15px;
+	color: #000;
+	font-size: 18px;
+	font-weight: 700
+}
+
+#sidebar .sidebar_bao .tab_btn ul li {
+	float: left;
+	width: 118px;
+	height: 36px;
+	padding: 10px 0 0 15px;
+	cursor: pointer
+}
+
+#sidebar .sidebar_bao .tab_btn .tab_active {
+	border: 1px solid #fff;
+	border-top: 2px solid #ed145b;
+	color: #000
+}
+
+#sidebar .sidebar_bao .tab_btn .tab_active span {
+	color: #ed145b
+}
+
+#sidebar .sidebar_bao .tab_btn .tab_noactive {
+	border: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	border-top: 2px solid #f8f8f8;
+	background: #f8f8f8;
+	width: 118px;
+	color: #999
+}
+
+#sidebar .sidebar_new .bao_box li {
+	overflow: hidden;
+	position: relative;
+	z-index: 1
+}
+
+#sidebar .sidebar_new #bao_box li {
+	display: none
+}
+
+#sidebar .sidebar_new .bao_box li,#sidebar .sidebar_new .bao_box li a {
+	width: 240px;
+	height: 250px;
+	text-align: center
+}
+
+#sidebar .sidebar_new .bao_box li {
+	vertical-align: middle
+}
+
+#sidebar .sidebar_new .bao_box li a {
+	display: table-cell;
+	vertical-align: middle
+}
+
+#sidebar .sidebar_new .bao_box li a .picbox {
+	height: 100%;
+	writing-mode: tb-rl;
+	vertical-align: middle;
+	cursor: pointer
+}
+
+#sidebar .sidebar_new .bao_box li img {
+}
+
+#sidebar .sidebar_new .bao_box li .bao_num {
+	width: 240px;
+	height: 30px;
+	line-height: 30px
+}
+
+#sidebar .sidebar_new .bao_box li .bao_num,#sidebar .home_popular_sort .p_time {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	background: rgba(0,0,0,.6)!important;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#99000000', EndColorStr='#99000000');
+	color: #FFF;
+	font-size: 12px
+}
+
+:root #sidebar .sidebar_new .bao_box li .bao_num {
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00000000', EndColorStr='#00000000')
+}
+
+#sidebar .sidebar_new .bao_box li .bao_num .num {
+	color: #ed145b;
+	font-weight: 700;
+	padding: 0 3px;
+	position: relative;
+	top: 1px
+}
+
+#sidebar .sidebar_new #bao_box .bao_active {
+	display: block
+}
+
+#sidebar .bao_box {
+	margin: 10px 15px 15px
+}
+
+#sidebar .sidebar_bao .tab_btn {
+	height: 49px
+}
+
+#sidebar .bao_box .slide_control {
+	bottom: 32px
+}
+
+#sidebar .bao_box .bao_info {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	z-index: 1;
+	overflow: hidden;
+	color: #FFF;
+	text-align: center;
+	background: url(/templates/jumei/images/home/popular_num_bg.png) no-repeat;
+	_background: none transparent;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.jumei.com/templates/jumei/images/home/popular_num_bg.png')
+}
+
+#sidebar .bao_box .bao_info .info_f {
+	height: 28px;
+	line-height: 28px;
+	padding-top: 10px;
+	font-size: 14px;
+	overflow: hidden
+}
+
+#sidebar .bao_box .bao_info .info_f .num,#sidebar .bao_box .bao_info .info_s .num {
+	font-family: arial;
+	padding-right: 3px;
+	position: relative;
+	top: 1px
+}
+
+#sidebar .bao_box .bao_info .info_f .num {
+	font-size: 18px
+}
+
+#sidebar .bao_box .bao_info .info_s {
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	font-size: 16px
+}
+
+#sidebar .bao_box .bao_info .info_s .num {
+	color: #ffce00;
+	font-size: 20px
+}
+
+#sidebar .bao_box .bao_info .info_t {
+	line-height: 26px;
+	font-size: 18px
+}
+
+#sidebar .home_popular_sidebar {
+	width: 242px;
+	position: relative;
+	left: -1px;
+	display: none;
+	margin-top: 10px;
+	*z-index: 2;
+	_z-index: 201
+}
+
+#sidebar .home_phover_sidebar {
+	display: inline-block
+}
+
+#sidebar .home_popular_sort {
+	width: 121px;
+	height: 72px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	z-index: 201
+}
+
+#sidebar .home_popular_sort .popular_link {
+	padding: 1px;
+	overflow: hidden;
+	display: block
+}
+
+#sidebar .home_popular_sort .popular_link,#sidebar .home_popular_sort .popular_link img {
+	width: 119px;
+	height: 70px
+}
+
+#sidebar .home_popular_sort .home_popular_con {
+	width: 320px;
+	height: 305px;
+	display: none;
+	padding: 5px;
+	background: #FFF;
+	box-shadow: 0 0 5px #dadada;
+	position: absolute;
+	top: 0;
+	right: 121px;
+	z-index: 1;
+	font-family: "宋体";
+	z-index: 10000
+}
+
+#sidebar .home_popular_sort a:hover {
+	text-decoration: none
+}
+
+#sidebar .home_popular_sort .p_pic,#sidebar .home_popular_sort .p_pic img {
+	width: 320px;
+	height: 200px;
+	display: block
+}
+
+#sidebar .home_popular_sort .p_pic {
+	overflow: hidden;
+	position: relative;
+	text-align: center
+}
+
+#sidebar .home_popular_sort .p_time {
+	width: 320px;
+	height: 22px;
+	line-height: 22px
+}
+
+:root #sidebar .home_popular_sort .p_time {
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00000000', EndColorStr='#00000000')
+}
+
+#sidebar .home_popular_sort .p_con {
+	padding: 5px 10px;
+	display: block;
+	overflow: hidden
+}
+
+#sidebar .home_popular_sort .p_name {
+	height: 44px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #000;
+	margin-bottom: 7px;
+	overflow: hidden;
+	word-break: break-all;
+	word-wrap: break-word
+}
+
+#sidebar .home_popular_sort .p_name .pink {
+	font-weight: 700;
+	font-family: tahoma
+}
+
+#sidebar .home_popular_sort .p_price {
+	height: 22px;
+	line-height: 22px;
+	overflow: hidden
+}
+
+#sidebar .home_popular_sort .p_price .wish {
+	font-size: 15px
+}
+
+#sidebar .home_popular_sort .p_price .p_num {
+	font-size: 18px;
+	padding: 0 10px 0 5px;
+	font-family: arial
+}
+
+#sidebar .home_popular_sort .p_price .p_market {
+	color: #999;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: line-through;
+	font-family: arial;
+	position: relative;
+	top: -1px
+}
+
+#sidebar .home_popular_sort .p_price .num {
+	font-family: tahoma
+}
+
+#sidebar .home_popular_sort .p_wish {
+	color: #333
+}
+
+#sidebar .home_popular_sort .p_wish .num {
+	color: #0abede;
+	font-weight: 700;
+	position: relative;
+	top: 1px
+}
+
+#sidebar .home_popular_sort .p_btn {
+	width: 106px;
+	height: 31px;
+	line-height: 31px;
+	display: inline-block;
+	overflow: hidden;
+	position: absolute;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 700;
+	right: 10px;
+	bottom: 18px;
+	z-index: 1;
+	background: url(/templates/jumei/images/home/popular_wish_bg.png) repeat-x top center #f05a1e;
+	text-align: center
+}
+
+#sidebar .home_popular_sort .home_p_tip {
+	width: 104px;
+	border: 1px solid #ccc;
+	position: absolute;
+	right: 10px;
+	top: 303px;
+	z-index: 1;
+	background: #efefef;
+	display: none
+}
+
+#sidebar .home_popular_sort .home_p_tip a {
+	height: 26px;
+	line-height: 26px;
+	padding: 0 10px;
+	display: block;
+	overflow: hidden;
+	background: #efefef;
+	color: #333;
+	font-size: 14px;
+	font-family: tahoma
+}
+
+#sidebar .home_popular_sort .home_p_tip a:hover {
+	color: #ed145b;
+	background: #FFF
+}
+
+#sidebar .home_popular_sort .home_p_tip .icon,#sidebar .home_popular_sort .home_p_tip .icon i {
+	width: 0;
+	height: 0;
+	font-size: 0;
+	display: inline-block;
+	position: absolute;
+	z-index: 1;
+	border-width: 0 5px 5px;
+	border-style: dashed dashed solid
+}
+
+#sidebar .home_popular_sort .home_p_tip .icon {
+	border-color: transparent transparent #ccc;
+	top: -6px;
+	left: 25px
+}
+
+#sidebar .home_popular_sort .home_p_tip .icon i {
+	border-color: transparent transparent #efefef;
+	left: -5px;
+	top: 1px;
+	overflow: hidden
+}
+
+#sidebar .home_popular_hover .popular_link {
+	background: url(/templates/jumei/images/home/popular_sidebar_bg.png) no-repeat top left
+}
+
+#home_slides_new .deal_info .timer .icon {
+	background: url(/templates/jumei/images/home/new_slides_icon.png) no-repeat;
+	_background: transparent none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.jumei.com/templates/jumei/images/home/new_slides_icon.png')
+}
+
+#home_slides_new .deal_info .deal_info_box .service_rating,#home_slides_new .deal_info .deal_info_box .rating {
+	background: url(/templates/jumei/images/home/new_slides_star.png) repeat-x
+}
+
+#home_slides_new,#home_slides_new .home_main_deal {
+	width: 960px;
+	height: 350px;
+	display: inline-block;
+	overflow: hidden
+}
+
+#home_slides_new {
+	margin-top: 15px;
+	background: #FFF
+}
+
+#home_slides_new .home_main_deal {
+	position: relative
+}
+
+#home_slides_new .deal_filter_object {
+	width: 3000px;
+	display: inline-block;
+	overflow: hidden
+}
+
+#home_slides_new .deal_brief {
+	width: 960px;
+	height: 350px;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	z-index: 1
+}
+
+#home_slides_new .link {
+	cursor: pointer;
+	display: block;
+	border: 0
+}
+
+#home_slides_new .link:hover {
+	text-decoration: none
+}
+
+#home_slides_new .deal_brief .deal_short_name_pic {
+	width: 520px;
+	height: 350px;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	display: inline
+}
+
+#home_slides_new .deal_brief .deal_short_name_pic .dx_pic {
+	width: 560px;
+	height: 350px;
+	margin-left: -20px;
+	display: inline
+}
+
+#home_slides_new .deal_brief .deal_short_name_pic .w_pic {
+	width: 350px;
+	height: 350px;
+	margin: 0 auto;
+	display: inline
+}
+
+#home_slides_new .deal_info {
+	width: 380px;
+	float: left;
+	overflow: hidden;
+	margin-left: 25px;
+	_display: inline;
+	padding: 13px 0
+}
+
+#home_slides_new .deal_info .countdown {
+	height: 32px;
+	background: #fff2f2;
+	padding: 0 10px;
+	overflow: hidden
+}
+
+#home_slides_new .deal_info .timer {
+	height: 20px;
+	line-height: 20px;
+	color: #333;
+	font-size: 18px;
+	overflow: hidden;
+	margin: 6px 0
+}
+
+#home_slides_new .deal_info .timer .icon {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	overflow: hidden;
+	margin-top: 2px;
+	float: left
+}
+
+#home_slides_new .deal_info .timer .tit {
+	font-size: 14px;
+	font-family: "宋体";
+	padding: 0 8px
+}
+
+#home_slides_new .deal_info .timer .time,#home_slides_new .deal_info .timer .time em {
+	font-family: arial;
+	font-weight: 700
+}
+
+#home_slides_new .deal_info .timer .time {
+	position: relative;
+	top: 1px;
+	letter-spacing: .1em
+}
+
+#home_slides_new .deal_info .title {
+	height: 130px;
+	font-size: 16px;
+	color: #010305;
+	font-family: "微软雅黑";
+	line-height: 26px;
+	margin: 10px 0;
+	overflow: hidden
+}
+
+#home_slides_new .deal_info .title h1 {
+	font-weight: 400
+}
+
+#home_slides_new .deal_info .title .pink {
+	color: #ed145b;
+	font-size: 14px;
+	font-weight: 700
+}
+
+#home_slides_new .deal_info .title .pink .num,#home_slides_new .deal_info .price_num,#home_slides_new .deal_info .market_price,#home_slides_new .deal_info .deal_info_box .deal_font b {
+	font-family: arial
+}
+
+#home_slides_new .deal_info .title .pink .num {
+	font-size: 18px
+}
+
+#home_slides_new .deal_info .price {
+}
+
+#home_slides_new .deal_info .price .price_num {
+	color: #ed145b;
+	font-size: 54px
+}
+
+#home_slides_new .deal_info .price .price_num em {
+	font-size: 36px
+}
+
+#home_slides_new .deal_info .price .market_price {
+	color: #999;
+	font-size: 14px;
+	text-decoration: line-through;
+	margin-left: 5px
+}
+
+#home_slides_new .deal_info .price .btn {
+	width: 113px;
+	height: 40px;
+	float: right;
+	margin-top: 15px;
+	overflow: hidden;
+	background: url(/templates/jumei/images/home/new_slides_btn.png) no-repeat
+}
+
+#home_slides_new .deal_info .deal_info_box {
+	padding-top: 15px;
+	height: 22px;
+	line-height: 22px;
+	overflow: hidden
+}
+
+#home_slides_new .deal_info .deal_info_box .deal_rating {
+	color: #999;
+	font-size: 14px;
+	float: left
+}
+
+#home_slides_new .deal_info .deal_info_box .sercice_rating_box {
+	width: 80px;
+	_height: 12px;
+	float: left;
+	margin: -1px 5px 0;
+	*margin-top: 3px;
+	overflow: hidden;
+	_position: relative
+}
+
+#home_slides_new .deal_info .deal_info_box .service_rating,#home_slides_new .deal_info .deal_info_box .rating {
+	height: 12px;
+	overflow: hidden;
+	display: inline-block
+}
+
+#home_slides_new .deal_info .deal_info_box .service_rating {
+	width: 80px;
+	background-position: 0 -13px;
+	_position: absolute;
+	_top: 0;
+	_left: 0
+}
+
+#home_slides_new .deal_info .deal_info_box .rating {
+	background-position: 0 0
+}
+
+#home_slides_new .deal_info .deal_info_box .purhcase_number {
+	float: right
+}
+
+#home_slides_new .deal_info .deal_info_box .deal_font {
+	font-size: 12px
+}
+
+#home_slides_new .deal_info .deal_info_box .deal_font b {
+	color: #b9966a;
+	font-size: 18px;
+	padding-right: 3px;
+	position: relative;
+	top: 2px
+}
+
+#home_slides_new .deal_brief_trigger {
+	height: 30px;
+	line-height: 30px;
+	width: 961px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 5
+}
+
+#home_slides_new .deal_brief_trigger .trigger {
+	width: 319px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	margin-right: 1px;
+	background: rgba(0,0,0,.65)!important;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#A6000000', EndColorStr='#A6000000');
+	color: #FFF;
+	cursor: pointer
+}
+
+:root #home_slides_new .deal_brief_trigger .trigger {
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00000000', EndColorStr='#00000000')
+}
+
+#home_slides_new .deal_brief_trigger .current {
+	background: rgba(237,20,91,.85)!important;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#D9ed145b', EndColorStr='#D9ed145b')
+}
+
+:root #home_slides_new .deal_brief_trigger .current {
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00ed145b', EndColorStr='#00ed145b')
+}
+
+#home_slides_new .deal_filter_btn {
+	width: 45px;
+	height: 72px;
+	display: none;
+	overflow: hidden;
+	position: absolute;
+	z-index: 3;
+	top: 123px;
+	background: url(/templates/jumei/images/home/new_slides_lr.png) no-repeat top center
+}
+
+#home_slides_new #deal_filter_left {
+	background-position: 0 0;
+	left: 0
+}
+
+#home_slides_new #deal_filter_left:hover {
+	background-position: -46px 0
+}
+
+#home_slides_new #deal_filter_right {
+	background-position: 0 -73px;
+	right: 0
+}
+
+#home_slides_new #deal_filter_right:hover {
+	background-position: -46px -73px
+}
+
+.wish_sale #colorbox,.wish_sale #cboxOverlay,.wish_sale #cboxWrapper,.wish_sale #cboxContent {
+	border: 0;
+	overflow: visible
+}
+
+.wish_sale #cboxContent {
+	background: 0 0
+}
+
+.wish_sale #cboxLoadedContent {
+	margin-top: 0
+}
+
+.wish_sale #cboxClose,.wish_sale #cboxClose:hover {
+	width: 23px;
+	height: 23px;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(/templates/jumei/images/cart_v2/cart_pop_close.png);
+	top: 10px;
+	right: -45px;
+	margin: 0;
+	padding: 0;
+	right: -12px;
+	text-indent: 99em;
+	top: -12px
+}
+
+.onsale_layer {
+	width: 380px;
+	background: #FFF
+}
+
+.onsale_layer p {
+	font-family: SimSun,'\5B8B\4F53'
+}
+
+.onsale_tit {
+	color: #ed145b;
+	font-weight: 700;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 15px;
+	background: #faf7f8;
+	border-bottom: 1px solid #e6e5e5
+}
+
+.onsale_layer_wrap {
+	padding: 20px 30px
+}
+
+.onsale_layer [type=text]:focus {
+	border: 1px solid #8EC52B
+}
+
+.onsale_mobile,.onsale_confirm_code {
+	line-height: 1.5em;
+	height: 16px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	width: 135px
+}
+
+.onsale_layer_tips {
+	font-size: 18px;
+	font-weight: 700;
+	padding: 0 0 15px;
+	_padding: 0 0 10px
+}
+
+.onsale_layer .submit_subscribe,.onsale_layer .get__wish_confirm_code {
+	overflow: visible;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#fffa2e71, endColorStr=#ffed155b),progid:DXImageTransform.Microsoft.DropShadow(color=#ffbbbbbb, offX=0, offY=1, positives=true);
+	background: #ed155b;
+	background: -webkit-gradient(linear,left top,left bottom,from(#fa2e71),to(#ed155b));
+	background: -webkit-linear-gradient(top,#fa2e71,#ed155b);
+	background: -moz-linear-gradient(top,#fa2e71,#ed155b);
+	background: -o-linear-gradient(top,#fa2e71,#ed155b);
+	background: linear-gradient(to bottom,#fa2e71,#ed155b);
+	-webkit-box-shadow: 0 1px 2px 0 #bbb;
+	box-shadow: 0 1px 2px 0 #bbb;
+	text-shadow: 1px 1px 3px #b9154a;
+	display: inline-block;
+	font-family: inherit;
+	word-break: keep-all;
+	white-space: nowrap;
+	font-weight: 400;
+	text-align: center;
+	line-height: 26px;
+	font-size: 12px;
+	cursor: pointer;
+	padding: 0 16px;
+	height: 26px;
+	color: #fff;
+	border: 0
+}
+
+.onsale_layer .onsale_disabled {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#D5D5D5, endColorStr=#ccc),progid:DXImageTransform.Microsoft.DropShadow(color=#f4769d, offX=0, offY=1, positives=true);
+	background: #FAF7F8;
+	background: -webkit-gradient(linear,left top,left bottom,from(#D5D5D5),to(#ccc));
+	background: -webkit-linear-gradient(top,#D5D5D5,#ccc);
+	background: -moz-linear-gradient(top,#D5D5D5,#ccc);
+	background: -o-linear-gradient(top,#D5D5D5,#ccc);
+	background: linear-gradient(to bottom,#D5D5D5,#ccc);
+	text-shadow: 1px 1px 3px #ccc;
+	color: #999
+}
+
+.onsale_input_wrap {
+	position: relative
+}
+
+.onsale_input_wrap label {
+	color: #666;
+	float: left;
+	line-height: 30px;
+	text-align: right;
+	width: 50px;
+	height: 50px
+}
+
+.onsale_act {
+	padding: 5px 0;
+	height: 16px;
+	overflow: hidden
+}
+
+.onsale_err i,.success_tips i {
+	background: url(/templates/jumei/images/account/login_sign/login.jpg) no-repeat #FFF;
+	width: 19px;
+	height: 20px;
+	overflow: hidden;
+	float: left
+}
+
+.onsale_err i {
+	background-position: -10px -11px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 4px 0 0 175px;
+	_margin: 4px 0 0 125px
+}
+
+.onsale_err .onsale_act {
+	color: #E42626;
+	height: 16px;
+	overflow: hidden
+}
+
+.success_tips i {
+	background: url(/templates/jumei/images/account/login_sign/subscribe_ok.jpg) no-repeat #FFF;
+	width: 24px;
+	height: 24px;
+	overflow: hidden;
+	float: left
+}
+
+.onsale_success {
+	background: #FFF
+}
+
+.success_tips {
+	padding: 0;
+	font-size: 14px;
+	height: 30px;
+	line-height: 24px
+}
+
+.success_tips i {
+	margin: 0 7px 0 0
+}
+
+.ok_wrap {
+	border: 1px solid #fbd0de;
+	background: #fffcfd;
+	padding: 10px 15px;
+	line-height: 2;
+	margin-top: 10px
+}
+
+.onsale_cancel {
+	padding: 5px 0
+}
+
+.onsale_cancel a {
+	color: #0abede
+}
+
+.onsale_layer .get__wish_confirm_code {
+	padding: 0 10px;
+	vertical-align: top
+}
+
+.en {
+	font-family: arial
+}
+
+.newdeal_box {
+	width: 960px;
+	margin: 0 auto;
+	font-family: "宋体";
+	padding-bottom: 50px
+}
+
+.newdeal_top,.newdeal_center {
+	width: 960px;
+	margin: 20px auto 0;
+	display: inline-block
+}
+
+.newdeal_top {
+}
+
+.newdeal_deal_buyit,.timer_corn,.newdeal_sidebar_gift li a .corn,.deal_tabs_right,.newdeal_deal_ilike .ilike_corn,.newdeal_chengnuo_corn .corn,.memb_corn,.newdeal_policy .policy_corn,.newwish_deal .newdeal_deal_buyit,.newwish_deal .newwish_icon,.newwish_deal .newwish_allnum i,.topday_new_top .bg,.view_detail_bar .btn_open,#home_list_top_timer label em {
+	background: url(/templates/jumei/images/newdeal/newdeal_pic_v11.png) no-repeat
+}
+
+#home_list_top_timer {
+	float: right;
+	padding-top: 5px;
+	line-height: 20px;
+	margin-right: 10px;
+	width: 175px;
+	display: inline;
+	overflow: hidden;
+	_zoom: 1
+}
+
+#home_list_top_timer div {
+	float: left;
+	display: inline
+}
+
+#home_list_top_timer span {
+	font-size: 12px;
+	color: #333
+}
+
+#home_list_top_timer label {
+	_zoom: 1;
+	width: 84px;
+	height: 23px;
+	overflow: hidden;
+	font-size: 20px;
+	color: #ed145b;
+	margin-left: 5px;
+	font-family: arial;
+	font-weight: 700;
+	float: right;
+	display: inline
+}
+
+#home_list_top_timer label em {
+	width: 22px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+	background-position: -369px -245px;
+	overflow: hidden;
+	font-size: 16px;
+	color: #fff;
+	float: left;
+	display: inline;
+	font-weight: 700
+}
+
+#home_list_top_timer label span {
+	color: #ed145b;
+	padding: 0 1px;
+	font-size: 18px;
+	float: left;
+	display: inline;
+	font-weight: 700;
+	height: 23px;
+	text-align: center;
+	line-height: 23px
+}
+
+.sort_all.old #home_list_top_timer {
+	padding-top: 9px;
+	background: url(/templates/jumei/images/newdeal/call-bell.png) no-repeat left 12px;
+	padding-left: 25px
+}
+
+.sort_all.old #home_list_top_timer div {
+	color: #fff;
+	margin-top: 2px
+}
+
+.sort_all.old #home_list_top_timer label em {
+	color: #ed145b;
+	background: 0 0
+}
+
+.newdeal_breadcrumbs {
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #f0f0f0;
+	box-shadow: 0 2px 6px #f0f0f0;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 0 40px
+}
+
+.newdeal_breadcrumbs_wrap_a,.newdeal_breadcrumbs_line,.newdeal_breadcrumbs_wrap_b {
+	color: #555;
+	float: left;
+	padding-right: 10px
+}
+
+.newdeal_breadcrumbs_wrap_a a {
+	color: #555
+}
+
+.newdeal_breadcrumbs_wrap_b {
+	color: #ed145b
+}
+
+.newdeal_deal_right {
+	width: 260px;
+	float: right;
+	background: #eee;
+	position: relative;
+	display: inline-block;
+	min-height: 400px;
+	_height: 400px
+}
+
+.newdeal_deal_buyit {
+	width: 298px;
+	height: 77px;
+	background-position: 0 0;
+	position: absolute;
+	right: -7px;
+	top: 0;
+	z-index: 10
+}
+
+.not_begin {
+	background-position: 0 -232px
+}
+
+.soldout {
+	background-position: 0 -77px
+}
+
+.newdeal_buyit_btn {
+	width: 95px;
+	height: 48px;
+	float: right;
+	margin: 10px 17px 0 0;
+	_display: inline;
+	cursor: pointer
+}
+
+.newdeal_deal_price {
+	height: 77px;
+	line-height: 73px;
+	font-size: 46px;
+	color: #FFF;
+	padding-left: 40px;
+	width: 144px;
+	overflow: hidden;
+	float: left;
+	display: inline
+}
+
+.newdeal_deal_price em {
+	font-size: 24px
+}
+
+.newdeal_deal_info {
+	width: 200px;
+	padding: 0 30px;
+	display: inline-block;
+	zoom: 1
+}
+
+.newdeal_deal_sort {
+	width: 200px;
+	padding: 15px 0;
+	border-bottom: 1px solid #d5d5d5;
+	display: inline-block
+}
+
+.newdeal_deal_right_black .newdeal_deal_sort {
+	border-bottom: 1px solid #454545
+}
+
+.newdeal_deal_right_black .no_border,.no_border {
+	border: 0
+}
+
+table.price_table td {
+	height: 22px
+}
+
+table.price_table .title {
+	color: #0e0e0e;
+	font-size: 14px
+}
+
+table.price_table .price {
+	color: #ec1a5b;
+	font-weight: 700;
+	font-size: 14px;
+	font-family: "微软雅黑"
+}
+
+.timer_corn,.account_corn {
+	display: inline-block;
+	float: left;
+	overflow: hidden
+}
+
+.timer_corn {
+	width: 32px;
+	height: 32px;
+	background-position: -300px 0;
+	margin-top: 5px
+}
+
+.newdeal_status {
+	width: 160px;
+	float: left;
+	color: #0e0e0e;
+	padding-left: 5px
+}
+
+.newdeal_num {
+	color: #0abede;
+	font-size: 18px;
+	position: relative;
+	top: 2px
+}
+
+.account_corn {
+	width: 32px;
+	height: 32px;
+	background: url(http://p0.jmstatic.com/templates/jumei/images/home/countdown.gif) no-repeat top center transparent;
+	margin-top: 1px
+}
+
+.newdeal_deal_ilike {
+	color: #959595;
+	float: left
+}
+
+.newdeal_deal_ilike .ilike_corn {
+	width: 15px;
+	height: 13px;
+	display: inline-block;
+	background-position: -364px 0;
+	overflow: hidden;
+	float: left;
+	margin: 1px 2px 0 0
+}
+
+.newdeal_deal_ilike:hover,.jiathis_style .jtico_jiathis:hover {
+	color: #ed145b;
+	text-decoration: none
+}
+
+.liked {
+	color: #ed145b
+}
+
+.liked .ilike_corn,.newdeal_deal_ilike:hover .ilike_corn {
+	background-position: -364px -13px
+}
+
+.newdeal_deal_info .size {
+	margin-top: 10px
+}
+
+.newdeal_deal_left {
+	width: 620px;
+	overflow: hidden;
+	padding: 0 40px;
+	display: inline-block;
+	_width: 600px;
+	background-color: #FFF;
+	float: left
+}
+
+.newdeal_title {
+	color: #010305;
+	font-size: 18px;
+	line-height: 26px;
+	font-family: "微软雅黑"
+}
+
+.newdeal_pic {
+	background: url(http://p0.jmstatic.com/templates/jumei/images/loading.gif) no-repeat center
+}
+
+.newdeal_pic img {
+	margin: 20px auto;
+	display: block
+}
+
+.jiathis_style {
+	float: right
+}
+
+.jiathis_style .jtico_jiathis {
+	background: 0 0;
+	background-position: 0;
+	padding-left: 0!important;
+	color: #959595
+}
+
+.newdeal_deal_boxed {
+	display: inline-block;
+	width: 260px;
+	height: 77px;
+	position: relative;
+	margin-top: 20px
+}
+
+table.price_table .title_black,.newdeal_status_black {
+	color: #959595
+}
+
+.newdeal_deal,.newdeal_deal_title {
+	background: #fff;
+	width: 960px;
+	display: inline-block
+}
+
+.newdeal_deal {
+	margin-bottom: 30px;
+	box-shadow: 1px 2px 6px #ccc
+}
+
+.newdeal_deal_title {
+	position: relative;
+	padding-top: 20px
+}
+
+.newdeal_logo {
+	width: 260px;
+	height: 90px;
+	float: right;
+	overflow: hidden;
+	text-align: center
+}
+
+.newdeal_title_black {
+	padding: 0 40px;
+	width: 620px;
+	float: left;
+	color: #010305;
+	font-size: 18px;
+	line-height: 26px;
+	font-family: "微软雅黑"
+}
+
+.newdeal_title_black a:hover {
+	text-decoration: none
+}
+
+.timer_corn_black {
+	background-position: -393px -245px
+}
+
+.newdeal_black_imgbox {
+	width: 960px;
+	height: 400px;
+	position: relative
+}
+
+.newdeal_deal_left_black {
+	width: 960px;
+	height: 400px;
+	position: relative;
+	background: url(http://p0.jmstatic.com/templates/jumei/images/loading.gif) no-repeat 350px 200px;
+	background-color: #FFF
+}
+
+.deal_detail {
+	width: 700px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0
+}
+
+.newdeal_menu_box {
+	width: 700px;
+	height: 40px;
+	display: inline-block
+}
+
+.deal_detail ul.new_tabs {
+	width: 680px;
+	padding-left: 20px;
+	height: 40px;
+	background: #313131;
+	z-index: 1000;
+	display: inline-block;
+	border: 0
+}
+
+.deal_detail .new_tabs .deal_tabs_right {
+	width: 160px;
+	height: 40px;
+	float: right;
+	background-position: -299px -75px
+}
+
+.deal_detail .new_tabs .deal_tabs_wish {
+	background-position: -299px -201px
+}
+
+.deal_detail .new_tabs .deal_tabs_right a.buy {
+	width: 57px;
+	height: 26px;
+	float: right;
+	margin: 8px 10px 0 0;
+	_display: inline;
+	cursor: pointer;
+	background: 0 0
+}
+
+.deal_detail .new_tabs .deal_tabs_wish a.buy {
+	margin-right: 28px;
+	width: 110px
+}
+
+.deal_detail .new_tabs .deal_tabs_right span.price {
+	width: 64px;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	margin-left: 19px;
+	display: inline-block;
+	overflow: hidden;
+	_display: inline;
+	color: #FFF;
+	font-size: 24px;
+	font-weight: 400
+}
+
+.deal_detail ul.new_tabs li,.deal_detail ul.new_tabs li a {
+	width: 80px;
+	height: 39px;
+	text-align: center
+}
+
+.deal_detail ul.new_tabs li {
+	float: left;
+	margin-top: 2px
+}
+
+.deal_detail ul.new_tabs li a {
+	line-height: 35px;
+	font-size: 14px;
+	color: #FFF;
+	font-family: "微软雅黑";
+	display: inline-block
+}
+
+.deal_detail ul.new_tabs li a:hover,.deal_detail ul.new_tabs li.on a,.deal_detail ul.new_tabs li a.selected {
+	background: #FFF;
+	color: #ec1a5b;
+	text-decoration: none
+}
+
+.newdeal_center_main {
+	background: #FFF;
+	border-bottom: 1px solid #d5cfca
+}
+
+.deal_detail .detail_info_box {
+	padding: 0
+}
+
+.clear {
+	height: 0;
+	clear: both
+}
+
+.newdeal_deal_right .newdeal_brand {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 260px;
+	height: 97px;
+	text-align: center;
+	background: #fff
+}
+
+.deal_detail .new_tabs .deal_tabs_right span.price em {
+	font-size: 16px
+}
+
+.charts_container {
+	margin-top: 0
+}
+
+.newdeal_deal_right_black {
+	z-index: 100;
+	background: 0 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0
+}
+
+.newdeal_deal_right_black_bg {
+	display: block;
+	position: relative;
+	left: 0;
+	width: 260px;
+	height: 400px;
+	background: #000;
+	opacity: .8;
+	_filter: alpha(opacity=80);
+	_zoom: 1
+}
+
+.newdeal_deal_right_black_01 {
+	position: absolute;
+	top: 10px;
+	right: 0
+}
+
+.newdeal_deal_end {
+	font-size: 14px;
+	color: #fff
+}
+
+.soldout_text {
+	font-size: 32px;
+	font-weight: 700;
+	color: #ed145b
+}
+
+.soldout_text,.newdeal_deal_sort_soldout .newdeal_num {
+	font-family: "微软雅黑","黑体"
+}
+
+.newdeal_membership_box {
+	width: 878px;
+	padding: 10px 40px;
+	display: inline-block
+}
+
+.newdeal_membership_man,.newdeal_member_box {
+	height: 18px;
+	line-height: 16px;
+	font-size: 12px;
+	font-family: "宋体";
+	overflow: hidden
+}
+
+.newdeal_membership_man {
+	width: 300px;
+	float: left;
+	margin: 4px 20px 4px 0;
+	color: #333
+}
+
+.newdeal_membership_man {
+	font-size: 12px;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.newdeal_membership_man .man,.newdeal_member_box .man {
+	height: 16px;
+	color: #FFF;
+	display: inline-block;
+	padding: 0 3px;
+	margin-right: 5px
+}
+
+.newdeal_membership_man .red {
+	color: #ed145b
+}
+
+.newdeal_membership_man .manfan {
+	background: #0abede
+}
+
+.newdeal_membership_man .manjian {
+	background: #ff6f0f
+}
+
+.newdeal_membership_man .manzeng,.newdeal_member_box .man {
+	background: #ed145b
+}
+
+.newdeal_membership_man .manzhe {
+	background: #4799ff
+}
+
+.newdeal_membership_man .dealseczhe {
+	background: #ff7fb2
+}
+
+.newdeal_membership_man .dealmorezhe {
+	background: #ab65d7
+}
+
+.newdeal_membership_man .dealduomian {
+	background: #ff6f0f
+}
+
+.newdeal_membership_man .saleicon {
+	overflow: hidden;
+	_zoom: 1;
+	padding-left: 13px;
+	background: url(/templates/jumei/images/newdeal/saleicon.jpg) no-repeat left center;
+	height: 18px;
+	float: left;
+	display: inline
+}
+
+.newdeal_membership_man .saleicon .txt {
+	background: #02a0ea;
+	height: 18px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 0 2px;
+	_width: 60px
+}
+
+.newdeal_membership_man .sale_name {
+	left: right;
+	display: inline;
+	height: 18px;
+	padding-left: 5px
+}
+
+.newdeal_membership_sort {
+	padding: 8px 0 15px;
+	height: 16px;
+	line-height: 16px
+}
+
+.newdeal_member_box {
+	height: 16px;
+	line-height: 16px;
+	display: inline-block;
+	color: #999
+}
+
+.newdeal_member_box a {
+	color: #0abede
+}
+
+.newdeal_member_box .memb_corn {
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	overflow: hidden;
+	background-position: -380px 0;
+	float: left
+}
+
+.newdeal_member_box .memhj_corn {
+	background-position: -380px 0
+}
+
+.newdeal_member_box .membj_corn {
+	background-position: -398px 0
+}
+
+.newdeal_member_box .memzs_corn {
+	background-position: -416px 0
+}
+
+.newdeal_member_box .huiyuan {
+	color: #FFF;
+	padding: 0 10px 0 3px;
+	border-right: 1px solid #999;
+	display: inline-block;
+	margin-right: 10px
+}
+
+.newdeal_member_box .price_pt {
+	color: #ed145b;
+	font-family: arial;
+	font-weight: 700;
+	text-decoration: line-through;
+	display: inline-block
+}
+
+.newdeal_right_timer {
+	display: inline-block;
+	width: 102px;
+	overflow: hidden;
+	float: left
+}
+
+.newdeal_policy {
+	width: 96px;
+	color: #000;
+	font-size: 12px;
+	overflow: hidden;
+	float: left;
+	padding-top: 5px
+}
+
+.newdeal_policy .policy_con {
+	width: 60px;
+	padding: 2px 0 0 4px;
+	float: left;
+	overflow: hidden;
+	line-height: 14px
+}
+
+.newdeal_policy .policy_corn {
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	background-position: -460px -245px;
+	display: inline-block;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color: #FFF;
+	float: left
+}
+
+.newdeal_policy .policy_thirty {
+	background-position: -493px -245px
+}
+
+.newdeal_policy .policy_seven {
+	background-position: -428px -245px
+}
+
+.newdeal_policy .policy_te {
+	background-position: -460px -245px
+}
+
+.newdeal_deal_right_black .newdeal_policy .policy_corn {
+	color: #ccc
+}
+
+.newdeal_deal_right_black .newdeal_policy {
+	color: #959595
+}
+
+.newdeal_title_black_zhenpin {
+	width: 540px;
+	padding: 0
+}
+
+.newdeal_wish {
+	font-size: 18px;
+	line-height: 73px;
+	_line-height: 79px;
+	*height: 70px;
+	font-family: '黑体';
+	margin-left: -5px;
+	padding-left: 25px;
+	*display: inline-block
+}
+
+.newwish_deal .newdeal_deal_buyit {
+	background-position: 0 -154px
+}
+
+.newwish_deal .newdeal_buyit_btn {
+	width: 112px
+}
+
+.newwish_deal .newdeal_deal_price {
+	padding-left: 0;
+	width: 160px;
+	text-align: center;
+	*margin-top: -3px
+}
+
+.newwish_deal .newwish_icon {
+	width: 10px;
+	height: 14px;
+	display: inline-block;
+	overflow: hidden;
+	background-position: -477px -148px;
+	position: relative;
+	left: -3px;
+	top: 3px;
+	z-index: 1
+}
+
+.newwish_deal .newdeal_deal_sort {
+	padding: 10px 0
+}
+
+.newwish_deal .timer_corn {
+	width: 19px;
+	height: 17px;
+	background-position: -468px -130px;
+	position: relative;
+	top: 2px
+}
+
+.newwish_deal .timer_corn_black {
+	background-position: -468px -112px
+}
+
+.newwish_deal .newdeal_num {
+	font-size: 18px;
+	position: relative;
+	top: 2px
+}
+
+.newwish_deal .newdeal_status {
+	width: auto
+}
+
+.newwish_deal .newwish_allnum {
+	overflow: hidden
+}
+
+.newwish_deal .newwish_allnum i {
+	width: 22px;
+	height: 16px;
+	display: inline-block;
+	overflow: hidden;
+	background-position: -465px -77px;
+	position: relative;
+	left: -2px;
+	position: relative;
+	top: 4px;
+	margin-right: 5px
+}
+
+.newwish_deal .newwish_white {
+	color: #959595
+}
+
+.newwish_deal .word {
+	width: 68px;
+	display: inline-block
+}
+
+.topday_new_top {
+	height: 50px;
+	overflow: hidden;
+	_zoom: 1
+}
+
+.topday_new_top .fl {
+	display: inline;
+	float: left;
+	width: 225px;
+	height: 27px;
+	background-position: 0 -322px
+}
+
+.deal_iconnew {
+	display: block;
+	background: url(/templates/jumei/images/newdeal/new_cx.png) no-repeat;
+	width: 70px;
+	height: 61px;
+	position: absolute;
+	top: -6px;
+	left: 30px
+}
+
+.view_detail_bar {
+	height: 40px;
+	_zoom: 1;
+	z-index: 10000
+}
+
+.view_detail_bar .tit {
+	display: none;
+	font-family: "微软雅黑";
+	color: #fff;
+	font-size: 14px;
+	width: 346px;
+	margin-left: 20px;
+	height: 20px;
+	overflow: hidden;
+	padding-top: 4px;
+	white-space: nowrap
+}
+
+.view_detail_bar.open .tit {
+	float: left;
+	display: inline
+}
+
+.view_detail_bar .d_bar_addtocart {
+	display: none;
+	width: 80px;
+	height: 34px
+}
+
+.view_detail_bar.open .d_bar_addtocart {
+	float: right;
+	display: inline;
+	background: url(about:blank)
+}
+
+.view_detail_bar .price {
+	display: none;
+	width: 90px;
+	color: #fff;
+	font-size: 26px;
+	margin-right: 10px
+}
+
+.view_detail_bar.open .price {
+	float: right;
+	display: inline
+}
+
+.view_detail_bar .price span {
+	font-size: 14px
+}
+
+.view_detail_bar_con {
+	padding-top: 6px;
+	width: 960px;
+	top: 0;
+	z-index: 1020;
+	height: 34px;
+	position: relative
+}
+
+.view_detail_bar.fixed .view_detail_bar_con {
+	position: fixed
+}
+
+.view_detail_bar .btn_open {
+	float: left;
+	display: inline;
+	height: 34px;
+	width: 150px;
+	background-position: -225px -316px;
+	margin-left: 406px
+}
+
+.view_detail_bar.open .btn_open {
+	margin-left: 40px
+}
+
+.view_detail_bar.open .view_detail_bar_con {
+	background: url(/templates/jumei/images/newdeal/view_detail_bar.jpg)
+}
+
+.view_detail_bar.open.soldout .view_detail_bar_con {
+	background: url(/templates/jumei/images/newdeal/view_detail_bar_s.jpg)
+}
+
+.view_detail_bar.open .btn_open {
+	background-position: -375px -316px
+}
+
+.home_detail_con {
+	padding: 20px;
+	display: none;
+	background: url(/templates/jumei/images/loading.gif) no-repeat center center
+}
+
+.newdeal_koubei {
+	overflow: hidden;
+	_zoom: 1;
+	color: #959595
+}
+
+.newdeal_koubei p {
+	line-height: 18px
+}
+
+.newdeal_koubei .fl {
+	float: left;
+	display: inline
+}
+
+.newdeal_koubei .fr {
+	float: right;
+	display: inline
+}
+
+.new_soldout {
+	position: absolute;
+	left: 300px;
+	top: 100px
+}
+
+.newdeal_koubei .rating,.newdeal_koubei .rating span {
+	background: url(/templates/jumei/images/home/new_rating.png) repeat-x top left;
+	height: 12px;
+	display: inline-block
+}
+
+.newdeal_koubei .rating {
+	width: 80px;
+	background-position: 0 -13px;
+	margin-top: 5px
+}
+
+#home_nav_bar {
+	display: none
+}
+
+.newdeal_deal_buyit .deal_oper_tip,.newdeal_deal_buyit .sku_pannel,.view_detail_bar_con .deal_oper_tip,.view_detail_bar_con .sku_pannel {
+	position: absolute;
+	left: auto;
+	top: 62px;
+	right: 20px;
+	border: solid 1px #ccc
+}
+
+.view_detail_bar_con .deal_oper_tip,.view_detail_bar_con .sku_pannel {
+	top: 40px;
+	right: 5px
+}
+
+.newdeal_deal_buyit .deal_oper_tip,.view_detail_bar_con .deal_oper_tip {
+	width: 146px;
+	line-height: 18px;
+	text-align: center;
+	color: #333;
+	font-size: 12px;
+	background-color: #efefef;
+	padding: 5px 0
+}
+
+.newdeal_deal_buyit .deal_oper_tip .corn,.newdeal_deal_buyit .sku_pannel .corn,.view_detail_bar_con .deal_oper_tip .corn,.view_detail_bar_con .sku_pannel .corn {
+	width: 0;
+	height: 0;
+	font-size: 0;
+	display: inline-block;
+	border-width: 0 5px 5px;
+	border-style: dashed dashed solid;
+	border-color: transparent transparent #efefef;
+	position: absolute;
+	top: -5px;
+	right: 37px
+}
+
+.newdeal_deal_buyit .sku_pannel,.view_detail_bar_con .sku_pannel {
+	background: #eee;
+	width: 100px;
+	display: none
+}
+
+.newdeal_deal_buyit .sku_pannel a,.view_detail_bar_con .sku_pannel a {
+	float: left;
+	display: inline;
+	height: 24px;
+	width: 100px;
+	overflow: hidden;
+	text-indent: 10px;
+	line-height: 24px;
+	color: #000
+}
+
+.newdeal_deal_buyit .sku_pannel a:hover,.view_detail_bar_con .sku_pannel a:hover {
+	background: #ccc;
+	color: #ed245b;
+	text-decoration: none
+}
+
+.newdealtip {
+	widows: 378px;
+	height: 229px;
+	background: url(/templates/jumei/images/newdeal/newdealtipbg.jpg) no-repeat center 70px
+}
+
+.newdealtip .tit {
+	color: #333;
+	font-weight: 700;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 15px;
+	background: #faf7f8;
+	border-bottom: 1px solid #e6e5e5
+}
+
+#cboxClose,#cboxClose:hover {
+	width: 23px;
+	height: 23px;
+	overflow: hidden;
+	white-space: nowrap;
+	background: url(/templates/jumei/images/cart_v2/cart_pop_close.png);
+	top: 10px;
+	right: -45px;
+	margin: 0;
+	padding: 0;
+	right: -12px;
+	text-indent: 99em;
+	top: -12px
+}
+
+#cboxContent {
+	overflow: visible
+}
+
+#cboxClose {
+	top: -12px
+}
+
+.btn_qjs {
+	display: block;
+	background: url(about:blank);
+	width: 115px;
+	height: 35px;
+	position: absolute;
+	top: 130px;
+	left: 122px;
+	text-indent: -99999px
+}
+
+.home_adpop {
+	position: absolute;
+	left: 50%;
+	z-index: 1;
+	display: none;
+	overflow: hidden
+}
+
+.home_adpop,.home_adpop img {
+	width: 100px;
+	height: 306px
+}
+
+.home_adpop img {
+	display: block
+}
+
+.home_ad_left {
+	margin-left: -595px
+}
+
+.home_ad_right {
+	margin-left: 495px
+}
+
+#yestoday_top {
+	background: url(/templates/jumei/images/newdeal/home_yse_tit_bg.jpg) no-repeat
+}
+
+.new_home_sur {
+	display: none;
+	position: fixed;
+	*position: absolute;
+	*top: expression( (50 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop )) + 'px');
+	top: 50px;
+	_zoom: 1;
+	z-index: 999999;
+	left: 50%;
+	margin-left: -535px
+}
