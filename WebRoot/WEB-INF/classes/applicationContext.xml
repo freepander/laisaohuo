@@ -16,19 +16,14 @@
     <context:annotation-config />
     <!--  制定扫描的位置  -->
 	<context:component-scan base-package="com.myivcre.ga" />
-    <!-- jdbc的配置文件的位置 -->
-	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<property name="locations">
-			<value>classpath:jdbc.properties</value>
-		</property>
-	</bean>
+    
 	<!--  start  配置数据源(数据库连接池) -->
 	<bean id="dataSource"
 		class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
-		<property name="driverClass" value="${jdbc.driverClassName}" />
-		<property name="jdbcUrl" value="${jdbc.url}" />
-		<property name="user" value="${jdbc.username}" />
-		<property name="password" value="${jdbc.password}" />
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/jumei?useUnicode=true&amp;characterEncoding=utf-8" />
+		<property name="user" value="root" />
+		<property name="password" value="root" />
 		<!--  连接池配置--> 
 		<!-- 初始化时获取的连接数，取值应在minPoolSize与maxPoolSize之间。Default: 3  -->
 		<property name="initialPoolSize" value="3"/>

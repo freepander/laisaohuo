@@ -20,7 +20,7 @@
 
 	<div class="header">
 		<div class="dl-title">
-			<a href="#" target="_blank"> <span class="lp-title-port">**</span><span class="dl-title-text">商城管理系统</span> </a>
+			<a href="#" target="_blank"> <span class="lp-title-port">来扫货</span><span class="dl-title-text">商城管理系统</span> </a>
 		</div>
 		<div class="dl-log">
 			欢迎您，<span class="dl-log-user">admin</span><a href="###" title="退出系统" class="dl-log-quit">[退出]</a>
@@ -138,6 +138,13 @@
 						id : 'gongxiaoliebiao',
 						text : '功效列表',
 						href : 'admin/effect_list'
+					} ]
+				}, {
+					text : '商品规格',
+					items : [ {
+						id : 'shangpinguige',
+						text : '商品规格管理',
+						href : 'admin/shopSpec_list'
 					} ]
 				}, {
 					text : '用户评论',

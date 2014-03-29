@@ -47,8 +47,8 @@
           <td><s:property value="nowPrice" /></td>
           <td><s:property value="salesVolume" /></td>
           <td>
-          	<a class="button button-dangerous" href="admin/goods_delete?id=<s:property value="id"/>" class="button">删除</a>
-          	<a class="button" href="admin/goods_input?id=<s:property value="id"/>" class="button">查看详情</a>
+          	<a class="button button-danger" href="admin/goods_delete?id=<s:property value="id"/>" class="button">删除</a>
+          	<a class="button button-warning" href="admin/goods_input?id=<s:property value="id"/>" class="button">修改</a>
           </td>
         </tr>
         </s:iterator>

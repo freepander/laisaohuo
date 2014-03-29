@@ -29,11 +29,43 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label"><s>*</s>商品编号</label>
+				<label class="control-label"><s>*</s>商品条码</label>
 				<div class="controls">
-					<input type="text" name="number" value="<s:property value="goods.number"/>">
+					<input type="text" name="numbers" value="<s:property value="goods.number"/>">
 				</div>
 			</div>
+			<div class="control-group">
+				<label class="control-label"><s>*</s>所属类别1</label>
+				<div class="controls">
+					<select name="bigCategoryId" id="bigCategoryId">
+						<option value="<s:property value="goods.bigCategory.id"/>"><s:property value="goods.bigCategory.name"/></option>
+					<s:iterator value="categoryList1">
+						<option value="<s:property value="id"/>"><s:property value="name"/></option>
+					</s:iterator>
+					</select>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label"><s>*</s>所属类别2</label>
+				<div class="controls">
+					<select name="categoryId" id="categoryId">
+						
+					</select>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label"><s>*</s>所属类别3</label>
+				<div class="controls">
+					<select name="twoCategoryId" id="twoCategoryId">
+						
+					</select>
+				</div>
+			</div>
+			<script>
+			$('#bigCategoryId').change(function(){
+				
+			})
+			</script>
 			<div class="control-group">
 				<label class="control-label"><s>*</s>所属品牌</label>
 				<div class="controls">
@@ -47,45 +79,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label"><s>*</s>所属类别</label>
+				<label class="control-label checkbox">商品功效</label>
 				<div class="controls">
-					<select name="categoryId">
-						<option value="1">请选择</option>
-						<option value="<s:property value="goods.category.id"/>"><s:property value="goods.category.name"/></option>
-					<s:iterator value="categoryList">
-						<option value="<s:property value="id"/>"><s:property value="name"/></option>
-					</s:iterator>
-					</select>
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>所属功效 </label>
-				<div class="controls">
-					<select name="effectId">
-						<option value="1">请选择</option>
-						<option value="<s:property value="goods.effect.id"/>"><s:property value="goods.effect.name"/></option>
-					<s:iterator value="effectList">
-						<option value="<s:property value="id"/>"><s:property value="name"/></option>
-					</s:iterator>
-					</select>
+					<input value="" type="checkbox" name="effectId">商品功效
+					<input value="" type="checkbox" name="effectId">商品功效2
 				</div>
 			</div>
 			<div class="control-group">
 				<label class="control-label"><s>*</s>商品价格</label>
 				<div class="controls">
-					<input type="text" name="nowPrice" value="<s:property value="goods.nowPrice"/>">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>商品原价</label>
-				<div class="controls">
 					<input type="text" name="price" value="<s:property value="goods.price"/>">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>赠送积分</label>
-				<div class="controls">
-					<input type="text" name="integral" value="<s:property value="goods.integral"/>">
 				</div>
 			</div>
 			<div class="control-group">
@@ -96,22 +99,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<input type="file" name="file" style="display:none;" id="path" onchange="f_upload(this)">
 				</div>
 			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>商品重量</label>
-				<div class="controls">
-					<input type="text" name="weight" value="<s:property value="goods.weight"/>">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>商品库存</label>
-				<div class="controls">
-					<input type="text" name="stock" value="<s:property value="goods.stock"/>">
-				</div>
-			</div>
             <div class="control-group">
 				<label class="control-label"><s>*</s>产品规格：</label>
 				<div class="controls control-row4">
-				<textarea name="specifications" class="input-large"><s:property value="goods.specifications"/></textarea>
+					<select name="shopSpec">
+						<option value="正常规格">正常规格</option>
+						<option value="中样">中样</option>
+						<option value="小样">小样</option>
+					</select>
 				</div>
             </div>
             <div class="control-group">
@@ -133,44 +128,24 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label"><s>*</s>产品包装</label>
+				<label class="control-label"><s>*</s>保存方法</label>
 				<div class="controls">
-					<input type="text" name="packaging" value="<s:property value="goods.packaging"/>">
+					<input type="text" name="baoCunMethod" value="<s:property value="goods.baoCunMethod"/>">
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label"><s>*</s>商品描述：</label>
-				<div class="controls control-row4">
-					<textarea name="description" class="input-large"><s:property value="goods.description"/></textarea>
+				<label class="control-label"><s>*</s>刮码声明</label>
+				<div class="controls">
+					<input type="text" name="luanMa" value="<s:property value="goods.luanMa"/>">
 				</div>
-            </div>
-            <hr>
-            <div style="clear:both;"></div>
-            <div class="control-group">
-				<label class="control-label"><s>*</s>商品详情：</label><br>
-					<textarea name="details" id="details" class="input-large" style="height: 500px;"><s:property value="goods.details"/></textarea>
-            </div>
-            <div style="clear:both;"></div>
-            <div class="control-group">
-				<label class="control-label"><s>*</s>使用方法：</label><br>
-					<textarea name="usages" id="usages" class="input-large" style="height: 500px;"><s:property value="goods.usages"/></textarea>
-            </div>
-            <div style="clear:both;"></div>
-            <div class="control-group">
-				<label class="control-label"><s>*</s>商品实拍：</label><br>
-					<textarea name="photos" id="photos" class="input-large" style="height: 500px;"><s:property value="goods.photos"/></textarea>
-            </div>
-            <div class="form-actions span5 offset3">
-            	<button id="btnSearch" type="submit" class="button button-primary">提交</button>
-            </div>
+			</div>
+			<div class="row">
+				<div class="form-actions offset3">
+					<button type="submit" class="button button-primary">保存</button>
+				</div>
+			</div>
             <script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
             <script type="text/javascript" src="assets/js/ajaxfileupload.js"></script>
-			<script type="text/javascript">
-			    UE.getEditor('details');
-			    UE.getEditor('usages');
-			    UE.getEditor('photos');
-			    
-			</script>
 			<script>
 			function f_upload(a){
 				var timestamp=new Date().getTime()

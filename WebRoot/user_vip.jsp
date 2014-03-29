@@ -47,9 +47,10 @@
     <div id="top_menu">
        <div id="top_nav">
             <div id="top_nav">
-				<div class="top_nav_item"><a href="index_index" class="nav_link">美妆商城</a></div>
-				<div class="top_nav_item"><a href="group_groupList" class="nav_link">今日团购</a></div>
-				<div class="top_nav_item  selected"><a href="articles_getArticle?id=1" class="nav_link">用户须知</a></div>
+				<div class="top_nav_item"><a href="index_index" class="nav_link">护理商城</a></div>
+				<div class="top_nav_item"><a href="group_groupList" class="nav_link">买多成团</a></div>
+				<div class="top_nav_item"><a href="articles_getArticle?id=1" class="nav_link">会员独享</a></div>
+				<div class="top_nav_item"><a href="articles_getArticle?id=1" class="nav_link">用户须知</a></div>
 				<div class="top_search_wrap">
 					<form action="#" method="get" id="mall_search_form" pos="top">
 						<input name="search" type="text" class="top_search_input" id="mall_search_input" lang="zh">
@@ -73,7 +74,7 @@
         <a href="user_order" class="list"><b></b>我的订单</a>
         <a href="user_collection" class="fav"><b></b>我的收藏</a>
         <a href="user_wish" class="onsale"><b></b>我的心愿单</a>
-        <a href="user_vip" class="member selected"><b></b>我的会员等级</a>
+        <a href="user_vip" class="member selected"><b></b>会员卡</a>
         <a href="user_red" class="envelope"><b></b>我的红包</a>
         <h2><b></b>管理个人账户</h2>
         <a href="user_message" class="settings"><b></b>设置账户信息</a>

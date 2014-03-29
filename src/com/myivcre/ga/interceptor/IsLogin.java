@@ -45,17 +45,17 @@ public class IsLogin extends AbstractInterceptor {
 					}
 				}
 			}
-			System.out.println(this.globalUsername+"   "+this.globalPassword);
+//			System.out.println(this.globalUsername+"   "+this.globalPassword);
 			if(null!=this.globalUsername&&null!=this.globalPassword){
 				String hql="from shopuser where username='"+this.globalUsername+"' and password='"+this.globalPassword+"'";
-				System.out.println(hql);
+//				System.out.println(hql);
 				List<ShopUser> l=this.baseService.getByHal(hql);
 				if(l.size()==1){
 					this.globalIsLogin=true;
 					session.setAttribute("user", l.get(0));
 				}
 			}
-		System.out.println(this.globalIsLogin);
+//		System.out.println(this.globalIsLogin);
 		session.setAttribute("gloablIsLogin", this.globalIsLogin);
 		arg0.invoke();
 		return "";

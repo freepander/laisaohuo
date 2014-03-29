@@ -23,6 +23,10 @@ public class CartsAction extends ActionSupport {
 	private int goodsId;
 	private int number;
 	private Cart cart;
+	/**
+	 * 添加商品到购物车
+	 * @return
+	 */
 	public String add(){
 		Map<String, Object> session=ServletActionContext.getContext().getSession();
 		this.cart=(Cart)session.get("cart");
@@ -53,6 +57,10 @@ public class CartsAction extends ActionSupport {
 		session.put("cart", this.cart);
 		return "cart";
 	}
+	/**
+	 * 查看购物车
+	 * @return
+	 */
 	public String list(){
 		Map<String, Object> session=ServletActionContext.getContext().getSession();
 		this.cart=(Cart)session.get("cart");
@@ -61,6 +69,30 @@ public class CartsAction extends ActionSupport {
 		}
 		return "cart";
 	}
+	/**
+	 * 从购物车中删除一件商品
+	 * @return
+	 */
+	public String deleteOneById(){
+		Map<String, Object> session=ServletActionContext.getContext().getSession();
+		this.cart=(Cart)session.get("cart");
+		for(int i=0;i<this.cart.getList().size();i++){
+			if(this.cart.getList().get(i).getGoods().getId()==this.goodsId){
+				this.cart.getList().remove(i);
+			}
+		}
+		double sum=0;
+		for(CartItem item:this.cart.getList()){
+			sum+=item.getPrice();
+		}
+		this.cart.setPrice(sum);
+		session.put("cart", this.cart);
+		return "cart";
+	}
+	/**
+	 * 清空购物车
+	 * @return
+	 */
 	public String removeAll(){
 		Map<String, Object> session=ServletActionContext.getContext().getSession();
 		this.cart=(Cart)session.get("cart");

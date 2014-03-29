@@ -30,7 +30,7 @@ public class TwoCategoryAction extends BaseAction {
 		if(id!=0){
 			this.twoCategory=(TwoCategory)this.baseService.get(TwoCategory.class, id);
 		}
-		this.categoryList=this.baseService.getByHal("from category where deletes=false");
+		this.categoryList=this.baseService.getByHal("from bigcategory where deletes=false");
 		return "success";
 	}
 	public String add(){
@@ -54,7 +54,7 @@ public class TwoCategoryAction extends BaseAction {
 	}
 	public String delete(){
 		this.twoCategory=(TwoCategory)this.baseService.get(TwoCategory.class, id);
-		this.twoCategory.setDelete(false);
+		this.twoCategory.setDelete(true);
 		this.baseService.update(this.twoCategory);
 		return "list";
 	}

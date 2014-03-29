@@ -19,77 +19,27 @@
 
 <div class="row">
 	<div class="span24">
-		<form id="J_Form" class="form-horizontal" method="post" action="admin/mallCarousel_update">
+		<form id="J_Form" class="form-horizontal" method="post" action="admin/twoCategory_<s:if test="id!=0">update</s:if><s:if test="id==0">add</s:if>">
+			<input name="id" type="hidden" value="<s:property value="twoCategory.id"/>" >
 			<div class="control-group">
-				<label class="control-label"><s>*</s>链接1</label>
+				<label class="control-label"><s>*</s>名称：</label>
 				<div class="controls">
-					<input type="text" name="name1" value="<s:property value="mallCarousel.name1"/>">
+					<input type="text" name="name" value="<s:property value="twoCategory.name"/>">
 				</div>
 			</div>
 			<div class="control-group">
-				<label class="control-label"><s>*</s>商品图片1</label>
-				<div class="controls">
-					<input type="text" name="logo1" id="logo1" value="<s:property value="mallCarousel.logo1"/>">
-					<input type="button" value="点击选择图片" onclick="path1.click()">
-					<input type="file" name="file" style="display:none;" id="path1" onchange="f_upload1(this)">
-				</div>
+			<label class="control-label"><s>*</s>所属类别</label>
+			<div class="controls">
+				<select name="categoryId">
+					<option value="<s:property value="twoCategory.parentCategory.id"/>"><s:property value="twoCategory.parentCategory.name"/></option>
+				<s:iterator value="categoryList">
+					<option value="<s:property value="id"/>"><s:property value="name"/></option>
+				</s:iterator>
+				</select>
 			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>链接2</label>
-				<div class="controls">
-					<input type="text" name="name2" value="<s:property value="mallCarousel.name2"/>">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>商品图片2</label>
-				<div class="controls">
-					<input type="text" name="logo2" id="logo2" value="<s:property value="mallCarousel.logo2"/>">
-					<input type="button" value="点击选择图片" onclick="path2.click()">
-					<input type="file" name="file" style="display:none;" id="path2" onchange="f_upload2(this)">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>链接3</label>
-				<div class="controls">
-					<input type="text" name="name3" value="<s:property value="mallCarousel.name3"/>">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>商品图片3</label>
-				<div class="controls">
-					<input type="text" name="logo3" id="logo3" value="<s:property value="mallCarousel.logo3"/>">
-					<input type="button" value="点击选择图片" onclick="path3.click()">
-					<input type="file" name="file" style="display:none;" id="path3" onchange="f_upload3(this)">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>链接4</label>
-				<div class="controls">
-					<input type="text" name="name4" value="<s:property value="mallCarousel.name4"/>">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>商品图片4</label>
-				<div class="controls">
-					<input type="text" name="logo4" id="logo4" value="<s:property value="mallCarousel.logo4"/>">
-					<input type="button" value="点击选择图片" onclick="path4.click()">
-					<input type="file" name="file" style="display:none;" id="path4" onchange="f_upload4(this)">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>链接5</label>
-				<div class="controls">
-					<input type="text" name="name5" value="<s:property value="mallCarousel.name5"/>">
-				</div>
-			</div>
-			<div class="control-group">
-				<label class="control-label"><s>*</s>商品图片5</label>
-				<div class="controls">
-					<input type="text" name="logo5" id="logo5" value="<s:property value="mallCarousel.logo5"/>">
-					<input type="button" value="点击选择图片" onclick="path5.click()">
-					<input type="file" name="file" style="display:none;" id="path5" onchange="f_upload5(this)">
-				</div>
-			</div>
+		</div>
+			
+			
 			
 			<div class="form-actions span5 offset3">
             	<button id="btnSearch" type="submit" class="button button-primary">提交</button>

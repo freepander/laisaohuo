@@ -23,13 +23,14 @@
         </a>
         <div id="user_header">
             <ul class="login_header">
-                <s:if test="!#session.gloablIsLogin">
-					<li class="login_li"><a href="user_registerInput" rel="nofollow">注册</a><em>|</em></li>
-                	<li class="login_li"><a href="user_loginInput" rel="nofollow">登录</a><em>|</em></li>
-					</s:if>
-					<s:if test="#session.gloablIsLogin">
-					<li class="login_li"><a href="user_order?id=<s:property value="#session.user.id"/>" rel="nofollow">个人中心</a><em>|</em></li>
-					<li class="user">欢迎您，<span style="color: #ED145B;"><s:property value="#session.user.username"/></span><span style="padding:0 5px;">[<a href="user_signOut" style="padding:0;">退出</a>]</span><em>|</em></li>
+                <s:if test="#session.gloablIsLogin==false">
+				<li class="login_li"><a href="user_registerInput" rel="nofollow">注册</a><em>|</em></li>
+               	<li class="login_li"><a href="user_loginInput" rel="nofollow">登录</a><em>|</em></li>
+               	<li class="login_li"><em>|</em><a href="#" rel="nofollow">马上有礼</a></li>
+				</s:if>
+				<s:if test="#session.gloablIsLogin==true">
+				<li class="login_li"><a href="user_order?id=<s:property value="#session.user.id"/>" rel="nofollow">个人中心</a><em>|</em></li>
+				<li class="user">欢迎您，<span style="color: #ED145B;"><s:property value="#session.user.username"/></span><span style="padding:0 5px;">[<a href="user_signOut" style="padding:0;">退出</a>]</span><em>|</em></li>
 				</s:if>
             </ul>
             <div class="clear"></div>
@@ -88,19 +89,7 @@
                 				<!--<span class="increase_num">+</span>-->
                 			</div>
                 			
-                			<script>
-//更改购买数量
- $('.decrease_num').click(function(){
- 	if($(this).next().val()!=1){
- 		$(this).next().val(parseInt($(this).next().val())-1)
- 	}
- });
- $('.increase_num').click(function(){
- 	if($(this).prev().val()!=10){
- 		$(this).prev().val(parseInt($(this).prev().val())+1)
- 	}
- });
-</script>
+
                 			<p class="pink" style="margin-top:10px;"></p>
                 		</div>
                 	</td>
@@ -114,7 +103,7 @@
                 		<span class="grey">省¥<b class="saved_price"><s:property value="goods.nowPrice*count-price"/></b></span>
                 	</td>
                 	<td class="action_box">
-                		<p><a class="item-buy-delete" href="javascript:void(0)">删除</a></p>
+                		<p><a class="item-buy-delete" href="carts_deleteOneById?goodsId=<s:property value="goods.id"/>">删除</a></p>
                 	</td>
                 </tr>
                 </s:iterator>
@@ -147,6 +136,18 @@
     </div>
 </div><!--  footer_textarea  -->
 
-
+<script>
+//更改购买数量
+ $('.decrease_num').click(function(){
+ 	if($(this).next().val()!=1){
+ 		$(this).next().val(parseInt($(this).next().val())-1)
+ 	}
+ });
+ $('.increase_num').click(function(){
+ 	if($(this).prev().val()!=10){
+ 		$(this).prev().val(parseInt($(this).prev().val())+1)
+ 	}
+ });
+</script>
 </body>
 </html>

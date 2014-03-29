@@ -16,15 +16,11 @@
 <link href="assets/css/bui-min.css" rel="stylesheet">
 </head>
 <body>
-
-
 	<table cellspacing="0" class="table table-bordered">
       <thead>
         <tr><th colspan="5">
         <ul class="toolbar">
-          <li><label class="checkbox"><input type="checkbox"><a href="#">全选</a></label></li>
-          <li><button class="button button-danger"><i class="icon-white icon-trash"></i>批量删除</button></li>
-          <li><button class="button button-success">添加</button></li>
+          <li><a href="admin/bigCategory_input" class="button button-success">添加</a></li>
         </ul>
         </th></tr>
         <tr>
@@ -40,9 +36,9 @@
           <td><input type="checkbox"></td>
           <td><s:property value="id"/></td>
           <td><s:property value="name"/></td>
-          <td><a class="button" href="#" class="button">完善信息</a>
-          	<a class="button button-dangerous" href="#" class="button">删除</a>
-          	<a class="button" href="#" class="button">查看详情</a></td>
+          <td>
+          	<a class="button button-danger" href="admin/bigCategory_delete?id=<s:property value="id"/>" class="button">删除</a>
+          	<a class="button button-warning" href="admin/bigCategory_input?id=<s:property value="id"/>" class="button">编辑</a></td>
         </tr>
         </s:iterator>
       </tbody>

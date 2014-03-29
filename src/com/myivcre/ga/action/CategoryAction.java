@@ -57,9 +57,17 @@ public class CategoryAction extends BaseAction {
 	}
 	public String delete(){
 		this.category=(Category) this.baseService.get(Category.class, id);
-		this.category.setDelete(false);
+		this.category.setDelete(true);
 		this.baseService.update(this.category);
 		return "list";
+	}
+	public String getCategoryList(){
+		this.list=this.baseService.getByHal("from category where deletes=false and parentCategory.id="+id);
+		return "categoryList";
+	}
+	public String getTwoCategoryList(){
+		this.list=this.baseService.getByHal("from twocategory where deletes=false and parentCategory.id="+id);
+		return "categoryList";
 	}
 	public String getName() {
 		return name;

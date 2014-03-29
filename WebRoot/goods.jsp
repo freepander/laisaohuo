@@ -28,14 +28,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     	<a href="index_index" id="home" title="" style="background:url(fontassets/img/logo_new_v1.jpg) no-repeat top left;"> </a>
         <div id="user_header">
             <ul class="login_header">
-					<s:if test="!#session.gloablIsLogin">
-					<li class="login_li"><a href="user_registerInput" rel="nofollow">注册</a><em>|</em></li>
-                	<li class="login_li"><a href="user_loginInput" rel="nofollow">登录</a><em>|</em></li>
-					</s:if>
-					<s:if test="#session.gloablIsLogin">
-					<li class="login_li"><a href="user_order?id=<s:property value="#session.user.id"/>" rel="nofollow">个人中心</a><em>|</em></li>
-					<li class="user">欢迎您，<span style="color: #ED145B;"><s:property value="#session.user.username"/></span><span style="padding:0 5px;">[<a href="user_signOut" style="padding:0;">退出</a>]</span><em>|</em></li>
-					</s:if>
+					<s:if test="#session.gloablIsLogin==false">
+				<li class="login_li"><a href="user_registerInput" rel="nofollow">注册</a><em>|</em></li>
+               	<li class="login_li"><a href="user_loginInput" rel="nofollow">登录</a><em>|</em></li>
+               	<li class="login_li"><em>|</em><a href="#" rel="nofollow">马上有礼</a></li>
+				</s:if>
+				<s:if test="#session.gloablIsLogin==true">
+				<li class="login_li"><a href="user_order?id=<s:property value="#session.user.id"/>" rel="nofollow">个人中心</a><em>|</em></li>
+				<li class="user">欢迎您，<span style="color: #ED145B;"><s:property value="#session.user.username"/></span><span style="padding:0 5px;">[<a href="user_signOut" style="padding:0;">退出</a>]</span><em>|</em></li>
+				</s:if>
 				</ul>
             <div class="clear"></div>
             <div class="header_logo_all">
@@ -50,16 +51,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class="clear"></div>
     <div id="top_menu">
     	<div id="top_nav">
-    		<div class="top_nav_item"><a href="group_groupList" class="nav_link">今日团购</a></div>
-			<div class="top_nav_item  selected"><a href="index_index" class="nav_link">美妆商城</a></div>
-			<div class="top_nav_item"><a href="#" class="nav_link">美妆口碑</a></div>
-			<div class="top_nav_item"><a href="#" rel="nofollow" target="_blank" class="nav_link">正品保证</a></div>
-			<div class="top_search_wrap">
-				<form action="#" method="get" id="mall_search_form" pos="top">
-					<input name="search" type="text" class="top_search_input" id="mall_search_input" lang="zh">
-					<button type="submit" id="btn_global_search">搜索</button>
-				</form>
-			</div>
+    		<div class="top_nav_item selected"><a href="index_index" class="nav_link">护理商城</a></div>
+				<div class="top_nav_item "><a href="group_groupList" class="nav_link">买多成团</a></div>
+				<div class="top_nav_item">
+					<a href="javascript:void(0)" class="nav_link">会员独享</a>
+					<div class="header_list" style="display: none;">
+						<a href="#"><span class="newbanner">信息发布</span></a>
+					</div>
+				</div>
+				<div class="top_nav_item"><a href="articles_getArticle?id=1" class="nav_link">用户须知</a></div>
+				<div class="top_search_wrap">
+					<form action="#" method="get" id="mall_search_form" pos="top">
+						<input name="search" type="text" class="top_search_input" id="mall_search_input" lang="zh">
+						<button type="submit" id="btn_global_search">搜索</button>
+					</form>
+				</div>
 		</div>
     </div>
 </div><!-- end  heander_container  -->
@@ -92,6 +98,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </div>
                     <!--活动告知-->
                     <div class="actnotic">
+                    	<p>此产品满100元立减30元</p>
                     </div>
                     <div class="sale_count">
                         <label>销量</label>最近<s:property value="goods.salesVolume"/>人已购买
@@ -121,7 +128,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         </div>
                         <div class="add_cart buyer_button">
                             <a href="javascript:void(0);" class="track_click" id="add_to_shoppingcart" title="加入购物车"></a>
-                            <a href="javascript:;" class="ilikewrap" id="btnilike">
+                            <a href="javascript:void(0);" class="ilikewrap" id="btnilike">
                                 <span id="ilike_text">收藏</span>
                                 <span style="color: #999;">(<span id="ilike_num"><s:property value="goods.collectionNumber"/></span>)</span>
                             </a>
@@ -133,6 +140,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                             <a href="#" target="_blank" title="30天退货" class="con">30天退货</a>
                             <a href="#" target="_blank" class="con" title="买二包邮">买二包邮</a>
                             <a href="#" target="_blank" class="con" title="闪电发货">闪电发货</a>
+                            
+                            <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
                         </p>
                     </div>
                 </div>
@@ -168,11 +178,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                             <td rowspan="7" align="right" valign="bottom"><img width="307px" height="343px" src="upload/goodslogo/<s:property value="goods.logo"/>" alt="<s:property value="goods.name"/>" border="0"></td>
                                         </tr>
                                         <tr>
-                                            <td valign="top"><b>品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌：</b></td>
+                                            <td valign="top"><b>品牌名称：</b></td>
                                             <td valign="top"><span><s:property value="goods.brand.name"/></span></td>
                                         </tr>
                                         <tr>
-                                            <td valign="top"><b>功&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;效：</b></td>
+                                            <td valign="top"><b>产品功效：</b></td>
                                             <td valign="top"><span><s:property value="goods.effect.name"/></span></td>
                                         </tr>
                                         <tr>
@@ -180,20 +190,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                             <td valign="top"><span><s:property value="goods.specifications"/></span></td>
                                         </tr>
                                         <tr>
-                                            <td valign="top"><b>生产地区：</b></td>
-                                            <td valign="top"><span><s:property value="goods.area"/></span></td>
+                                            <td valign="top"><b>产品容量：</b></td>
+                                            <td valign="top"><span><s:property value="goods.rongLiang"/></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><b>保存方法：</b></td>
+                                            <td valign="top"><span><s:property value="goods.baoCunMethod"/></span></td>
                                         </tr>
                                         <tr>
                                             <td valign="top"><b>保质期限：</b></td>
                                             <td valign="top"><span><s:property value="goods.shelfLife"/>（具体日期以实物为准）</span></td>
                                         </tr>
                                         <tr>
-                                            <td valign="top"><b>适用人群：</b></td>
-                                            <td valign="top"><span><s:property value="goods.crowd"/></span></td>
+                                            <td valign="top"><b>生产国家：</b></td>
+                                            <td valign="top"><span><s:property value="goods.area"/></span></td>
                                         </tr>
                                         <tr>
-                                            <td valign="top"><b>产品包装：</b></td>
-                                            <td valign="top"><span><s:property value="goods.packaging"/></span></td>
+                                            <td valign="top"><b>乱码说明：</b></td>
+                                            <td valign="top"><span><s:property value="goods.luanMa"/></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><b>特别声明：</b></td>
+                                            <td valign="top"><span><s:property value="goods.teBieShengMing"/></span></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -225,6 +243,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                 <div class="description_images">
                                     用户口碑
                                 </div>
+                            </div>
+                            <div class="deal_contents" style="width:920px;">
+                            <!-- Duoshuo Comment BEGIN -->
+	<div class="ds-thread"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"laisaohuo"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment END -->
                             </div>
                         </div>
                     </div>
@@ -320,6 +354,20 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     </div>
 </div>
 <script>
+//将商品添加收藏
+$('#btnilike').click(function(){
+	var id=<s:property value="goods.id"/>
+	var num=$(this).contents().find('#ilike_num').html();
+	if(<s:property value="areLogin"/>){
+		if(<s:property value="areCollection"/>){
+			$.get("good_deleteCollection",{id:id},function(){alert("取消收藏成功。");location.reload()});
+		}else{
+			$.get("good_addCollection",{id:id},function(){alert("收藏成功。");location.reload()});
+		}
+	}else{
+		alert("请登录");
+	}
+})
 //更改购买数量
  $('#decrease_num').click(function(){
  	if($('#buy_number').val()!=1){
