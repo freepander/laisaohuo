@@ -1,32 +1,41 @@
 package com.myivcre.ga.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 /**
- * 购物车项
+ * 出货单
  * @author freepander
  *
  */
-@Entity(name="cartItem")
-public class CartItem {
+@Entity(name="shipmentlist")
+public class ShipmentList {
 	@Id@GeneratedValue
 	private int id;
+	//出货时间
+	private Date time;
+	//出货商品
 	@ManyToOne
 	private Goods goods;
-	private int count;
+	//出货数量
+	private int number;
+	//出国价格
 	private double price;
-	public CartItem(){
-		
-	}
-	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	public Date getTime() {
+		return time;
+	}
+	public void setTime(Date time) {
+		this.time = time;
 	}
 	public Goods getGoods() {
 		return goods;
@@ -34,11 +43,11 @@ public class CartItem {
 	public void setGoods(Goods goods) {
 		this.goods = goods;
 	}
-	public int getCount() {
-		return count;
+	public int getNumber() {
+		return number;
 	}
-	public void setCount(int count) {
-		this.count = count;
+	public void setNumber(int number) {
+		this.number = number;
 	}
 	public double getPrice() {
 		return price;
@@ -46,8 +55,6 @@ public class CartItem {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
-	
 	
 
 }

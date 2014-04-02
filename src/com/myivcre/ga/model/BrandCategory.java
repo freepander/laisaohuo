@@ -7,6 +7,7 @@ import javax.persistence.OneToOne;
 
 /**
  * 品牌类别
+ * 每个类别有15个推荐商品
  * @author freepander
  *
  */

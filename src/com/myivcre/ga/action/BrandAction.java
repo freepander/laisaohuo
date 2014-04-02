@@ -18,8 +18,6 @@ public class BrandAction extends BaseAction {
 	private static final long serialVersionUID = 1L;
 	private String name;
 	private boolean visible;
-	private int categoryId;
-	private List categoryList;
 	private Brand brand;
 	
 	public String list(){
@@ -37,29 +35,24 @@ public class BrandAction extends BaseAction {
 		if(id!=0){
 			this.brand=(Brand)this.baseService.get(Brand.class, id);
 		}
-		this.categoryList=this.baseService.getByHal("from brandcategory where delete=false");
 		return "success";
 	}
 	public String add(){
 		this.brand=new Brand();
 		this.brand.setName(name);
-		this.brand.setDelete(false);
-		BrandCategory category=(BrandCategory)this.baseService.get(BrandCategory.class, categoryId);
-		this.brand.setCategory(category);
+		this.brand.setDeletes(false);
 		this.baseService.save(this.brand);
 		return "list";
 	}
 	public String update(){
 		this.brand=(Brand)this.baseService.get(Brand.class, id);
 		this.brand.setName(name);
-		BrandCategory category=(BrandCategory)this.baseService.get(BrandCategory.class, categoryId);
-		this.brand.setCategory(category);
 		this.baseService.update(this.brand);
 		return "list";
 	}
 	public String delete(){
 		this.brand=(Brand)this.baseService.get(Brand.class, id);
-		this.brand.setDelete(false);
+		this.brand.setDeletes(true);
 		this.baseService.update(this.brand);
 		return "list";
 	}
@@ -74,18 +67,6 @@ public class BrandAction extends BaseAction {
 	}
 	public void setVisible(boolean visible) {
 		this.visible = visible;
-	}
-	public int getCategoryId() {
-		return categoryId;
-	}
-	public void setCategoryId(int categoryId) {
-		this.categoryId = categoryId;
-	}
-	public List getCategoryList() {
-		return categoryList;
-	}
-	public void setCategoryList(List categoryList) {
-		this.categoryList = categoryList;
 	}
 	public Brand getBrand() {
 		return brand;

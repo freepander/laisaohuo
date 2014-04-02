@@ -10,6 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+/**
+ * 商品
+ * @author freepander
+ *
+ */
 @Entity(name = "goods")
 public class Goods {
 	@Id
@@ -24,10 +29,10 @@ public class Goods {
 	// 所属类别  一级
 	@ManyToOne
 	private BigCategory bigCategory;
-	//所属类别  二级
+	//所属类别  三级
 	@ManyToOne
 	private TwoCategory twoCategory;
-	//所属类别  三级
+	//所属类别  二级
 	@ManyToOne
 	private Category category;
 	// 类别集合
@@ -56,9 +61,6 @@ public class Goods {
 	private int integral;
 	// 商品图片
 	private String logo;
-	// 详细描述
-	@Column(length = 100000)
-	private String description;
 	// 商品重量
 	private double weight;
 	// 库存
@@ -104,6 +106,10 @@ public class Goods {
 	private String photos;
 	// 是否删除
 	private boolean deletes;
+	
+	public Goods(){
+		this.stock=0;
+	}
 	public int getId() {
 		return id;
 	}
@@ -211,12 +217,6 @@ public class Goods {
 	}
 	public void setLogo(String logo) {
 		this.logo = logo;
-	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
 	}
 	public double getWeight() {
 		return weight;

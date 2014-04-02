@@ -22,13 +22,11 @@ public class GoodsAction extends BaseAction {
 	private int bigCategoryId;
 	private int twoCategoryId;
 	private int categoryId;
-	private List towCategoryList;
 	private int brandId;
 	private int[] effectId;
 	private double nowPrice;
 	private double price;
 	private String logo;
-	private String description;
 	private double weight;
 	private int stock;
 	private int salesVolume;
@@ -40,18 +38,17 @@ public class GoodsAction extends BaseAction {
 	private String shelfLife;
 	private String crowd;
 	private String packaging;
-	private String details;
-	private String usages;
 	private String photos;
-	private List categoryList;
 	private List brandList;
-	private List effectList;
 	private String rongLiang;
 	private String baoCunMethod;
 	private String luanMa;
 	private String teBieShengMing;
 	private String numbers;
 	private String spec;
+	private List<BigCategory> bigCategoryList;
+	private String method;
+	private String content;
 	public String list(){
 		try{
 			q.add("deletes=?");
@@ -68,13 +65,12 @@ public class GoodsAction extends BaseAction {
 		if(id!=0){
 			this.goods=(Goods)this.baseService.get(Goods.class, id);
 		}
-		this.categoryList=this.baseService.getByHal("from category where deletes=false");
+		this.bigCategoryList=this.baseService.getByHal("from bigcategory where deletes=false");
 		this.brandList=this.baseService.getByHal("from brand where deletes=false");
-		this.effectList=this.baseService.getByHal("from effect where deletes=false");
 		return "success";
 	}
 	public String add(){
-		
+		System.out.println(this.effectId.length);
 		this.goods=new Goods();
 		this.goods.setName(name);
 		this.goods.setNumbers(numbers);
@@ -86,7 +82,10 @@ public class GoodsAction extends BaseAction {
 		this.goods.setTwoCategory(twoC);
 		Brand brand=(Brand)this.baseService.get(Brand.class, brandId);
 		this.goods.setBrand(brand);
-		
+		for(int i=0;i<this.effectId.length;i++){
+			Effect e=(Effect)this.baseService.get(Effect.class, effectId[i]);
+			this.goods.getEffectList().add(e);
+		}
 		this.goods.setPrice(price);
 		this.goods.setLogo(logo);
 		this.goods.setSpec(spec);
@@ -102,52 +101,70 @@ public class GoodsAction extends BaseAction {
 		return "list";
 	}
 	public String update(){
-		this.goods=(Goods)this.baseService.get(Goods.class, id);
-		this.goods.setName(name);
-		this.goods.setNumber(number);
-		Category category=(Category)this.baseService.get(Category.class, categoryId);
-		this.goods.setCategory(category);
-		Brand brand=(Brand)this.baseService.get(Brand.class, brandId);
-		Effect effect=(Effect)this.baseService.get(Effect.class, effectId);
-		this.goods.setEffect(effect);
-		this.goods.setBrand(brand);
-		this.goods.setNowPrice(nowPrice);
-		this.goods.setPrice(price);
-		this.goods.setLogo(logo);
-		this.goods.setDescription(description);
-		this.goods.setWeight(weight);
-		this.goods.setStock(stock);
-		this.goods.setVisible(true);
-		this.goods.setDate(new Date());
-		
-		this.goods.setArea(area);
-		this.goods.setSpecifications(specifications);
-		this.goods.setShelfLife(shelfLife);
-		this.goods.setPackaging(packaging);
-		this.goods.setUsages(usages);
-		this.goods.setPhotos(photos);
-		this.goods.setCrowd(crowd);
-		this.goods.setDetails(details);
-		this.goods.setRongLiang(rongLiang);
-		this.goods.setBaoCunMethod(baoCunMethod);
-		this.goods.setLuanMa(luanMa);
-		this.goods.setTeBieShengMing(teBieShengMing);
-		this.baseService.update(this.goods);
+//		this.goods=(Goods)this.baseService.get(Goods.class, id);
+//		this.goods.setName(name);
+//		this.goods.setNumber(number);
+//		Category category=(Category)this.baseService.get(Category.class, categoryId);
+//		this.goods.setCategory(category);
+//		Brand brand=(Brand)this.baseService.get(Brand.class, brandId);
+//		Effect effect=(Effect)this.baseService.get(Effect.class, effectId);
+//		this.goods.setEffect(effect);
+//		this.goods.setBrand(brand);
+//		this.goods.setNowPrice(nowPrice);
+//		this.goods.setPrice(price);
+//		this.goods.setLogo(logo);
+//		this.goods.setWeight(weight);
+//		this.goods.setStock(stock);
+//		this.goods.setVisible(true);
+//		this.goods.setDate(new Date());
+//		
+//		this.goods.setArea(area);
+//		this.goods.setSpecifications(specifications);
+//		this.goods.setShelfLife(shelfLife);
+//		this.goods.setPackaging(packaging);
+//		this.goods.setUsages(usages);
+//		this.goods.setPhotos(photos);
+//		this.goods.setCrowd(crowd);
+//		this.goods.setDetails(details);
+//		this.goods.setRongLiang(rongLiang);
+//		this.goods.setBaoCunMethod(baoCunMethod);
+//		this.goods.setLuanMa(luanMa);
+//		this.goods.setTeBieShengMing(teBieShengMing);
+//		this.baseService.update(this.goods);
 		return "list";
 	}
 	public String delete(){
 		this.goods=(Goods)this.baseService.get(Goods.class, id);
-		
-		this.goods.setVisible(false);
+		this.goods.setVisible(true);
 		this.baseService.update(this.goods);
 		return "list";
 	}
-	
+	//编辑商品详细内容
+	public String bianjiInput(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		if(method.equals("shangpinxiangqing")){
+			this.content=this.goods.getDetails();
+		}else if(method.equals("shiyongfafang")){
+			this.content=this.goods.getUsages();
+		}else if(method.equals("shangpinshipai")){
+			this.content=this.goods.getPhotos();
+		}
+		return "success";
+	}
+	public String bianji(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		if(method.equals("shangpinxiangqing")){
+			goods.setDetails(content);
+		}else if(method.equals("shiyongfafang")){
+			goods.setUsages(content);
+		}else if(method.equals("shangpinshipai")){
+			goods.setPhotos(content);
+		}
+		this.baseService.update(this.goods);
+		return "list";
+	}
 	public String getName() {
 		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
 	}
 	public String getNumber() {
 		return number;
@@ -155,29 +172,11 @@ public class GoodsAction extends BaseAction {
 	public void setNumber(String number) {
 		this.number = number;
 	}
-	public List getCategoryList() {
-		return categoryList;
-	}
-	public void setCategoryList(List categoryList) {
-		this.categoryList = categoryList;
-	}
-	public List getBrandList() {
-		return brandList;
-	}
-	public void setBrandList(List brandList) {
-		this.brandList = brandList;
-	}
 	public int getCategoryId() {
 		return categoryId;
 	}
 	public void setCategoryId(int categoryId) {
 		this.categoryId = categoryId;
-	}
-	public List getTowCategoryList() {
-		return towCategoryList;
-	}
-	public void setTowCategoryList(List towCategoryList) {
-		this.towCategoryList = towCategoryList;
 	}
 	public int getBrandId() {
 		return brandId;
@@ -185,7 +184,6 @@ public class GoodsAction extends BaseAction {
 	public void setBrandId(int brandId) {
 		this.brandId = brandId;
 	}
-	
 	public double getNowPrice() {
 		return nowPrice;
 	}
@@ -204,12 +202,7 @@ public class GoodsAction extends BaseAction {
 	public void setLogo(String logo) {
 		this.logo = logo;
 	}
-	public String getDescription() {
-		return description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
+	
 	public double getWeight() {
 		return weight;
 	}
@@ -234,23 +227,17 @@ public class GoodsAction extends BaseAction {
 	public void setScore(double score) {
 		this.score = score;
 	}
-	public Goods getGoods() {
-		return goods;
-	}
-	public void setGoods(Goods goods) {
-		this.goods = goods;
-	}
-	public List getEffectList() {
-		return effectList;
-	}
-	public void setEffectList(List effectList) {
-		this.effectList = effectList;
-	}
 	public int getIntegral() {
 		return integral;
 	}
 	public void setIntegral(int integral) {
 		this.integral = integral;
+	}
+	public Goods getGoods() {
+		return goods;
+	}
+	public void setGoods(Goods goods) {
+		this.goods = goods;
 	}
 	public String getSpecifications() {
 		return specifications;
@@ -276,23 +263,20 @@ public class GoodsAction extends BaseAction {
 	public void setCrowd(String crowd) {
 		this.crowd = crowd;
 	}
+	public List getBrandList() {
+		return brandList;
+	}
+	public void setBrandList(List brandList) {
+		this.brandList = brandList;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public String getPackaging() {
 		return packaging;
 	}
 	public void setPackaging(String packaging) {
 		this.packaging = packaging;
-	}
-	public String getDetails() {
-		return details;
-	}
-	public void setDetails(String details) {
-		this.details = details;
-	}
-	public String getUsages() {
-		return usages;
-	}
-	public void setUsages(String usages) {
-		this.usages = usages;
 	}
 	public String getPhotos() {
 		return photos;
@@ -353,6 +337,24 @@ public class GoodsAction extends BaseAction {
 	}
 	public void setSpec(String spec) {
 		this.spec = spec;
+	}
+	public List<BigCategory> getBigCategoryList() {
+		return bigCategoryList;
+	}
+	public void setBigCategoryList(List<BigCategory> bigCategoryList) {
+		this.bigCategoryList = bigCategoryList;
+	}
+	public String getMethod() {
+		return method;
+	}
+	public void setMethod(String method) {
+		this.method = method;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 }

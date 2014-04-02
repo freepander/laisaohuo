@@ -4,7 +4,6 @@
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"+ request.getServerName() + ":" + request.getServerPort()+ path + "/";
 %>
-<option value="1">请选择</option>
 <s:iterator value="list">
-	<option value="<s:property value="id"/>"><s:property value="name"/></option>
+<input value="<s:property value="id"/>" type="checkbox" name="effectId"><s:property value="name"/>
 </s:iterator>

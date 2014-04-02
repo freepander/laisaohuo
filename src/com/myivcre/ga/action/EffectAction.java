@@ -6,15 +6,16 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.myivcre.ga.model.BigCategory;
+import com.myivcre.ga.model.Category;
 import com.myivcre.ga.model.Effect;
 
 @Component("effectAction")
 @Scope("prototype")
 public class EffectAction extends BaseAction {
 	private String name;
-	private int CategoryId;
+	private int categoryId;
+	private int bigCategoryId;
 	private List bigCategoryList;
-	private boolean visible;
 	private Effect effect;
 	public String list(){
 		try{
@@ -37,16 +38,21 @@ public class EffectAction extends BaseAction {
 	public String add(){
 		this.effect=new Effect();
 		this.effect.setName(name);
-		BigCategory category=(BigCategory)this.baseService.get(BigCategory.class, CategoryId);
-		this.effect.setCategory(category);
+		BigCategory bigCategory=(BigCategory)this.baseService.get(BigCategory.class, bigCategoryId);
+		this.effect.setBigCategory(bigCategory);
+		Category c=(Category)this.baseService.get(Category.class, categoryId);
+		this.effect.setCategory(c);
 		this.effect.setDelete(false);
-		this.effect.setVisible(visible);
 		this.baseService.save(this.effect);
 		return "list";
 	}
 	public String update(){
 		this.effect=(Effect)this.baseService.get(Effect.class, id);
 		this.effect.setName(name);
+		BigCategory bigCategory=(BigCategory)this.baseService.get(BigCategory.class, bigCategoryId);
+		this.effect.setBigCategory(bigCategory);
+		Category c=(Category)this.baseService.get(Category.class, categoryId);
+		this.effect.setDelete(false);
 		this.baseService.update(this.effect);
 		return "list";
 	}
@@ -56,6 +62,10 @@ public class EffectAction extends BaseAction {
 		this.baseService.update(this.effect);
 		return "list";
 	}
+	public String getListByCategory(){
+		this.list=this.baseService.getByHal("from effect where deletes=false and category.id="+id);
+		return "effectList";
+	}
 	public String getName() {
 		return name;
 	}
@@ -63,10 +73,16 @@ public class EffectAction extends BaseAction {
 		this.name = name;
 	}
 	public int getCategoryId() {
-		return CategoryId;
+		return categoryId;
 	}
 	public void setCategoryId(int categoryId) {
-		CategoryId = categoryId;
+		this.categoryId = categoryId;
+	}
+	public int getBigCategoryId() {
+		return bigCategoryId;
+	}
+	public void setBigCategoryId(int bigCategoryId) {
+		this.bigCategoryId = bigCategoryId;
 	}
 	public List getBigCategoryList() {
 		return bigCategoryList;
@@ -80,5 +96,5 @@ public class EffectAction extends BaseAction {
 	public void setEffect(Effect effect) {
 		this.effect = effect;
 	}
-	
+		
 }

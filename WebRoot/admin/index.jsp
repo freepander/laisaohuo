@@ -17,7 +17,6 @@
 <link href="assets/css/main-min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
 	<div class="header">
 		<div class="dl-title">
 			<a href="#" target="_blank"> <span class="lp-title-port">来扫货</span><span class="dl-title-text">商城管理系统</span> </a>
@@ -63,9 +62,9 @@
 						href : 'admin/brandCategory_qianglist'
 					}, {
 						id : 'hufuneirong',
-						text : '商品强管理',
+						text : '商品墙管理',
 						href : 'admin/bigCategory_qianglist'
-					} ]
+					}]
 				}, {
 					text : '团购内容',
 					items : [ {
@@ -105,7 +104,15 @@
 						id : 'tianjiashangpin',
 						text : '添加商品',
 						href : 'admin/goods_input'
-					}, ]
+					}, {
+						id : 'jinhuo',
+						text : '进货',
+						href : 'admin/purchaseShipment_pInput'
+					}, {
+						id : 'chuhuo',
+						text : '出货',
+						href : 'admin/purchaseShipment_sInput'
+					} ]
 				}, {
 					text : '类别管理',
 					items : [ {
@@ -123,11 +130,7 @@
 					} ]
 				}, {
 					text : '品牌管理',
-					items : [ {
-						id : 'pinpaileibie',
-						text : '品牌类别',
-						href : 'admin/brandCategory_list'
-					},{
+					items : [{
 						id : 'pinpailiebiao',
 						text : '品牌列表',
 						href : 'admin/brand_list'
@@ -138,13 +141,6 @@
 						id : 'gongxiaoliebiao',
 						text : '功效列表',
 						href : 'admin/effect_list'
-					} ]
-				}, {
-					text : '商品规格',
-					items : [ {
-						id : 'shangpinguige',
-						text : '商品规格管理',
-						href : 'admin/shopSpec_list'
 					} ]
 				}, {
 					text : '用户评论',

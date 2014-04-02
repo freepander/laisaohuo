@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 /**
- * 商品小类别
+ * 商品三级类别
  * @author freepander
  *
  */
@@ -14,9 +14,12 @@ import javax.persistence.ManyToOne;
 public class TwoCategory {
 	@Id@GeneratedValue
 	private int id;
+	//名称
 	private String name;
+	//父类
 	@ManyToOne
 	private Category parentCategory;
+	//是否被删除
 	private boolean deletes;
 	public int getId() {
 		return id;

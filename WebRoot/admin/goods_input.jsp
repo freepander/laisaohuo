@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="control-group">
 				<label class="control-label"><s>*</s>商品条码</label>
 				<div class="controls">
-					<input type="text" name="numbers" value="<s:property value="goods.number"/>">
+					<input type="text" name="numbers" value="<s:property value="goods.numbers"/>">
 				</div>
 			</div>
 			<div class="control-group">
@@ -39,7 +39,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="controls">
 					<select name="bigCategoryId" id="bigCategoryId">
 						<option value="<s:property value="goods.bigCategory.id"/>"><s:property value="goods.bigCategory.name"/></option>
-					<s:iterator value="categoryList1">
+					<s:iterator value="bigCategoryList">
 						<option value="<s:property value="id"/>"><s:property value="name"/></option>
 					</s:iterator>
 					</select>
@@ -49,7 +49,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<label class="control-label"><s>*</s>所属类别2</label>
 				<div class="controls">
 					<select name="categoryId" id="categoryId">
-						
+						<option value="1">请选择</option>
 					</select>
 				</div>
 			</div>
@@ -57,15 +57,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<label class="control-label"><s>*</s>所属类别3</label>
 				<div class="controls">
 					<select name="twoCategoryId" id="twoCategoryId">
-						
+						<option value="1">请选择</option>
 					</select>
 				</div>
 			</div>
-			<script>
-			$('#bigCategoryId').change(function(){
-				
-			})
-			</script>
 			<div class="control-group">
 				<label class="control-label"><s>*</s>所属品牌</label>
 				<div class="controls">
@@ -80,7 +75,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>
 			<div class="control-group">
 				<label class="control-label checkbox">商品功效</label>
-				<div class="controls">
+				<div class="controls" id="effectId">
 					<input value="" type="checkbox" name="effectId">商品功效
 					<input value="" type="checkbox" name="effectId">商品功效2
 				</div>
@@ -146,18 +141,35 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>
             <script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
             <script type="text/javascript" src="assets/js/ajaxfileupload.js"></script>
+            <script>
+            $('#bigCategoryId').change(function(){
+            	var id=$(this).val();
+            	$.get("admin/category_getCategoryList",{id:id},function(data){
+            		$('#categoryId').html(data)
+            	})
+            })
+            $('#categoryId').change(function(){
+            	var id=$(this).val();
+            	$.get("admin/category_getTwoCategoryList",{id:id},function(data){
+            		$('#twoCategoryId').html(data)
+            	})
+            	$.get("admin/effect_getListByCategory",{id:id},function(data){
+            		$('#effectId').html(data)
+            	})
+            })
+            </script>
 			<script>
 			function f_upload(a){
 				var timestamp=new Date().getTime()
 		    	var s_name=$(a).val();
-		    	var s_names=s_name.split("\\");
+		    	var s_names=s_name.split(".");
 		    	var s_name2=s_names[s_names.length-1];
-		    	$('#logo').val(timestamp+s_name2);
+		    	$('#logo').val(timestamp+"."+s_name2);
 		    	$.ajaxFileUpload({
 		    		url:'file_upload',
 		    		secureuri:false,
 		    		fileElementId:'path',
-		    		data:{fileName:timestamp+s_name2,folderName:"goodslogo"},
+		    		data:{fileName:timestamp+"."+s_name2,folderName:"goodslogo"},
 		    		beforeSend:function(){},
 		    		success: function(){
 		    			alert("上传成功"); 

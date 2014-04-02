@@ -15,12 +15,8 @@ public class Brand {
 	@Id@GeneratedValue
 	private int id;
 	private String name;
-	@ManyToOne
-	private BrandCategory category;
-	//被删除？
+	//是否被删除
 	private boolean deletes;
-	//是否出现在首页
-	private boolean visible;
 	public int getId() {
 		return id;
 	}
@@ -33,23 +29,11 @@ public class Brand {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public BrandCategory getCategory() {
-		return category;
-	}
-	public void setCategory(BrandCategory category) {
-		this.category = category;
-	}
-	public boolean isDelete() {
+	public boolean isDeletes() {
 		return deletes;
 	}
-	public void setDelete(boolean delete) {
-		this.deletes = delete;
-	}
-	public boolean isVisible() {
-		return visible;
-	}
-	public void setVisible(boolean visible) {
-		this.visible = visible;
+	public void setDeletes(boolean deletes) {
+		this.deletes = deletes;
 	}
 	
 	

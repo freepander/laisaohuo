@@ -30,7 +30,7 @@
         <tr>
           <th width="15"></th>
           <th>#</th>
-          <th>编号</th>
+          <th>商品条码</th>
           <th>名称</th>
           <th>价格</th>
           <th>销量</th>
@@ -40,15 +40,20 @@
       <tbody>
       	<s:iterator value="pageModel.objects">
         <tr>
-          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td> 
           <td><s:property value="id"/></td>
-          <td><s:property value="number"/></td>
-          <td><s:property value="name"/></td>
-          <td><s:property value="nowPrice" /></td>
+          <td><s:property value="numbers"/></td>
+          <td><a target="_blank" href="good_goods?id=<s:property value="id"/>"><s:property value="name"/></a></td>
+          <td><s:property value="price" /></td>
           <td><s:property value="salesVolume" /></td>
           <td>
           	<a class="button button-danger" href="admin/goods_delete?id=<s:property value="id"/>" class="button">删除</a>
           	<a class="button button-warning" href="admin/goods_input?id=<s:property value="id"/>" class="button">修改</a>
+          	<a class="button button-warning" href="admin/goods_bianjiInput?id=<s:property value="id"/>&method=shangpinxiangqing" class="button">商品详情</a>
+          	<a class="button button-warning" href="admin/goods_bianjiInput?id=<s:property value="id"/>&method=shiyongfangfa" class="button">使用方法</a>
+          	<a class="button button-warning" href="admin/goods_bianjiInput?id=<s:property value="id"/>&method=shangpinshipai" class="button">商品实拍</a>
+          	<a class="button button-warning" href="admin/goods_addCount?id=<s:property value="id"/>" class="button">进货</a>
+          	<a class="button button-warning" href="admin/goods_removeCount?id=<s:property value="id"/>" class="button">出货</a>
           </td>
         </tr>
         </s:iterator>

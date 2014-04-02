@@ -22,16 +22,13 @@
       <thead>
         <tr><th colspan="5">
         <ul class="toolbar">
-          <li><label class="checkbox"><input type="checkbox"><a href="#">全选</a></label></li>
-          <li><button class="button button-danger"><i class="icon-white icon-trash"></i>批量删除</button></li>
-          <li><button class="button button-success">添加</button></li>
+          <li><a href="admin/brand_input" class="button button-success">添加</a></li>
         </ul>
         </th></tr>
         <tr>
           <th width="15"></th>
           <th>#</th>
           <th>名称</th>
-          <th>所在类别</th>
           <th>操作</th>
         </tr>
       </thead>
@@ -41,10 +38,8 @@
           <td><input type="checkbox"></td>
           <td><s:property value="id"/></td>
           <td><s:property value="name"/></td>
-          <td><s:property value="category.name"/></td>
           <td>
-          	<a class="button button-dangerous" href="#" class="button">删除</a>
-          	<a class="button" href="#" class="button">查看详情</a>
+          	<a class="button button-dangerous" href="admin/brand_delete?id=<s:property value="id"/>" class="button">删除</a>
           </td>
         </tr>
         </s:iterator>

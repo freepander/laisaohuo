@@ -18,9 +18,9 @@ public class Effect {
 	private boolean deletes;
 	//所属类别
 	@ManyToOne
-	private BigCategory category;
-	//是否出现在首页上
-	private boolean visible;
+	private BigCategory bigCategory;
+	@ManyToOne
+	private Category category;
 	public int getId() {
 		return id;
 	}
@@ -45,18 +45,20 @@ public class Effect {
 	public void setDeletes(boolean deletes) {
 		this.deletes = deletes;
 	}
-	public BigCategory getCategory() {
+	
+	public BigCategory getBigCategory() {
+		return bigCategory;
+	}
+	public void setBigCategory(BigCategory bigCategory) {
+		this.bigCategory = bigCategory;
+	}
+	public Category getCategory() {
 		return category;
 	}
-	public void setCategory(BigCategory category) {
+	public void setCategory(Category category) {
 		this.category = category;
 	}
-	public boolean isVisible() {
-		return visible;
-	}
-	public void setVisible(boolean visible) {
-		this.visible = visible;
-	}
+	
 	
 
 }

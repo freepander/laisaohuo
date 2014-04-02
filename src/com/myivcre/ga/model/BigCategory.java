@@ -15,80 +15,85 @@ import javax.persistence.OneToOne;
 public class BigCategory {
 	@Id@GeneratedValue
 	private int id;
+	//名称
 	private String name;
-	//推荐品牌  11个为最佳
-//	@OneToMany
-//	private List<Brand> brandList;
+	/**
+	 * 推荐商品
+	 */
 	private boolean deletes;
-	@OneToOne
+	@ManyToOne
 	private Goods goods1;
-	@OneToOne
-	private Goods goods2;
-	@OneToOne
-	private Goods goods3;
-	@OneToOne
-	private Goods goods4;
-	@OneToOne
-	private Goods goods5;
-	@OneToOne
-	private Goods goods6;
-	@OneToOne
-	private Goods goods7;
-	@OneToOne
-	private Goods goods8;
-	@OneToOne
-	private Goods goods9;
-	@OneToOne
-	private Goods goods10;
-	@OneToOne
-	private Goods goods11;
-	@OneToOne
-	private Goods goods12;
 	private String pic1;
+	@ManyToOne
+	private Goods goods2;
 	private String pic2;
+	@ManyToOne
+	private Goods goods3;
 	private String pic3;
+	@ManyToOne
+	private Goods goods4;
 	private String pic4;
+	@ManyToOne
+	private Goods goods5;
 	private String pic5;
+	@ManyToOne
+	private Goods goods6;
 	private String pic6;
+	@ManyToOne
+	private Goods goods7;
 	private String pic7;
+	@ManyToOne
+	private Goods goods8;
 	private String pic8;
+	@ManyToOne
+	private Goods goods9;
 	private String pic9;
+	@ManyToOne
+	private Goods goods10;
 	private String pic10;
+	@ManyToOne
+	private Goods goods11;
 	private String pic11;
+	@ManyToOne
+	private Goods goods12;
 	private String pic12;
+	/**
+	 * 推荐品牌
+	 */
 	@ManyToOne
 	private Brand brand1;
+	private String brandpic1;
 	@ManyToOne
 	private Brand brand2;
+	private String brandpic2;
 	@ManyToOne
 	private Brand brand3;
+	private String brandpic3;
 	@ManyToOne
 	private Brand brand4;
+	private String brandpic4;
 	@ManyToOne
 	private Brand brand5;
+	private String brandpic5;
 	@ManyToOne
 	private Brand brand6;
+	private String brandpic6;
 	@ManyToOne
 	private Brand brand7;
+	private String brandpic7;
 	@ManyToOne
 	private Brand brand8;
+	private String brandpic8;
 	@ManyToOne
 	private Brand brand9;
+	private String brandpic9;
 	@ManyToOne
 	private Brand brand10;
+	private String brandpic10;
 	@ManyToOne
 	private Brand brand11;
-	private String brandpic1;
-	private String brandpic2;
-	private String brandpic3;
-	private String brandpic4;
-	private String brandpic5;
-	private String brandpic6;
-	private String brandpic7;
-	private String brandpic8;
-	private String brandpic9;
-	private String brandpic10;
 	private String brandpic11;
+	
 	public int getId() {
 		return id;
 	}

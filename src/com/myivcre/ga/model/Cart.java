@@ -9,6 +9,11 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+/**
+ * 购物车
+ * @author freepander
+ *
+ */
 @Entity(name="cart")
 public class Cart {
 	@Id@GeneratedValue

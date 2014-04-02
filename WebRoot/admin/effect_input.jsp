@@ -11,7 +11,7 @@
 <head>
 <base href="<%=basePath%>">
 <meta charset="utf-8">
-<title>三级类别输入内容管理</title>
+<title>功效编辑</title>
 <link href="assets/css/dpl-min.css" rel="stylesheet">
 <link href="assets/css/bui-min.css" rel="stylesheet">
 </head>
@@ -19,8 +19,8 @@
 
 <div class="row">
 	<div class="span24">
-		<form id="J_Form" class="form-horizontal" method="post" action="admin/twoCategory_<s:if test="id!=0">update</s:if><s:if test="id==0">add</s:if>">
-			<input name="id" type="hidden" value="<s:property value="twoCategory.id"/>" >
+		<form id="J_Form" class="form-horizontal" method="post" action="admin/effect_<s:if test="id!=0">update</s:if><s:if test="id==0">add</s:if>">
+			<input name="id" type="hidden" value="<s:property value="effect.id"/>" >
 			<div class="control-group">
 				<label class="control-label"><s>*</s>名称：</label>
 				<div class="controls">
@@ -30,9 +30,9 @@
 			<div class="control-group">
 				<label class="control-label"><s>*</s>所属一级类别</label>
 				<div class="controls">
-					<select id="parentCategoryId">
+					<select id="bigCategoryId" name="bigCategoryId">
 						<option value="1">请选择</option>
-					<s:iterator value="categoryList">
+					<s:iterator value="bigCategoryList">
 						<option value="<s:property value="id"/>"><s:property value="name"/></option>
 					</s:iterator>
 					</select>
@@ -52,7 +52,7 @@
 		<script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
 		<script type="text/javascript" src="assets/js/ajaxfileupload.js"></script>
 		<script>
-		$('#parentCategoryId').change(function(){
+		$('#bigCategoryId').change(function(){
 			console.log($(this).val());
 			var id=$(this).val();
 			$.get("admin/category_getCategoryList",{id:id},function(data){

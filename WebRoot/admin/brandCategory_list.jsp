@@ -22,8 +22,6 @@
       <thead>
         <tr><th colspan="5">
         <ul class="toolbar">
-          <li><label class="checkbox"><input type="checkbox"><a href="#">全选</a></label></li>
-          <li><button class="button button-danger"><i class="icon-white icon-trash"></i>批量删除</button></li>
           <li><button class="button button-success">添加</button></li>
         </ul>
         </th></tr>
@@ -42,7 +40,6 @@
           <td><s:property value="name"/></td>
           <td>
           	<a class="button button-dangerous" href="admin/brandCategory_delete?id=<s:property value="id"/>" class="button">删除</a>
-          	<a class="button" href="admin/brandCategory_delete?id=<s:property value="id"/>" class="button">查看详情</a>
           </td>
         </tr>
         </s:iterator>

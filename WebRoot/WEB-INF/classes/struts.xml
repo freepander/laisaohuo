@@ -12,6 +12,9 @@
 			<result name="qianglist" type="chain">{1}_qianglist</result>
 			<result name="mallCarouselinput">/admin/mallCarousel_input.jsp</result>
 			<result name="categoryList">/pianduan/categorList.jsp</result>
+			<result name="effectList">/pianduan/effectList.jsp</result>
+			<result name="pInput">/admin/purchaseShipment_pInput.jsp</result>
+			<result name="sInput">/admin/purchaseShipment_sInput.jsp</result>
 		</action>
 	</package>
 	<package name="admin2" namespace="/admin2" extends="struts-default">

@@ -319,14 +319,14 @@
 	function f_upload1(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo1').val(timestamp+s_name2);
+    	$('#logo1').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path1',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -337,14 +337,14 @@
 	function f_upload2(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo2').val(timestamp+s_name2);
+    	$('#logo2').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path2',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -355,14 +355,14 @@
 	function f_upload3(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo3').val(timestamp+s_name2);
+    	$('#logo3').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path3',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -373,14 +373,14 @@
 	function f_upload4(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo4').val(timestamp+s_name2);
+    	$('#logo4').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path4',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -391,14 +391,14 @@
 	function f_upload5(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo5').val(timestamp+s_name2);
+    	$('#logo5').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path5',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -409,14 +409,14 @@
 	function f_upload6(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo6').val(timestamp+s_name2);
+    	$('#logo6').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path6',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -427,14 +427,14 @@
 	function f_upload7(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo7').val(timestamp+s_name2);
+    	$('#logo7').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path7',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -445,14 +445,14 @@
 	function f_upload8(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo8').val(timestamp+s_name2);
+    	$('#logo8').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path8',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -463,14 +463,14 @@
 	function f_upload9(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo9').val(timestamp+s_name2);
+    	$('#logo9').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path9',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -481,14 +481,14 @@
 	function f_upload10(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo10').val(timestamp+s_name2);
+    	$('#logo10').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path10',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -499,14 +499,14 @@
 	function f_upload11(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo11').val(timestamp+s_name2);
+    	$('#logo11').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path11',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -517,14 +517,14 @@
 	function f_upload12(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo12').val(timestamp+s_name2);
+    	$('#logo12').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path12',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -535,14 +535,14 @@
 	function f_upload13(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo13').val(timestamp+s_name2);
+    	$('#logo13').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path13',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -553,14 +553,14 @@
 	function f_upload14(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo14').val(timestamp+s_name2);
+    	$('#logo14').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path14',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
@@ -571,14 +571,14 @@
 	function f_upload15(a){
 		var timestamp=new Date().getTime()
     	var s_name=$(a).val();
-    	var s_names=s_name.split("\\");
+    	var s_names=s_name.split("\.");
     	var s_name2=s_names[s_names.length-1];
-    	$('#logo15').val(timestamp+s_name2);
+    	$('#logo15').val(timestamp+"."+s_name2);
     	$.ajaxFileUpload({
     		url:'file_upload',
     		secureuri:false,
     		fileElementId:'path15',
-    		data:{fileName:timestamp+s_name2,folderName:"brand"},
+    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
     		beforeSend:function(){},
     		success: function(){
     			alert("上传成功"); 
