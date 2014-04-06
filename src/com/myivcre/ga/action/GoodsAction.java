@@ -82,11 +82,6 @@ public class GoodsAction extends BaseAction {
 		return "success";
 	}
 	public String add(){
-		System.out.println(effectId.length);
-		for(int i=0;i<this.effectId.length;i++){
-			Effect e=(Effect)this.baseService.get(Effect.class, effectId[i]);
-			System.out.println(e.getId());
-		}
 		this.goods=new Goods();
 		this.goods.setName(name);
 		this.goods.setNumbers(numbers);
@@ -127,7 +122,43 @@ public class GoodsAction extends BaseAction {
 		return "list";
 	}
 	public String update(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		this.goods.setName(name);
+		this.goods.setNumbers(numbers);
+		this.goods.setLogo(logo);
+		BigCategory bigc=(BigCategory)this.baseService.get(BigCategory.class, bigCategoryId);
+		this.goods.setBigCategory(bigc);
+		Category category=(Category)this.baseService.get(Category.class, categoryId);
+		this.goods.setCategory(category);
+		if(twoCategoryId!=0){
+			TwoCategory twoC=(TwoCategory)this.baseService.get(TwoCategory.class, twoCategoryId);
+			this.goods.setTwoCategory(twoC);
+		}
+		Brand brand=(Brand)this.baseService.get(Brand.class, brandId);
+		this.goods.setEffectList(new ArrayList<Effect>());
+		this.goods.setBrand(brand);
+		for(int i=0;i<this.effectId.length;i++){
+			Effect e=(Effect)this.baseService.get(Effect.class, effectId[i]);
+			this.goods.getEffectList().add(e);
+		}
+		this.goods.setSpec(spec);
+		this.goods.setPrice(price);
+		this.goods.setNowPrice(nowPrice);
+		this.goods.setOriginalPrice(originalPrice);
+		this.goods.setCapacity(capacity);
+		this.goods.setSalesVolume2(salesVolume2);
+		this.goods.setArea(area);
+		this.goods.setShelfLife(shelfLife);
+		this.goods.setCrowd(crowd);
+		this.goods.setBaoCunMethod(baoCunMethod);
+		this.goods.setLuanMa(luanMa);
+		this.goods.setTeBieShengMing(teBieShengMing);
+		this.goods.setDeletes(false);
+		this.goods.setVisible(true);
+		this.goods.setOnIndex(onIndex);
 		
+		this.goods.setSalesVolume(0);
+		this.baseService.update(this.goods);
 		return "list";
 	}
 	public String delete(){
