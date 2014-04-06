@@ -19,8 +19,6 @@ public class Effect {
 	//所属类别
 	@ManyToOne
 	private BigCategory bigCategory;
-	@ManyToOne
-	private Category category;
 	public int getId() {
 		return id;
 	}
@@ -52,13 +50,5 @@ public class Effect {
 	public void setBigCategory(BigCategory bigCategory) {
 		this.bigCategory = bigCategory;
 	}
-	public Category getCategory() {
-		return category;
-	}
-	public void setCategory(Category category) {
-		this.category = category;
-	}
 	
-	
-
 }

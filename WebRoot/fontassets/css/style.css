@@ -1,0 +1,413 @@
+.products_Category {
+	width: 238px;
+	border: solid 1px #ccc;
+}
+
+.products_Category h2 {
+	background: #919191;
+	color: #fff;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 10px;
+	font-family: "Microsoft YaHei"
+}
+
+.products_Category h2 a {
+	color: #fff;
+	text-decoration: none
+}
+
+.products_Category ul {
+	background: #fff
+}
+
+.products_Category ul .item {
+	z-index: 999;
+	background: #fff;
+	position: relative;
+	color: #000;
+	height: 35px;
+	border-top: solid 1px #e5e5e5;
+	float: left;
+	display: inline;
+	width: 238px
+}
+
+.products_Category ul .item .item_p {
+	position: absolute;
+	z-index: 101;
+	background: url(../img/categoryarrow.jpg) no-repeat 200px center #fff;
+	text-indent: 13px;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+	width: 238px;
+	overflow: hidden
+}
+
+.products_Category ul .item .item_p a {
+	color: #000;
+	margin-right: 5px
+}
+
+.products_Category ul .item .icon {
+	float: left;
+	display: inline;
+	width: 25px;
+	height: 35px;
+	background: url(../img/categoryicon.jpg) no-repeat;
+	margin-left: 14px
+}
+
+.products_Category ul .item .icon.i1 {
+}
+
+.products_Category ul .item .icon.i2 {
+	background-position: 0 -36px
+}
+
+.products_Category ul .item .icon.i3 {
+	background-position: 0 -72px
+}
+
+.products_Category ul .item .icon.i4 {
+	background-position: 0 -108px
+}
+
+.products_Category ul .item .icon.i5 {
+	background-position: 0 -144px
+}
+
+.products_Category ul .item .icon.i6 {
+	background-position: 0 -180px
+}
+
+.products_Category ul .item .icon.i7 {
+	background-position: 0 -36px
+}
+
+.products_Category ul .item .icon.i8 {
+	background-position: 0 -216px
+}
+
+.products_Category ul .item.hover .icon.i1 {
+	background-position: -25px 0
+}
+
+.products_Category ul .item.hover .icon.i2 {
+	background-position: -25px -36px
+}
+
+.products_Category ul .item.hover .icon.i3 {
+	background-position: -25px -72px
+}
+
+.products_Category ul .item.hover .icon.i4 {
+	background-position: -25px -108px
+}
+
+.products_Category ul .item.hover .icon.i5 {
+	background-position: -25px -144px
+}
+
+.products_Category ul .item.hover .icon.i6 {
+	background-position: -25px -180px
+}
+
+.products_Category ul .item.hover .icon.i7 {
+	background-position: -25px -36px
+}
+
+.products_Category ul .item.hover .icon.i8 {
+	background-position: -25px -216px
+}
+
+.products_Category ul .item.hover {
+	background: #eee
+}
+
+.products_Category .item .moreCategory {
+	display: none;
+	position: absolute;
+	top: -1px;
+	background: #eee;
+	padding: 10px;
+	left: 238px;
+	width: 185px;
+	border: solid 1px #ccc;
+	z-index: 100;
+	overflow: hidden;
+	padding-top: 5px;
+	box-shadow: 1px 2px 4px #ccc
+}
+
+.products_Category .item.hover .moreCategory {
+	display: block
+}
+
+.products_Category ul .item.hover .item_p {
+	width: 239px;
+	background: #eee
+}
+
+.moreCategory p {
+	height: 27px;
+	border-bottom: dashed 1px #bebebe;
+	background: url(http://images.jumei.com/templates/jumei/images/mall/malllist_line.jpg) no-repeat center center
+}
+
+.moreCategory p span {
+	float: left;
+	display: inline;
+	height: 27px;
+	line-height: 27px;
+	overflow: hidden
+}
+
+.moreCategory p span.left {
+	width: 88px;
+	margin-left: 22px
+}
+
+.moreCategory p span.right {
+}
+
+.moreCategory p span a {
+	color: #000;
+	padding: 3px;
+	text-decoration: none
+}
+
+.moreCategory p span a:hover {
+	background: #f8a3bf;
+	color: #fff
+}
+
+
+
+
+
+/*   商品  列表    */
+
+
+.cardlist.largecard{
+	width:100%;
+	letter-spacing: -4px;
+	margin-left: 20px;
+}
+.cardlist{
+	overflow:hidden;
+	margin-bottom:-38px;
+	font-size: 0;
+}
+.cardlist.largecard .carditem{
+	margin-right: 22px;
+}
+.cardlist .carditem {
+letter-spacing: normal;
+}
+.cardlist .carditem {
+display: inline-block;
+vertical-align: top;
+margin-right: 18px;
+margin-bottom: 38px;
+}
+.card-story, .card-story-large {
+position: relative;
+}
+.cardlist.largecard .carditem .card-main {
+width: 270px;
+}
+.cardlist .carditem .card-main {
+font-size: 12px;
+width: 222px;
+}
+.cardlist .carditem .card-main {
+background: #fff;
+overflow: hidden;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+border-radius: 4px;
+}
+.cardlist .carditem .card-main {
+border: 1px solid #dfdfdf;
+-webkit-box-shadow: 0 1px 2px 0 rgba(158,158,158,0.2);
+-moz-box-shadow: 0 1px 2px 0 rgba(158,158,158,0.2);
+-ms-box-shadow: 0 1px 2px 0 rgba(158,158,158,0.2);
+box-shadow: 0 1px 2px 0 rgba(158,158,158,0.2);
+}
+.card-story-large .card-hd {
+height: 260px;
+}
+.card-story .card-hd, .card-story-large .card-hd {
+position: relative;
+height: 192px;
+overflow: hidden;
+}
+.card-story-large .card-bd {
+padding: 13px 20px 0;
+height: 220px;
+}
+.card-story .card-bd, .card-story-large .card-bd {
+padding: 16px 16px 15px;
+height: 60px;
+position: relative;
+overflow: hidden;
+}
+.card-story-large .card-bd .story-title {
+line-height: 1.5;
+margin-bottom: 20px;
+}
+.card-story .card-bd .story-title, .card-story-large .card-bd .story-title {
+font-size: 13px;
+line-height: 1;
+color: #333;
+margin-bottom: 16px;
+font-weight: bold;
+}
+.commodity-price {
+position: absolute;
+right: 0;
+bottom: 0;
+line-height: 1;
+padding: 8px 12px;
+color: #fff;
+background: #b9b9b9;
+background: rgba(185,185,185,0.65);
+}
+.card-story-large .card-actions .btn-doulist:hover {
+color: #fff;
+background: #d8442b;
+background-image: -webkit-linear-gradient(bottom,#962412,#a83725 7%,#c15848 92%,#d06b5b);
+background-image: -moz-linear-gradient(bottom,#962412,#a83725 7%,#c15848 92%,#d06b5b);
+background-image: -ms-linear-gradient(bottom,#962412,#a83725 7%,#c15848 92%,#d06b5b);
+background-image: -o-linear-gradient(bottom,#962412,#a83725 7%,#c15848 92%,#d06b5b);
+background-image: linear-gradient(bottom,#962412,#a83725 7%,#c15848 92%,#d06b5b);
+}
+.card-story .card-actions .btn-doulist, .card-story-large .card-actions .btn-doulist, .card-story .card-actions .btn-doulist:link, .card-story-large .card-actions .btn-doulist:link, .card-story .card-actions .btn-doulist:visited, .card-story-large .card-actions .btn-doulist:visited {
+color: #fff;
+background: #db5140;
+background: rgba(219,81,64,0.9);
+background-image: -webkit-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: -moz-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: -ms-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: -o-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+}
+.card-story .card-actions .btn-doulist, .card-story-large .card-actions .btn-doulist, .card-story .card-actions .btn-doulist:link, .card-story-large .card-actions .btn-doulist:link, .card-story .card-actions .btn-doulist:visited, .card-story-large .card-actions .btn-doulist:visited {
+color: #fff;
+background: #db5140;
+background: rgba(219,81,64,0.9);
+background-image: -webkit-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: -moz-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: -ms-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: -o-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+}
+.card-story .card-actions .btn-doulist, .card-story-large .card-actions .btn-doulist, .card-story .card-actions .btn-doulist:link, .card-story-large .card-actions .btn-doulist:link, .card-story .card-actions .btn-doulist:visited, .card-story-large .card-actions .btn-doulist:visited {
+color: #fff;
+background: #db5140;
+background: rgba(219,81,64,0.9);
+background-image: -webkit-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: -moz-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: -ms-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: -o-linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+background-image: linear-gradient(bottom,#a02713,#c0341e 7%,#e0614d 92%,#ee6f5b);
+}
+.card-story .card-actions .btn-doulist, .card-story-large .card-actions .btn-doulist {
+font-size: 12px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+border-radius: 4px;
+padding: 13px 17px 12px;
+line-height: 1;
+}
+.card-story .card-actions .btn-doulist, .card-story-large .card-actions .btn-doulist, .card-story .card-actions .btn-carditem-like, .card-story-large .card-actions .btn-carditem-like {
+pointer-events: auto;
+}
+.btn-doulist:active, .btn-doulist:hover {
+color: #fff;
+background-color: #d8442b;
+}
+.btn-doulist:link, .btn-doulist:visited {
+color: #fff;
+background-color: #de533c;
+}
+.btn-doulist:link, .btn-doulist:visited {
+color: #fff;
+background-color: #de533c;
+}
+a:active, a:hover {
+color: #7f4b2f;
+background: 0;
+}
+.card-story .card-actions .btn-carditem-like:link, .card-story-large .card-actions .btn-carditem-like:link, .card-story .card-actions .btn-carditem-like:visited, .card-story-large .card-actions .btn-carditem-like:visited, .card-story .card-actions .btn-carditem-like, .card-story-large .card-actions .btn-carditem-like, .card-story .card-actions .btn-carditem-like:active, .card-story-large .card-actions .btn-carditem-like:active, .card-story .card-actions .btn-carditem-like:hover, .card-story-large .card-actions .btn-carditem-like:hover {
+color: #484848;
+background: #fff;
+background-image: -webkit-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: -moz-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: -ms-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: -o-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+}
+.card-story .card-actions .btn-carditem-like:link, .card-story-large .card-actions .btn-carditem-like:link, .card-story .card-actions .btn-carditem-like:visited, .card-story-large .card-actions .btn-carditem-like:visited, .card-story .card-actions .btn-carditem-like, .card-story-large .card-actions .btn-carditem-like, .card-story .card-actions .btn-carditem-like:active, .card-story-large .card-actions .btn-carditem-like:active, .card-story .card-actions .btn-carditem-like:hover, .card-story-large .card-actions .btn-carditem-like:hover {
+color: #484848;
+background: #fff;
+background-image: -webkit-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: -moz-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: -ms-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: -o-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+}
+.card-story .card-actions .btn-carditem-like:link, .card-story-large .card-actions .btn-carditem-like:link, .card-story .card-actions .btn-carditem-like:visited, .card-story-large .card-actions .btn-carditem-like:visited, .card-story .card-actions .btn-carditem-like, .card-story-large .card-actions .btn-carditem-like, .card-story .card-actions .btn-carditem-like:active, .card-story-large .card-actions .btn-carditem-like:active, .card-story .card-actions .btn-carditem-like:hover, .card-story-large .card-actions .btn-carditem-like:hover {
+color: #484848;
+background: #fff;
+background-image: -webkit-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: -moz-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: -ms-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: -o-linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+background-image: linear-gradient(bottom,#babbbb,#dedede 9%,#efefef 96%,#f1f2f4);
+}
+.card-story .card-actions .btn-carditem-like, .card-story-large .card-actions .btn-carditem-like {
+float: right;
+padding: 8px 14px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+-ms-border-radius: 4px;
+border-radius: 4px;
+line-height: 16px;
+}
+.card-story .card-actions .btn-doulist, .card-story-large .card-actions .btn-doulist, .card-story .card-actions .btn-carditem-like, .card-story-large .card-actions .btn-carditem-like {
+pointer-events: auto;
+}
+.card-story-large .card-actions {
+padding: 20px 25px;
+z-index: 2;
+}
+.card-story .card-actions, .card-story-large .card-actions {
+display: none;
+}
+.card-story .card-actions, .card-story-large .card-actions {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+padding: 12px;
+overflow: hidden;
+pointer-events: none;
+}
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote {
+margin: 0;
+padding: 0;
+}
+
+
+
+
+
+
+
+

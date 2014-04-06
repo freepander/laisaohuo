@@ -24,50 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 <body>
 <div id="header_container">
-    <div id="logo">
-    	<a href="index_index" id="home" title="" style="background:url(fontassets/img/logo_new_v1.jpg) no-repeat top left;"> </a>
-        <div id="user_header">
-            <ul class="login_header">
-					<s:if test="#session.gloablIsLogin==false">
-				<li class="login_li"><a href="user_registerInput" rel="nofollow">注册</a><em>|</em></li>
-               	<li class="login_li"><a href="user_loginInput" rel="nofollow">登录</a><em>|</em></li>
-               	<li class="login_li"><em>|</em><a href="#" rel="nofollow">马上有礼</a></li>
-				</s:if>
-				<s:if test="#session.gloablIsLogin==true">
-				<li class="login_li"><a href="user_order?id=<s:property value="#session.user.id"/>" rel="nofollow">个人中心</a><em>|</em></li>
-				<li class="user">欢迎您，<span style="color: #ED145B;"><s:property value="#session.user.username"/></span><span style="padding:0 5px;">[<a href="user_signOut" style="padding:0;">退出</a>]</span><em>|</em></li>
-				</s:if>
-				</ul>
-            <div class="clear"></div>
-            <div class="header_logo_all">
-					<div id="cart_box"><a id="cart" href="carts_list" rel="nofollow"> <span class="num png"></span> </a>
-					</div>
-					<a href="articles_getArticle?id=1" rel="nofollow" class="top_link lightning" target="_blank"></a> 
-					<a href="articles_getArticle?id=1" rel="nofollow" class="top_link gild" target="_blank"></a> 
-					<a href="articles_getArticle?id=1" rel="nofollow" class="top_link credit" target="_blank"></a>
-				</div>
-        </div>
-    </div>
-    <div class="clear"></div>
-    <div id="top_menu">
-    	<div id="top_nav">
-    		<div class="top_nav_item selected"><a href="index_index" class="nav_link">护理商城</a></div>
-				<div class="top_nav_item "><a href="group_groupList" class="nav_link">买多成团</a></div>
-				<div class="top_nav_item">
-					<a href="javascript:void(0)" class="nav_link">会员独享</a>
-					<div class="header_list" style="display: none;">
-						<a href="#"><span class="newbanner">信息发布</span></a>
-					</div>
-				</div>
-				<div class="top_nav_item"><a href="articles_getArticle?id=1" class="nav_link">用户须知</a></div>
-				<div class="top_search_wrap">
-					<form action="#" method="get" id="mall_search_form" pos="top">
-						<input name="search" type="text" class="top_search_input" id="mall_search_input" lang="zh">
-						<button type="submit" id="btn_global_search">搜索</button>
-					</form>
-				</div>
-		</div>
-    </div>
+	<%@include file="pianduan/header1.jsp" %>
 </div><!-- end  heander_container  -->
 
 <div id="container">
@@ -90,16 +47,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <p class="price">
                         <em class="yen">¥</em>
                         <span id="mall_price"><s:property value="goods.nowPrice"/></span>
-                        <span class="label">聚美价</span>
-                        <span style="color:#888888;" id="discount">(专柜价<del>￥<span id="info_market_price"><s:property value="goods.price"/></span></del>,为您节省<label>￥</label><s:property value="goods.price-goods.price"/>)</span>
+                        <span class="label">售价</span>
+                        <span style="color:#888888;" id="discount"></span>
                     </p>
                     <div>
                         <span class="discount" id="discount"></span>
                     </div>
                     <!--活动告知-->
+                    <!--
                     <div class="actnotic">
                     	<p>此产品满100元立减30元</p>
                     </div>
+                  	-->
                     <div class="sale_count">
                         <label>销量</label>最近<s:property value="goods.salesVolume"/>人已购买
                     </div>
@@ -111,8 +70,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                             </div>
                         </div>
                         <span>
-                            <label style="color:#ed145b;">　<s:property value="goods.score*10"/></label>分&nbsp;(共<a href="#report_deal" title="查看所有口碑">841</a>篇口碑 
-                            <a href="#" target="_blank" title="查看所有短评">30532</a>篇短评)
+                            <label style="color:#ed145b;">　<s:property value="goods.score*10"/></label>分&nbsp;(共<a href="#report_deal" title="查看所有评论"><s:property value="goods.reviewNumber"/></a>个评论 )
                         </span>
                         <div class="clear"></div>
                     </div>
@@ -174,7 +132,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     <tbody>
                                         <tr>
                                             <td width="85" valign="top"><b>商品名称：</b></td>
-                                            <td width="250" valign="top"><span><s:property value="goods.specifications"/></span></td>
+                                            <td width="250" valign="top"><s:property value="goods.name"/></td>
                                             <td rowspan="7" align="right" valign="bottom"><img width="307px" height="343px" src="upload/goodslogo/<s:property value="goods.logo"/>" alt="<s:property value="goods.name"/>" border="0"></td>
                                         </tr>
                                         <tr>
@@ -183,15 +141,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                         </tr>
                                         <tr>
                                             <td valign="top"><b>产品功效：</b></td>
-                                            <td valign="top"><span><s:property value="goods.effect.name"/></span></td>
+                                            <td valign="top"><s:iterator value="goods.effectList">
+                                            <span><s:property value="name"/></span>
+                                            </s:iterator></td>
                                         </tr>
                                         <tr>
                                             <td valign="top"><b>产品规格：</b></td>
-                                            <td valign="top"><span><s:property value="goods.specifications"/></span></td>
+                                            <td valign="top"><span><s:property value="goods.spec"/></span></td>
                                         </tr>
                                         <tr>
                                             <td valign="top"><b>产品容量：</b></td>
-                                            <td valign="top"><span><s:property value="goods.rongLiang"/></span></td>
+                                            <td valign="top"><span><s:property value="goods.capacity"/></span></td>
                                         </tr>
                                         <tr>
                                             <td valign="top"><b>保存方法：</b></td>
@@ -274,84 +234,7 @@ var duoshuoQuery = {short_name:"laisaohuo"};
 
 <div class="clear"></div>
 <div id="footer_container">
-    <div id="footer_textarea">
-        <div class="footer_top">
-            <div class="footer_con" id="footer_links">
-                <ul class="linksa png">
-                    <li class="links">服务保障</li>
-                    <li><a href="#" target="_blank" rel="nofollow">真品联盟</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">100%正品保证</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">30天无条件退货</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">7×24小时客服服务</a></li>
-                    <li><span class="footer_zcemail">总裁邮箱</span><img src="http://p0.jmstatic.com/templates/jumei/images/ceo_v4.jpg" alt="" class="footer_zcemail_img"></li>
-                </ul>
-
-                <ul class="linksb png">
-                    <li class="links">使用帮助</li>
-                    <li><a href="#" target="_blank" rel="nofollow">新手指南</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">常见问题</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">帮助中心</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">用户协议</a></li>
-                </ul>
-
-                <ul class="linksc png">
-                    <li class="links">支付方式</li>
-                    <li><a href="#" target="_blank" rel="nofollow">货到付款</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">在线支付</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">余额支付</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">现金券支付</a></li>
-                </ul>
-
-                <ul class="linksd png">
-                    <li class="links">配送方式</li>
-                    <li><a href="#" target="_blank" rel="nofollow">买二包邮</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">配送说明</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">运费说明</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">验货签收</a></li>
-                </ul>
-
-                <ul class="linkse png">
-                    <li class="links">售后服务</li>
-                    <li><a href="#" target="_blank" rel="nofollow">正品承诺</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">售后咨询</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">退货政策</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">退货办理</a></li>
-                </ul>
-
-                <span class="links_er_box">
-                    <ul class="linksf">
-                        <li class="links">手机聚美</li>
-                        <li><span class="link_bottom_pic"></span></li>
-                        <li>下载移动客户端</li>
-                    </ul>
-                    <ul class="linksg">
-                        <li class="links">聚美微信</li>
-                        <li><span class="link_bottom_pic"></span></li>
-                        <li>聚美官方微信</li>
-                    </ul>
-                </span>
-            </div>
-        </div>
-        <div class="footer_center">
-            <div class="footer_con" id="footer_link">
-                <a href="#" target="_blank" rel="nofollow">关于聚美优品</a>  |
-                <a href="#" target="_blank" rel="nofollow">获取更新</a>  |
-                <a href="#" target="_blank" rel="nofollow">加入聚美</a>  |
-                <a href="#" target="_blank" rel="nofollow">品牌合作专区</a>  |
-                <a href="#" target="_blank" rel="nofollow">网站联盟</a>  |
-                <a href="#" target="_blank" rel="nofollow">媒体报道</a>  |
-                <a href="#" target="_blank" rel="nofollow">商务合作</a>  |
-                <a href="#" target="_blank" rel="nofollow">友情链接</a>
-            </div>
-        </div>
-        <div class="footer_con" id="footer_copyright">
-            <p class="footer_copy_con">
-                © 2014 哈尔滨明彦创新科技发展有限公司 保留一切权利。 <br>
-                京公网安备 110105001608 | <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">京ICP证111033号</a> | 食品流通许可证 SP1101051110165515（1-1）
-                | <a href="http://p2.jmstatic.com/activity/2013_chuangrui.jpeg" target="_blank" rel="nofollow">营业执照</a>
-            </p>
-        </div>
-    </div>
+    <%@include file="pianduan/footer1.jsp" %>
 </div>
 <script>
 //将商品添加收藏

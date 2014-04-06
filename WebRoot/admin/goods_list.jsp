@@ -20,10 +20,8 @@
 
 	<table cellspacing="0" class="table table-bordered">
       <thead>
-        <tr><th colspan="7">
+        <tr><th colspan="8">
         <ul class="toolbar">
-          <li><label class="checkbox"><input type="checkbox"><a href="#">全选</a></label></li>
-          <li><button class="button button-danger"><i class="icon-white icon-trash"></i>批量删除</button></li>
           <li><a href="admin/goods_input" class="button button-success">添加</a></li>
         </ul>
         </th></tr>
@@ -33,6 +31,7 @@
           <th>商品条码</th>
           <th>名称</th>
           <th>价格</th>
+          <th>销量</th>
           <th>销量</th>
           <th>操作</th>
         </tr>
@@ -46,14 +45,13 @@
           <td><a target="_blank" href="good_goods?id=<s:property value="id"/>"><s:property value="name"/></a></td>
           <td><s:property value="price" /></td>
           <td><s:property value="salesVolume" /></td>
+          <td><s:property value="stock" /></td>
           <td>
           	<a class="button button-danger" href="admin/goods_delete?id=<s:property value="id"/>" class="button">删除</a>
           	<a class="button button-warning" href="admin/goods_input?id=<s:property value="id"/>" class="button">修改</a>
           	<a class="button button-warning" href="admin/goods_bianjiInput?id=<s:property value="id"/>&method=shangpinxiangqing" class="button">商品详情</a>
           	<a class="button button-warning" href="admin/goods_bianjiInput?id=<s:property value="id"/>&method=shiyongfangfa" class="button">使用方法</a>
           	<a class="button button-warning" href="admin/goods_bianjiInput?id=<s:property value="id"/>&method=shangpinshipai" class="button">商品实拍</a>
-          	<a class="button button-warning" href="admin/goods_addCount?id=<s:property value="id"/>" class="button">进货</a>
-          	<a class="button button-warning" href="admin/goods_removeCount?id=<s:property value="id"/>" class="button">出货</a>
           </td>
         </tr>
         </s:iterator>

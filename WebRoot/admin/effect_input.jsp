@@ -38,6 +38,7 @@
 					</select>
 				</div>
 			</div>
+			<!-- 
 			<div class="control-group">
 				<label class="control-label"><s>*</s>所属二级类别</label>
 				<div class="controls">
@@ -45,12 +46,14 @@
 					</select>
 				</div>
 			</div>
+			 -->
 			<div class="form-actions span5 offset3">
             	<button id="btnSearch" type="submit" class="button button-primary">提交</button>
             </div> 
 		</form>
 		<script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
 		<script type="text/javascript" src="assets/js/ajaxfileupload.js"></script>
+		<!--
 		<script>
 		$('#bigCategoryId').change(function(){
 			console.log($(this).val());
@@ -59,7 +62,8 @@
 				$('#categoryId').html(data);
 			})
 		})
-		</script>
+		</script> 
+		 -->
 		<script>
 			function f_upload1(a){
 				var timestamp=new Date().getTime()

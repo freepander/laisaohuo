@@ -39,7 +39,7 @@
           <td><input type="checkbox"></td>
           <td><s:property value="id"/></td>
           <td><s:property value="name"/></td>
-          <td><s:property value="bigCategory.name"/>-<s:property value="category.name"/></td>
+          <td><s:property value="bigCategory.name"/></td>
           <td>
           	<a class="button button-dangerous" href="admin/effect_delete?id=<s:property value="id"/>" class="button">删除</a>
           </td>

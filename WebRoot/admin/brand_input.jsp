@@ -27,6 +27,21 @@
 				<input type="text" name="name" value="<s:property value="category.name"/>">
 			</div>
 		</div>
+		<div class="control-group">
+				<label class="control-label">品牌图片</label>
+				<div class="controls">
+					<input type="text" name="logo" id="logo" value="<s:property value="goods.logo"/>">
+					<input type="button" value="点击选择图片" onclick="path.click()">
+					<input type="file" name="file" style="display:none;" id="path" onchange="f_upload(this)">
+				</div>
+			</div>
+		<div class="control-group">
+			<label class="control-label">是否出现在首页</label>
+			<div class="controls">
+				<input type="radio" name="visible" value="true" checked>是
+				<input type="radio" name="visible" value="false">否
+			</div>
+		</div>
 		<div class="form-actions span5 offset3">
 			<button id="btnSearch" type="submit" class="button button-primary">提交</button>
 		</div>
@@ -35,5 +50,26 @@
 </div>
 	
 <script type="text/javascript" src="assets/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="assets/js/ajaxfileupload.js"></script>
+<script>
+			function f_upload(a){
+				var timestamp=new Date().getTime()
+		    	var s_name=$(a).val();
+		    	var s_names=s_name.split(".");
+		    	var s_name2=s_names[s_names.length-1];
+		    	$('#logo').val(timestamp+"."+s_name2);
+		    	$.ajaxFileUpload({
+		    		url:'file_upload',
+		    		secureuri:false,
+		    		fileElementId:'path',
+		    		data:{fileName:timestamp+"."+s_name2,folderName:"brand"},
+		    		beforeSend:function(){},
+		    		success: function(){
+		    			alert("上传成功"); 
+		    		}
+		    	});
+		    	return false;
+		    }
+			</script>
 </body>
 </html>

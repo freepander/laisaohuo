@@ -13,7 +13,7 @@ import com.myivcre.ga.model.Effect;
 @Scope("prototype")
 public class EffectAction extends BaseAction {
 	private String name;
-	private int categoryId;
+//	private int categoryId;
 	private int bigCategoryId;
 	private List bigCategoryList;
 	private Effect effect;
@@ -40,8 +40,8 @@ public class EffectAction extends BaseAction {
 		this.effect.setName(name);
 		BigCategory bigCategory=(BigCategory)this.baseService.get(BigCategory.class, bigCategoryId);
 		this.effect.setBigCategory(bigCategory);
-		Category c=(Category)this.baseService.get(Category.class, categoryId);
-		this.effect.setCategory(c);
+//		Category c=(Category)this.baseService.get(Category.class, categoryId);
+//		this.effect.setCategory(c);
 		this.effect.setDelete(false);
 		this.baseService.save(this.effect);
 		return "list";
@@ -51,8 +51,8 @@ public class EffectAction extends BaseAction {
 		this.effect.setName(name);
 		BigCategory bigCategory=(BigCategory)this.baseService.get(BigCategory.class, bigCategoryId);
 		this.effect.setBigCategory(bigCategory);
-		Category c=(Category)this.baseService.get(Category.class, categoryId);
-		this.effect.setDelete(false);
+//		Category c=(Category)this.baseService.get(Category.class, categoryId);
+//		this.effect.setDelete(false);
 		this.baseService.update(this.effect);
 		return "list";
 	}
@@ -62,8 +62,8 @@ public class EffectAction extends BaseAction {
 		this.baseService.update(this.effect);
 		return "list";
 	}
-	public String getListByCategory(){
-		this.list=this.baseService.getByHal("from effect where deletes=false and category.id="+id);
+	public String getListByBigCategory(){
+		this.list=this.baseService.getByHal("from effect where deletes=false and bigCategory.id="+id);
 		return "effectList";
 	}
 	public String getName() {
@@ -72,12 +72,12 @@ public class EffectAction extends BaseAction {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getCategoryId() {
-		return categoryId;
-	}
-	public void setCategoryId(int categoryId) {
-		this.categoryId = categoryId;
-	}
+//	public int getCategoryId() {
+//		return categoryId;
+//	}
+//	public void setCategoryId(int categoryId) {
+//		this.categoryId = categoryId;
+//	}
 	public int getBigCategoryId() {
 		return bigCategoryId;
 	}

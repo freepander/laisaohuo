@@ -27,28 +27,15 @@ public class IndexAction extends ActionSupport {
 	List xiangFenCategoryList;
 	List shentihuliCategoryList;
 	List meironggongjuCategoryList;
-	List muyingzhuanquCategoryList;
+	List tongxuehuiCategoryList;
 	List nanshizhuanquCategoryList;
 	List shipinbaojianCategoryList;
-	List brandCategoryList;
-	BigCategory hufu;
-	List hufuEffectList;
+	List brandList;
 	List hufuGoodsList;
-	BigCategory caizhuang;
-	List caizhuangEffectList;
 	List caizhuangGoodsList;
-	BigCategory xiangfen;
-	List xiangfenEffectList;
 	List xiangfenGoodsList;
-	BigCategory huli;
-	List huliEffectList;
 	List huliGoodsList;
-	BigCategory nanshi;
-	List nanshiEffectList;
 	List nanshiGoodsList;
-	BigCategory muying;
-	List muyingEffectList;
-	List muyingGoodsList;
 	
 	public String index() throws Exception {
 		this.mallCarousel = (MallCarousel) this.baseService.get(MallCarousel.class, 1);
@@ -58,70 +45,59 @@ public class IndexAction extends ActionSupport {
 		this.xiangFenCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=3");
 		this.shentihuliCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=4");
 		this.meironggongjuCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=5");
-		this.muyingzhuanquCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=6");
+		this.tongxuehuiCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=9");
 		this.nanshizhuanquCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=7");
 		this.shipinbaojianCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=8");
 		
-		this.brandCategoryList=this.baseService.getByHal("from brandcategory where deletes=false");
-		
-		this.hufu=(BigCategory)this.baseService.get(BigCategory.class, 1);
-		this.hufuEffectList=this.baseService.getByHal("from effect where deletes=false and category.id=1");
-		orderby.add("salesVolume desc");
 		q.add("deletes=?");
 		a.add(false);
 		q.add("category.parentCategory.id=?");
 		a.add(1);
+		q.add("onIndex=?");
+		a.add(true);
 		this.hufuGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
 		
-		this.caizhuang=(BigCategory)this.baseService.get(BigCategory.class, 2);
-		this.caizhuangEffectList=this.baseService.getByHal("from effect where deletes=false and category.id=2");
 		q.clear();
 		a.clear();
 		q.add("deletes=?");
 		a.add(false);
 		q.add("category.parentCategory.id=?");
 		a.add(2);
+		q.add("onIndex=?");
+		a.add(true);
 		this.caizhuangGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
 		
-		this.xiangfen=(BigCategory)this.baseService.get(BigCategory.class, 3);
-		this.xiangfenEffectList=this.baseService.getByHal("from effect where deletes=false and category.id=3");
 		q.clear();
 		a.clear();
 		q.add("deletes=?");
 		a.add(false);
 		q.add("category.parentCategory.id=?");
 		a.add(3);
+		q.add("onIndex=?");
+		a.add(true);
 		this.xiangfenGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
 		
-		this.huli=(BigCategory)this.baseService.get(BigCategory.class, 4);
-		this.huliEffectList=this.baseService.getByHal("from effect where deletes=false and category.id=4");
 		q.clear();
 		a.clear();
 		q.add("deletes=?");
 		a.add(false);
 		q.add("category.parentCategory.id=?");
 		a.add(4);
+		q.add("onIndex=?");
+		a.add(true);
 		this.huliGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
 		
-		this.nanshi=(BigCategory)this.baseService.get(BigCategory.class, 5);
-		this.nanshiEffectList=this.baseService.getByHal("from effect where deletes=false and category.id=5");
 		q.clear();
 		a.clear();
 		q.add("deletes=?");
 		a.add(false);
 		q.add("category.parentCategory.id=?");
-		a.add(5);
+		a.add(7);
+		q.add("onIndex=?");
+		a.add(true);
 		this.nanshiGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
 		
-		this.muying=(BigCategory)this.baseService.get(BigCategory.class, 6);
-		this.muyingEffectList=this.baseService.getByHal("from effect where deletes=false and category.id=6");
-		q.clear();
-		a.clear();
-		q.add("deletes=?");
-		a.add(false);
-		q.add("category.parentCategory.id=?");
-		a.add(6);
-		this.muyingGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
+		this.brandList=this.baseService.getByHal("from brand where deletes=false and visible=true");
 		
 		return "index";
 	}
@@ -174,12 +150,20 @@ public class IndexAction extends ActionSupport {
 		this.meironggongjuCategoryList = meironggongjuCategoryList;
 	}
 
-	public List getMuyingzhuanquCategoryList() {
-		return muyingzhuanquCategoryList;
+	public List getTongxuehuiCategoryList() {
+		return tongxuehuiCategoryList;
 	}
 
-	public void setMuyingzhuanquCategoryList(List muyingzhuanquCategoryList) {
-		this.muyingzhuanquCategoryList = muyingzhuanquCategoryList;
+	public void setTongxuehuiCategoryList(List tongxuehuiCategoryList) {
+		this.tongxuehuiCategoryList = tongxuehuiCategoryList;
+	}
+
+	public List getBrandList() {
+		return brandList;
+	}
+
+	public void setBrandList(List brandList) {
+		this.brandList = brandList;
 	}
 
 	public List getNanshizhuanquCategoryList() {
@@ -204,30 +188,6 @@ public class IndexAction extends ActionSupport {
 
 	public void setMallCarousel(MallCarousel mallCarousel) {
 		this.mallCarousel = mallCarousel;
-	}
-
-	public List getBrandCategoryList() {
-		return brandCategoryList;
-	}
-
-	public void setBrandCategoryList(List brandCategoryList) {
-		this.brandCategoryList = brandCategoryList;
-	}
-
-	public BigCategory getHufu() {
-		return hufu;
-	}
-
-	public void setHufu(BigCategory hufu) {
-		this.hufu = hufu;
-	}
-
-	public List getHufuEffectList() {
-		return hufuEffectList;
-	}
-
-	public void setHufuEffectList(List hufuEffectList) {
-		this.hufuEffectList = hufuEffectList;
 	}
 
 	public List<String> getQ() {
@@ -262,44 +222,12 @@ public class IndexAction extends ActionSupport {
 		this.hufuGoodsList = hufuGoodsList;
 	}
 
-	public BigCategory getCaizhuang() {
-		return caizhuang;
-	}
-
-	public void setCaizhuang(BigCategory caizhuang) {
-		this.caizhuang = caizhuang;
-	}
-
-	public List getCaizhuangEffectList() {
-		return caizhuangEffectList;
-	}
-
-	public void setCaizhuangEffectList(List caizhuangEffectList) {
-		this.caizhuangEffectList = caizhuangEffectList;
-	}
-
 	public List getCaizhuangGoodsList() {
 		return caizhuangGoodsList;
 	}
 
 	public void setCaizhuangGoodsList(List caizhuangGoodsList) {
 		this.caizhuangGoodsList = caizhuangGoodsList;
-	}
-
-	public BigCategory getXiangfen() {
-		return xiangfen;
-	}
-
-	public void setXiangfen(BigCategory xiangfen) {
-		this.xiangfen = xiangfen;
-	}
-
-	public List getXiangfenEffectList() {
-		return xiangfenEffectList;
-	}
-
-	public void setXiangfenEffectList(List xiangfenEffectList) {
-		this.xiangfenEffectList = xiangfenEffectList;
 	}
 
 	public List getXiangfenGoodsList() {
@@ -310,44 +238,12 @@ public class IndexAction extends ActionSupport {
 		this.xiangfenGoodsList = xiangfenGoodsList;
 	}
 
-	public BigCategory getHuli() {
-		return huli;
-	}
-
-	public void setHuli(BigCategory huli) {
-		this.huli = huli;
-	}
-
-	public List getHuliEffectList() {
-		return huliEffectList;
-	}
-
-	public void setHuliEffectList(List huliEffectList) {
-		this.huliEffectList = huliEffectList;
-	}
-
 	public List getHuliGoodsList() {
 		return huliGoodsList;
 	}
 
 	public void setHuliGoodsList(List huliGoodsList) {
 		this.huliGoodsList = huliGoodsList;
-	}
-
-	public BigCategory getNanshi() {
-		return nanshi;
-	}
-
-	public void setNanshi(BigCategory nanshi) {
-		this.nanshi = nanshi;
-	}
-
-	public List getNanshiEffectList() {
-		return nanshiEffectList;
-	}
-
-	public void setNanshiEffectList(List nanshiEffectList) {
-		this.nanshiEffectList = nanshiEffectList;
 	}
 
 	public List getNanshiGoodsList() {
@@ -358,28 +254,5 @@ public class IndexAction extends ActionSupport {
 		this.nanshiGoodsList = nanshiGoodsList;
 	}
 
-	public BigCategory getMuying() {
-		return muying;
-	}
-
-	public void setMuying(BigCategory muying) {
-		this.muying = muying;
-	}
-
-	public List getMuyingEffectList() {
-		return muyingEffectList;
-	}
-
-	public void setMuyingEffectList(List muyingEffectList) {
-		this.muyingEffectList = muyingEffectList;
-	}
-
-	public List getMuyingGoodsList() {
-		return muyingGoodsList;
-	}
-
-	public void setMuyingGoodsList(List muyingGoodsList) {
-		this.muyingGoodsList = muyingGoodsList;
-	}
-
+	
 }

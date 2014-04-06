@@ -18,6 +18,7 @@ public class BrandAction extends BaseAction {
 	private static final long serialVersionUID = 1L;
 	private String name;
 	private boolean visible;
+	private String logo;
 	private Brand brand;
 	
 	public String list(){
@@ -41,12 +42,16 @@ public class BrandAction extends BaseAction {
 		this.brand=new Brand();
 		this.brand.setName(name);
 		this.brand.setDeletes(false);
+		this.brand.setVisible(visible);
+		this.brand.setLogo(logo);
 		this.baseService.save(this.brand);
 		return "list";
 	}
 	public String update(){
 		this.brand=(Brand)this.baseService.get(Brand.class, id);
 		this.brand.setName(name);
+		this.brand.setVisible(visible);
+		this.brand.setLogo(logo);
 		this.baseService.update(this.brand);
 		return "list";
 	}
@@ -76,6 +81,12 @@ public class BrandAction extends BaseAction {
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+	public String getLogo() {
+		return logo;
+	}
+	public void setLogo(String logo) {
+		this.logo = logo;
 	}
 	
 }

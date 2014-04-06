@@ -16,9 +16,11 @@
 <link href="assets/css/bui-min.css" rel="stylesheet">
 </head>
 <body>
-
-
 <div class="row">
+	<div class="container">
+	
+	<h3>推荐图片尺寸为：170*80px</h3>
+	</div>
 	<div class="span24">
 		<form id="J_Form" class="form-horizontal" method="post" action="admin/brandCategory_qiangupdate">
 		<input type="hidden" value="<s:property value="id"/>" name="id">

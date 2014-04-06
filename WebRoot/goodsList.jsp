@@ -26,13 +26,14 @@
                 <div class="num_warp_list_name_mall">
                     <span style="font-size:18px; font-weight:bolder; color:#ed145b;">¥<s:property value="nowPrice"/></span>
                 </div>
-                <div class="num_warp_list_warp_word">
+                <!-- <div class="num_warp_list_warp_word">
                     <span class="num_warp_list_quantity_white"></span>
                     <span style="float:left; margin:2px 0 0 3px;">31388篇评价</span>
                 </div>
+                 -->
                 <div class="pList_item_button clearfix">
                     <div class="add_to_cart">
-                        <a href="#" target="_blank" rel="nofollow" u_nos="TM11071400026" u_as="">
+                        <a href="carts_add?goodsId=<s:property value="id"/>&number=1" target="_blank" rel="nofollow" u_nos="TM11071400026" u_as="">
                             <img src="fontassets/img/incart.jpg" border="0">
                         </a>
                     </div>

@@ -18,7 +18,9 @@
 <body>
 <div class="row">
 	<div class="span24">
-	
+	<div class="container">
+		<h2>推荐图片尺寸为1920*410px</h2>
+	</div>
 		<form id="J_Form" class="form-horizontal" method="post" action="admin/mallCarousel_update">
 			<div class="control-group">
 				<label class="control-label">链接1</label>

@@ -3,7 +3,6 @@ package com.myivcre.ga.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 /**
  * 品牌
@@ -15,6 +14,16 @@ public class Brand {
 	@Id@GeneratedValue
 	private int id;
 	private String name;
+	//是否显示在首页
+	private boolean visible;
+	//显示首页的图片logo
+	private String logo;
+	public boolean isVisible() {
+		return visible;
+	}
+	public void setVisible(boolean visible) {
+		this.visible = visible;
+	}
 	//是否被删除
 	private boolean deletes;
 	public int getId() {
@@ -34,6 +43,12 @@ public class Brand {
 	}
 	public void setDeletes(boolean deletes) {
 		this.deletes = deletes;
+	}
+	public String getLogo() {
+		return logo;
+	}
+	public void setLogo(String logo) {
+		this.logo = logo;
 	}
 	
 	

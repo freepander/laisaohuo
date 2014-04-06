@@ -65,7 +65,7 @@ public class ProductsAction extends ActionSupport{
 			this.bigCategory=(BigCategory)this.baseService.get(BigCategory.class, bigCategoryId);
 			this.categoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id="+bigCategoryId);
 			this.brandList=this.baseService.getByHal("from brand where deletes=false");
-			this.effectList=this.baseService.getByHal("from effect where deletes=false and category.id="+bigCategoryId);
+			this.effectList=this.baseService.getByHal("from effect where deletes=false and bigCategory.id="+bigCategoryId);
 		}else {
 			this.categoryList=this.baseService.getByHal("from category where deletes=false");
 			this.brandList=this.baseService.getByHal("from brand where deletes=false");
@@ -84,39 +84,79 @@ public class ProductsAction extends ActionSupport{
 		return "products";
 	}
 	public String goodsList() throws Exception{
-		if(bigCategoryId!=0){
-			q.add("category.parentCategory.id=?");
-			a.add(bigCategoryId);
-		}
 		if(effectId!=0){
-			q.add("effect.id=?");
-			a.add(effectId);
-		}
-		if(brandId!=0){
-			q.add("brand.id=?");
-			a.add(brandId);
-		}
-		if(categoryId!=0){
-			q.add("category.id=?");
-			a.add(categoryId);
-		}
-		if(method==1){
+			String hql="";
+			if(bigCategoryId!=0){
+				if(categoryId!=0){
+					if(brandId!=0){
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId+" and g.category.id="+categoryId+" and brand.id="+brandId;
+					}else{
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId+" and g.category.id="+categoryId;
+					}
+				}else{
+					if(brandId!=0){
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId+" and g.brand.id="+brandId;
+					}else{
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId;
+					}
+					
+				}
+			}else{
+				if(categoryId!=0){
+					if(brandId!=0){
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.category.id="+categoryId+" and brand.id="+brandId;
+					}else{
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.category.id="+categoryId;
+					}
+				}else{
+					if(brandId!=0){
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and brand.id="+brandId;
+					}else{
+						hql="from goods g  where "+effectId+" = some elements(g.effectList)";
+					}
+					
+				}
+			}
+			System.out.println(hql);
+			this.pageModel=new PageModel();
+			this.pageModel.setObjects(this.baseService.getByHal(hql));
+			return "success";
+		}else{
+			if(bigCategoryId!=0){
+				q.add("bigCategory.id=?");
+				a.add(bigCategoryId);
+			}
 			
-		}else if(method==2){
-			orderby.add("nowPrice desc");//降序
-		}else if(method==3){
-			orderby.add("nowPrice asc");//升序
-		}else if(method==4){
-			orderby.add("pageView desc");
-		}else if(method==5){
-			orderby.add("pageView asc");
-		}else if(method==6){
-			orderby.add("date desc");
-		}else if(method==7){
-			orderby.add("date asc");
+			if(brandId!=0){
+				q.add("brand.id=?");
+				a.add(brandId);
+			}
+			if(categoryId!=0){
+				q.add("category.id=?");
+				a.add(categoryId);
+			}
+			
+			if(method==1){
+				
+			}else if(method==2){
+				orderby.add("nowPrice desc");//降序
+			}else if(method==3){
+				orderby.add("nowPrice asc");//升序
+			}else if(method==4){
+				orderby.add("pageView desc");
+			}else if(method==5){
+				orderby.add("pageView asc");
+			}else if(method==6){
+				orderby.add("date desc");
+			}else if(method==7){
+				orderby.add("date asc");
+			}
+			
+			this.pageModel=this.baseService.getPageModel("goods", pageNum, 10, orderby, q, a);
+			
+			return "success";
 		}
-		this.pageModel=this.baseService.getPageModel("goods", pageNum, 10, orderby, q, a);
-		return "success";
+		
 	}
 	public List<String> getQ() {
 		return q;

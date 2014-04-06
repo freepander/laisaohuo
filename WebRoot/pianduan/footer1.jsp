@@ -18,17 +18,15 @@
 
 					<ul class="linksb png">
 						<li class="links">支付方式</li>
-						<li><a href="#" target="_blank" rel="nofollow">在线支付</a>
-						</li>
 						<li><a href="#" target="_blank" rel="nofollow">支付宝担保</a>
 						</li>
-						<li><a href="#" target="_blank" rel="nofollow">货到付款</a>
+						<li><a href="#" target="_blank" rel="nofollow">扫码支付</a>
 						</li>
 					</ul>
 
 					<ul class="linksc png">
 						<li class="links">配送方式</li>
-						<li><a href="#" target="_blank" rel="nofollow">顺风包邮</a>
+						<li><a href="#" target="_blank" rel="nofollow">顺丰包邮</a>
 						</li>
 						<li><a href="#" target="_blank" rel="nofollow">自建网络</a>
 						</li>
@@ -56,20 +54,16 @@
 						</li>
 						<li><a href="#" target="_blank" rel="nofollow">会员个性化服务</a>
 						</li>
+						<li><a href="#" target="_blank" rel="nofollow">你提我做</a>
+						</li>
 					</ul>
 
 					<span class="links_er_box">
-						<ul class="linksf">
-							<li class="links">手机聚美</li>
-							<li><span class="link_bottom_pic"></span>
-							</li>
-							<li>下载移动客户端</li>
-						</ul>
 						<ul class="linksg">
-							<li class="links">聚美微信</li>
+							<li class="links">微信平台</li>
 							<li><span class="link_bottom_pic"></span>
 							</li>
-							<li>聚美官方微信</li>
+							<li>来扫货官方微信</li>
 						</ul> </span>
 				</div>
 			</div>

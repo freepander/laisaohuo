@@ -23,6 +23,7 @@ public class Category {
 	//推荐品牌
 	@OneToMany
 	private List<Brand> brandList;
+	//三级类别集合
 	@OneToMany
 	private List<TwoCategory> towCategoryList;
 	private boolean deletes;

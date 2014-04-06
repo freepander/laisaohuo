@@ -27,8 +27,8 @@
     <div class="clear"></div>
     <div id="top_menu">
        <div id="top_nav">
-       		<div class="top_nav_item"><a href="index_index" class="nav_link">护理商城</a></div>
-				<div class="top_nav_item"><a href="group_groupList" class="nav_link">买多成团</a></div>
+       		<div class="top_nav_item"><a href="index_index" class="nav_link">扫货区</a></div>
+				<div class="top_nav_item"><a href="group_groupList" class="nav_link">风暴价</a></div>
 				<div class="top_nav_item selected">
 					<a href="javascript:void(0)" class="nav_link">会员独享</a>
 					<div class="header_list" style="display: none;">
