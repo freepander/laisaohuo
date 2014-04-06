@@ -89,39 +89,40 @@ public class ProductsAction extends ActionSupport{
 			if(bigCategoryId!=0){
 				if(categoryId!=0){
 					if(brandId!=0){
-						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId+" and g.category.id="+categoryId+" and brand.id="+brandId;
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId+" and g.category.id="+categoryId+" and brand.id="+brandId+" and deletes=false";
 					}else{
-						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId+" and g.category.id="+categoryId;
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId+" and g.category.id="+categoryId+" and deletes=false";
 					}
 				}else{
 					if(brandId!=0){
-						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId+" and g.brand.id="+brandId;
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId+" and g.brand.id="+brandId+" and deletes=false";
 					}else{
-						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId;
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.bigCategory.id="+bigCategoryId+" and deletes=false";
 					}
 					
 				}
 			}else{
 				if(categoryId!=0){
 					if(brandId!=0){
-						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.category.id="+categoryId+" and brand.id="+brandId;
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.category.id="+categoryId+" and brand.id="+brandId+" and deletes=false";
 					}else{
-						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.category.id="+categoryId;
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and g.category.id="+categoryId+" and deletes=false";
 					}
 				}else{
 					if(brandId!=0){
-						hql="from goods g  where "+effectId+" = some elements(g.effectList) and brand.id="+brandId;
+						hql="from goods g  where "+effectId+" = some elements(g.effectList) and brand.id="+brandId+" and deletes=false";
 					}else{
-						hql="from goods g  where "+effectId+" = some elements(g.effectList)";
+						hql="from goods g  where "+effectId+" = some elements(g.effectList)"+" and deletes=false";
 					}
 					
 				}
 			}
-			System.out.println(hql);
 			this.pageModel=new PageModel();
 			this.pageModel.setObjects(this.baseService.getByHal(hql));
 			return "success";
 		}else{
+			q.add("deletes=?");
+			a.add(false);
 			if(bigCategoryId!=0){
 				q.add("bigCategory.id=?");
 				a.add(bigCategoryId);

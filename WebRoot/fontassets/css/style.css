@@ -27,7 +27,7 @@
 	background: #fff;
 	position: relative;
 	color: #000;
-	height: 35px;
+	height: 40px;
 	border-top: solid 1px #e5e5e5;
 	float: left;
 	display: inline;
@@ -40,8 +40,8 @@
 	background: url(../img/categoryarrow.jpg) no-repeat 200px center #fff;
 	text-indent: 13px;
 	display: block;
-	height: 35px;
-	line-height: 35px;
+	height: 40px;
+	line-height: 40px;
 	width: 238px;
 	overflow: hidden
 }
@@ -192,9 +192,8 @@
 
 
 .cardlist.largecard{
-	width:100%;
+	width:1238px;
 	letter-spacing: -4px;
-	margin-left: 20px;
 }
 .cardlist{
 	overflow:hidden;
@@ -202,7 +201,7 @@
 	font-size: 0;
 }
 .cardlist.largecard .carditem{
-	margin-right: 22px;
+	margin-right: 20px;
 }
 .cardlist .carditem {
 letter-spacing: normal;
@@ -217,7 +216,7 @@ margin-bottom: 38px;
 position: relative;
 }
 .cardlist.largecard .carditem .card-main {
-width: 270px;
+width: 283px;
 }
 .cardlist .carditem .card-main {
 font-size: 12px;

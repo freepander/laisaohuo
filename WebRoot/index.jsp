@@ -110,25 +110,6 @@
                         </li>
                         <li class="item">
                             <p class="item_p">
-                                <span class="icon i5"></span>
-                                <a target="_blank" href="products_listAll?bigCategoryId=3">香氛</a>
-                            </p>
-
-                            <div class="moreCategory">
-                                <s:iterator value="xiangFenCategoryList" status="st">
-                                	<s:if test="#st.index%2==0">
-                                	<p class="clearfix">
-                                	<span class="left"><a class="fun_category" target="_blank" title="<s:property value="name"/>" href="products_listAll?bigCategoryId=3&categoryId=<s:property value="id"/>"><s:property value="name"/></a></span>
-                                	</s:if>
-                                	<s:if test="#st.index%2==1">
-                                	<span class="right"><a class="fun_category" target="_blank" title="<s:property value="name"/>" href="products_listAll?bigCategoryId=3&categoryId=<s:property value="id"/>"><s:property value="name"/></a></span>
-                                	</p>
-                                	</s:if>
-                                </s:iterator>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <p class="item_p">
                                 <span class="icon i3"></span>
                                 <a target="_blank" href="products_listAll?bigCategoryId=4">身体护理</a>
                             </p>
@@ -334,51 +315,7 @@
 				
 			</div>
 			<!--  彩妆 end  -->
-			<div id="ferfuem_floor" class="floor" style="background:none;">
-				<div class="floor_head">
-					<h3>香氛</h3>
-					<ul class="fh_cate">
-						<s:iterator value="xiangfenEffectList">
-						<li><a href="products_listAll?bigCategoryId=3&effectId=<s:property value="id"/>" target="_blank" rel="nofollow"><s:property value="name"/></a></li>	
-						</s:iterator>
-					</ul>
-					<a href="products_listAll?bigCategoryId=3" class="more" target="_blank">去护肤馆</a>
-				</div>
-				<div class="floor_con"style="min-height:200px;">
-					<div id="J_CardListBox" class="cardlist-wrap">
-						<ul class="cardlist largecard">
-							<s:iterator value="xiangfenGoodsList">
-							<li class="carditem card-story-large">
-								<div class="card-main">
-									<div class="card-hd">
-										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
-											<img class="story-image" width="300" height="300" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>" style="margin-top:-20.0px;">
-										</a>
-										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
-										
-									</div>
-									<div class="card-bd">
-										<h2 class="story-title" title=" ">
-										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/></a>
-										</h2>
-									</div>
-								</div>
-								<div class="card-extra">
-									<div class="card-actions" style="display: none; padding-top:30px;" >
-										<a class="J_AddToDoulist btn-doulist" href="carts_add?goodsId=<s:property value="id"/>&number=1">加入购物车</a>
-										<a class="J_CommodityLikeBtn btn-carditem-like" href="javascript:void(0)" style="margin-top:-12px;">
-											加入收藏
-										</a>
-									</div>
-								</div>
-							</li>
-							</s:iterator>
-							
-						</ul>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
+			
 			<!--  身体护理 start  -->
 			<div id="Body_floor" class="floor" style="background:none;">
 				<div class="floor_head">
@@ -474,6 +411,7 @@
 			</div>
 			
 			<!-- 护肤心得  -->
+			<!-- 
 			<div class="floor">
 				<div class="floor_head">
 					<h3 style="background: none; color: #000; text-indent: 0; font-size: 20px; line-height: 60px; padding-left: 20px;">护肤心得</h3>
@@ -544,7 +482,9 @@
 					</ul>
 				</div>
 			</div>
+			-->
 			<!--  生活窍门   -->
+			<!-- 
 			<div class="floor">
 				<div class="floor_head">
 					<h3 style="background: none; color: #000; text-indent: 0; font-size: 20px; line-height: 60px; padding-left: 20px;">生活窍门</h3>
@@ -615,10 +555,18 @@
 					</ul>
 				</div>
 			</div>
-			<!--  生活窍门   end-->
+			-->
+			
 			<!--  右侧导航  -->
 			<div id="home_nav_bar" style="display: block;">
-				<a href="index_index#skincare" class="nav_floor nf1"></a> <a href="index_index#color" class="nav_floor nf2"></a> <a href="index_index#ferfuem_floor" class="nav_floor nf3"></a> <a href="index_index#Body_floor" class="nav_floor nf4"></a> <a href="index_index#Man_floor" class="nav_floor nf5"></a> <a href="index_index#milk_floor" class="nav_floor nf6"></a> <!-- <a href="#" class="nav_feedback"></a>--> <a href="javascript:ib_wopen();" rel="nofollow" target="_blank"
+				<a href="index_index#skincare" class="nav_floor nf1"></a> 
+				<a href="index_index#color" class="nav_floor nf2"></a> 
+				 
+				<a href="index_index#Body_floor" class="nav_floor nf4"></a> 
+				<a href="index_index#Man_floor" class="nav_floor nf5"></a> 
+				 
+				<!-- <a href="#" class="nav_feedback"></a>--> 
+				<a href="javascript:ib_wopen();" rel="nofollow" target="_blank"
 					class="nav_service"></a>
 			</div>
 			<!--  右侧导航 end  -->

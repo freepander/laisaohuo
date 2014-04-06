@@ -64,7 +64,14 @@
 							<li><span class="link_bottom_pic"></span>
 							</li>
 							<li>来扫货官方微信</li>
-						</ul> </span>
+						</ul>
+						<ul class="linksg">
+							<li class="links">官方微博</li>
+							<li><span class="link_bottom_pic"></span>
+							</li>
+							<li>来扫货官方微博</li>
+						</ul>
+					</span>
 				</div>
 			</div>
 			<div class="footer_center">

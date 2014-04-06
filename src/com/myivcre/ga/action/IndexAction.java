@@ -24,7 +24,6 @@ public class IndexAction extends ActionSupport {
 	MallCarousel mallCarousel;
 	List hufuCategoryList;
 	List caizhuangCategoryList;
-	List xiangFenCategoryList;
 	List shentihuliCategoryList;
 	List meironggongjuCategoryList;
 	List tongxuehuiCategoryList;
@@ -33,7 +32,6 @@ public class IndexAction extends ActionSupport {
 	List brandList;
 	List hufuGoodsList;
 	List caizhuangGoodsList;
-	List xiangfenGoodsList;
 	List huliGoodsList;
 	List nanshiGoodsList;
 	
@@ -42,7 +40,6 @@ public class IndexAction extends ActionSupport {
 		
 		this.hufuCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=1");
 		this.caizhuangCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=2");
-		this.xiangFenCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=3");
 		this.shentihuliCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=4");
 		this.meironggongjuCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=5");
 		this.tongxuehuiCategoryList=this.baseService.getByHal("from category where deletes=false and parentCategory.id=9");
@@ -66,16 +63,6 @@ public class IndexAction extends ActionSupport {
 		q.add("onIndex=?");
 		a.add(true);
 		this.caizhuangGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
-		
-		q.clear();
-		a.clear();
-		q.add("deletes=?");
-		a.add(false);
-		q.add("category.parentCategory.id=?");
-		a.add(3);
-		q.add("onIndex=?");
-		a.add(true);
-		this.xiangfenGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
 		
 		q.clear();
 		a.clear();
@@ -124,14 +111,6 @@ public class IndexAction extends ActionSupport {
 
 	public void setCaizhuangCategoryList(List caizhuangCategoryList) {
 		this.caizhuangCategoryList = caizhuangCategoryList;
-	}
-
-	public List getXiangFenCategoryList() {
-		return xiangFenCategoryList;
-	}
-
-	public void setXiangFenCategoryList(List xiangFenCategoryList) {
-		this.xiangFenCategoryList = xiangFenCategoryList;
 	}
 
 	public List getShentihuliCategoryList() {
@@ -228,14 +207,6 @@ public class IndexAction extends ActionSupport {
 
 	public void setCaizhuangGoodsList(List caizhuangGoodsList) {
 		this.caizhuangGoodsList = caizhuangGoodsList;
-	}
-
-	public List getXiangfenGoodsList() {
-		return xiangfenGoodsList;
-	}
-
-	public void setXiangfenGoodsList(List xiangfenGoodsList) {
-		this.xiangfenGoodsList = xiangfenGoodsList;
 	}
 
 	public List getHuliGoodsList() {
