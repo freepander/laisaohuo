@@ -745,7 +745,7 @@ div.f-input-tip-container .error {
 	height: 100px;
 	padding-top: 30px;
 	font-size: 20px;
-	color: #ed145b;
+	color: #FF9900;
 	font-family: "\534E\6587\7EC6\9ED1"
 }
 
@@ -764,7 +764,7 @@ div.f-input-tip-container .error {
 }
 
 .success_wrapper span {
-	color: #ed145b;
+	color: #FF9900;
 	font-size: 16px
 }
 

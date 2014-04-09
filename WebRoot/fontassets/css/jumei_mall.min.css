@@ -84,7 +84,7 @@
 }
 
 .mall_nav ul.nav li a:hover {
-	color: #ED145B;
+	color: #FF9900;
 	text-decoration: underline
 }
 
@@ -134,7 +134,7 @@
 }
 
 .mall_nav .nav_filter .left li a:hover {
-	color: #ED145B
+	color: #FF9900
 }
 
 .mall_nav .nav_filter .right {
@@ -241,7 +241,7 @@
 }
 
 .serchkeyword a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -267,7 +267,7 @@
 }
 
 .sidebar_notice ul li span {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -328,13 +328,13 @@
 }
 
 .mall_sidebar_box .content li .name a:hover {
-	color: #ED145B
+	color: #FF9900
 }
 
 .mall_sidebar_box .content li .price {
 	float: left;
 	width: 115px;
-	color: #ed145b;
+	color: #FF9900;
 	margin-top: 5px
 }
 
@@ -353,7 +353,7 @@
 	height: 20px;
 	margin-bottom: 5px;
 	font-weight: 700;
-	color: #ed145b
+	color: #FF9900
 }
 
 .mall_sidebar_box .filter ul {
@@ -374,7 +374,7 @@
 }
 
 .mall_sidebar_box .filter li a:hover {
-	color: #ed145b
+	color: #FF9900
 }
 
 .product_desc .block_title {
@@ -438,7 +438,7 @@
 }
 
 .search_result .result_view span {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -1173,7 +1173,7 @@ ul.mall_menu li .hoverBox .hover_word ul li {
 	width: 166px;
 	height: 216px;
 	padding: 0;
-	border: 2px solid #ed145b;
+	border: 2px solid #FF9900;
 	overflow: hidden;
 	zoom: 1
 }
@@ -1183,7 +1183,7 @@ ul.mall_menu li .hoverBox .hover_word ul li {
 }
 
 .mall_store_hover .mall_store_value {
-	background: #ed145b;
+	background: #FF9900;
 	color: #FFF;
 	cursor: pointer
 }
@@ -1281,7 +1281,7 @@ ul.mall_menu li .hoverBox .hover_word ul li {
 	width: 344px;
 	height: 334px;
 	padding: 0;
-	border: 2px solid #ed145b;
+	border: 2px solid #FF9900;
 	overflow: hidden
 }
 
@@ -1289,7 +1289,7 @@ ul.mall_menu li .hoverBox .hover_word ul li {
 	width: 166px;
 	height: 160px;
 	padding: 0;
-	border: 2px solid #ed145b;
+	border: 2px solid #FF9900;
 	overflow: hidden
 }
 
@@ -1396,7 +1396,7 @@ ul.mall_menu li .hoverBox .hover_word ul li {
 }
 
 .perdown a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	font-size: 12px;
 	font-family: "微软雅黑";
 	text-decoration: none
@@ -1454,7 +1454,7 @@ ul.mall_menu li .hoverBox .hover_word ul li {
 .num_word_a a:hover {
 	font-size: 12px;
 	text-decoration: underline;
-	color: #ed145b
+	color: #FF9900
 }
 
 #warp {
@@ -1501,7 +1501,7 @@ ul.mall_menu li .hoverBox .hover_word ul li {
 }
 
 .result_tit_right a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -1541,7 +1541,7 @@ ul.mall_menu li .hoverBox .hover_word ul li {
 }
 
 .search_bot a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -1576,7 +1576,7 @@ ul.mall_menu li .hoverBox .hover_word ul li {
 }
 
 warp_left .selected {
-	background: #ed145b;
+	background: #FF9900;
 	color: #FFF
 }
 
@@ -1587,7 +1587,7 @@ warp_left .selected {
 }
 
 .next_selected_second .selected {
-	background: #ed145b;
+	background: #FF9900;
 	color: #FFF
 }
 
@@ -1618,11 +1618,11 @@ warp_left .selected {
 .next_selected_second ul li a:hover {
 	color: #fff;
 	text-decoration: none;
-	background: #ed145b
+	background: #FF9900
 }
 
 .next_selected_second .selected a {
-	background: #ed145b;
+	background: #FF9900;
 	color: #FFF;
 	padding: 3px 5px;
 	*padding: 6px 5px
@@ -1630,7 +1630,7 @@ warp_left .selected {
 
 .next_selected_bor {
 	height: 20px;
-	border: 1px solid #f8a3bf;
+	border: 1px solid #FF9900;
 	border-right: 0;
 	float: left;
 	font-size: 12px;
@@ -1681,21 +1681,21 @@ warp_left .selected {
 .next_selected_hover {
 	text-decoration: none;
 	color: #fff;
-	background: #ed145b;
+	background: #FF9900;
 	cursor: pointer
 }
 
 .next_selected_hover {
 	text-decoration: none;
 	color: #fff;
-	background: #ed145b;
+	background: #FF9900;
 	cursor: pointer
 }
 
 .next_selected ul li.next_selected_hover a {
 	text-decoration: none;
 	color: #fff;
-	background: #ed145b;
+	background: #FF9900;
 	cursor: pointer
 }
 
@@ -1775,11 +1775,11 @@ warp_left .selected {
 	float: left;
 	margin: 2px 0 0 5px;
 	margin: 5px 0 0 5px\9;
-	color: #ed145b
+	color: #FF9900
 }
 
 .num_red a {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -1802,7 +1802,7 @@ warp_left .selected {
 }
 
 .num_black a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -1816,7 +1816,7 @@ warp_left .selected {
 }
 
 .num_black_b a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -1952,7 +1952,7 @@ warp_left .selected {
 }
 
 .num_warp_list_name a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -1993,8 +1993,8 @@ warp_left .selected {
 }
 
 .next_page_up:hover {
-	border: 1px solid #ed145b;
-	color: #ed145b;
+	border: 1px solid #FF9900;
+	color: #FF9900;
 	cursor: pointer
 }
 
@@ -2011,8 +2011,8 @@ warp_left .selected {
 }
 
 .next_page_num_hover {
-	border: 1px solid #ed145b;
-	color: #ed145b;
+	border: 1px solid #FF9900;
+	color: #FF9900;
 	cursor: pointer
 }
 
@@ -2072,12 +2072,12 @@ warp_left .selected {
 }
 
 #warp_right .all_categories .showwarp .selected p a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
 #warp_right .all_categories .showwarp a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -2116,7 +2116,7 @@ warp_left .selected {
 	_height: 36px;
 	background: #f9a3be;
 	overflow: hidden;
-	color: #ed145b
+	color: #FF9900
 }
 
 #warp_right .all_categories ul li.catewarp_red .div_top {
@@ -2311,7 +2311,7 @@ warp_left .selected {
 }
 
 #warp_left .num_tit ul li.desc_enable a {
-	color: #ed145b
+	color: #FF9900
 }
 
 #warp_left .num_tit ul li.asc_enable span.arrow_red {
@@ -2319,7 +2319,7 @@ warp_left .selected {
 }
 
 #warp_left .num_tit ul li.asc_enable a {
-	color: #ed145b
+	color: #FF9900
 }
 
 #warp_left .num_tit ul li.desc_disable span.arrow_red {
@@ -2349,7 +2349,7 @@ warp_left .selected {
 	width: 208px;
 	background: #999;
 	overflow: hidden;
-	color: #ed145b;
+	color: #FF9900;
 	*margin-top: -2px
 }
 
@@ -2535,7 +2535,7 @@ warp_left .selected {
 }
 
 .deal_browse_goods div span {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -2566,7 +2566,7 @@ warp_left .selected {
 }
 
 .num_warp_list_pic_mall.num_warp_list_pic_hover {
-	border: 1px solid #ed145b;
+	border: 1px solid #FF9900;
 	margin: 4px
 }
 
@@ -2603,7 +2603,7 @@ warp_left .selected {
 
 .belongs_brand_num .proname a:hover {
 	text-decoration: none;
-	color: #ed145b
+	color: #FF9900
 }
 
 .belongs_brand_num .proname_num {
@@ -2677,7 +2677,7 @@ warp_left .selected {
 	float: right;
 	width: 60px;
 	height: 20px;
-	color: #ed145b;
+	color: #FF9900;
 	font-size: 12px;
 	margin: 3px 10px 0 0;
 	cursor: pointer
@@ -2761,14 +2761,14 @@ warp_left .selected {
 }
 
 .products li .name a:hover {
-	color: #ed145b
+	color: #FF9900
 }
 
 .products li .price {
 	width: 160px;
 	text-align: center;
 	line-height: 18px;
-	color: #ED145B;
+	color: #FF9900;
 	overflow: hidden
 }
 
@@ -2914,7 +2914,7 @@ warp_left .selected {
 
 .page-nav li a:hover {
 	text-decoration: none;
-	border: solid 1px #ed145b
+	border: solid 1px #FF9900
 }
 
 .page-nav li.current span {
@@ -2923,7 +2923,7 @@ warp_left .selected {
 	height: 24px;
 	padding: 0 10px;
 	line-height: 24px;
-	background: #ed145b;
+	background: #FF9900;
 	border: solid 1px #bcbcbc;
 	box-shadow: inset 0 0 5px 1px #be3668;
 	color: #fff

@@ -4,7 +4,26 @@
 	"http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts>
 	<constant name="struts.devMode" value="true"></constant>
+	<package name="login" namespace="/login" extends="struts-default">
+    	<global-results>
+			<result name="login">/admin/login.jsp</result>
+		</global-results>
+    	<action name="admin" class="adminAction" method="login">
+    		<result name="success">/admin/index.jsp</result>
+    		<result name="error">/admin/login.jsp</result>
+    	</action>
+    </package>
 	<package name="admin" namespace="/admin" extends="struts-default">
+		<interceptors>
+			<interceptor name="authority" class="com.myivcre.ga.interceptor.AdminLogin"/>
+			<interceptor-stack name="login">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="authority"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<global-results>
+			<result name="login">/admin/login.jsp</result>
+		</global-results>
 		<action name="*_*" class="{1}Action" method="{2}">
 			<result name="list" type="chain">{1}_list</result>
 			<result name="success">/admin/{1}_{2}.jsp</result>
@@ -15,15 +34,28 @@
 			<result name="effectList">/pianduan/effectList.jsp</result>
 			<result name="pInput">/admin/purchaseShipment_pInput.jsp</result>
 			<result name="sInput">/admin/purchaseShipment_sInput.jsp</result>
+			<interceptor-ref name="login"></interceptor-ref>
+			
 		</action>
 	</package>
 	<package name="admin2" namespace="/admin2" extends="struts-default">
+		<interceptors>
+			<interceptor name="authority" class="com.myivcre.ga.interceptor.AdminLogin"/>
+			<interceptor-stack name="login">
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+				<interceptor-ref name="authority"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<global-results>
+			<result name="login">/admin/login.jsp</result>
+		</global-results>
 		<action name="*_*" class="{1}Action" method="{2}">
 			<result name="list" type="chain">{1}_list</result>
 			<result name="success">/admin/{1}_{2}.jsp</result>
 			<result name="oneList" type="chain">article_oneList</result>
 			<result name="twoList" type="chain">article_twoList</result>
 			<result name="threeList" type="chain">article_threeList</result>
+			<interceptor-ref name="login"></interceptor-ref>
 		</action>
 	</package>
 	<package name="defaul" namespace="/" extends="struts-default">

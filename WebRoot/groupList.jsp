@@ -58,7 +58,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	</div><!-- end  container  -->
 	<div class="clear"></div>
 <div id="footer_container">
-    <%@include file="pianduan/footer1.jsp" %>
+	<%@include file="pianduan/footer1.jsp" %>
+</div>
 <a id="ibangkf" style="display:none;" href="http://www.ibangkf.com">在线客服</a>
 <script language="javascript" src="http://c.ibangkf.com/i/c-laisaohuo.js"></script>
 <script type="text/javascript">

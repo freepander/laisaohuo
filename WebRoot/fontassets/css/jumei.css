@@ -63,7 +63,7 @@ body {
     font-family: Tahoma, Geneva, sans-serif;
 }
 a {
-    color: #ed145b;
+    color: #FF9900;
     text-decoration: none;
 }
 a:hover {
@@ -109,7 +109,7 @@ input.formbutton {
     *padding:5px 1.5em 0;
     border: 2px solid;
     border-color: #e186b1 #751b4c #751b4c #e186b1;
-    background: #ed145b;
+    background: #FF9900;
     color: #fff;
     letter-spacing: .1em;
     cursor: pointer;
@@ -138,7 +138,7 @@ a.formbutton {
     padding: 4px 1em;
     border: 2px solid;
     border-color: #e186b1 #751b4c #751b4c #e186b1;
-    background: #ed145b;
+    background: #FF9900;
     color: #fff;
     letter-spacing: .1em;
     cursor: pointer;
@@ -150,7 +150,7 @@ a.formbutton {
     color:#999;
 }
 .pink {
-    color: #ed145b;
+    color: #FF9900;
 }
 .ac {
     text-align: center;
@@ -326,11 +326,11 @@ body {
     position:relative;
 }
 #user_header ul.login_header a:hover, #user_header ul.login_header a.lin_more_now{
-    color:#ed145b;
+    color:#FF9900;
     text-decoration: none;
 }
 #user_header ul.login_header a:hover .mycorn, #user_header ul.login_header a.lin_more_now .mycorn{
-    border-color:#ed145b transparent transparent;
+    border-color:#FF9900 transparent transparent;
 }
 #user_header ul.login_header li {
     float: right;
@@ -614,7 +614,7 @@ body {
 .cart_content .single_info a.name:hover, .cart_content .price_all .delete:hover,
 .cart_content .price_all .price, .cart_content .con_all .price_gongji span,
 .cart_content .con_all .price_gongji em, .cart_content .con_all .num_all{
-    color:#ed145b;
+    color:#FF9900;
 }
 .cart_content .price_all, .cart_content .con_all .price_whole, .cart_content .con_all .num_two{
     height:30px;
@@ -703,7 +703,7 @@ body {
     left:0px;
     z-index: 200;
     display: none;
-    background: #ED145B;
+    background: #FF9900;
     box-shadow: 0 2px 4px #666;
 }
 #top_menu #top_nav ul li .header_list a{
@@ -715,7 +715,7 @@ body {
     overflow:hidden;
 }
 #top_menu #top_nav ul li .header_list .selected{
-    background: #ed145b;
+    background: #FF9900;
     color:#fff;
 }
 #top_menu #top_nav ul li .header_list a .newbanner{
@@ -731,14 +731,14 @@ body {
     color:#cca562;
 }
 #top_menu #top_nav ul li .header_list a:hover{
-    background: #ed145b;
+    background: #FF9900;
     color:#FFF;
 }
 #top_menu #top_nav ul li .header_list a:hover .newbanner{
-    border-bottom:1px solid #ed145b;
+    border-bottom:1px solid #FF9900;
 }
 #top_menu #top_nav ul li.selected, #top_menu #top_nav ul li.hover{
-    background:#ed145b;
+    background:#FF9900;
 }
 #top_menu #top_nav li a {
     color: #fff;
@@ -753,7 +753,7 @@ body {
 }
 #top_nav li.selected a,#top_nav ul li.hover a{
     color: #fff;
-    background: #ED145B;
+    background: #FF9900;
 }
 #top_nav li a .arrow, #top_nav li.selected a .arrow, #top_nav li.hover a .arrow{
     width:0;
@@ -1123,7 +1123,7 @@ body {
     font: 20px/30px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; background: url(/assets/images/css_pics/i/sprite.png) no-repeat 54px 7px
 }
 #cboxClose:hover{
-    color: #ed145b;
+    color: #FF9900;
     background: url(/assets/images/css_pics/i/sprite.png) no-repeat 54px -17px;
 }
 #cboxLoadingOverlay{background:url(http://images.jumei.com/templates/jumei/images/newmall/lazy_loading.gif) no-repeat center center #fff;}
@@ -1228,7 +1228,7 @@ div.notification_center .action div{
     color:#333;
 }
 .friendlinks li a:hover{
-    color:#ed145b;
+    color:#FF9900;
 }
 
 /*rating*/
@@ -1354,7 +1354,7 @@ div.notification_center .action div{
     _display:inline;
 }
 .gateway_list .gateway_ul li label.now_hover{
-    border:1px solid #ed145b;
+    border:1px solid #FF9900;
     margin:1px;
 }
 .gateway_list li.selected label{
@@ -1544,12 +1544,12 @@ div.notification_center .action div{
 .gateway_list li.aplipay_more .stri_close{
     border-width:0 6px 6px;
     border-style:dashed dashed solid;
-    border-color:transparent transparent #ed145b;
+    border-color:transparent transparent #FF9900;
 }
 .gateway_list li.aplipay_more .stri_open{
     border-width:6px 6px 0;
     border-style:solid dashed dashed;
-    border-color:#ed145b transparent transparent;
+    border-color:#FF9900 transparent transparent;
 }
 /*gateway end*/
 
@@ -1666,13 +1666,13 @@ div.notification_center .action div{
     height: 20px;
 }
 .consult-type a {
-    color: #ed145b;
+    color: #FF9900;
     padding: 10px;
     background-color: white;
 }
 .consult-type a.selected {
     color: white;
-    background-color: #ed145b;
+    background-color: #FF9900;
 }
 */
 /*qa.jumei.com end*/
@@ -1832,7 +1832,7 @@ ol.survey h5 {
     text-align: center;
 }
 #user_header #top_waiting_pay a{
-    color:#ED145B;
+    color:#FF9900;
 }
 #user_header #top_waiting_pay .close{
     position: absolute;
@@ -1923,7 +1923,7 @@ ol.survey h5 {
     color:#333;
 }
 #sidebar #buyers .list_container .list_product_name a:hover {
-    color:#ED145B;
+    color:#FF9900;
     text-decoration:none;
 }
 #sidebar .hot_brands_box .list_container .list_title{
@@ -2003,7 +2003,7 @@ ol.survey h5 {
     color:#333;
 }
 .box_v1 .right_part .price{
-    color:#ED145B;
+    color:#FF9900;
 }
 #sidebar .popular_products_box .title a.hover .arrow{
     background-position: 0 0px;
@@ -2036,7 +2036,7 @@ ol.survey h5 {
 }
 #sidebar .popular_products_box .info_titles a:hover {
     text-decoration:none;
-    color:#ED145B;
+    color:#FF9900;
 }
 #sidebar .popular_products_box .info_titles a span.color_ecb {
     color:#ec1a5b;
@@ -2056,7 +2056,7 @@ ol.survey h5 {
 }
 #sidebar .popular_products_box .info_title a:hover {
     text-decoration:none;
-    color:#ED145B;
+    color:#FF9900;
 }
 #sidebar .popular_products_box .info_title a span.color_ecb {
     color:#ec1a5b;
@@ -2215,7 +2215,7 @@ ol.survey h5 {
     font-size: 12px;
 }
 .cart_popup .user_buy_products li a:hover{
-    color:#ed145b;
+    color:#FF9900;
     text-decoration: none;
 }
 .cart_popup .user_buy_products li .pic{
@@ -2247,7 +2247,7 @@ ol.survey h5 {
     width: 90px;
     height: 32px;
     line-height: 30px;
-    background: url(/assets/images/jumei/cart/btn_pink_mid.png) no-repeat 0 0 #ED145B;
+    background: url(/assets/images/jumei/cart/btn_pink_mid.png) no-repeat 0 0 #FF9900;
     color:#fff;
     font-size: 14px;
     text-align: center;
@@ -2398,7 +2398,7 @@ ol.survey h5 {
 .notice-tip { width:200px; margin:0px;}
 .notice-tip  p { line-height:22px }
 #header_notice{  left: -160px;  top:20px; display: none;}
-#user_header #user_control #header_notice a{  color: #ED145B}
+#user_header #user_control #header_notice a{  color: #FF9900}
 #header_notice p{ line-height: 23px;}
 
 /* referral_links start 
@@ -2552,7 +2552,7 @@ ol.survey h5 {
     border-radius: 50%;
 }
 .mall_dot_hover{
-    background: #ed145b;
+    background: #FF9900;
 }
 .slide_control{
     position:absolute;z-index:20;left:10px;bottom:15px;
@@ -2651,7 +2651,7 @@ ol.survey h5 {
     font-weight: normal;
 }
 #top_menu #top_nav .header_list_item .brands_list a:hover{
-    color:#ed145b;
+    color:#FF9900;
 }
 #top_menu #top_nav .header_list_item .brands_list a:hover,
 #top_menu #top_nav .header_list_item .act_banner a:hover,

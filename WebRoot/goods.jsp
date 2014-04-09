@@ -169,10 +169,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                             <td valign="top"><b>乱码说明：</b></td>
                                             <td valign="top"><span><s:property value="goods.luanMa"/></span></td>
                                         </tr>
+                                        <s:if test='teBieShengMing!=""'>
                                         <tr>
                                             <td valign="top"><b>特别声明：</b></td>
                                             <td valign="top"><span><s:property value="goods.teBieShengMing"/></span></td>
                                         </tr>
+                                        </s:if>
                                     </tbody>
                                 </table>
                             </div>

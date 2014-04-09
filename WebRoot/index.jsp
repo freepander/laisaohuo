@@ -209,7 +209,7 @@
 				<div id="authorize_floor">
 					<div class="floor_con" id="fun_floor_con" style="height: 300px;">
 						<div class="af_con">
-							<ul>
+							<ul style="margin-top: 20px;">
 							<s:iterator value="brandList">
 								<li><a target="_blank" href="products_listAll?brandId=<s:property value="id"/>"><img src="upload/brand/<s:property value="logo"/>" style="margin-left: 0px;"></a></li>
 							</s:iterator>
@@ -239,7 +239,7 @@
 								<div class="card-main">
 									<div class="card-hd">
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
-											<img class="story-image" width="300" height="300" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>" style="margin-top:-20.0px;">
+											<img class="story-image" width="283" height="192" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
 										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
 										
@@ -248,6 +248,10 @@
 										<h2 class="story-title" title=" ">
 										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/></a>
 										</h2>
+										<div class="story-info">
+											<span class="info-pinglun">评论:<s:property value="reviewNumber"/>&nbsp;&nbsp;收藏：<s:property value="collectionNumber"/></span>
+											<span class="info-xiaoliang">销量:<s:property value="salesVolume+salesVolume2"/></span>
+										</div>
 									</div>
 								</div>
 								<div class="card-extra">
@@ -286,7 +290,7 @@
 								<div class="card-main">
 									<div class="card-hd">
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
-											<img class="story-image" width="300" height="300" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>" style="margin-top:-20.0px;">
+											<img class="story-image" width="283" height="192" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
 										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
 										
@@ -295,6 +299,10 @@
 										<h2 class="story-title" title=" ">
 										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/></a>
 										</h2>
+										<div class="story-info">
+											<span class="info-pinglun">评论:<s:property value="reviewNumber"/>&nbsp;&nbsp;收藏：<s:property value="collectionNumber"/></span>
+											<span class="info-xiaoliang">销量:<s:property value="salesVolume+salesVolume2"/></span>
+										</div>
 									</div>
 								</div>
 								<div class="card-extra">
@@ -335,7 +343,7 @@
 								<div class="card-main">
 									<div class="card-hd">
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
-											<img class="story-image" width="300" height="300" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>" style="margin-top:-20.0px;">
+											<img class="story-image" width="283" height="192" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
 										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
 										
@@ -344,6 +352,10 @@
 										<h2 class="story-title" title=" ">
 										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/></a>
 										</h2>
+										<div class="story-info">
+											<span class="info-pinglun">评论:<s:property value="reviewNumber"/>&nbsp;&nbsp;收藏：<s:property value="collectionNumber"/></span>
+											<span class="info-xiaoliang">销量:<s:property value="salesVolume+salesVolume2"/></span>
+										</div>
 									</div>
 								</div>
 								<div class="card-extra">
@@ -381,7 +393,7 @@
 								<div class="card-main">
 									<div class="card-hd">
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
-											<img class="story-image" width="300" height="300" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>" style="margin-top:-20.0px;">
+											<img class="story-image" width="283" height="192" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
 										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
 										
@@ -390,6 +402,10 @@
 										<h2 class="story-title" title=" ">
 										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/></a>
 										</h2>
+										<div class="story-info">
+											<span class="info-pinglun">评论:<s:property value="reviewNumber"/>&nbsp;&nbsp;收藏：<s:property value="collectionNumber"/></span>
+											<span class="info-xiaoliang">销量:<s:property value="salesVolume+salesVolume2"/></span>
+										</div>
 									</div>
 								</div>
 								<div class="card-extra">
@@ -581,14 +597,7 @@
 	
 	<a id="ibangkf" style="display:none;" href="http://www.ibangkf.com">在线客服</a>
 <script language="javascript" src="http://c.ibangkf.com/i/c-laisaohuo.js"></script>
-<script>
-$('.carditem').mouseover(function(){
-	$(this).find('.card-actions').show();
-})
-$('.carditem').mouseout(function(){
-	$(this).find('.card-actions').hide();
-})
-</script>
+
 <script>
 
 				//顶部菜单

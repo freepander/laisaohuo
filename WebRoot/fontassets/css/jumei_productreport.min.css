@@ -175,7 +175,7 @@
 }
 
 .product_report .cat_nav .sub_nav p a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	background: 0 0
 }
 
@@ -184,7 +184,7 @@
 }
 
 .product_report .cat_nav .sub_nav .leave_msg {
-	color: #ed145b
+	color: #FF9900
 }
 
 .product_report .cat_nav .sub_nav .leave_msg:hover {
@@ -1458,7 +1458,7 @@
 	width: 32px;
 	font: 700 45px "Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
 	line-height: 35px;
-	color: #ED145B
+	color: #FF9900
 }
 
 .product_report .side_list_view .content {
@@ -1710,7 +1710,7 @@
 }
 
 .product_report .brand_element_view .brand_element_container a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -1782,7 +1782,7 @@
 #report_home .recomm .product .info .number {
 	font-size: 14px;
 	font-weight: 700;
-	color: #ED145B;
+	color: #FF9900;
 	font-family: Georgia,"Helvetica Neue",Arial,"微软雅黑";
 	line-height: 20px
 }
@@ -2189,7 +2189,7 @@
 	bottom: 0;
 	left: 0;
 	color: #fff;
-	background: #ed145b;
+	background: #FF9900;
 	display: block;
 	filter: Alpha(opacity=50);
 	-moz-opacity: .5;
@@ -2200,7 +2200,7 @@
 	filter: Alpha(opacity=70);
 	-moz-opacity: .7;
 	opacity: .7;
-	background: #ed145b
+	background: #FF9900
 }
 
 .comment_container .content {
@@ -2663,7 +2663,7 @@ div#container div#body div#view_report.product_report div.main div.report_detail
 
 div#container div#body div#view_report.product_report div.main div.report_detail_container div.rp_bd div.content div.summary div a:hover {
 	background: 0 0;
-	color: #ED145B
+	color: #FF9900
 }
 
 .box_rect .user {
@@ -2686,7 +2686,7 @@ div#container div#body div#view_report.product_report div.main div.report_detail
 	color: #fff;
 	width: 100%;
 	_width: 177px;
-	background: #ed145b;
+	background: #FF9900;
 	display: block;
 	filter: Alpha(opacity=50);
 	-moz-opacity: .5;
@@ -2694,7 +2694,7 @@ div#container div#body div#view_report.product_report div.main div.report_detail
 }
 
 .box_rect .user .edit_avatar:hover {
-	background: #ed145b;
+	background: #FF9900;
 	filter: Alpha(opacity=70);
 	-moz-opacity: .7;
 	opacity: .7
@@ -2738,7 +2738,7 @@ div#container div#body div#view_report.product_report div.main div.report_detail
 }
 
 .switch_show_my_product a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -2908,14 +2908,14 @@ div#container div#body div#view_report.product_report div.main div.report_detail
 	left: 0;
 	color: #fff;
 	width: 100%;
-	background: #ed145b;
+	background: #FF9900;
 	filter: Alpha(opacity=50);
 	-moz-opacity: .5;
 	opacity: .5
 }
 
 .product_report .user_info .main_info a.edit_avatar:hover {
-	background: #ed145b;
+	background: #FF9900;
 	text-decoration: none;
 	filter: Alpha(opacity=70);
 	-moz-opacity: .7;
@@ -3400,7 +3400,7 @@ div#container div#body div#view_report.product_report div.main div.report_detail
 }
 
 .topkoubei_pic_left_left_name a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: underline
 }
 

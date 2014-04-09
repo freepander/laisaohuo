@@ -40,6 +40,7 @@
           <td><s:property value="name"/></td>
           <td>
           	<a class="button button-dangerous" href="admin/brand_delete?id=<s:property value="id"/>" class="button">删除</a>
+          	<a class="button" href="admin/brand_input?id=<s:property value="id"/>" class="button">更改</a>
           </td>
         </tr>
         </s:iterator>

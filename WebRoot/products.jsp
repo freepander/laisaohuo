@@ -84,25 +84,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                         </li>
                         <li class="item">
                             <p class="item_p">
-                                <span class="icon i5"></span>
-                                <a href="products_listAll?bigCategoryId=3">香氛</a>
-                            </p>
-
-                            <div class="moreCategory">
-                                <s:iterator value="xiangFenCategoryList" status="st">
-                                	<s:if test="#st.index%2==0">
-                                	<p class="clearfix">
-                                	<span class="left"><a class="fun_category" data-categoryId="<s:property value="id"/>" title="<s:property value="name"/>" href="javascript:void(0);"><s:property value="name"/></a></span>
-                                	</s:if>
-                                	<s:if test="#st.index%2==1">
-                                	<span class="right"><a class="fun_category" data-categoryId="<s:property value="id"/>" title="<s:property value="name"/>" href="javascript:void(0);"><s:property value="name"/></a></span>
-                                	</p>
-                                	</s:if>
-                                </s:iterator>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <p class="item_p">
                                 <span class="icon i3"></span>
                                 <a href="products_listAll?bigCategoryId=4">身体护理</a>
                             </p>
@@ -126,24 +107,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                             </p>
                             <div class="moreCategory">
                                 <s:iterator value="meironggongjuCategoryList" status="st">
-                                	<s:if test="#st.index%2==0">
-                                	<p class="clearfix">
-                                	<span class="left"><a class="fun_category" data-categoryId="<s:property value="id"/>" title="<s:property value="name"/>" href="javascript:void(0);"><s:property value="name"/></a></span>
-                                	</s:if>
-                                	<s:if test="#st.index%2==1">
-                                	<span class="right"><a class="fun_category" data-categoryId="<s:property value="id"/>" title="<s:property value="name"/>" href="javascript:void(0);"><s:property value="name"/></a></span>
-                                	</p>
-                                	</s:if>
-                                </s:iterator>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <p class="item_p">
-                                <span class="icon i6"></span>
-                                <a href="products_listAll?bigCategoryId=6">母婴专区</a>
-                            </p>
-                            <div class="moreCategory">
-                                <s:iterator value="muyingzhuanquCategoryList" status="st">
                                 	<s:if test="#st.index%2==0">
                                 	<p class="clearfix">
                                 	<span class="left"><a class="fun_category" data-categoryId="<s:property value="id"/>" title="<s:property value="name"/>" href="javascript:void(0);"><s:property value="name"/></a></span>
@@ -191,6 +154,24 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                 </s:iterator>
                             </div>
                         </li>
+                        <li class="item">
+                            <p class="item_p">
+                                <span class="icon i9"></span>
+                                <a style="color:red;" href="products_listAll?bigCategoryId=9">同学惠</a>
+                            </p>
+                            <div class="moreCategory">
+                                <s:iterator value="tongxuehuiCategoryList" status="st">
+                                	<s:if test="#st.index%2==0">
+                                	<p class="clearfix">
+                                	<span class="left"><a class="fun_category" data-categoryId="<s:property value="id"/>" title="<s:property value="name"/>" href="javascript:void(0);"><s:property value="name"/></a></span>
+                                	</s:if>
+                                	<s:if test="#st.index%2==1">
+                                	<span class="right"><a class="fun_category" data-categoryId="<s:property value="id"/>" title="<s:property value="name"/>" href="javascript:void(0);"><s:property value="name"/></a></span>
+                                	</p>
+                                	</s:if>
+                                </s:iterator>
+                            </div>
+                        </li>
                     </ul>
                     <div class="clear"></div>
                 </div>
@@ -198,7 +179,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             <div id="warp_left">
                 <div id="pListContainer">
                     <div id="warp_left_top">
-                    
                     
                     <div class="allready_selected">
                     	<div class="tit">你选择了：</div>
@@ -301,84 +281,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <div class="clear"></div>
 <div id="footer_container">
-    <div id="footer_textarea">
-        <div class="footer_top">
-            <div class="footer_con" id="footer_links">
-                <ul class="linksa png">
-                    <li class="links">服务保障</li>
-                    <li><a href="#" target="_blank" rel="nofollow">真品联盟</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">100%正品保证</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">30天无条件退货</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">7×24小时客服服务</a></li>
-                    <li><span class="footer_zcemail">总裁邮箱</span><img src="http://p0.jmstatic.com/templates/jumei/images/ceo_v4.jpg" alt="" class="footer_zcemail_img"></li>
-                </ul>
-
-                <ul class="linksb png">
-                    <li class="links">使用帮助</li>
-                    <li><a href="#" target="_blank" rel="nofollow">新手指南</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">常见问题</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">帮助中心</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">用户协议</a></li>
-                </ul>
-
-                <ul class="linksc png">
-                    <li class="links">支付方式</li>
-                    <li><a href="#" target="_blank" rel="nofollow">货到付款</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">在线支付</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">余额支付</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">现金券支付</a></li>
-                </ul>
-
-                <ul class="linksd png">
-                    <li class="links">配送方式</li>
-                    <li><a href="#" target="_blank" rel="nofollow">买二包邮</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">配送说明</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">运费说明</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">验货签收</a></li>
-                </ul>
-
-                <ul class="linkse png">
-                    <li class="links">售后服务</li>
-                    <li><a href="#" target="_blank" rel="nofollow">正品承诺</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">售后咨询</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">退货政策</a></li>
-                    <li><a href="#" target="_blank" rel="nofollow">退货办理</a></li>
-                </ul>
-
-                <span class="links_er_box">
-                    <ul class="linksf">
-                        <li class="links">手机聚美</li>
-                        <li><span class="link_bottom_pic"></span></li>
-                        <li>下载移动客户端</li>
-                    </ul>
-                    <ul class="linksg">
-                        <li class="links">聚美微信</li>
-                        <li><span class="link_bottom_pic"></span></li>
-                        <li>聚美官方微信</li>
-                    </ul>
-                </span>
-            </div>
-        </div>
-        <div class="footer_center">
-            <div class="footer_con" id="footer_link">
-                <a href="#" target="_blank" rel="nofollow">关于聚美优品</a>  |
-                <a href="#" target="_blank" rel="nofollow">获取更新</a>  |
-                <a href="#" target="_blank" rel="nofollow">加入聚美</a>  |
-                <a href="#" target="_blank" rel="nofollow">品牌合作专区</a>  |
-                <a href="#" target="_blank" rel="nofollow">网站联盟</a>  |
-                <a href="#" target="_blank" rel="nofollow">媒体报道</a>  |
-                <a href="#" target="_blank" rel="nofollow">商务合作</a>  |
-                <a href="#" target="_blank" rel="nofollow">友情链接</a>
-            </div>
-        </div>
-        <div class="footer_con" id="footer_copyright">
-            <p class="footer_copy_con">
-                © 2014 哈尔滨明彦创新科技发展有限公司 保留一切权利。 <br>
-                京公网安备 110105001608 | <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">京ICP证111033号</a> | 食品流通许可证 SP1101051110165515（1-1）
-                | <a href="http://p2.jmstatic.com/activity/2013_chuangrui.jpeg" target="_blank" rel="nofollow">营业执照</a>
-            </p>
-        </div>
-    </div>
+	<%@include file="pianduan/footer1.jsp" %>
 </div>
 <script>
 	$('.fun_brand').click(function(){

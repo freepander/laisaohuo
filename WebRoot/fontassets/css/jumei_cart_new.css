@@ -56,7 +56,7 @@
 #cart .confirm_pay .btn_grey_mid{
     width:auto;
     line-height: 40px;
-    color:#ed145b;
+    color:#FF9900;
     background:none;
 }
 #cart .confirm_pay .btn_grey_mid:hover{
@@ -154,7 +154,7 @@
 #cart .cart_products table .number_box .pink span {
     width: auto;
     line-height: 18px;
-    background: #ED145B;
+    background: #FF9900;
     color: #fff;
     padding: 1px 3px;
 }
@@ -292,7 +292,7 @@
 }
 #cart .cart_products table .card_no_cap,
 #cart .cart_products table .card{
-    background:#ed145b;
+    background:#FF9900;
 }
 #cart .cart_products table .reduce_price{
     background:#4799ff;
@@ -327,7 +327,7 @@
     overflow: hidden;
 }
 #cart .cart_products table .sale_info .sale_item .timer{
-    color:#ed145b;
+    color:#FF9900;
 }
 #cart .cart_products table .price_sum{
     float: right;
@@ -351,7 +351,7 @@
     color:#fff;
 }
 #cart .cart_products .focus_tr td .focus_amount{
-    color:#ed145b;
+    color:#FF9900;
     font-weight: bold;
     font-family: Helvetica, arial, "sans-serif";
 }
@@ -437,7 +437,7 @@
     padding:10px 0;
 }
 #cart_products .add_again td a{
-    color:#ed145b;
+    color:#FF9900;
 }
 #cart .cart_products table .btn_grey_small:hover,#cart .cart_products table .btn_pink_big:hover{
     text-decoration: none;
@@ -447,7 +447,7 @@
     font-size: 14px;
 }
 #cart .cart_products table .name a:hover{
-    color:#ED145B;
+    color:#FF9900;
 }
 #cart .cart_products table td.product_box{
     overflow: hidden;
@@ -635,7 +635,7 @@
 #cart .cart_other_products .cart_cross_triggers .current,#cart .cart_other_products .cart_cross_triggers a:hover{
     text-decoration: none;
     background: #fff;
-    color:#ed145b;
+    color:#FF9900;
     line-height: 27px;
     border: 1px solid#e2e2e2;
     border-bottom-color: #fff;
@@ -717,12 +717,12 @@
     width: 0;
 }
 .address_btns_wrap .address_more a.stri_open span{
-    border-color: #ED145B rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-color: #FF9900 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     border-style: solid dashed dashed;
     border-width: 6px 6px 0;
 }
 .address_btns_wrap .address_more a.stri_close span{
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #ED145B;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #FF9900;
     border-style: dashed dashed solid;
     border-width: 0 6px 6px;
 }
@@ -790,14 +790,14 @@
 #cart .cart_left .option .content .option_box .btnEditAddress_new{
     top:12px;right:42px;
     cursor: pointer;
-    color:#ed145b;
+    color:#FF9900;
     height: 14px;line-height:14px;font-size:12px;
     overflow:hidden;
 }
 #cart .cart_left .option .content .option_box .btnEditAddress_del{
     top:12px;right:10px;
     cursor: pointer;
-    color:#ed145b;
+    color:#FF9900;
     height: 14px;line-height:14px;font-size:12px;
     overflow:hidden;
 }
@@ -964,7 +964,7 @@
     float:right;
 }
 #cart .content .editAddressForm .selectclose:hover{
-    color:#ed145b;
+    color:#FF9900;
     text-decoration:none;
 }
 
@@ -1013,7 +1013,7 @@
 }
 #cart .cart_left .cart_products td.price_count{
     padding-top:10px;
-    color:#ED145B;
+    color:#FF9900;
 }
 #cart .cart_left .cart_products td.count span.left{
     color:#000;
@@ -1048,7 +1048,7 @@
     font-weight:500;
     float:left;
     padding-left:10px;
-    color:#ed145b;
+    color:#FF9900;
     font-family:"宋体";
     line-height:58px;
 }
@@ -1064,7 +1064,7 @@
     cursor:pointer;
 }
 #cart .paytype #paytype_balance_info span{
-    color:#ED145B;
+    color:#FF9900;
 }
 #cart .share{
     margin-top:20px;
@@ -1251,7 +1251,7 @@
 }
 .cart_other_products .btn_scroll:hover{
     text-decoration: none;
-    background: #ed145b;
+    background: #FF9900;
 }
 #scroll_left{
     left:0px;
@@ -1299,12 +1299,12 @@
     color:#000;
 }
 .mall_box ul.product_list li .name a:hover{
-    color:#ED145B;
+    color:#FF9900;
 }
 .mall_box ul.product_list li .price{
     margin-bottom: 10px;
     line-height:18px;
-    color:#ed145b;
+    color:#FF9900;
     font-size: 18px;
     font-family: Helvetica, arial, sans-serif;
 }
@@ -1361,7 +1361,7 @@
 }
 #cart .pay_status .pay_status_img .status_text{
     float: left;
-    color:#ed145b;
+    color:#FF9900;
     margin-left: 20px;
     line-height: 65px;
     font-family: "微软雅黑","宋体";
@@ -1483,7 +1483,7 @@
 
 }
 #cart .cart_right .other_deal li span{
-    color:#ED145B;
+    color:#FF9900;
 }
 
 #show_promo_card{
@@ -1554,12 +1554,12 @@
     position: relative;
 }
 .sale_gifts_selector .enable{
-    border: 1px solid #ed145b;
+    border: 1px solid #FF9900;
 }
 .sale_gifts_selector .enable .til{
-    background: #ed145b;
+    background: #FF9900;
     color: #fff;
-    border-bottom-color: #ed145b;
+    border-bottom-color: #FF9900;
 }
 .sale_gifts_selector .enable ul{
     background: #ffdede;
@@ -1568,7 +1568,7 @@
     cursor: pointer;
 }
 .sale_gifts_selector .enable li.selected{
-    border-color: #ed145b;
+    border-color: #FF9900;
 }
 .sale_gifts_selector .enable li .icon{
     position: absolute;
@@ -1663,7 +1663,7 @@
 }
 .order-table th {
     background: #ffeef2;
-    border-bottom: 1px #ed145b solid;
+    border-bottom: 1px #FF9900 solid;
     padding-top: 10px;
     padding-bottom: 10px;
     white-space: nowrap;
@@ -1740,7 +1740,7 @@ td.item-buy-total {
     line-height:14px;
     text-align:center;
     color:#FFF;
-    background:#ed145b;
+    background:#FF9900;
     overflow:hidden;
     display:inline-block;
     font-family:"宋体";
@@ -1756,7 +1756,7 @@ td.item-buy-total {
 }
 
 #cart .cart_left .cart_products .cart_products_v2 .order_amount td .price_count{
-    color:#ed145b;
+    color:#FF9900;
 }
 #cart .cart_left .cart_products .cart_products_v2 .order_amount td .price_count .price{
     font-size:14px;
@@ -1823,7 +1823,7 @@ td.item-buy-total {
     border-bottom: 1px solid #ccc;
     font-weight: normal;
     color:#fff;
-    background: #ED145B;
+    background: #FF9900;
 }
 #cart .cart_left .cart_products .cart_products_v2 .order_amount td .order_amount_container .choose_promo_card_box h2 .btn_close,
 #cart .cart_left .cart_products .cart_products_v2 .order_amount td .order_amount_container .choose_red_card_box h2 .btn_close{
@@ -2122,7 +2122,7 @@ td.item-buy-total {
 }
 .sale_gifts_tabs .title_tabs .current{
     background: #fff;
-    color:#ed145b;
+    color:#FF9900;
     border: 1px solid #e2e2e2;
     border-bottom-color: #fff;
 }
@@ -2240,7 +2240,7 @@ td.item-buy-total {
     *margin-left:10px;
     padding: 3px 10px;
     *padding:0px;
-    background: #ED145B;
+    background: #FF9900;
     border: 1px solid #ccc;
     width:auto;
     color:#fff;
@@ -2250,7 +2250,7 @@ td.item-buy-total {
     margin:10px 0;
     padding: 5px 10px;
     *padding:0px 5px;
-    background: #ED145B;
+    background: #FF9900;
     border: 1px solid #ccc;
     color:#fff;
     cursor: pointer;
@@ -2321,7 +2321,7 @@ td.item-buy-total {
     position: relative;
 }
 #cart .cart_left #address_selector .content .address_lbl_hover{
-    border:1px solid #ed145b;
+    border:1px solid #FF9900;
 }
 #cart .option_box .address_lbl_hover .btnEditAddress_new,#cart .option_box .address_lbl_hover .btnEditAddress_del{
     display:inline;
@@ -2564,7 +2564,7 @@ td.item-buy-total {
 }
 #cart .cart_left .pic_corn_box{
     position:relative;
-    border-color:transparent #ed145b transparent transparent;
+    border-color:transparent #FF9900 transparent transparent;
     left:-7px;
     top:50%;
     z-index:1;
@@ -2638,8 +2638,8 @@ td.item-buy-total {
 .sale_wrap{*display: table-cell;*text-align: center;zoom: 1}
 #cart .cart_products .cart_item .sale_tj_rule_wrap{margin: 0;font-size: 12px;font-weight: 400;display: inline-block;text-align:center;float: none;*display: inline-block}
     #cart .cart_products .sale_tj_rule_wrap .sale_info{margin: 0;*float: none;*display: inline}
-    .sale_tj_rule{background: #fcdce7;border-radius: 10px;padding:2px 8px;font-size: 12px;font-weight: 400;color: #ed145b;cursor: pointer;display:inline-block;*display: inline;*padding-right: 16px }
-    .tj_arrow{;width: 0px;height:0;overflow:hidden;border: 4px solid #ed145b;margin: 5px 0 0 4px; border-color:#ed145b transparent transparent ;overflow: hidden;float: right;*float:none;zoom:1;*position: absolute;}
+    .sale_tj_rule{background: #fcdce7;border-radius: 10px;padding:2px 8px;font-size: 12px;font-weight: 400;color: #FF9900;cursor: pointer;display:inline-block;*display: inline;*padding-right: 16px }
+    .tj_arrow{;width: 0px;height:0;overflow:hidden;border: 4px solid #FF9900;margin: 5px 0 0 4px; border-color:#FF9900 transparent transparent ;overflow: hidden;float: right;*float:none;zoom:1;*position: absolute;}
 #cart .cart_products table .number_box{text-align: center;width: 100px;
     /*padding: 25px 20px 20px;vertical-align: text-top*/
 }

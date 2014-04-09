@@ -80,7 +80,7 @@ em {
 	position: absolute;
 	left: -9px;
 	font-family: Arial,Helvetica,sans-serif;
-	color: #ed145b
+	color: #FF9900
 }
 
 #deal_info .buyit img {
@@ -142,7 +142,7 @@ em {
 
 #deal_info .price {
 	_width: 210px;
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700;
 	padding: 15px 0;
 	padding-right: 0;
@@ -206,7 +206,7 @@ em {
 	height: 20px;
 	line-height: 20px;
 	margin: 5px 0 0 12px;
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -312,7 +312,7 @@ em {
 	font-family: '微软雅黑',YaHei,'黑体',Tahoma,Helvetica,arial,sans-serif;
 	font-weight: 700;
 	line-height: 70px;
-	color: #ed145b;
+	color: #FF9900;
 	text-align: center
 }
 
@@ -369,7 +369,7 @@ em {
 }
 
 #deal_brief .title span {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -459,8 +459,8 @@ em {
 
 #sysmsg-tip .sysmsg-tip-content {
 	background: #FBFBC5;
-	border-left: 1px solid #ed145b;
-	border-right: 1px solid #ed145b
+	border-left: 1px solid #FF9900;
+	border-right: 1px solid #FF9900
 }
 
 #sysmsg-tip .sysmsg-tip-bottom {
@@ -652,7 +652,7 @@ em {
 }
 
 .filter .current a {
-	background: none repeat scroll 0 0 #ED145B;
+	background: none repeat scroll 0 0 #FF9900;
 	border-radius: 2px;
 	color: #FFF;
 	padding: 3px 7px
@@ -714,7 +714,7 @@ em {
 .deal_detail .new_tabs li.buy span {
 	float: left;
 	font-size: 18px;
-	color: #ed145b;
+	color: #FF9900;
 	padding-left: 10px;
 	width: 72px;
 	overflow: hidden;
@@ -1004,7 +1004,7 @@ em {
 }
 
 .deal_detail .today_deals li .info .price {
-	color: #ed145b;
+	color: #FF9900;
 	font-size: 18px;
 	font-family: Arial;
 	padding-left: 19px;
@@ -1039,7 +1039,7 @@ em {
 	word-break: break-all;
 	word-wrap: normal;
 	white-space: normal;
-	color: #ed145b
+	color: #FF9900
 }
 
 .deal_detail .today_deals li .name a {
@@ -1129,7 +1129,7 @@ em {
 }
 
 .deal_detail #product_report ul.product_reports li .report .user_info .user_name {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -1232,7 +1232,7 @@ em {
 	height: 24px;
 	padding: 0 7px;
 	background: #fff;
-	border: 1px solid #ed145b;
+	border: 1px solid #FF9900;
 	font-size: 12px;
 	display: block;
 	float: left;
@@ -1302,7 +1302,7 @@ em {
 }
 
 #deal_info .company_name a:hover {
-	color: #ED145B
+	color: #FF9900
 }
 
 #deal_info .progress .icon {
@@ -1348,7 +1348,7 @@ em {
 	margin-left: 5px;
 	*margin-left: 2px;
 	height: 10px;
-	background: #ed145b
+	background: #FF9900
 }
 
 #deal_info .tip_num {
@@ -1511,7 +1511,7 @@ em {
 }
 
 .deal_filter .parent_filter li a:hover,.deal_filter .parent_filter li.selected a,.deal_filter .parent_filter li.switch a,.deal_filter .parent_filter li.switch a:hover,.deal_filter .children_filter ul li a:hover,.deal_filter .children_filter ul li.more a,.filter_more a,.filter_more a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -1521,7 +1521,7 @@ em {
 	line-height: 36px;
 	font-weight: 700;
 	height: 36px;
-	border-bottom: 4px solid #ed145b
+	border-bottom: 4px solid #FF9900
 }
 
 .deal_filter .parent_filter li.switch,.deal_filter .parent_filter li.switch a {
@@ -1636,12 +1636,12 @@ em {
 }
 
 .deal_filter .children_filter ul li.selected a {
-	background: #ed145b;
+	background: #FF9900;
 	color: #FFF
 }
 
 .deal_filter .children_filter ul li .filter_intro {
-	color: #ed145b
+	color: #FF9900
 }
 
 .deal_filter .children_filter .filter_function_more {
@@ -1660,7 +1660,7 @@ em {
 	height: 38px;
 	line-height: 38px;
 	margin-left: 15px;
-	color: #ED145B;
+	color: #FF9900;
 	font-size: 12px;
 	float: left;
 	display: inline
@@ -1677,7 +1677,7 @@ em {
 .breadcrumbs_wrap_word_a {
 	height: 38px;
 	line-height: 38px;
-	color: #ED145B;
+	color: #FF9900;
 	font-size: 12px;
 	float: left
 }
@@ -1754,7 +1754,7 @@ em {
 }
 
 .deal_browse_goods div span {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -1789,7 +1789,7 @@ em {
 	height: 58px;
 	font-size: 30px;
 	font-weight: bolder;
-	color: #ed145b;
+	color: #FF9900;
 	line-height: 58px;
 	float: left
 }
@@ -1885,7 +1885,7 @@ em {
 }
 
 .deal_right_top_content .name {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -1894,7 +1894,7 @@ em {
 }
 
 .deal_right_top_content a:hover {
-	color: #ed145b
+	color: #FF9900
 }
 
 ul,li {
@@ -1908,7 +1908,7 @@ ul,li {
 }
 
 .pink {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -2040,14 +2040,14 @@ ul,li {
 }
 
 .deal_hover .name a {
-	color: #ed145b
+	color: #FF9900
 }
 
 .deal_box .name .persent {
 	word-break: break-all;
 	word-wrap: normal;
 	white-space: normal;
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -2322,7 +2322,7 @@ ul,li {
 }
 
 #sidebar .list_report a:hover {
-	color: #ed145b
+	color: #FF9900
 }
 
 #sidebar .loreal {
@@ -3535,7 +3535,7 @@ ul.comments li .comment_content .title .time {
 }
 
 .deal_luxury .deal_browse_goods div span {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -3549,7 +3549,7 @@ ul.comments li .comment_content .title .time {
 	height: 38px;
 	line-height: 38px;
 	margin-left: 15px;
-	color: #ED145B;
+	color: #FF9900;
 	font-size: 12px;
 	float: left;
 	display: inline
@@ -3566,7 +3566,7 @@ ul.comments li .comment_content .title .time {
 .breadcrumbs_wrap_word_a {
 	height: 38px;
 	line-height: 38px;
-	color: #ED145B;
+	color: #FF9900;
 	font-size: 12px;
 	float: left
 }
@@ -3718,7 +3718,7 @@ ul.comments li .comment_content .title .time {
 }
 
 .deal_luxury .deal_hover .name a {
-	color: #ed145b
+	color: #FF9900
 }
 
 .deal_luxury .deal_box .pink span {
@@ -4117,7 +4117,7 @@ ul.comments li .comment_content .title .time {
 }
 
 #recent_deals_container .btns_container .clear_cart:hover,.abtest_style #recent_deals_container .btns_container .clear_cart:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoratin: none;
 	background: #f7f7f7
 }
@@ -4267,7 +4267,7 @@ ul.comments li .comment_content .title .time {
 
 #cart_content span.f_color,#recent_deals_container .price span.f_color {
 	font-size: 18px;
-	color: #ed145b;
+	color: #FF9900;
 	margin-right: 12px;
 	font-family: Arial,"宋体";
 	position: relative;
@@ -4328,7 +4328,7 @@ ul.comments li .comment_content .title .time {
 }
 
 #home_nav_bar .sorts_list .hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -4509,7 +4509,7 @@ ul.comments li .comment_content .title .time {
 }
 
 #home_nav_bar .cart_content .single_info a.name:hover,.cart_content .price_all .delete:hover,#home_nav_bar .cart_content .price_all .price,.cart_content .con_all .price_gongji span,#home_nav_bar .cart_content .con_all .price_gongji em,.cart_content .con_all .num_all {
-	color: #ed145b
+	color: #FF9900
 }
 
 #home_nav_bar .cart_content .price_all,.cart_content .con_all .price_whole,.cart_content .con_all .num_two {
@@ -4647,7 +4647,7 @@ ul.comments li .comment_content .title .time {
 
 .deals_pic_name a:hover {
 	text-decoration: none;
-	color: #ED145B
+	color: #FF9900
 }
 
 .deals_pic_down {
@@ -4716,7 +4716,7 @@ ul.comments li .comment_content .title .time {
 }
 
 .rep_kb_warp a:hover {
-	color: #ED145B;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -4738,7 +4738,7 @@ ul.comments li .comment_content .title .time {
 }
 
 #recent-deals .time a:hover {
-	color: #ED145B;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -4841,7 +4841,7 @@ ul.comments li .comment_content .title .time {
 .product_report_rates .report_record .record {
 	line-height: 48px;
 	font-size: 40px;
-	color: #ed145b;
+	color: #FF9900;
 	margin-bottom: 10px
 }
 
@@ -5055,7 +5055,7 @@ ul.comments li .comment_content .title .time {
 .deal_detail #product_report .user_report_comments .comment_user_info .user_name {
 	float: left;
 	font-weight: 700;
-	color: #ED145B;
+	color: #FF9900;
 	margin-right: 5px
 }
 
@@ -5166,12 +5166,12 @@ ul.comments li .comment_content .title .time {
 
 .deal_like .liked {
 	background-position: 0 -24px;
-	color: #ED145B
+	color: #FF9900
 }
 
 .deal_like .ilikewrap:hover {
 	background-position: 0 -24px;
-	color: #ED145B;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -5210,7 +5210,7 @@ ul.comments li .comment_content .title .time {
 }
 
 .deal_like .ilikewrap .findme a {
-	color: #ed145b
+	color: #FF9900
 }
 
 .deal_zhe {
@@ -5295,7 +5295,7 @@ ul.comments li .comment_content .title .time {
 }
 
 .deal_zhe .deal_zhe_title span {
-	color: #ed145b
+	color: #FF9900
 }
 
 .deal_zhe .deal_zhe_chakan {

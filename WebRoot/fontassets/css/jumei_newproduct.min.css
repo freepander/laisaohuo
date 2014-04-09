@@ -28,11 +28,11 @@
 }
 
 .location a:hover {
-	color: #ed145b
+	color: #FF9900
 }
 
 .location span {
-	color: #ed145b
+	color: #FF9900
 }
 
 #reportwrap .deal_con_content {
@@ -73,7 +73,7 @@
 }
 
 .product_info .info .koubei span a:hover {
-	color: #ED145B
+	color: #FF9900
 }
 
 .product_info .firstcolor {
@@ -118,7 +118,7 @@
 	text-align: left;
 	float: left;
 	margin: 0 35px 0 5px;
-	color: #ed145b;
+	color: #FF9900;
 	overflow: hidden
 }
 
@@ -186,7 +186,7 @@
 }
 
 .service_rating.small .koubei a:hover {
-	color: #ED145B;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -304,7 +304,7 @@
 	text-align: center;
 	font-family: "微软雅黑";
 	line-height: 40px;
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none;
 	font-size: 14px
 }
@@ -418,7 +418,7 @@
 
 #mall_sidebar .bottom_part .pinglun {
 	height: 20px;
-	color: #f8a3bf;
+	color: #FF9900;
 	float: left;
 	margin-left: 10px
 }
@@ -433,7 +433,7 @@
 }
 
 .pink {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700
 }
 
@@ -508,7 +508,7 @@
 }
 
 .deal_hover .name a {
-	color: #ed145b
+	color: #FF9900
 }
 
 .deal_box .pink span {
@@ -621,7 +621,7 @@ textarea.lazyload {
 	width: 680px;
 	padding-left: 20px;
 	height: 40px;
-	background: #313131;
+	background: #0081CC;
 	z-index: 1000;
 	border: 0;
 	overflow: hidden;
@@ -648,7 +648,7 @@ textarea.lazyload {
 }
 
 .product_info .info .size .size_box span.selected {
-	border: 1px solid #ed145b;
+	border: 1px solid #FF9900;
 	background: url(http://images.jumei.com/templates/jumei/images/newmall/typechoosicon.jpg) no-repeat right bottom
 }
 
@@ -799,7 +799,7 @@ textarea.lazyload {
 
 #activity_timer {
 	float: none;
-	color: #ED145B
+	color: #FF9900
 }
 
 .mall_saleout {
@@ -856,7 +856,7 @@ textarea.lazyload {
 }
 
 .product_info .info .price .yen {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700;
 	font-size: 16px
 }
@@ -885,7 +885,7 @@ textarea.lazyload {
 }
 
 #mall_price {
-	color: #ed145b;
+	color: #FF9900;
 	font-size: 30px
 }
 
@@ -1144,7 +1144,7 @@ div.jqZoomPup {
 	display: block;
 	border-style: dashed dashed dashed solid;
 	border-width: 5px;
-	border-color: transparent transparent transparent #ed145b;
+	border-color: transparent transparent transparent #FF9900;
 	font-size: 0;
 	overflow: hidden;
 	width: 0;
@@ -2056,7 +2056,7 @@ div.jqZoomPup {
 }
 
 #recent_deals_container .btns_container .clear_cart:hover,.abtest_style #recent_deals_container .btns_container .clear_cart:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoratin: none;
 	background: #f7f7f7
 }
@@ -2206,7 +2206,7 @@ div.jqZoomPup {
 
 #cart_content span.f_color,#recent_deals_container .price span.f_color {
 	font-size: 18px;
-	color: #ed145b;
+	color: #FF9900;
 	margin-right: 12px;
 	font-family: Arial,"宋体";
 	position: relative;
@@ -2338,7 +2338,7 @@ div.jqZoomPup {
 }
 
 #home_nav_bar .cart_content .single_info a.name:hover,.cart_content .price_all .delete:hover,#home_nav_bar .cart_content .price_all .price,.cart_content .con_all .price_gongji span,#home_nav_bar .cart_content .con_all .price_gongji em,.cart_content .con_all .num_all {
-	color: #ed145b
+	color: #FF9900
 }
 
 #home_nav_bar .cart_content .price_all,.cart_content .con_all .price_whole,.cart_content .con_all .num_two {
@@ -2438,7 +2438,7 @@ div.jqZoomPup {
 }
 
 .cart_membership {
-	background: #ed145b;
+	background: #FF9900;
 	border-radius: 8px;
 	color: #FFF;
 	padding: 0 16px 0 8px;
@@ -2526,7 +2526,7 @@ div.jqZoomPup {
 }
 
 .mall_membership_box .p_num {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: line-through
 }
 

@@ -61,7 +61,7 @@
                 <tr>
                     <th colspan="2">产品</th>
                     <th>数量</th>
-                    <th>聚美价</th>
+                    <th>扫货价</th>
                     <th>小计</th>
                     <th class="text_left">操作</th>
                 </tr>
@@ -126,14 +126,8 @@
     </div>
 </div><!--  container end  -->
 
-<div id="footer_textarea">
-    <div class="footer_con" id="footer_copyright">
-        <p class="footer_copy_con">
-                © 2014 哈尔滨明彦创新科技发展有限公司 保留一切权利。 <br>
-                京公网安备 110105001608 | <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">京ICP证111033号</a> | 食品流通许可证 SP1101051110165515（1-1）
-                | <a href="http://p2.jmstatic.com/activity/2013_chuangrui.jpeg" target="_blank" rel="nofollow">营业执照</a>
-            </p>
-    </div>
+<div id="footer_container">
+		<%@include file="pianduan/footer1.jsp" %>
 </div><!--  footer_textarea  -->
 
 <script>

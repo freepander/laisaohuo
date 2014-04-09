@@ -248,7 +248,7 @@ body {
 }
 
 #pListContainer .pList-item.hover {
-	border: solid 3px #fbd0df;
+	border: solid 3px #FF9900;
 	z-index: 10
 }
 
@@ -419,7 +419,7 @@ body {
 	font-size: 12px;
 	width: 20px;
 	height: 16px;
-	background: #ed145b
+	background: #FF9900
 }
 
 .promotions_info .icon.jian {
@@ -450,7 +450,7 @@ body {
 
 .promo_icon {
 	color: #fff;
-	background: #ed145b;
+	background: #FF9900;
 	padding: 1px 2px;
 	border: solid 1px #da084d
 }
@@ -479,12 +479,12 @@ body {
 	display: inline-block;
 	padding: 3px 5px;
 	border: solid 1px #dbdbdb;
-	color: #ed145b;
+	color: #FF9900;
 	margin: 1px 2px
 }
 
 .star_score .text strong {
-	color: #ed145b;
+	color: #FF9900;
 	font-family: Arial;
 	font-size: 18px;
 	letter-spacing: 1px;
@@ -755,7 +755,7 @@ body {
 }
 
 .moreCategory p span a:hover {
-	background: #f8a3bf;
+	background: #FF9900;
 	color: #fff
 }
 
@@ -840,7 +840,7 @@ p.noicon a {
 
 #warp_right .bottom_part .pinglun {
 	height: 20px;
-	color: #f8a3bf;
+	color: #FF9900;
 	float: left;
 	margin-left: 10px
 }
@@ -896,7 +896,7 @@ p.noicon a {
 }
 
 .service_rating.small .koubei a:hover {
-	color: #ED145B;
+	color: #FF9900;
 	text-decoration: none
 }
 

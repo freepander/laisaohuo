@@ -28,7 +28,7 @@ img {
 
 .product_report a {
 	text-decoration: none;
-	color: #ed145b
+	color: #FF9900
 }
 
 .product_report a:hover {
@@ -127,7 +127,7 @@ img {
 	line-height: 38px;
 	margin: 0;
 	font-size: 20px;
-	color: #ed145b;
+	color: #FF9900;
 	_margin-bottom: 10px;
 	font-family: tahoma,arial,sans-serif;
 	font-weight: bold
@@ -144,7 +144,7 @@ img {
 }
 
 .rp_score_l p span {
-	color: #ed145b
+	color: #FF9900
 }
 
 .deal_con_content .rp_score_l .rating {
@@ -617,16 +617,16 @@ h2.use_tit {
 }
 
 .deal_con_content .redtxt {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: bold
 }
 
 .deal_con_content .reda {
-	color: #ed145b
+	color: #FF9900
 }
 
 .deal_con_content .reda:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: underline
 }
 

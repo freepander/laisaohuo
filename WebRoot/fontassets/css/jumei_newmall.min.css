@@ -508,7 +508,7 @@ img {
 }
 
 .mtsBanner .mall_dot_hover {
-	background: #ed145b;
+	background: #FF9900;
 	color: #fff
 }
 
@@ -555,7 +555,7 @@ img {
 	display: none;
 	border-style: solid dashed dashed;
 	border-width: 5px;
-	border-color: #ed145b transparent transparent;
+	border-color: #FF9900 transparent transparent;
 	font-size: 0;
 	overflow: hidden;
 	width: 0;
@@ -568,7 +568,7 @@ img {
 
 #authorize_floor .au_tabnav span.hover {
 	text-decoration: none;
-	background: #ed145b;
+	background: #FF9900;
 	color: #fff
 }
 
@@ -648,6 +648,8 @@ img {
 	height: 60px;
 	margin-bottom: 20px;
 	background:#fff;
+	background-color:#FFF;
+	border-radius:5px;
 }
 
 .floor_head h3 {
@@ -656,7 +658,8 @@ img {
 	display: inline;
 	width: 190px;
 	height: 60px;
-	background: url(http://images.jumei.com/templates/jumei/images/newmall/floortitlebg_2.jpg) no-repeat
+	background: url(http://images.jumei.com/templates/jumei/images/newmall/floortitlebg_2.jpg) no-repeat;
+	border-radius: 40px;
 }
 
 #color .floor_head h3 {
@@ -720,7 +723,7 @@ img {
 }
 
 .floor_head .fh_cate li a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -759,7 +762,7 @@ img {
 }
 
 .floor_con .fc_sale_rank ul .item .text {
-	color: #ed145b;
+	color: #FF9900;
 	height: 14px;
 	padding: 6px 0;
 	overflow: hidden
@@ -799,12 +802,12 @@ img {
 }
 
 .floor_con .fc_sale_rank ul .hover .tit a {
-	color: #ed145b
+	color: #FF9900
 }
 
 .floor_con .fc_sale_rank ul .item a:hover {
 	text-decoration: none;
-	color: #ed145b
+	color: #FF9900
 }
 
 .floor_con .fc_sale_rank ul .item .sr_con {
@@ -973,7 +976,7 @@ img {
 }
 
 .mask_koubei p em {
-	color: #ed145b
+	color: #FF9900
 }
 
 .mask_koubei .rat {
@@ -1030,7 +1033,7 @@ img {
 
 .fo_tabs ul li.hover {
 	background: #fff;
-	color: #ed145b
+	color: #FF9900
 }
 
 .fo_tab_con {
@@ -1724,11 +1727,11 @@ img {
 }
 
 #mall_bfd_container .m_l_name a:hover {
-	color: #ed145b
+	color: #FF9900
 }
 
 #mall_bfd_container .may_list_price label,#mall_bfd_container .may_list_price span {
-	color: #ed145b;
+	color: #FF9900;
 	font-size: 16px
 }
 

@@ -24,13 +24,13 @@
 			<div class="control-group">
 			<label class="control-label"><s>*</s>品牌名称：</label>
 			<div class="controls">
-				<input type="text" name="name" value="<s:property value="category.name"/>">
+				<input type="text" name="name" value="<s:property value="brand.name"/>">
 			</div>
 		</div>
 		<div class="control-group">
 				<label class="control-label">品牌图片</label>
 				<div class="controls">
-					<input type="text" name="logo" id="logo" value="<s:property value="goods.logo"/>">
+					<input type="text" name="logo" id="logo" value="<s:property value="brand.logo"/>">
 					<input type="button" value="点击选择图片" onclick="path.click()">
 					<input type="file" name="file" style="display:none;" id="path" onchange="f_upload(this)">
 				</div>

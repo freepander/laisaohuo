@@ -90,7 +90,7 @@ body {
 }
 
 .deal_filter .parent_filter li a:hover,.deal_filter .parent_filter li.selected a,.deal_filter .parent_filter li.switch a,.deal_filter .parent_filter li.switch a:hover,.deal_filter .children_filter ul li a:hover,.deal_filter .children_filter ul li.more a,.filter_more a,.filter_more a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -100,7 +100,7 @@ body {
 	line-height: 36px;
 	font-weight: 700;
 	height: 36px;
-	border-bottom: 4px solid #ed145b
+	border-bottom: 4px solid #FF9900
 }
 
 .deal_filter .parent_filter li.switch,.deal_filter .parent_filter li.switch a {
@@ -213,12 +213,12 @@ body {
 }
 
 .deal_filter .children_filter ul li.selected a {
-	background: #ed145b;
+	background: #FF9900;
 	color: #FFF
 }
 
 .deal_filter .children_filter ul li .filter_intro {
-	color: #ed145b
+	color: #FF9900
 }
 
 .img_box .row_soldout {
@@ -324,7 +324,7 @@ body {
 	left: 10px;
 	top: 10px;
 	font-size: 36px;
-	color: #ed145b;
+	color: #FF9900;
 	font-family: arial
 }
 
@@ -600,7 +600,7 @@ body {
 	position: absolute;
 	left: -9px;
 	font-family: Arial,Helvetica,sans-serif;
-	color: #ed145b
+	color: #FF9900
 }
 
 #deal_info .buyit a {
@@ -697,7 +697,7 @@ body {
 }
 
 #sidebar .comment a:hover {
-	color: #ED145B;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -801,7 +801,7 @@ body {
 }
 
 #home_nav_bar .home_nav_border .nav_cart:hover,#home_nav_bar .home_nav_border .nav_recent_deals:hover,#home_nav_bar .home_nav_border .nav_service:hover,#home_nav_bar .home_nav_border .nav_backtotop:hover {
-	background: #ed145b
+	background: #FF9900
 }
 
 #home_nav_bar .home_nav_border .nav_cart span,#home_nav_bar .home_nav_border .nav_recent_deals span,#home_nav_bar .home_nav_border .nav_service span,#home_nav_bar .home_nav_border .nav_backtotop span {
@@ -941,7 +941,7 @@ body {
 }
 
 #home_nav_bar #nav_today_block.act,#home_nav_bar #nav_today_block:hover {
-	background: #ed145b
+	background: #FF9900
 }
 
 #home_nav_bar #nav_today_block.act span,#home_nav_bar #nav_today_block:hover span {
@@ -967,7 +967,7 @@ body {
 }
 
 #home_nav_bar #nav_yestoday_block.act,#home_nav_bar #nav_yestoday_block:hover {
-	background: #ed145b
+	background: #FF9900
 }
 
 #home_nav_bar #nav_yestoday_block.act span,#home_nav_bar #nav_yestoday_block:hover span {
@@ -987,7 +987,7 @@ body {
 
 #home_nav_bar .yes_guide a {
 	display: inline;
-	color: #ed145b;
+	color: #FF9900;
 	background: 0 0
 }
 
@@ -1196,7 +1196,7 @@ body {
 }
 
 #recent_deals_container .btns_container .clear_cart:hover,.abtest_style #recent_deals_container .btns_container .clear_cart:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoratin: none;
 	background: #f7f7f7
 }
@@ -1346,7 +1346,7 @@ body {
 
 #cart_content span.f_color,#recent_deals_container .price span.f_color {
 	font-size: 18px;
-	color: #ed145b;
+	color: #FF9900;
 	margin-right: 12px;
 	font-family: Arial,"宋体";
 	position: relative;
@@ -1406,7 +1406,7 @@ body {
 }
 
 #home_nav_bar .sorts_list .hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -1586,7 +1586,7 @@ body {
 }
 
 #home_nav_bar .cart_content .single_info a.name:hover,.cart_content .price_all .delete:hover,#home_nav_bar .cart_content .price_all .price,.cart_content .con_all .price_gongji span,#home_nav_bar .cart_content .con_all .price_gongji em,.cart_content .con_all .num_all {
-	color: #ed145b
+	color: #FF9900
 }
 
 #home_nav_bar .cart_content .price_all,.cart_content .con_all .price_whole,.cart_content .con_all .num_two {
@@ -1698,7 +1698,7 @@ body {
 }
 
 #home_nav_bar .sorts_list .hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
@@ -2358,7 +2358,7 @@ body {
 	float: left;
 	display: block;
 	margin: 0 5px 5px 0;
-	color: #ED145B;
+	color: #FF9900;
 	padding: 5px;
 	border: 1px solid #dbdbdb;
 	white-space: nowrap
@@ -2609,11 +2609,11 @@ body {
 }
 
 .today_other_deals .hover,.today_soldout_deals .hover {
-	border: 1px solid #ED145B
+	border: 1px solid #FF9900
 }
 
 .home_deal_list_container .hover {
-	border: 1px solid #ED145B;
+	border: 1px solid #FF9900;
 	border-bottom: 0;
 	border-right: 0;
 	margin-left: -1px;
@@ -2621,14 +2621,14 @@ body {
 }
 
 .home_deal_list_container .hover .img_box {
-	border-right: 1px solid #ED145B;
+	border-right: 1px solid #FF9900;
 	margin-right: -1px
 }
 
 .home_deal_list_container .hover .shadow {
 	position: relative;
 	left: -1px;
-	border-top: 1px solid #ED145B;
+	border-top: 1px solid #FF9900;
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 	clear: both
@@ -2665,7 +2665,7 @@ body {
 
 .home_breed .home_breed_title,.home_breed_story .home_breed_title {
 	font-size: 24px;
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700;
 	font-family: "微软雅黑";
 	overflow: hidden
@@ -2776,7 +2776,7 @@ body {
 }
 
 .home_mall_breed ul.mall_breed_center li .price {
-	color: #ed145b;
+	color: #FF9900;
 	text-align: center;
 	padding: 5px 0
 }
@@ -2990,7 +2990,7 @@ body {
 	height: 38px;
 	line-height: 38px;
 	margin-left: 15px;
-	color: #ED145B;
+	color: #FF9900;
 	font-size: 12px;
 	float: left;
 	display: inline
@@ -3007,7 +3007,7 @@ body {
 .breadcrumbs_wrap_word_a {
 	height: 38px;
 	line-height: 38px;
-	color: #ED145B;
+	color: #FF9900;
 	font-size: 12px;
 	float: left
 }
@@ -3183,7 +3183,7 @@ body {
 	top: 0;
 	left: 170px;
 	font-family: Arial,Helvetica,sans-serif;
-	color: #ed145b
+	color: #FF9900
 }
 
 #home_slides_deals .deal_info .buyit a {
@@ -3245,7 +3245,7 @@ body {
 	font-size: 18px;
 	font-family: arial;
 	font-weight: 700;
-	color: #ed145b
+	color: #FF9900
 }
 
 #home_slides_deals .deal_info .countdown {
@@ -3273,7 +3273,7 @@ body {
 	background-position: center;
 	font-size: 36px;
 	font-weight: 700;
-	color: #ed145b;
+	color: #FF9900;
 	text-align: center
 }
 
@@ -3332,7 +3332,7 @@ body {
 }
 
 #home_slides_deals .deal_brief .title span {
-	color: #ed145b
+	color: #FF9900
 }
 
 #home_slides_deals .deal_info strong {
@@ -3410,7 +3410,7 @@ body {
 
 #home_slides_deals .deal_brief_trigger .current {
 	background: rgba(237,20,91,.85)!important;
-	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#D9ed145b', EndColorStr='#D9ed145b')
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#D9FF9900', EndColorStr='#D9FF9900')
 }
 
 :root #home_slides_deals .deal_brief_trigger .current {
@@ -3611,7 +3611,7 @@ body {
 
 .featured_box .featured_con_single .price_con .zhek {
 	font-size: 36px;
-	color: #ed145b;
+	color: #FF9900;
 	font-family: arial
 }
 
@@ -3645,7 +3645,7 @@ body {
 }
 
 .featured_box .featured_btns:hover .featured_btns_bg {
-	background: #ed145b;
+	background: #FF9900;
 	opacity: .3;
 	filter: alpha(opacity=30)
 }
@@ -3788,7 +3788,7 @@ body {
 
 .sort_all .sort_new a:hover,.sort_all .sort_new a.asc_enable,.sort_all .sort_new a.desc_enable {
 	text-decoration: none;
-	color: #ed145b
+	color: #FF9900
 }
 
 .sort_all .sort_new a span.arrow {
@@ -3850,7 +3850,7 @@ body {
 }
 
 .sort_all .sort_new a.asc_enable span.arrow_two .arrow_top,.sort_all .sort_new a.asc_enable span.arrow .arrow_top {
-	border-color: transparent transparent #ed145b
+	border-color: transparent transparent #FF9900
 }
 
 .sort_all .sort_new a.desc_enable,.sort_all .sort_new a.asc_enable {
@@ -3858,7 +3858,7 @@ body {
 }
 
 .sort_all .sort_new a.desc_enable span.arrow_two .arrow_top,.sort_all .sort_new a:hover span.arrow_two .arrow_top,.sort_all .sort_new a.asc_enable span.arrow_two .arrow_bottom {
-	background: #ed145b
+	background: #FF9900
 }
 
 .sort_all .sort_new a.asc_enable:hover span.arrow_two .arrow_top {
@@ -3866,7 +3866,7 @@ body {
 }
 
 .sort_all .sort_new a.desc_enable span.arrow_two .arrow_bottom,.sort_all .sort_new a:hover span.arrow_two .arrow_bottom,.sort_all .sort_new a.desc_enable span.arrow .arrow_bottom {
-	border-color: #ed145b transparent transparent
+	border-color: #FF9900 transparent transparent
 }
 
 .sort_all .sort_new a.J_NewProduct {
@@ -4009,7 +4009,7 @@ body {
 }
 
 .body_all .home_deal_list_container .deal_box .price_box .p {
-	color: #ed145b;
+	color: #FF9900;
 	font-family: arial;
 	font-size: 30px
 }
@@ -4042,7 +4042,7 @@ body {
 	display: inline-block;
 	float: right;
 	background-position: 0 -57px;
-	background-color: #ed145b
+	background-color: #FF9900
 }
 
 .body_all .home_deal_list_container .deal_box .numtimer_box {
@@ -4196,7 +4196,7 @@ body {
 }
 
 .body_all .home_deal_list_container .deal_box .img_box .stock_tension_bg {
-	background: #ed145b;
+	background: #FF9900;
 	opacity: .8;
 	filter: alpha(opacity=80);
 	position: relative
@@ -4501,7 +4501,7 @@ body {
 
 #home_main_new a:hover {
 	text-decoration: none;
-	color: #ed145b
+	color: #FF9900
 }
 
 #home_main_new .home_main_con_title {
@@ -4771,12 +4771,12 @@ body {
 
 #sidebar .sidebar_bao .tab_btn .tab_active {
 	border: 1px solid #fff;
-	border-top: 2px solid #ed145b;
+	border-top: 2px solid #FF9900;
 	color: #000
 }
 
 #sidebar .sidebar_bao .tab_btn .tab_active span {
-	color: #ed145b
+	color: #FF9900
 }
 
 #sidebar .sidebar_bao .tab_btn .tab_noactive {
@@ -4846,7 +4846,7 @@ body {
 }
 
 #sidebar .sidebar_new .bao_box li .bao_num .num {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700;
 	padding: 0 3px;
 	position: relative;
@@ -5100,7 +5100,7 @@ body {
 }
 
 #sidebar .home_popular_sort .home_p_tip a:hover {
-	color: #ed145b;
+	color: #FF9900;
 	background: #FFF
 }
 
@@ -5273,7 +5273,7 @@ body {
 }
 
 #home_slides_new .deal_info .title .pink {
-	color: #ed145b;
+	color: #FF9900;
 	font-size: 14px;
 	font-weight: 700
 }
@@ -5290,7 +5290,7 @@ body {
 }
 
 #home_slides_new .deal_info .price .price_num {
-	color: #ed145b;
+	color: #FF9900;
 	font-size: 54px
 }
 
@@ -5400,11 +5400,11 @@ body {
 
 #home_slides_new .deal_brief_trigger .current {
 	background: rgba(237,20,91,.85)!important;
-	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#D9ed145b', EndColorStr='#D9ed145b')
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#D9FF9900', EndColorStr='#D9FF9900')
 }
 
 :root #home_slides_new .deal_brief_trigger .current {
-	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00ed145b', EndColorStr='#00ed145b')
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#00FF9900', EndColorStr='#00FF9900')
 }
 
 #home_slides_new .deal_filter_btn {
@@ -5474,7 +5474,7 @@ body {
 }
 
 .onsale_tit {
-	color: #ed145b;
+	color: #FF9900;
 	font-weight: 700;
 	height: 28px;
 	line-height: 28px;
@@ -5682,7 +5682,7 @@ body {
 	height: 23px;
 	overflow: hidden;
 	font-size: 20px;
-	color: #ed145b;
+	color: #FF9900;
 	margin-left: 5px;
 	font-family: arial;
 	font-weight: 700;
@@ -5705,7 +5705,7 @@ body {
 }
 
 #home_list_top_timer label span {
-	color: #ed145b;
+	color: #FF9900;
 	padding: 0 1px;
 	font-size: 18px;
 	float: left;
@@ -5728,7 +5728,7 @@ body {
 }
 
 .sort_all.old #home_list_top_timer label em {
-	color: #ed145b;
+	color: #FF9900;
 	background: 0 0
 }
 
@@ -5753,7 +5753,7 @@ body {
 }
 
 .newdeal_breadcrumbs_wrap_b {
-	color: #ed145b
+	color: #FF9900
 }
 
 .newdeal_deal_right {
@@ -5897,12 +5897,12 @@ table.price_table .price {
 }
 
 .newdeal_deal_ilike:hover,.jiathis_style .jtico_jiathis:hover {
-	color: #ed145b;
+	color: #FF9900;
 	text-decoration: none
 }
 
 .liked {
-	color: #ed145b
+	color: #FF9900
 }
 
 .liked .ilike_corn,.newdeal_deal_ilike:hover .ilike_corn {
@@ -6173,7 +6173,7 @@ table.price_table .title_black,.newdeal_status_black {
 .soldout_text {
 	font-size: 32px;
 	font-weight: 700;
-	color: #ed145b
+	color: #FF9900
 }
 
 .soldout_text,.newdeal_deal_sort_soldout .newdeal_num {
@@ -6216,7 +6216,7 @@ table.price_table .title_black,.newdeal_status_black {
 }
 
 .newdeal_membership_man .red {
-	color: #ed145b
+	color: #FF9900
 }
 
 .newdeal_membership_man .manfan {
@@ -6228,7 +6228,7 @@ table.price_table .title_black,.newdeal_status_black {
 }
 
 .newdeal_membership_man .manzeng,.newdeal_member_box .man {
-	background: #ed145b
+	background: #FF9900
 }
 
 .newdeal_membership_man .manzhe {
@@ -6321,7 +6321,7 @@ table.price_table .title_black,.newdeal_status_black {
 }
 
 .newdeal_member_box .price_pt {
-	color: #ed145b;
+	color: #FF9900;
 	font-family: arial;
 	font-weight: 700;
 	text-decoration: line-through;

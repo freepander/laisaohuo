@@ -22,6 +22,8 @@
 						</li>
 						<li><a href="#" target="_blank" rel="nofollow">扫码支付</a>
 						</li>
+						<li><a href="#" target="_blank" rel="nofollow">货到付款</a>
+						</li>
 					</ul>
 
 					<ul class="linksc png">
@@ -83,7 +85,7 @@
 			</div>
 			<div class="footer_con" id="footer_copyright">
 				<p class="footer_copy_con">
-					© 2014 哈尔滨明彦创新科技发展有限公司 保留一切权利。 <br> 京公网安备 110105001608 | <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">京ICP证111033号</a> | 食品流通许可证 SP1101051110165515（1-1） | <a href="http://p2.jmstatic.com/activity/2013_chuangrui.jpeg" target="_blank" rel="nofollow">营业执照</a>
+					© 2014 哈尔滨明彦创新科技发展有限公司 保留一切权利。 <br> 吉ICP备14001040号-1  
 				</p>
 			</div>
 		</div>
