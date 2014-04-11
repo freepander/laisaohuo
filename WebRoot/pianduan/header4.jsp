@@ -18,9 +18,11 @@
 			<div class="header_logo_all">
 				<div id="cart_box"><a id="cart" href="carts_list" rel="nofollow"> <span class="num png"></span> </a>
 				</div>
+				<!--
 				<a href="articles_getArticle?id=1" rel="nofollow" class="top_link lightning" target="_blank"></a> 
-					<a href="articles_getArticle?id=1" rel="nofollow" class="top_link gild" target="_blank"></a> 
-					<a href="articles_getArticle?id=1" rel="nofollow" class="top_link credit" target="_blank"></a>
+				<a href="articles_getArticle?id=1" rel="nofollow" class="top_link gild" target="_blank"></a> 
+				<a href="articles_getArticle?id=1" rel="nofollow" class="top_link credit" target="_blank"></a> 
+				 -->
 			</div>
         </div>
     </div>
