@@ -423,7 +423,9 @@ img {
 }
 
 .mtsBanner {
-	width: auto;
+	width: 1198px;
+	margin-left: auto;
+	margin-right: auto;
 	height: 410px;
 	background: #fff;
 	overflow: hidden
@@ -577,8 +579,8 @@ img {
 }
 
 #authorize_floor .af_con {
-	padding-top: 0;
-	height: 296px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 	overflow: hidden
 }
 

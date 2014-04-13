@@ -1,18 +1,18 @@
 package com.myivcre.ga.action;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import com.myivcre.ga.model.Address;
 import com.myivcre.ga.model.ShopUser;
 import com.myivcre.ga.service.BaseService;
 import com.opensymphony.xwork2.ActionContext;
@@ -29,6 +29,16 @@ public class UserAction extends ActionSupport{
 	private ShopUser user;
 	private String showMessage;
 	private List list;
+	//收货地址
+	private String addressee;
+	private String province;
+	private String city;
+	private String district;
+	private String street;
+	private String zipCode;
+	private String telphone;
+	private Address address;
+	private int addressId;
 	public String order(){
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
 		return "user_order";
@@ -49,8 +59,88 @@ public class UserAction extends ActionSupport{
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
 		return "user_order5";
 	}
+	/**
+	 * 管理收货地址
+	 * @return
+	 */
 	public String address(){
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		return "user_address";
+	}
+	/**
+	 * 添加新的收货地址
+	 * @return
+	 */
+	public String addAddress(){
+		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		//创建新的地址
+		Address address=new Address();
+		address.setAddressee(addressee);
+		address.setProvince(province);
+		address.setCity(city);
+		address.setDistrict(district);
+		address.setStreet(street);
+		address.setZipCode(zipCode);
+		address.setTelphone(telphone);
+		if(this.user.getAddressList()==null){
+			this.user.setAddressList(new ArrayList<Address>());
+		}
+		this.user.getAddressList().add(address);
+		//更新user对象
+		this.baseService.update(this.user);
+		//更新session中的user对象
+		ActionContext.getContext().getSession().put("user", this.user);
+		return "user_address";
+	}
+	/**
+	 * 编辑已有收货地址
+	 * @return
+	 */
+	public String inputAddress(){
+		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		for(Address a: user.getAddressList()){
+			if(a.getId()==addressId){
+				this.address=a;
+				break;
+			}
+			
+		}
+		return "user_address";
+	}
+	/**
+	 * 删除已有收货地址
+	 * @return
+	 */
+	public String deleteAddress(){
+		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		for(Address a: user.getAddressList()){
+			if(a.getId()==addressId){
+				this.user.getAddressList().remove(a);
+				break;
+			}
+		}
+		this.baseService.update(this.user);
+		return "user_address";
+	}
+	/**
+	 * 更新已有收货地址
+	 * @return
+	 */
+	public String updateAddress(){
+		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		for(Address a: user.getAddressList()){
+			if(a.getId()==addressId){
+				a.setAddressee(addressee);
+				a.setCity(city);
+				a.setDistrict(district);
+				a.setProvince(province);
+				a.setStreet(street);
+				a.setTelphone(telphone);
+				a.setZipCode(zipCode);
+				break;
+			}
+		}
+		this.baseService.update(this.user);
 		return "user_address";
 	}
 	public String collection(){
@@ -197,4 +287,59 @@ public class UserAction extends ActionSupport{
 	public void setList(List list) {
 		this.list = list;
 	}
+	public String getAddressee() {
+		return addressee;
+	}
+	public void setAddressee(String addressee) {
+		this.addressee = addressee;
+	}
+	public String getProvince() {
+		return province;
+	}
+	public void setProvince(String province) {
+		this.province = province;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getDistrict() {
+		return district;
+	}
+	public void setDistrict(String district) {
+		this.district = district;
+	}
+	public String getStreet() {
+		return street;
+	}
+	public void setStreet(String street) {
+		this.street = street;
+	}
+	public String getZipCode() {
+		return zipCode;
+	}
+	public void setZipCode(String zipCode) {
+		this.zipCode = zipCode;
+	}
+	public String getTelphone() {
+		return telphone;
+	}
+	public void setTelphone(String telphone) {
+		this.telphone = telphone;
+	}
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+	public int getAddressId() {
+		return addressId;
+	}
+	public void setAddressId(int addressId) {
+		this.addressId = addressId;
+	}
+	
 }

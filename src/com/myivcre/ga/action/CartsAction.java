@@ -10,9 +10,11 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.myivcre.ga.model.Cart;
-import com.myivcre.ga.model.CartItem;
 import com.myivcre.ga.model.Goods;
+import com.myivcre.ga.model.Order;
+import com.myivcre.ga.model.OrderItem;
 import com.myivcre.ga.service.BaseService;
+import com.myivcre.ga.util.Billing;
 import com.opensymphony.xwork2.ActionSupport;
 
 @Component("cartsAction")
@@ -24,36 +26,42 @@ public class CartsAction extends ActionSupport {
 	private int number;
 	private Cart cart;
 	/**
-	 * 添加商品到购物车
+	 * 添加一件商品到购物车
 	 * @return
 	 */
 	public String add(){
 		Map<String, Object> session=ServletActionContext.getContext().getSession();
+		//从session中获得购物车内容
 		this.cart=(Cart)session.get("cart");
+		//如果购物车为空则重新创建购物车
 		if(this.cart==null){
 			this.cart=new Cart();
 		}
 		boolean flag=false;
-		for(CartItem item:this.cart.getList()){
+		//遍历购物车内商品，购物车内已经存在该商品，则只更改数量
+		for(OrderItem item:this.cart.getList()){
 			if(item.getGoods().getId()==this.goodsId){
-				item.setCount(item.getCount()+this.number);
-				item.setPrice(item.getPrice()+this.number*item.getGoods().getNowPrice());
+				item.setCount(this.number);
+				//传入计费系统
+				Billing.orderItem(item);
 				flag=true;
 			}
 		}
+		//购物车中不存在该商品，将新的商品添加到购物车中
 		if(!flag){
-			CartItem item=new CartItem();
-			item.setCount(this.number);
+			OrderItem item=new OrderItem();
 			Goods goods=(Goods)this.baseService.get(Goods.class, goodsId);
 			item.setGoods(goods);
-			item.setPrice(this.number*item.getGoods().getNowPrice());
+			item.setCount(this.number);
+			//传入计费系统
+			Billing.orderItem(item);
 			this.cart.getList().add(item);
 		}
+		//计算价格
 		double sum=0;
-		for(CartItem item:this.cart.getList()){
-			sum+=item.getPrice();
-		}
+		Billing.cart(this.cart);
 		this.cart.setPrice(sum);
+		//将新的购物车放入session中
 		session.put("cart", this.cart);
 		return "cart";
 	}
@@ -75,16 +83,17 @@ public class CartsAction extends ActionSupport {
 	 */
 	public String deleteOneById(){
 		Map<String, Object> session=ServletActionContext.getContext().getSession();
+		//从session中获得商品
 		this.cart=(Cart)session.get("cart");
+		//找到指定商品，删除
 		for(int i=0;i<this.cart.getList().size();i++){
 			if(this.cart.getList().get(i).getGoods().getId()==this.goodsId){
 				this.cart.getList().remove(i);
 			}
 		}
+		//计算价格
 		double sum=0;
-		for(CartItem item:this.cart.getList()){
-			sum+=item.getPrice();
-		}
+		Billing.cart(this.cart);
 		this.cart.setPrice(sum);
 		session.put("cart", this.cart);
 		return "cart";
@@ -100,6 +109,28 @@ public class CartsAction extends ActionSupport {
 		this.cart.setPrice(0);
 		session.put("cart", this.cart);
 		return "cart";
+	}
+	/**
+	 * 生成订单
+	 * @return
+	 */
+	public String createOrder(){
+		Map<String, Object> session=ServletActionContext.getContext().getSession();
+		//从session中获得购物车
+		Cart cart=(Cart)session.get("cart");
+		//创建订单对象
+		Order order=new Order();
+		for(OrderItem item:cart.getList()){
+			order.getItemList().add(item);
+		} 
+		return "order";
+	}
+	/**
+	 * 完善订单信息，准备支付
+	 * @return
+	 */
+	public String orderSuccess(){
+		return "pay";
 	}
 	public BaseService getBaseService() {
 		return baseService;

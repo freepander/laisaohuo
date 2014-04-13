@@ -18,10 +18,13 @@ import javax.persistence.OneToMany;
 public class Cart {
 	@Id@GeneratedValue
 	private int id;
+	//商品列表
 	@OneToMany
-	private List<CartItem> list=new ArrayList<CartItem>();
+	private List<OrderItem> list=new ArrayList<OrderItem>();
+	//购买用户
 	@ManyToOne
 	private ShopUser user;
+	//最终价格
 	private double price;
 	public int getId() {
 		return id;
@@ -29,10 +32,11 @@ public class Cart {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public List<CartItem> getList() {
+	
+	public List<OrderItem> getList() {
 		return list;
 	}
-	public void setList(List<CartItem> list) {
+	public void setList(List<OrderItem> list) {
 		this.list = list;
 	}
 	public ShopUser getUser() {

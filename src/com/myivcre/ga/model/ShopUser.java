@@ -1,8 +1,14 @@
 package com.myivcre.ga.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import org.hibernate.annotations.Cascade;
 
 /**
  * 商城用户
@@ -19,6 +25,12 @@ public class ShopUser {
 	private String password;
 	//邮箱
 	private String email;
+	//收货地址
+	@OneToMany@Cascade(value={org.hibernate.annotations.CascadeType.ALL})
+	private List<Address> addressList;
+	public ShopUser(){
+		this.addressList=new ArrayList<Address>();
+	}
 	public int getId() {
 		return id;
 	}
@@ -43,4 +55,11 @@ public class ShopUser {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public List<Address> getAddressList() {
+		return addressList;
+	}
+	public void setAddressList(List<Address> addressList) {
+		this.addressList = addressList;
+	}
+	
 }

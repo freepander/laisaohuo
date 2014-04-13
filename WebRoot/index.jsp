@@ -207,7 +207,7 @@
 				</div>
 				<!--正品联盟-->
 				<div id="authorize_floor">
-					<div class="floor_con" id="fun_floor_con" style="height: 300px;">
+					<div class="floor_con" id="fun_floor_con">
 						<div class="af_con">
 							<ul style="margin-top: 20px;">
 							<s:iterator value="brandList">

@@ -56,6 +56,12 @@
         </div>
 		</s:if>
         <div class="cart_products">
+        <form action="order_in" method="post">
+        	<input type="hidden" name="" value="">
+        	<input type="hidden" name="" value="">
+        	<input type="hidden" name="" value="">
+        	<input type="hidden" name="" value="">
+        </form>
             <table width="100%" id="cart_products">
                 <tbody>
                 <tr>
@@ -112,7 +118,7 @@
                         <div id="cart_amount_line">
                             <a class="btn_grey_small" href="index_index">继续购物</a>
                             <a class="clean_cart" href="carts_removeAll" onclick="if(confirm('您确定要清空购物车吗？'))window.location.href='carts_removeAll';return false;">清空购物车</a>
-                            <a id="go_to_order" class="btn_pink_big" href="order_in">去结算</a>
+                            <a id="go_to_order" class="btn_pink_big" href="carts_createOrder">去结算</a>
                             <div class="price_sum">
                             	应付总额<span class="blue">（不含运费）</span>：
                                 <span class="total_count">¥<span id="item-buy-total-t"><s:property value="#session.cart.price"/></span></span>

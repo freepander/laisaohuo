@@ -112,6 +112,8 @@
 		</action>
 		<action name="carts_*" class="cartsAction" method="{1}">
 			<result name="cart">/cart.jsp</result>
+			<result name="order">/order.jsp</result>
+			<result name="pay">/pay.jsp</result>
 		</action>
 		<action name="file_*" class="fileAction" method="{1}">
 			<result name="a">/index.jsp</result>
