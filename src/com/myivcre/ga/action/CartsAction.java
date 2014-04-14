@@ -1,6 +1,7 @@
 package com.myivcre.ga.action;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Map;
 
 import javax.annotation.Resource;
@@ -9,6 +10,7 @@ import org.apache.struts2.ServletActionContext;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import com.myivcre.ga.model.Address;
 import com.myivcre.ga.model.Cart;
 import com.myivcre.ga.model.Goods;
 import com.myivcre.ga.model.Order;
@@ -16,7 +18,6 @@ import com.myivcre.ga.model.OrderItem;
 import com.myivcre.ga.model.ShopUser;
 import com.myivcre.ga.service.BaseService;
 import com.myivcre.ga.util.Billing;
-import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 @Component("cartsAction")
@@ -29,6 +30,9 @@ public class CartsAction extends ActionSupport {
 	private Cart cart;
 	private ShopUser user;
 	private Order order;
+	private int addressId;
+	private String deliverytime;
+	private String userMessage;
 	/**
 	 * 添加一件商品到购物车
 	 * @return
@@ -126,16 +130,7 @@ public class CartsAction extends ActionSupport {
 		this.user=(ShopUser)session.get("user");
 		//重新从数据库中查找user，放置缓存造成错误
 		this.user=(ShopUser)this.baseService.get(ShopUser.class, this.user.getId());
-		//创建订单对象
-		this.order=new Order();
-		for(OrderItem item:cart.getList()){
-			order.getItemList().add(item);
-		}
-		order.setPrice(1);
-		order.setNowPrice(1);
-		order.setFreight(1);
-		order.setShopUser(this.user);
-		order.setIntegral(100);
+		//对购物车进行计费
 		return "order";
 	}
 	
@@ -144,6 +139,31 @@ public class CartsAction extends ActionSupport {
 	 * @return
 	 */
 	public String orderSuccess(){
+		Map<String, Object> session=ServletActionContext.getContext().getSession();
+		//从session中获得user
+		this.user=(ShopUser)session.get("user");
+		//重新从数据库中查找user，放置缓存造成错误
+		this.user=(ShopUser)this.baseService.get(ShopUser.class, this.user.getId());
+		//创建订单对象
+		this.order=new Order();
+		this.cart=(Cart)session.get("cart");
+		for(OrderItem item: this.cart.getList()){
+			this.order.getItemList().add(item);
+			this.baseService.save(item);
+		}
+		this.order.setNumber(String.valueOf(new Date().getTime()));
+		Address address=(Address)this.baseService.get(Address.class , addressId);
+		this.order.setAddress(address);
+		this.order.setDeliverytime(deliverytime);
+		this.order.setUserMessage(userMessage);
+		this.order.setPrice(1);
+		this.order.setNowPrice(1);
+		this.order.setFreight(5);
+		this.order.setState(1);
+		this.order.setShopUser(this.user);
+		this.order.setIntegral(10);
+		this.order.setCreateDate(new Date());
+		this.baseService.save(this.order);
 		return "pay";
 	}
 	public BaseService getBaseService() {
@@ -182,6 +202,24 @@ public class CartsAction extends ActionSupport {
 	}
 	public void setCart(Cart cart) {
 		this.cart = cart;
+	}
+	public int getAddressId() {
+		return addressId;
+	}
+	public void setAddressId(int addressId) {
+		this.addressId = addressId;
+	}
+	public String getDeliverytime() {
+		return deliverytime;
+	}
+	public void setDeliverytime(String deliverytime) {
+		this.deliverytime = deliverytime;
+	}
+	public String getUserMessage() {
+		return userMessage;
+	}
+	public void setUserMessage(String userMessage) {
+		this.userMessage = userMessage;
 	}
 
 }

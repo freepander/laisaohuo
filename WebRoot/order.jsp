@@ -51,7 +51,7 @@
         	<span class="click_icon"></span> 
         	<strong>提示信息</strong>
         </div>
-        <form action="" method="post" id="check_pay_form" onsubmit="return false;"style="display:inline-block;">
+        <form action="carts_orderSuccess" method="post" id="check_pay_form" style="display:inline-block;">
         	<div class="cart_left" style="*overflow: hidden">
 				<div class="option" id="address_selector">
 					<div class="title">1 地址选择</div>
@@ -250,7 +250,7 @@
                                             		<div class="order_amount_container">
                                             			<div class="price_count express_num">
                                             				<div class="price">
-                                            					¥<span id="total_amount_product/804/" class="total_amount"> 63.90</span>
+                                            					¥<span id="total_amount_product/804/" class="total_amount"><s:property value="cart.price"/></span>
                                             				</div>
                                             			</div>
                                             			<span class="express_tit">本单应付：</span>
@@ -262,7 +262,7 @@
                                 </table>
                             </div>
                             <div class="orders_total_amount">
-                            	应付总额：<span class="total_count">¥<span id="cart_total">63.90</span></span>
+                            	应付总额：<span class="total_count">¥<span id="cart_total"><s:property value="cart.price"/></span></span>
                             </div>
                         </div>
                     </div>
@@ -279,10 +279,10 @@
 				<div class="sure_payinfo_wrap">
 						<div class="confirm_pay_box">
 							<div class="confirm_pay">
-								<a href="/i/cart/show/?from=confirmation_modify_cart_new" class="btn_grey_small">返回修改购物车</a>
-								<input type="submit" id="btn_confirm_pay" class="btn_pink_big" value="确认订单" onclick="return check_pay();">
+								<a  href="carts_list" class="btn_grey_small">返回修改购物车</a>
+								<input type="submit" id="btn_confirm_pay" class="btn_pink_big" value="确认订单">
 								<div class="price_sum">
-									应付总额：<span class="total_count">¥<span id="cart_total2">63.90</span></span>
+									应付总额：<span class="total_count">¥<span id="cart_total2"><s:property value="cart.price"/></span></span>
 								</div>
 							</div>
 						</div>
@@ -296,17 +296,10 @@
 </div><!--  footer_textarea  -->
 
 <script>
-//更改购买数量
- $('.decrease_num').click(function(){
- 	if($(this).next().val()!=1){
- 		$(this).next().val(parseInt($(this).next().val())-1)
- 	}
- });
- $('.increase_num').click(function(){
- 	if($(this).prev().val()!=10){
- 		$(this).prev().val(parseInt($(this).prev().val())+1)
- 	}
- });
+//验证信息是否正确
+function check_pay(){
+	return true;
+}
 </script>
 </body>
 </html>

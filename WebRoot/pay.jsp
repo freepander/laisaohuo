@@ -76,15 +76,8 @@
         </a>
         <div id="user_header">
             <ul class="login_header">
-                <s:if test="#session.gloablIsLogin==false">
-				<li class="login_li"><a href="user_registerInput" rel="nofollow">注册</a><em>|</em></li>
-               	<li class="login_li"><a href="user_loginInput" rel="nofollow">登录</a><em>|</em></li>
-               	<li class="login_li"><em>|</em><a href="#" rel="nofollow">马上有礼</a></li>
-				</s:if>
-				<s:if test="#session.gloablIsLogin==true">
 				<li class="login_li"><a href="user_order?id=<s:property value="#session.user.id"/>" rel="nofollow">个人中心</a><em>|</em></li>
 				<li class="user">欢迎您，<span style="color: #ED145B;"><s:property value="#session.user.username"/></span><span style="padding:0 5px;">[<a href="user_signOut" style="padding:0;">退出</a>]</span><em>|</em></li>
-				</s:if>
             </ul>
             <div class="clear"></div>
             <div class="header_logo_all">
@@ -107,7 +100,7 @@
                 </div>
                 <div class="option" style=" border-top: 1px solid #dcdcdc;">
                 	<div class="content">
-                		<p>收货信息：唐铭员&nbsp;&nbsp;-&nbsp;&nbsp;黑龙江省-哈尔滨市-南岗区 黑龙江大学，18644060531，邮编：150080</p>
+                		<p>收货信息：<s:property value="order.address.addressee"/>&nbsp;&nbsp;-&nbsp;&nbsp;<s:property value="order.address.province"/>-<s:property value="order.address.city"/>-<s:property value="order.address.district"/> <s:property value="order.address.street"/>，<s:property value="order.address.telphone"/>，邮编：<s:property value="order.address.zipCode"/></p>
                 		<p>
                 			送货时间：<span>仅工作日送货</span>
                 		</p>
@@ -123,7 +116,7 @@
                         </ul>
                         <div class="clear"></div>
                         <p style="margin-top:20px;">
-                        	应付金额：<span class="pink" style="font-size: 18px;font-family: Arial">¥<span style="font-size: 28px">63.90</span></span>
+                        	应付金额：<span class="pink" style="font-size: 18px;font-family: Arial">¥<span style="font-size: 28px"><s:property value="order.nowPrice"/></span></span>
                         </p>
                     </div>
                     <div class="clear"></div>

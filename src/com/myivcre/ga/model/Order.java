@@ -15,7 +15,7 @@ import javax.persistence.OneToMany;
  * @author freepander
  *
  */
-@Entity(name="order")
+@Entity(name="orders")
 public class Order {
 	@Id@GeneratedValue
 	private int id;
