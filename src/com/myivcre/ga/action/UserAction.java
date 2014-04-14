@@ -103,7 +103,6 @@ public class UserAction extends ActionSupport{
 				this.address=a;
 				break;
 			}
-			
 		}
 		return "user_address";
 	}
@@ -120,6 +119,7 @@ public class UserAction extends ActionSupport{
 			}
 		}
 		this.baseService.update(this.user);
+		this.addressId=0;
 		return "user_address";
 	}
 	/**
@@ -127,6 +127,7 @@ public class UserAction extends ActionSupport{
 	 * @return
 	 */
 	public String updateAddress(){
+		System.out.println("updateAddressAction");
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
 		for(Address a: user.getAddressList()){
 			if(a.getId()==addressId){
@@ -141,6 +142,7 @@ public class UserAction extends ActionSupport{
 			}
 		}
 		this.baseService.update(this.user);
+		this.addressId=0;
 		return "user_address";
 	}
 	public String collection(){
@@ -341,5 +343,5 @@ public class UserAction extends ActionSupport{
 	public void setAddressId(int addressId) {
 		this.addressId = addressId;
 	}
-	
+
 }

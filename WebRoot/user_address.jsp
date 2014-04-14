@@ -87,52 +87,52 @@
     <h1>管理收货地址</h1>
     <div class="content sector">
     	<h2><span class="addAddress">新增</span>收货地址</h2>
-    	<form class="shipping_address" action="user_addAddress" method="post">
+    	<form class="shipping_address" action="user_<s:if test="addressId==0">addAddress</s:if><s:if test="addressId!=0">updateAddress</s:if>" method="post">
+    		<input type="hidden" name="addressId" value="<s:property value="address.id"/>">
+    		<input type="hidden" value="" name="province" id="province_input">
+			<input type="hidden" value="" name="city" id="city_input">
+			<input type="hidden" value="" name="district" id="county_input">
 			<div class="input_container">
 				<label for="recipient_name"><span class="spark">*</span>收件人姓名：</label>
-				<input type="text" size="20" class="t_input recipient_name" id="recipient_name" name="addressee" value="" maxlength="14">
+				<input type="text" size="20" class="t_input recipient_name" id="recipient_name" name="addressee" value="<s:property value="address.addressee"/>" maxlength="14">
 			</div>
 			<div class="input_container">
-				<input type="hidden" value="" name="province" id="province_input">
-				<input type="hidden" value="<s:property value="addressId"/>" name="addressId" id="">
-				<input type="hidden" value="" name="city" id="city_input">
-				<input type="hidden" value="" name="district" id="county_input">
 				<label for="select_province"><span class="spark">*</span>省市区：</label>
 				<span class="select_ui">
 					<div class="select_arrow"></div>
-					<div class="select_text_ui" id="province_display" style="min-width: 8.5em;">请选择</div>
+					<div class="select_text_ui" id="province_display" style="min-width: 8.5em;"><s:if test="addressId==0">请选择</s:if><s:property value="address.province"/></div>
 					<select class="f-input" id="province" name="province1"> 
-						<option value="" selected="selected">请选择</option> 
+						<option value="<s:property value="address.province"/>" selected="selected">请选择</option> 
 						
 					</select>
 				</span> 
 				<span class="select_ui">
 					<div class="select_arrow"></div>
-					<div class="select_text_ui" id="city_display" style="min-width: 3.5em;">请选择</div>
+					<div class="select_text_ui" id="city_display" style="min-width: 3.5em;"><s:if test="addressId==0">请选择</s:if><s:property value="address.city"/></div>
 					<select class="f-input" id="city" name="city1"> 
-						<option value="" selected="selected">请选择</option> 
+						<option value="<s:property value="address.city"/>" selected="selected">请选择</option> 
 					</select>
 				</span> 
 				<span class="select_ui">
 					<div class="select_arrow"></div>
-					<div class="select_text_ui" id="county_display" style="min-width: 3.5em;">请选择</div>
+					<div class="select_text_ui" id="county_display" style="min-width: 3.5em;"><s:if test="addressId==0">请选择</s:if><s:property value="address.district"/></div>
 					<select class="f-input" id="county" name="district1"> 
-						<option value="" selected="selected">请选择</option> 
+						<option value="<s:property value="address.district"/>" selected="selected">请选择</option> 
 					</select>
 				</span>
 			</div>
 			<input type="hidden" name="area" id="area" value=""/>
 			<div class="input_container">
 				<label for="recipient_street"><span class="spark">*</span>街道地址：</label>
-				<input type="text" size="80" class="t_input recipient_street" id="recipient_street" name="street" value="" maxlength="30">
+				<input type="text" size="80" class="t_input recipient_street" id="recipient_street" name="street" value="<s:property value="address.street"/>" maxlength="30">
 			</div>
 			<div class="input_container">
 				<label for="recipient_postal">邮政编码：</label>
-				<input type="text" size="10" class="t_input recipient_postal" id="recipient_postal" name="zipCode" value="" maxlength="6">
+				<input type="text" size="10" class="t_input recipient_postal" id="recipient_postal" name="zipCode" value="<s:property value="address.zipCode"/>" maxlength="6">
 			</div>
 			<div class="input_container">
 				<label for="recipient_hp">手机号码：</label>
-				<input type="tel" size="20" class="t_input recipient_hp" id="recipient_hp" name="telphone" value="" maxlength="11">
+				<input type="tel" size="20" class="t_input recipient_hp" id="recipient_hp" name="telphone" value="<s:property value="address.telphone"/>" maxlength="11">
 			</div>
 			<div class="act">
 				<input type="submit" value="保存收货地址" name="commit" id="shipping_address_submit" class="formbutton">

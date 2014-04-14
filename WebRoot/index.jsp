@@ -239,7 +239,7 @@
 								<div class="card-main">
 									<div class="card-hd">
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
-											<img class="story-image" width="283" height="192" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
+											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
 										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
 										
@@ -290,7 +290,7 @@
 								<div class="card-main">
 									<div class="card-hd">
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
-											<img class="story-image" width="283" height="192" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
+											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
 										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
 										
@@ -343,7 +343,7 @@
 								<div class="card-main">
 									<div class="card-hd">
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
-											<img class="story-image" width="283" height="192" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
+											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
 										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
 										
@@ -393,7 +393,7 @@
 								<div class="card-main">
 									<div class="card-hd">
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
-											<img class="story-image" width="283" height="192" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
+											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
 										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
 										

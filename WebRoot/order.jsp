@@ -142,18 +142,20 @@
                 	</div>
                 	<div id="default_address_wrap">
 						<div class="content" id="address_wrap">
-							<div class="option_box selected" selector="old_address">
+						<s:iterator value="user.addressList" status="st">
+							<div class="option_box <s:if test="#st.index==0">selected</s:if>">
 								<label class="address_lbl">
-									<span class="btnEditAddress_new" title="修改地址">修改</span>
-									<span class="btnEditAddress_del" title="删除地址">删除</span>
+									<!--<span class="btnEditAddress_new" title="修改地址">修改</span>
+									<span class="btnEditAddress_del" title="删除地址">删除</span>-->
 									<p>
-										<span class="addr_name">唐铭员</span>
-                						<span class="addr_con">黑龙江省-哈尔滨市-南岗区 黑龙江大学,150080</span>
-                						<span class="addr_num">18644060531 </span>
+										<span class="addr_name"><s:property value="addressee"/></span>
+                						<span class="addr_con"><s:property value="province"/>-<s:property value="city"/>-<s:property value="district"/>-<s:property value="street"/>,<s:property value="zipCode"/>黑龙江省-哈尔滨市-南岗区 黑龙江大学,150080</span>
+                						<span class="addr_num"><s:property value="telphone"/></span>
                 					</p>
                 				</label>
                 				<div class="clear"></div>
                 			</div>
+                		</s:iterator>
                 		</div>
 						<div class="address_btns_wrap">
 							<a class="add_address_btn" href="javascript:void(0)">使用新地址</a>
@@ -168,17 +170,17 @@
         			<div class="title">2 送货时间 <span style="color:#666666;font-size:12px;font-weight:normal;font-family:'宋体';">送货时间仅作参考，快递公司会尽量满足您的要求</span>        </div>
        				<div class="content">
        					<div class="option_box selected">
-       						<input id="delivery_day_weekday" name="prefer_delivery_day" type="radio" value="weekday">
+       						<input id="delivery_day_weekday" name="prefer_delivery_day" type="radio" value="仅工作日送货" checked>
        						<label for="delivery_day_weekday">仅工作日送货</label>
        						<div class="clear"></div>
        					</div>
        					<div class="option_box">
-       						<input id="delivery_day_weekend" name="prefer_delivery_day" type="radio" value="weekend">
+       						<input id="delivery_day_weekend" name="prefer_delivery_day" type="radio" value="仅周末送货">
        						<label for="delivery_day_weekend">仅周末送货</label>
        						<div class="clear"></div>
        					</div>
        					<div class="option_box now_hover">
-       						<input id="delivery_day_" name="prefer_delivery_day" type="radio" value="">
+       						<input id="delivery_day_" name="prefer_delivery_day" type="radio" value="工作日/周末/假日均可">
        						<label for="delivery_day_">工作日/周末/假日均可</label>
        						<div class="clear"></div>
        					</div>
@@ -191,8 +193,8 @@
        					<div class="title">3 商品清单</div>
        						<div class="cart_products_v2">
        							<h2>
-       								<span>此订单将从 <b>聚美优品</b> 发出</span>
-       								<a href="/i/cart/show/?confirmation_cartshow&amp;from=flow_conf_list_backtocart_new" style="float: right">返回修改购物车</a>
+       								<!--<span>此订单将从 <b>聚美优品</b> 发出</span>-->
+       								<a href="carts_list" style="float: right">返回修改购物车</a>
        							</h2>
        							<table border="0" cellpadding="1" cellspacing="0" id="cart_products" width="100%">
        								<colgroup>
@@ -208,32 +210,36 @@
                    							<th width="140">单价</th>
                    							<th width="140">小计</th>
                							</tr>
-                               			<tr id="1029748_" class="cart_item" deal_hash_id="">
+               							<s:iterator value="cart.list">
+                               			<tr class="cart_item">
                    							<td class="name text_left padd_left">
                        							<div style="width:320px;position: relative;line-height: 21px">
-                       								<a href="http://mall.jumei.com/product_22250.html?_new" target="_blank" class="name_hover">隐泉之语樱花净白慕丝洁面膏 80g </a>
+                       								<a href="good_goods?id=<s:property value="goods.id"/>" target="_blank" class="name_hover"><s:property value="goods.name"/></a>
                                                        <div class="pic_hover">
-                                                       	<img src="http://p0.jmstatic.com/product/000/022/22250_std/22250_100_100.jpg" alt="隐泉之语樱花净白慕丝洁面膏 80g ">
+                                                       	<img src="upload/goods/<s:property value="goods.logo"/>" alt="<s:property value="goods.name"/>">
                                                        </div>
                                                    </div>
                                                </td>
-                                               <td class="number_box">1</td>
-                                               <td class="price_box">¥<span id="item-buy-price-1029748_">58.90</span></td>
-                                               <td class="count_price_box bold">¥<span id="item-buy-total-1029748_">58.90</span></td>
+                                               <td class="number_box"><s:property value="count"/></td>
+                                               <td class="price_box">¥<span id="item-buy-price-1029748_"><s:property value="goods.nowPrice"/></span></td>
+                                               <td class="count_price_box bold">¥<span id="item-buy-total-1029748_"><s:property value="nowPrice"/></span></td>
                                         </tr>
+                                        </s:iterator>
                                         <tr>
                                            	<td colspan="4" class="count" style="padding:10px 0 10px 30px;">
                                            		<div class="content">
                                            			<div class="option_box">
-                                           				<input id="Express_product/804/" type="radio" value="Express" class="choose_delivery J_Express" checked="checked">
+                                           				<input name="express" id="Express_product/804/" type="radio" value="Express" class="choose_delivery J_Express" checked="checked">
                                            				<label for="Express_product/804/" id="label_express" class="J_label_express">快递（5元，系统自动判断选择快递）</label>
                                            				<div class="clear"></div>
                                            			</div>
+                                           			<!--
                                            			<div class="option_box" style="">
-                                           				<input id="EMS_product/804/" type="radio" value="EMS" class="choose_delivery J_EMS" name="logistic_preference[product/804/]" delivery_fee="15">
+                                           				<input name="express" id="EMS_product/804/" type="radio" value="EMS" class="choose_delivery J_EMS" name="logistic_preference[product/804/]" delivery_fee="15">
                                            				<label for="EMS_product/804/">EMS（15元，可能需要较长时间送达，新疆、西藏、宁夏、青海、内蒙古只支持EMS）</label>
                                            				<div class="clear"></div>
                                            			</div>
+                                           			 -->
                                            			<span class="express_num">¥<span class="exp_num J_Final_Delivery">5</span></span>
                                            			<span class="express_tit">运费：</span>
                                            		</div>

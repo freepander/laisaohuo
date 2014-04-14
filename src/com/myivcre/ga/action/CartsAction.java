@@ -13,8 +13,10 @@ import com.myivcre.ga.model.Cart;
 import com.myivcre.ga.model.Goods;
 import com.myivcre.ga.model.Order;
 import com.myivcre.ga.model.OrderItem;
+import com.myivcre.ga.model.ShopUser;
 import com.myivcre.ga.service.BaseService;
 import com.myivcre.ga.util.Billing;
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 
 @Component("cartsAction")
@@ -25,6 +27,8 @@ public class CartsAction extends ActionSupport {
 	private int goodsId;
 	private int number;
 	private Cart cart;
+	private ShopUser user;
+	private Order order;
 	/**
 	 * 添加一件商品到购物车
 	 * @return
@@ -117,14 +121,24 @@ public class CartsAction extends ActionSupport {
 	public String createOrder(){
 		Map<String, Object> session=ServletActionContext.getContext().getSession();
 		//从session中获得购物车
-		Cart cart=(Cart)session.get("cart");
+		this.cart=(Cart)session.get("cart");
+		//从session中获得user
+		this.user=(ShopUser)session.get("user");
+		//重新从数据库中查找user，放置缓存造成错误
+		this.user=(ShopUser)this.baseService.get(ShopUser.class, this.user.getId());
 		//创建订单对象
-		Order order=new Order();
+		this.order=new Order();
 		for(OrderItem item:cart.getList()){
 			order.getItemList().add(item);
-		} 
+		}
+		order.setPrice(1);
+		order.setNowPrice(1);
+		order.setFreight(1);
+		order.setShopUser(this.user);
+		order.setIntegral(100);
 		return "order";
 	}
+	
 	/**
 	 * 完善订单信息，准备支付
 	 * @return
@@ -134,6 +148,18 @@ public class CartsAction extends ActionSupport {
 	}
 	public BaseService getBaseService() {
 		return baseService;
+	}
+	public ShopUser getUser() {
+		return user;
+	}
+	public void setUser(ShopUser user) {
+		this.user = user;
+	}
+	public Order getOrder() {
+		return order;
+	}
+	public void setOrder(Order order) {
+		this.order = order;
 	}
 	public void setBaseService(BaseService baseService) {
 		this.baseService = baseService;

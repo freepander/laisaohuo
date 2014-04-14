@@ -47,7 +47,8 @@ public class Order {
 	private String expressNumber;
 	//赠送积分
 	private int integral;
-	
+	//下单时间
+	private Date createDate;
 	public Order(){
 		this.number=String.valueOf(new Date().getTime());
 		this.itemList=new ArrayList<OrderItem>();
@@ -102,6 +103,12 @@ public class Order {
 	}
 	public double getPrice() {
 		return price;
+	}
+	public Date getCreateDate() {
+		return createDate;
+	}
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
 	}
 	public void setPrice(double price) {
 		this.price = price;
