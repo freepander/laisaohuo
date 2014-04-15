@@ -1,6 +1,7 @@
 package com.myivcre.ga.util;
 
 import com.myivcre.ga.model.Cart;
+import com.myivcre.ga.model.Order;
 import com.myivcre.ga.model.OrderItem;
 
 /**
@@ -42,13 +43,14 @@ public class Billing {
 	 * @param cartList
 	 * @return
 	 */
-//	public static double order(O){
-//		double money=0;
-//		for(CartItem item:cartList){
-//			money+=item.getPrice();
-//		}
-//		
-//		return money;
-//	}
+	public static double order(Order order){
+		double money=0;
+		for(OrderItem item:order.getItemList()){
+			money+=item.getNowPrice();
+		}
+		order.setNowPrice(money+5);
+		order.setPrice(money+5);
+		return money;
+	}
 
 }

@@ -96,11 +96,11 @@
         	<div class="cart_left">
         		<div class="cart_notice">
                 	<h2>还差最后一步，请尽快付款！</h2>
-               		<p class="pink" style="font-weight: 300; padding: 0">请尽快完成付款，否则团购结束或商品售光后您的订单将被取消。</p>
+               		<!-- <p class="pink" style="font-weight: 300; padding: 0">请尽快完成付款，否则团购结束或商品售光后您的订单将被取消。</p> -->
                 </div>
                 <div class="option" style=" border-top: 1px solid #dcdcdc;">
                 	<div class="content">
-                		<p>收货信息：<s:property value="order.address.addressee"/>&nbsp;&nbsp;-&nbsp;&nbsp;<s:property value="order.address.province"/>-<s:property value="order.address.city"/>-<s:property value="order.address.district"/> <s:property value="order.address.street"/>，<s:property value="order.address.telphone"/>，邮编：<s:property value="order.address.zipCode"/></p>
+                		<p>收货信息：<s:property value="order.addressee"/>&nbsp;&nbsp;-&nbsp;&nbsp;<s:property value="order.province"/>-<s:property value="order.city"/>-<s:property value="order.district"/> <s:property value="order.street"/>，<s:property value="order.telphone"/>，邮编：<s:property value="order.zipCode"/></p>
                 		<p>
                 			送货时间：<span>仅工作日送货</span>
                 		</p>
@@ -121,45 +121,29 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="option paytype" style="border-bottom: 1px solid #dcdcdc;">
-                	<form id="order-pay-form" method="post" action="http://pay.jumei.com/alipay/forward" target="_blank" sid="s14924066-13974122436358" address_id="29584327" is_balance_payment="0">
-                        <input type="hidden" name="defaultbank" value="">
-                        <input type="hidden" name="paymethod" value="bankPay">
-                        <input type="hidden" name="out_trade_no" value="s14924066-13974122436358">
-                        <input type="hidden" name="subject" value="聚美优品 - 购物车编号 s14924066-13974122436358">
-                        <input type="hidden" name="total_fee" value="63.90">
-                        <input type="hidden" name="quantity" value="1">
-                        <input type="hidden" name="it_b_pay" value="1d">
-                        <input type="hidden" name="sign_id_ext" value="14924066">
-                        <input type="hidden" name="sign_name_ext" value="frepander">
-                        <input type="hidden" name="timestamp" value="1397412243">
-                        <input type="hidden" name="default_login" value="N">
-                        <input type="hidden" name="sign" value="06f2c968304066af66059c9261d343e8">
+                <div class="option paytype" id="order-pay-form" style="border-bottom: 1px solid #dcdcdc;">
+                	<form id="order-pay-form" method="post"  action="pay_alipayapi" target="_blank">
+                        <input type="hidden" name="WIDseller_email" value="laisaohuo@163.com">
+                        <input type="hidden" name="WIDout_trade_no" value="<s:property value="order.number"/>">
+                        <input type="hidden" name="WIDsubject" value="来扫货商城购物单">
+                        <input type="hidden" name="WIDprice" value="<s:property value="order.nowPrice"/>">
+                        <input type="hidden" name="WIDbody" value="来扫货商城购物单">
+                        <input type="hidden" name="WIDshow_url" value="http://www.laisaohuo.com">
+                        <input type="hidden" name="WIDreceive_name" value="<s:property value="order.addressee"/>">
+                        <input type="hidden" name="WIDreceive_address" value="<s:property value="order.province"/><s:property value="order.city"/><s:property value="order.district"/><s:property value="order.street"/>">
+                        <input type="hidden" name="WIDreceive_zip" value="<s:property value="order.zipCode"/>">
+                        <input type="hidden" name="WIDreceive_mobile" value="<s:property value="order.telphone"/>">
+                        <input type="submit" class="btn_pink_big" value="立即付款">
                     </form>
-                    <a onclick="$('#order-pay-form').submit();" class="btn_pink_big">立即付款</a>
                    	<div class="clear"></div>
                 </div>
             </div>
         </div>
     </div>
 </div><!--  container end  -->
-
 <div id="footer_container">
 		<%@include file="pianduan/footer1.jsp" %>
 </div><!--  footer_textarea  -->
 
-<script>
-//更改购买数量
- $('.decrease_num').click(function(){
- 	if($(this).next().val()!=1){
- 		$(this).next().val(parseInt($(this).next().val())-1)
- 	}
- });
- $('.increase_num').click(function(){
- 	if($(this).prev().val()!=10){
- 		$(this).prev().val(parseInt($(this).prev().val())+1)
- 	}
- });
-</script>
 </body>
 </html>

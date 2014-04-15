@@ -89,19 +89,17 @@
                 	</td>
                 	<td class="number_box" style="*padding-right: 0; *padding-left: 5px">
                 		<div style="*width: 160px">
-                			<div class="buy_number_input ">
+                			<div class="buy_number_input "style="width:30px;">
                 				<!--<span class="decrease_num">-</span>-->
-                				<input class="item-buy-quantity-input" value="<s:property value="count"/>">
+                				<input class="item-buy-quantity-input" value="<s:property value="count"/>" >
                 				<!--<span class="increase_num">+</span>-->
                 			</div>
-                			
-
                 			<p class="pink" style="margin-top:10px;"></p>
                 		</div>
                 	</td>
                 	<td class="price_box">
                 		<p>
-                			<span><s:property value="price"/></span>
+                			<span><s:property value="goods.nowPrice"/></span>
                 		</p>
                 	</td>
                 	<td class="count_price_box">

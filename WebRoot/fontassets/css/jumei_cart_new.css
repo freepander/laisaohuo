@@ -2675,7 +2675,7 @@ td.item-buy-total {
 #cboxOverlay{ z-index:99999}
 #colorbox{ z-index:9999999}
 #cboxContent{ border:none;background:#767676;}
-#cboxLoadedContent{margin-top:30px;}
+#cboxLoadedContent{margin-top:0px;}
 #cboxTitle, #cboxClose{top:0;font-size:14px;color:#FFF;}
 #cboxClose{text-indent: -99999px;text-align: justify;display: none;}
 #cboxClose:hover{color:#fff;}

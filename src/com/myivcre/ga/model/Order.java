@@ -24,8 +24,13 @@ public class Order {
 	//订单编号
 	private String number;
 	//收货地址
-	@ManyToOne
-	private Address address;
+	private String addressee;
+	private String province;
+	private String city;
+	private String district;
+	private String street;
+	private String zipCode;
+	private String telphone;
 	//送货时间
 	private String deliverytime;
 	//买家留言
@@ -52,7 +57,6 @@ public class Order {
 	public Order(){
 		this.number=String.valueOf(new Date().getTime());
 		this.itemList=new ArrayList<OrderItem>();
-		this.address=null;
 		this.deliverytime="仅工作日送货";
 		this.userMessage="";
 		this.price=0;
@@ -82,12 +86,6 @@ public class Order {
 	}
 	public void setNumber(String number) {
 		this.number = number;
-	}
-	public Address getAddress() {
-		return address;
-	}
-	public void setAddress(Address address) {
-		this.address = address;
 	}
 	public String getDeliverytime() {
 		return deliverytime;
@@ -154,6 +152,48 @@ public class Order {
 	}
 	public void setIntegral(int integral) {
 		this.integral = integral;
+	}
+	public String getAddressee() {
+		return addressee;
+	}
+	public void setAddressee(String addressee) {
+		this.addressee = addressee;
+	}
+	public String getProvince() {
+		return province;
+	}
+	public void setProvince(String province) {
+		this.province = province;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getDistrict() {
+		return district;
+	}
+	public void setDistrict(String district) {
+		this.district = district;
+	}
+	public String getStreet() {
+		return street;
+	}
+	public void setStreet(String street) {
+		this.street = street;
+	}
+	public String getZipCode() {
+		return zipCode;
+	}
+	public void setZipCode(String zipCode) {
+		this.zipCode = zipCode;
+	}
+	public String getTelphone() {
+		return telphone;
+	}
+	public void setTelphone(String telphone) {
+		this.telphone = telphone;
 	}
 	
 

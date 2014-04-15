@@ -115,6 +115,10 @@
 			<result name="order">/order.jsp</result>
 			<result name="pay">/pay.jsp</result>
 		</action>
+		<action name="pay_*" class="payAction" method="{1}">
+			<result name="paytoalipay">/paytoalipay.jsp</result>
+		</action>
+		
 		<action name="file_*" class="fileAction" method="{1}">
 			<result name="a">/index.jsp</result>
 		</action>
