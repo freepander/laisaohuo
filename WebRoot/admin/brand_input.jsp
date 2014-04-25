@@ -34,6 +34,9 @@
 					<input type="button" value="点击选择图片" onclick="path.click()">
 					<input type="file" name="file" style="display:none;" id="path" onchange="f_upload(this)">
 				</div>
+				<div>
+					170px*80px
+				</div>
 			</div>
 		<div class="control-group">
 			<label class="control-label">是否出现在首页</label>

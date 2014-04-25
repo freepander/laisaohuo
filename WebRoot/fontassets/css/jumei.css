@@ -1295,7 +1295,6 @@ div.notification_center .action div{
     *width:183px;
     display:block;
     height: 42px;
-    margin-bottom: 20px;
     /*overflow:hidden;*/
 }
 .gateway_list .common_pay{
@@ -1335,6 +1334,7 @@ div.notification_center .action div{
     font-size:14px;
     font-family:"微软雅黑";
     padding-right:15px;
+    border-top: 1px solid #d5d5d5;
 }
 .gateway_list li input{
     float:left;
@@ -1344,10 +1344,9 @@ div.notification_center .action div{
 }
 .gateway_list li label{
     float:left;
-    background: url(../img/gateway_bg_v5.jpg);
     height: 38px;
     width:130px;
-    border: 1px solid #ccc;
+    font-size: 24px;
     cursor: pointer;
     margin:1px;
     overflow:hidden;

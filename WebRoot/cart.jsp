@@ -135,6 +135,12 @@
 </div><!--  footer_textarea  -->
 
 <script>
+$('#go_to_order').click(function(){
+	if($('.cart_item').length==0){
+		alert('还没有选择商品哦。')
+		return false;
+	}
+})
 //更改购买数量
  $('.decrease_num').click(function(){
  	if($(this).next().val()!=1){

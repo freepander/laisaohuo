@@ -21,8 +21,9 @@ public class GroupBuyAction extends BaseAction {
 	private String endDate;
 	private String logo;
 	private int goodsId;
+	private int slaeNumber2;
 	private String description;
-	
+	private String erweima;
 	
 	private GroupBuy groupBuy;
 	
@@ -30,7 +31,8 @@ public class GroupBuyAction extends BaseAction {
 		try{
 			q.add("deletes = ?");
 			a.add(false);
-			this.pageModel=this.baseService.getPageModel("groupbuy", pageNum, 20,q,a);
+			orderby.add("startDate desc");
+			this.pageModel=this.baseService.getPageModel("groupbuy", pageNum, 100,q,a);
 		}catch(Exception e){
 			e.printStackTrace();
 		}
@@ -51,15 +53,14 @@ public class GroupBuyAction extends BaseAction {
 		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
 		this.groupBuy.setStartDate(sdf.parse(this.startDate));
 		this.groupBuy.setEndDate(sdf.parse(this.endDate));
-		this.groupBuy.setCollectionNumber(0);
 		this.groupBuy.setSlaeNumber(0);
+		this.groupBuy.setSlaeNumber2(slaeNumber2);
 		this.groupBuy.setLogo(logo);
 		Goods goods=(Goods)this.baseService.get(Goods.class, goodsId);
 		this.groupBuy.setGoods(goods);
 		this.groupBuy.setDeletes(false);
 		this.groupBuy.setDescription(description);
-		DecimalFormat df=new DecimalFormat(".##");
-		this.groupBuy.setDiscount(Double.parseDouble(df.format(price/goods.getPrice()))*10);
+		this.groupBuy.setErweima(erweima);
 		this.baseService.save(this.groupBuy);
 		return "list";
 	}

@@ -2,6 +2,7 @@ package com.myivcre.ga.action;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
@@ -181,7 +182,10 @@ public class UserAction extends ActionSupport{
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
 		return "user_message";
 	}
-	
+	/**
+	 * 退出登录
+	 * @return
+	 */
 	public String signOut(){
 		HttpServletResponse response=ServletActionContext.getResponse();
 		HttpServletRequest request=ServletActionContext.getRequest();
@@ -195,8 +199,14 @@ public class UserAction extends ActionSupport{
 				response.addCookie(cookie);
 			}
 		}
+		Map<String, Object> session=ServletActionContext.getContext().getSession();
+		session.put("user", null);
 		return "index_index";
 	}
+	/**
+	 * 注册
+	 * @return
+	 */
 	public String register(){
 		List l1=this.baseService.getByHal("from shopuser where email='"+email+"'");
 		List l2=this.baseService.getByHal("from shopuser where username='"+username+"'");
@@ -213,8 +223,23 @@ public class UserAction extends ActionSupport{
 		this.user.setUsername(username);
 		this.user.setPassword(password);
 		this.baseService.save(this.user);
+		//将用户名密码加入cookie中  将用户 加入session中
+		HttpServletResponse response=ServletActionContext.getResponse();
+		Cookie c1=new Cookie("username",user.getUsername());
+		Cookie c2=new Cookie("password",user.getPassword());
+		c1.setMaxAge(30*24*60*60);
+		c2.setMaxAge(30*24*60*60);
+		response.addCookie(c1);
+		response.addCookie(c2);
+		//将用户放入session
+		Map<String, Object> session=ServletActionContext.getContext().getSession();
+		session.put("user", this.user);
 		return "index_index";
 	}
+	/**
+	 * 进入登陆页面
+	 * @return
+	 */
 	public String loginInput(){
 		HttpServletRequest request=ServletActionContext.getRequest();
 		Cookie[] cookies=request.getCookies();
@@ -227,6 +252,10 @@ public class UserAction extends ActionSupport{
 		}
 		return "login";
 	}
+	/**
+	 * 登陆
+	 * @return
+	 */
 	public String login(){
 		List<ShopUser> l=this.baseService.getByHal("from shopuser where username='"+username+"' and password='"+password+"'");
 		if(l.size()>0){
@@ -238,15 +267,25 @@ public class UserAction extends ActionSupport{
 			c2.setMaxAge(30*24*60*60);
 			response.addCookie(c1);
 			response.addCookie(c2);
+			//将用户放入session
+			Map<String, Object> session=ServletActionContext.getContext().getSession();
+			session.put("user", this.user);
 			return "index_index";
 		}else{
 			this.showMessage="用户名或密码不正确";
 			return "login";
 		}
 	}
+	/**
+	 * 进入注册页面
+	 * @return
+	 */
 	public String registerInput(){
 		return "register";
 	}
+	
+	
+	
 	public BaseService getBaseService() {
 		return baseService;
 	}

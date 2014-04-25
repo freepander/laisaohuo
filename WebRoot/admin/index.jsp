@@ -56,17 +56,9 @@
 						id : 'dingbulunbo',
 						text : '顶部轮播',
 						href : 'admin/mallCarousel_input'
-					}, {
-						id : 'pinpaiqiang',
-						text : '品牌墙',
-						href : 'admin/brandCategory_qianglist'
-					}, {
-						id : 'hufuneirong',
-						text : '商品墙管理',
-						href : 'admin/bigCategory_qianglist'
 					}]
 				}, {
-					text : '团购内容',
+					text : '活动列表',
 					items : [ {
 						id : 'tuangouliebiao',
 						text : '团购列表',
@@ -75,6 +67,14 @@
 						id : 'tianjiatuangou',
 						text : '添加团购',
 						href : 'admin/groupBuy_input'
+					}, {
+						id : 'dazheliebiao',
+						text : '打折商品列表',
+						href : 'admin/goods_discountList'
+					} , {
+						id : 'tianjiadazheshangpin',
+						text : '添加打折商品',
+						href : 'admin/goods_discountInput'
 					} ]
 				}, {
 					text : '文章内容',
@@ -142,14 +142,7 @@
 						text : '功效列表',
 						href : 'admin/effect_list'
 					} ]
-				}, {
-					text : '用户评论',
-					items : [ {
-						id : 'pinglunliebiao',
-						text : '评论列表',
-						href : 'b4/pinglunliebiao.html'
-					} ]
-				} ]
+				}]
 			}, {
 				id : 'search',
 				menu : [ {
@@ -168,7 +161,7 @@
 					items : [ {
 						id : 'dingdanliebiao',
 						text : '订单列表',
-						href : 'c2/dingdanliebiao.html'
+						href : 'admin/order_list.jsp'
 					}, {
 						id : 'dingdanchaxun',
 						text : '订单查询',

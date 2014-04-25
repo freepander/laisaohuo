@@ -34,6 +34,7 @@
 			<result name="effectList">/pianduan/effectList.jsp</result>
 			<result name="pInput">/admin/purchaseShipment_pInput.jsp</result>
 			<result name="sInput">/admin/purchaseShipment_sInput.jsp</result>
+			<result name="discountList">/admin/goods_discountList.jsp</result>
 			<interceptor-ref name="login"></interceptor-ref>
 			
 		</action>
@@ -66,29 +67,43 @@
 				<interceptor-ref name="islogin"></interceptor-ref>
 			</interceptor-stack>
 		</interceptors>
+		<global-results>
+			<result name="login_login">/login.jsp</result>
+		</global-results>
 		<action name="index_*" class="indexAction" method="{1}">
 			<result name="index_index">index2.jsp</result>
 			<result name="index">/index.jsp</result>
 			<result name="success">/{1}.jsp</result>
-			<interceptor-ref name="islogin_stack"></interceptor-ref>
+			<!--
+			<interceptor-ref name="islogin_stack"></interceptor-ref> 
+			 -->
 		</action>
 		<action name="articles_*" class="articlesAction" method="{1}">
 			<result name="article">/article.jsp</result>
 			<result name="success">/{1}.jsp</result>
-			<interceptor-ref name="islogin_stack"></interceptor-ref>
+			<!--
+			<interceptor-ref name="islogin_stack"></interceptor-ref> 
+			 -->
 		</action>
 		<action name="good_*" class="goodAction" method="{1}">
 			<result name="success">/{1}.jsp</result>
-			<interceptor-ref name="islogin_stack"></interceptor-ref>
+			
+			<!--
+			<interceptor-ref name="islogin_stack"></interceptor-ref> 
+			 -->
 		</action>
 		<action name="group_*" class="groupAction" method="{1}">
 			<result name="success">/{1}.jsp</result>
-			<interceptor-ref name="islogin_stack"></interceptor-ref>
+			<!--
+			<interceptor-ref name="islogin_stack"></interceptor-ref> 
+			 -->
 		</action>
 		<action name="products_*" class="productsAction" method="{1}">
 			<result name="products">/products.jsp</result>
 			<result name="success">/{1}.jsp</result>
-			<interceptor-ref name="islogin_stack"></interceptor-ref>
+			<!--
+			<interceptor-ref name="islogin_stack"></interceptor-ref> 
+			 -->
 		</action>
 		<action name="user_*" class="userAction" method="{1}">
 			<result name="index_index">/index2.jsp</result>
@@ -108,7 +123,9 @@
 			<result name="user_password">/user_password.jsp</result>
 			<result name="user_address">/user_address.jsp</result>
 			<result name="user_returnGoods">/user_returnGoods.jsp</result>
-			<interceptor-ref name="islogin_stack"></interceptor-ref>
+			<!--
+			<interceptor-ref name="islogin_stack"></interceptor-ref> 
+			 -->
 		</action>
 		<action name="carts_*" class="cartsAction" method="{1}">
 			<result name="cart">/cart.jsp</result>

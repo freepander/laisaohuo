@@ -19,9 +19,11 @@
     <div id="logo">
 		<a href="index_index" id="home" title="" style="background:url(fontassets/img/logo_new_v1.jpg) no-repeat top left;"></a>
 		<div class="header_logo_box">
+		    <!--
 		    <a href="articles_getArticle?id=1" rel="nofollow" class="top_link lightning" target="_blank"></a> 
-					<a href="articles_getArticle?id=1" rel="nofollow" class="top_link gild" target="_blank"></a> 
-					<a href="articles_getArticle?id=1" rel="nofollow" class="top_link credit" target="_blank"></a>
+			<a href="articles_getArticle?id=1" rel="nofollow" class="top_link gild" target="_blank"></a> 
+			<a href="articles_getArticle?id=1" rel="nofollow" class="top_link credit" target="_blank"></a> 
+		     -->
 		</div>
 	</div>
 </div><!--  header_container  -->
@@ -35,7 +37,7 @@ alert("<s:property value="showMessage"/>");
 		<div class="l_bar"></div>
 		<div class="main">
 			<div class="content_head">
-				<h1>注册聚美</h1>
+				<h1>注册</h1>
 			</div>
 			<div class="content_body">
 				<form id="signup-user-form" class="signup-user-form" method="post" action="user_register">
@@ -98,35 +100,22 @@ alert("<s:property value="showMessage"/>");
 							</div>
 						</div>
 					</div>
-					<!-- 
-					<div class="line verityWrap">
-						<label for="signup-hashcode-confirm">验证码：</label>
-						<div class="textbox_ui">
-							<input type="text" name="hash_code" id="signup-hashcode-confirm">
-							<div class="focus_text">按右图填写，不区分大小写</div>
-							<div class="invalid">
-								<i></i>
-								<div class="required">请输入验证码</div>
-								<div class="format">验证码输入有误</div>
-							</div>
-						</div>
-						<a href="#">
-							<img src="/i/account/hash_code?from=signup&amp;1389619649">
-							换一张
-						</a>
-					</div>
-					 -->
 					<div class="act">
 						<input type="submit" value="同意协议并注册" name="commit" id="signup-submit">
 						<p>&nbsp;</p>
-						<a href="/help/user_terms" rel="nofollow" target="_blank">《用户协议》</a>
+						<!-- <a href="/help/user_terms" rel="nofollow" target="_blank">《用户协议》</a> -->
 					</div>
 				</form>
 			</div>
 		</div>
 		<script>
 		$('#signup-user-form').submit(function(){
-			
+			if($('#signup-email-address').val()==''){alert('邮箱不能为空！');return false;}
+			if($('#signup-username').val()==''){alert('用户名不能为空！');return false;}
+			if($('#signup-password').val()==''){alert('密码不能为空');return false;}
+			if($('#signup-password').val()!=$('#signup-password-confirm').val()){alert('两次密码不一致！');return false;}
+			if($('#signup-username').val().length<4){alert('用户名不能小于4位')return false;}
+			if($('#signup-password').val().length<6){alert('密码不能小于4位')return false;}
 		})
 		</script>
 		<div class="sidebar">
@@ -142,9 +131,7 @@ alert("<s:property value="showMessage"/>");
     <div id="footer_textarea">        
         <div class="footer_con" id="footer_copyright">
             <p class="footer_copy_con">
-                © 2014 哈尔滨明彦创新科技发展有限公司 保留一切权利。 <br>
-                京公网安备 110105001608 | <a href="http://www.miibeian.gov.cn" target="_blank" rel="nofollow">京ICP证111033号</a> | 食品流通许可证 SP1101051110165515（1-1）
-                | <a href="http://p2.jmstatic.com/activity/2013_chuangrui.jpeg" target="_blank" rel="nofollow">营业执照</a>
+                © 2014 哈尔滨明彦创新科技发展有限公司 保留一切权利。 <br> 吉ICP备14001040号-1
             </p>
         </div>
     </div>

@@ -1,5 +1,6 @@
 package com.myivcre.ga.action;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,7 +61,9 @@ public class GoodsAction extends BaseAction {
 	//用于编辑商品详情
 	private String method;
 	private String content;
-	
+	//打折商品
+	private double discount;
+	private double discountPrice;
 	public String list(){
 		try{
 			q.add("deletes=?");
@@ -167,7 +170,110 @@ public class GoodsAction extends BaseAction {
 		this.baseService.update(this.goods);
 		return "list";
 	}
-	//编辑商品详细内容
+	public String effectInput(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		this.list=this.baseService.getByHal("from effect where bigCategory.id="+goods.getBigCategory().getId()+" and deletes=false ");
+		return "success";
+	}
+	/**
+	 * 更改商品功效
+	 * @return
+	 */
+	public String effectUpdate(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		this.goods.setEffectList(new ArrayList<Effect>());
+		for(int i=0;i<this.effectId.length;i++){
+			Effect e=(Effect)this.baseService.get(Effect.class, effectId[i]);
+			this.goods.getEffectList().add(e);
+		}
+		this.baseService.update(this.goods);
+		return "list";
+	}
+	/**
+	 * 更改类别信息
+	 * @return
+	 */
+	public String categoryInput(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		this.bigCategoryList=this.baseService.getByHal("from bigcategory where deletes=false");
+		this.brandList=this.baseService.getByHal("from brand where deletes=false");
+		return "success";
+	}
+	public String categoryUpdate(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		this.goods.setLogo(logo);
+		BigCategory bigc=(BigCategory)this.baseService.get(BigCategory.class, bigCategoryId);
+		this.goods.setBigCategory(bigc);
+		Category category=(Category)this.baseService.get(Category.class, categoryId);
+		this.goods.setCategory(category);
+		if(twoCategoryId!=0){
+			TwoCategory twoC=(TwoCategory)this.baseService.get(TwoCategory.class, twoCategoryId);
+			this.goods.setTwoCategory(twoC);
+		}
+		Brand brand=(Brand)this.baseService.get(Brand.class, brandId);
+		this.goods.setBrand(brand);
+		this.baseService.update(this.goods);
+		return "list";
+	}
+	/**
+	 * 更改其他信息
+	 * @return
+	 */
+	public String otherInput(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		return "success";
+	}
+	public String otherUpdate(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		this.goods.setSpec(spec);
+		this.goods.setNowPrice(nowPrice);
+		this.goods.setCapacity(capacity);
+		this.goods.setSalesVolume2(salesVolume2);
+		this.goods.setArea(area);
+		this.goods.setShelfLife(shelfLife);
+		this.goods.setCrowd(crowd);
+		this.goods.setBaoCunMethod(baoCunMethod);
+		this.goods.setLuanMa(luanMa);
+		this.goods.setTeBieShengMing(teBieShengMing);
+		this.baseService.update(this.goods);
+		return "list";
+	}
+	/**
+	 * 将商品添加到首页上与移除
+	 * @return
+	 */
+	public String indexAdd(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		this.goods.setOnIndex(true);
+		this.baseService.update(this.goods);
+		return "list";
+	}
+	public String indexRemove(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		this.goods.setOnIndex(false);
+		this.baseService.update(this.goods);
+		return "list";
+	}
+	/**
+	 * 商品下架与上架 
+	 * @return
+	 */
+	public String visibleTrue(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		this.goods.setVisible(true);
+		this.baseService.update(this.goods);
+		return "list";
+	}
+	public String visibleFalse(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		this.goods.setVisible(false);
+		this.baseService.update(this.goods);
+		return "list";
+	}
+	/**
+	 * 编辑商品详细信息
+	 * @return
+	 */
 	public String bianjiInput(){
 		this.goods=(Goods)this.baseService.get(Goods.class, id);
 		if(method.equals("shangpinxiangqing")){
@@ -190,6 +296,28 @@ public class GoodsAction extends BaseAction {
 		}
 		this.baseService.update(this.goods);
 		return "list";
+	}
+	/**
+	 * 商品打折处理
+	 * @return
+	 */
+	public String discountInput(){
+		return "success";
+	}
+	
+	public String discountList(){
+		this.list=this.baseService.getByHal("from goods where visible=true and discount<1");
+		return "success";
+	}
+	
+	public String discountUpdate(){
+		this.goods=(Goods)this.baseService.get(Goods.class, id);
+		this.goods.setDiscount(discount);
+//		DecimalFormat df = new DecimalFormat("#.00");
+		this.goods.setDiscountPrice(Double.parseDouble(String.format("%.2f", discountPrice)));
+		this.baseService.update(this.goods);
+		this.list=this.baseService.getByHal("from goods where visible=true and discount<1");
+		return "discountList";
 	}
 	public String getName() {
 		return name;
@@ -412,6 +540,18 @@ public class GoodsAction extends BaseAction {
 	}
 	public void setOnIndex(boolean onIndex) {
 		this.onIndex = onIndex;
+	}
+	public double getDiscount() {
+		return discount;
+	}
+	public double getDiscountPrice() {
+		return discountPrice;
+	}
+	public void setDiscountPrice(double discountPrice) {
+		this.discountPrice = discountPrice;
+	}
+	public void setDiscount(double discount) {
+		this.discount = discount;
 	}
 	
 }

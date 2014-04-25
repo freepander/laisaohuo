@@ -208,12 +208,14 @@
 				<!--正品联盟-->
 				<div id="authorize_floor">
 					<div class="floor_con" id="fun_floor_con">
-						<div class="af_con">
-							<ul style="margin-top: 20px;">
+						<div class="af_con" style="height: 220px;overflow:hidden;position:relative;">
+							<ul style="margin-top: 20px;height: 202px;position:absolute;left:0;top:0;">
 							<s:iterator value="brandList">
-								<li><a target="_blank" href="products_listAll?brandId=<s:property value="id"/>"><img src="upload/brand/<s:property value="logo"/>" style="margin-left: 0px;"></a></li>
+								<li><a target="_blank" href="products_listAll?brandId=<s:property value="id"/>"><img src="upload/brand/<s:property value="logo"/>" style="margin-left: 0px; width: 170px;height: 80px;"></a></li>
 							</s:iterator>
 							</ul>
+							<img id="brandList-right" style="cursor:pointer;display:none;position:absolute;right: 0px; top: 93px;" src="assets/img/qiehuan_right.png">
+							<img id="brandList-left" style="cursor:pointer;display:none;position:absolute;left:0px;top:93px;" src="assets/img/qiehuan_left.png">
 						</div>
 					</div>
 				</div>
@@ -241,12 +243,12 @@
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
 											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
-										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
+										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><s:property value="discountPrice"/>（<s:property value="discount"/>折）</s:if> </span>
 										
 									</div>
 									<div class="card-bd">
 										<h2 class="story-title" title=" ">
-										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/></a>
+										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/>(<s:property value="capacity"/>)</a>
 										</h2>
 										<div class="story-info">
 											<span class="info-pinglun">评论:<s:property value="reviewNumber"/>&nbsp;&nbsp;收藏：<s:property value="collectionNumber"/></span>
@@ -292,12 +294,12 @@
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
 											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
-										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
+										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><s:property value="discountPrice"/>（<s:property value="discount"/>折）</s:if> </span>
 										
 									</div>
 									<div class="card-bd">
 										<h2 class="story-title" title=" ">
-										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/></a>
+										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/>(<s:property value="capacity"/>)</a>
 										</h2>
 										<div class="story-info">
 											<span class="info-pinglun">评论:<s:property value="reviewNumber"/>&nbsp;&nbsp;收藏：<s:property value="collectionNumber"/></span>
@@ -345,12 +347,11 @@
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
 											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
-										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
-										
+										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><s:property value="discountPrice"/>（<s:property value="discount"/>折）</s:if> </span>
 									</div>
 									<div class="card-bd">
 										<h2 class="story-title" title=" ">
-										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/></a>
+										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/>(<s:property value="capacity"/>)</a>
 										</h2>
 										<div class="story-info">
 											<span class="info-pinglun">评论:<s:property value="reviewNumber"/>&nbsp;&nbsp;收藏：<s:property value="collectionNumber"/></span>
@@ -395,12 +396,12 @@
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
 											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
-										<span class="commodity-price">￥<s:property value="nowPrice"/></span>
+										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><s:property value="discountPrice"/>（<s:property value="discount"/>折）</s:if> </span>
 										
 									</div>
 									<div class="card-bd">
 										<h2 class="story-title" title=" ">
-										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/></a>
+										    <a target="_blank" href="good_goods?id=<s:property value="id"/>"> <s:property value="name"/>(<s:property value="capacity"/>)</a>
 										</h2>
 										<div class="story-info">
 											<span class="info-pinglun">评论:<s:property value="reviewNumber"/>&nbsp;&nbsp;收藏：<s:property value="collectionNumber"/></span>
@@ -626,12 +627,25 @@
 				</script>
 <script type="text/javascript">
 				//品牌墙
-					$('#fun_au_tabnav span').mouseover(function(){
-						$(this).parent().children().removeClass('hover');
-						$(this).addClass('hover')
-						var i=$(this).attr('data-tab');
-						$('#fun_floor_con').children().hide();
-						$('#fun_floor_con').children().eq(i).show()
+					var length=$('.af_con ul').children().length
+					length/2==0?$('.af_con ul').width(200*(length/2)):$('.af_con ul').width(200*(length+1)/2);
+					$('.af_con').mouseover(function(){
+						$('#brandList-right').show()
+						$('#brandList-left').show()
+					})
+					$('.af_con').mouseout(function(){
+						$('#brandList-right').hide()
+						$('#brandList-left').hide()
+					})
+					$('#brandList-right').click(function(){
+						var left=parseInt($('.af_con ul').css('left'))
+						var width=$('.af_con ul').width()
+						if(left==1200-width){}else{$('.af_con ul').css('left',left-200)}
+					})
+					$('#brandList-left').click(function(){
+						var left=parseInt($('.af_con ul').css('left'))
+						var width=$('.af_con ul').width()
+						if(left==0){}else{$('.af_con ul').css('left',left+200)}
 					})
 					</script>
 <script>

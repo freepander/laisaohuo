@@ -24,8 +24,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div id="container" class="grid_v2" style="width: 1020px;">
 		<div id="body" style="width: 1100px;">
 			<div id="main" class="deals home_deal_list leftAll" >
-				<div class="sort_all old png" id="sort_top">
-	            </div>
+				
 				<div id="toady_deal_list" class="home_deal_list_container">
 					<s:iterator value="groupBuyList">
 					<div class="deal_box   deal_diaoxing ">
@@ -36,16 +35,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		                </div>
 		                <a href="group_groupBuy?id=<s:property value="id"/>" target='_blank' class="deal_link" rel="nofollow">            
 		                	<p class="title_box">
-		                		<span class="pink"><s:property value="discount"/>折/ </span><s:property value="description"/>
+		                		<span class="pink"></span><s:property value="description"/>
 		                	</p>
 		                	<div class="price_box">
 	                			<span class="go">去看看</span>
 	                			<em>¥</em><span class="pnum" style="font-size:30px;"><s:property value="price"/></span>
-	                			<span style="text-decoration: line-through;color:#999;">¥<s:property value="goods.price"/></span>
+	                			<span style="text-decoration: line-through;color:#999;">¥<s:property value="goods.nowPrice"/></span>
 	                		</div>
 	            			<div class="numtimer_box">
 	            				<div class="num_box">
-	            					<span class="buy_num"><s:property value="slaeNumber"/></span>人已经购买&nbsp;                
+	            					<!-- <span class="buy_num"><s:property value="slaeNumber"/></span>人已经购买&nbsp; -->                
 	            				</div>
 	            			</div>
 	            		</a>

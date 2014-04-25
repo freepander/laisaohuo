@@ -247,53 +247,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 <body>
 <div id="header_container">
-    <div id="logo">
-    	<a href="index_index" id="home" title="" style="background:url(fontassets/img//logo_new_v1.jpg) no-repeat top left;"> </a>
-        <div id="user_header">
-            <ul class="login_header">
-				<s:if test="#session.gloablIsLogin==false">
-				<li class="login_li"><a href="user_registerInput" rel="nofollow">注册</a><em>|</em></li>
-               	<li class="login_li"><a href="user_loginInput" rel="nofollow">登录</a><em>|</em></li>
-               	<li class="login_li"><em>|</em><a href="#" rel="nofollow">马上有礼</a></li>
-				</s:if>
-				<s:if test="#session.gloablIsLogin==true">
-				<li class="login_li"><a href="user_order?id=<s:property value="#session.user.id"/>" rel="nofollow">个人中心</a><em>|</em></li>
-				<li class="user">欢迎您，<span style="color: #ED145B;"><s:property value="#session.user.username"/></span><span style="padding:0 5px;">[<a href="user_signOut" style="padding:0;">退出</a>]</span><em>|</em></li>
-				</s:if>
-			</ul>
-            <div class="clear"></div>
-            <div class="header_logo_all">
-            	<div id="cart_box">
-            		<a id="cart" href="carts_list" rel="nofollow">
-            			<span class="num png"></span>
-            		</a>
-                </div>
-                <a href="articles_getArticle?id=1" rel="nofollow" class="top_link lightning" target="_blank"></a> 
-					<a href="articles_getArticle?id=1" rel="nofollow" class="top_link gild" target="_blank"></a> 
-					<a href="articles_getArticle?id=1" rel="nofollow" class="top_link credit" target="_blank"></a>
-            </div>
-        </div>
-    </div>
-    <div class="clear"></div>
-    <div id="top_menu">
-       <div id="top_nav">
-       		<div class="top_nav_item selected"><a href="index_index" class="nav_link">护理商城</a></div>
-				<div class="top_nav_item "><a href="group_groupList" class="nav_link">买多成团</a></div>
-				<div class="top_nav_item">
-					<a href="javascript:void(0)" class="nav_link">会员独享</a>
-					<div class="header_list" style="display: none;">
-						<a href="#"><span class="newbanner">信息发布</span></a>
-					</div>
-				</div>
-				<div class="top_nav_item"><a href="articles_getArticle?id=1" class="nav_link">用户须知</a></div>
-				<div class="top_search_wrap">
-					<form action="#" method="get" id="mall_search_form" pos="top">
-						<input name="search" type="text" class="top_search_input" id="mall_search_input" lang="zh">
-						<button type="submit" id="btn_global_search">搜索</button>
-					</form>
-				</div>
-        </div>
-    </div>
+    <div id="header_container">
+    	<%@include file="pianduan/header2.jsp" %>
+	</div><!-- end  heander_container  -->
 </div><!-- end  heander_container  -->
 
 <div id="container">
@@ -303,7 +259,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <div class="newdeal_deal ">
                     <div class="newdeal_deal_title">
                         <div class="newdeal_title_black">
-                            <span style="color:#ed145b;">今日团购</span>
+                            <span style="color:#ed145b;">低价风暴</span>
                             <span class="share_title" style="color: black;"><s:property value="groupBuy.description"/></span>
                         </div>
                         
@@ -328,14 +284,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                         <table border="0" cellpadding="0" cellspacing="0" width="100%" class="price_table">
                                             <tbody>
                                             <tr>
-                                                <td class="title title_black">市场价</td>
-                                                <td class="title title_black">折扣</td>
-                                                <td class="title title_black">你节省</td>
+                                                <td class="title title_black">原价</td>
+                                                <td class="title title_black">为你节省</td>
                                             </tr>
                                             <tr>
-                                                <td class="price en">¥<s:property value="groupBuy.goods.price"/></td>
-                                                <td class="price en"><s:property value="groupBuy.discount"/>折</td>
-                                                <td class="price en">¥<s:property value="groupBuy.goods.price-groupBuy.price"/></td>
+                                                <td class="price en">¥<s:property value="groupBuy.goods.nowPrice"/></td>
+                                                <td class="price en">¥<s:property value="groupBuy.goods.nowPrice-groupBuy.price"/></td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -353,15 +307,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     </div>
                 </div>
             </div>
-            
-
 
             <div class="newdeal_center">
                 <div class="deal_detail">
                     <ul id="new_deal_tabs" class="new_tabs">
                         <div class="deal_tabs_right ">
                             <span class="price"><em>¥</em><s:property value="groupBuy.price"/></span>
-                            <a class="buy" href="#body"></a>
+                            <a class="buy tanchuduihuakuang" href="#"></a>
                         </div>
                         <li><a href="group_groupBuy?id=<s:property value="groupBuy.id"/>#specs">商品参数</a></li>
                         <li><a href="group_groupBuy?id=<s:property value="groupBuy.id"/>#details">商品详情</a></li>
@@ -379,47 +331,55 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     <img src="fontassets/img/tit_specs.jpg" width="100%">
                                 </div>
                                 <div class="deal_con_content">
-                                    <table border="0" cellpadding="0" cellspacing="0" style="font-family:arial;">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="660">
                                     <tbody>
-                                    <tr>
-                                        <td width="85"><b>商品名称：</b></td>
-                                        <td><span><s:property value="groupBuy.goods.name"/></span></td>
-                                        <td rowspan="7" style="padding-right:0;"><img width="307px" src="upload/goodslogo/<s:property value="groupBuy.goods.logo"/>"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;牌：</b></td>
-                                        <td><span><s:property value="groupBuy.goods.brand.name"/></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>分&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;类：</b></td>
-                                        <td><span><s:property value="groupBuy.goods.category.name"/></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>功&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;效：</b></td>
-                                        <td><span><s:property value="groupBuy.goods.effect"/></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>退货政策</b></td>
-                                        <td><span>30天拆封无条件退货</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>产品规格：</b></td>
-                                        <td><span><s:property value="groupBuy.goods.specifications"/></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>原产地区：</b></td>
-                                        <td><span><s:property value="groupBuy.goods.area"/></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>保质期限：</b></td>
-                                        <td><span><s:property value="groupBuy.goods.shelfLife"/></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>适用人群：</b></td>
-                                        <td><span><s:property value="groupBuy.goods.crowd"/></span></td>
-                                    </tr>
+                                        <tr>
+                                            <td width="85" valign="top"><b>商品名称：</b></td>
+                                            <td width="250" valign="top"><s:property value="groupBuy.goods.name"/>(<s:property value="goods.capacity"/>)</td>
+                                            <td rowspan="7" align="right" valign="bottom"><img width="307px" height="343px" src="upload/goodslogo/<s:property value="goods.logo"/>" alt="<s:property value="goods.name"/>" border="0"></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><b>品牌名称：</b></td>
+                                            <td valign="top"><span><s:property value="groupBuy.goods.brand.name"/></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><b>产品功效：</b></td>
+                                            <td valign="top"><s:iterator value="groupBuy.goods.effectList">
+                                            <span><s:property value="name"/>/</span>
+                                            </s:iterator></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><b>产品规格：</b></td>
+                                            <td valign="top"><span><s:property value="groupBuy.goods.spec"/></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><b>产品容量：</b></td>
+                                            <td valign="top"><span><s:property value="groupBuy.goods.capacity"/></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><b>保存方法：</b></td>
+                                            <td valign="top"><span><s:property value="groupBuy.goods.baoCunMethod"/></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><b>保质期限：</b></td>
+                                            <td valign="top"><span><s:property value="groupBuy.goods.shelfLife"/>（具体日期以实物为准）</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><b>生产国家：</b></td>
+                                            <td valign="top"><span><s:property value="groupBuy.goods.area"/></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top"><b>乱码说明：</b></td>
+                                            <td valign="top"><span><s:property value="groupBuy.goods.luanMa"/></span></td>
+                                        </tr>
+                                        <s:if test='teBieShengMing!=""'>
+                                        <tr>
+                                            <td valign="top"><b>特别声明：</b></td>
+                                            <td valign="top"><span><s:property value="groupBuy.goods.teBieShengMing"/></span></td>
+                                        </tr>
+                                        </s:if>
                                     </tbody>
-                                    </table>
+                                </table>
                                 </div>
                             </div>
                             <div class="deal_con" id="details">
@@ -446,16 +406,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     ${groupBuy.goods.photos }
                                 </div>
                             </div>
-                            <div class="deal_con" id="reviews">
-                                <div class="block_title" id="title_reviews">
-                                    <img src="fontassets/img/deal_reviews2.jpg" width="100%">
-                                </div>
-                                <div class="deal_con_content">
-                                    
-                                </div>
-                            </div>
-                            
-                            
                         </div>
                     </div>
                     
@@ -473,6 +423,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<%@include file="pianduan/footer1.jsp" %>
 </div>
 <script type="text/javascript">
+$('#go_to_cart').click(function(){
+	alert('扫描二维码即可购买。')
+	return false;
+})
+$('.tanchuduihuakuang').click(function(){
+	alert('扫描二维码即可购买。')
+	return false;
+})
   (function(nav){
       var _defautlTop=$(nav).offset().top-$(window).scrollTop();
       var _defaultLeft=$(nav).offset().left-$(window).scrollLeft();

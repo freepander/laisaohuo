@@ -25,22 +25,20 @@ public class GroupBuy {
 	private Date startDate;
 	//结束时间
 	private Date endDate;
-	//收藏人数
-	private int collectionNumber;
 	//购买人数
 	private int slaeNumber;
+	//伪购买人数
+	private int slaeNumber2;
 	//商品图片
 	private String logo;
-	//折扣
-	private double discount;
 	//团购商品
 	@ManyToOne
 	private Goods goods;
 	//简单描述
 	private String description;
-	
+	//二维码
+	private String erweima;
 	private boolean deletes;
-	
 	public GroupBuy(){
 		this.deletes=false;
 		this.createDate=new Date();
@@ -48,17 +46,17 @@ public class GroupBuy {
 	public int getId() {
 		return id;
 	}
+	public int getSlaeNumber2() {
+		return slaeNumber2;
+	}
+	public void setSlaeNumber2(int slaeNumber2) {
+		this.slaeNumber2 = slaeNumber2;
+	}
 	public void setId(int id) {
 		this.id = id;
 	}
 	public String getName() {
 		return name;
-	}
-	public double getDiscount() {
-		return discount;
-	}
-	public void setDiscount(double discount) {
-		this.discount = discount;
 	}
 	public void setName(String name) {
 		this.name = name;
@@ -87,12 +85,6 @@ public class GroupBuy {
 	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
-	public int getCollectionNumber() {
-		return collectionNumber;
-	}
-	public void setCollectionNumber(int collectionNumber) {
-		this.collectionNumber = collectionNumber;
-	}
 	public int getSlaeNumber() {
 		return slaeNumber;
 	}
@@ -116,6 +108,13 @@ public class GroupBuy {
 	}
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
+	}
+	
+	public String getErweima() {
+		return erweima;
+	}
+	public void setErweima(String erweima) {
+		this.erweima = erweima;
 	}
 	public boolean isDeletes() {
 		return deletes;

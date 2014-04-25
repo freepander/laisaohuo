@@ -24,9 +24,9 @@ alert("<s:property value="showMessage"/>");
 </script>
 </s:if>
 <div class="sign">
-	<div class="loginWrap">
-		<a class="logo" href="/"></a>
-		<div class="loginPic">
+	<div class="loginWrap" style="margin-top: 10px;">
+		<a class="logo" href="#" style="height:108px;width:207px;background-position:0 0;"></a>
+		<div class="loginPic" style="background:url(fontassets/img/loginPic.jpg)">
 			<div class="loginBord">
 				<div class="loginTit">
 					<span class="fl">登录</span>

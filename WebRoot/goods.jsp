@@ -31,7 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div id="body">
         <div id="detail_top">
             <h1 class="title">
-                <span><s:property value="goods.name"/></span>
+                <span><s:property value="goods.name"/>(<s:property value="goods.capacity"/>)</span>
             </h1>
             <div class="product_info">
                 <!--左侧-->
@@ -119,9 +119,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <div class="product_desc" style="width: 100%;">                    
                         <ul id="new_deal_tabs" class="new_tabs" style="width: 940px;">
                             <li><a href="good_goods?id=<s:property value="id"/>#specs">商品参数</a></li>
+                            <s:if test='{goods.details!=""}'>
                             <li><a href="good_goods?id=<s:property value="id"/>#details">商品详情</a></li>
+                            </s:if>
+                            <s:if test='{goods.usages!=""}'>
                             <li><a href="good_goods?id=<s:property value="id"/>#usage">使用方法</a></li>
+                            </s:if>
+                            <s:if test='{goods.photos!=""}'>
                             <li><a href="good_goods?id=<s:property value="id"/>#photos">商品实拍</a></li>
+                            </s:if>
                             <li><a href="good_goods?id=<s:property value="id"/>#reviews">用户口碑</a></li>
                             <li class="buy_tab ">
                                 <span class="price"><em>¥</em><s:property value="goods.nowPrice"/></span>
@@ -138,7 +144,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     <tbody>
                                         <tr>
                                             <td width="85" valign="top"><b>商品名称：</b></td>
-                                            <td width="250" valign="top"><s:property value="goods.name"/></td>
+                                            <td width="250" valign="top"><s:property value="goods.name"/>(<s:property value="goods.capacity"/>)</td>
                                             <td rowspan="7" align="right" valign="bottom"><img width="307px" height="343px" src="upload/goodslogo/<s:property value="goods.logo"/>" alt="<s:property value="goods.name"/>" border="0"></td>
                                         </tr>
                                         <tr>
@@ -184,18 +190,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     </tbody>
                                 </table>
                             </div>
+                            <s:if test='{goods.details!=""}'>
                             <div class="deal_contents" id="details">
                                 <div class="block_title" id="title_story">
                                     <img src="fontassets/img/tit_detail.jpg">
                                 </div>
                                 ${goods.details }
                             </div>
+                            </s:if>
+                            <s:if test='{goods.usages!=""}'>
                             <div class="deal_contents" id="usage">
                                 <div class="block_title" id="title_usage">
                                     <img src="fontassets/img/tit_usa.jpg">
                                 </div>
                                 ${goods.usages }
                             </div>
+                            </s:if>
+                            <s:if test='{goods.photos!=""}'>
                             <div class="deal_contents" id="photos">
                                 <div class="block_title" id="title_real_photo">
                                     <img src="fontassets/img/tit_photo.jpg">
@@ -204,6 +215,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     ${goods.photos }
                                 </div>
                             </div>
+                            </s:if>
                             <div class="deal_contents" id="reviews">
                                 <div class="block_title" id="title_real_photo">
                                     <img src="fontassets/img/deal_reviews2.jpg">

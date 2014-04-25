@@ -1,12 +1,9 @@
 package com.myivcre.ga.model;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -99,8 +96,13 @@ public class Goods {
 	private boolean onIndex;
 	//评论个数
 	private int reviewNumber;
+	//折扣 单个商品折扣
+	private double discount;
+	//打折后价格
+	private double discountPrice;
 	public Goods(){
 		this.reviewNumber=0;
+		this.discount=1;
 	}
 	public boolean isOnIndex() {
 		return onIndex;
@@ -118,6 +120,12 @@ public class Goods {
 		this.id = id;
 	}
 
+	public double getDiscount() {
+		return discount;
+	}
+	public void setDiscount(double discount) {
+		this.discount = discount;
+	}
 	public String getName() {
 		return name;
 	}
@@ -286,6 +294,13 @@ public class Goods {
 		this.score = score;
 	}
 
+
+	public double getDiscountPrice() {
+		return discountPrice;
+	}
+	public void setDiscountPrice(double discountPrice) {
+		this.discountPrice = discountPrice;
+	}
 	public int getCollectionNumber() {
 		return collectionNumber;
 	}
