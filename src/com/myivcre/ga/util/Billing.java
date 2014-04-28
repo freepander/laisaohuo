@@ -54,8 +54,8 @@ public class Billing {
 		for(OrderItem item:order.getItemList()){
 			money+=item.getNowPrice();
 		}
-		order.setNowPrice(money+5);
-		order.setPrice(money+5);
+		order.setNowPrice(money);
+		order.setPrice(money);
 		return money;
 	}
 

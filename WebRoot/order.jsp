@@ -138,7 +138,7 @@
                                                </div>
                                         </td>
                                         <td class="number_box"><s:property value="count"/></td>
-                                        <td class="price_box">¥<span id="item-buy-price-1029748_"><s:property value="goods.nowPrice"/></span></td>
+                                        <td class="price_box">¥<span id="item-buy-price-1029748_"><s:if test="goods.discount==1"><s:property value="goods.nowPrice"/></s:if><s:if test="goods.discount<1"><span style="text-decoration:line-through;"><s:property value="goods.price"/></span>&nbsp;&nbsp;<s:property value="goods.discountPrice"/></s:if></span></td>
                                         <td class="count_price_box bold">¥<span id="item-buy-total-1029748_"><s:property value="nowPrice"/></span></td>
                                      </tr>
                                      </s:iterator>
@@ -147,7 +147,7 @@
                                         	<div class="content">
                                           		<div class="option_box">
                                           			<input name="express" id="Express_product/804/" type="radio" value="Express" class="choose_delivery J_Express" checked="checked">
-                                          				<label for="Express_product/804/" id="label_express" class="J_label_express">快递（5元，系统自动判断选择快递）</label>
+                                          				<label for="Express_product/804/" id="label_express" class="J_label_express">顺丰速运</label>
                                           				<div class="clear"></div>
                                           		</div>
                                       			<!--
@@ -157,7 +157,7 @@
                                       				<div class="clear"></div>
                                       			</div>
                                       			 -->
-                                       			<span class="express_num">¥<span class="exp_num J_Final_Delivery">5</span></span>
+                                       			<span class="express_num"><span class="exp_num J_Final_Delivery">货到付运费</span></span>
                                        			<span class="express_tit">运费：</span>
                                        		</div>
                                        	</td>
@@ -167,7 +167,7 @@
                                            		<div class="order_amount_container">
                                            			<div class="price_count express_num">
                                            				<div class="price">
-                                           					¥<span id="total_amount_product/804/" class="total_amount"><s:property value="cart.price+5"/></span>
+                                           					¥<span id="total_amount_product/804/" class="total_amount"><s:property value="cart.price"/></span>
                                            				</div>
                                            			</div>
                                            			<span class="express_tit">本单应付：</span>
@@ -213,7 +213,7 @@
 						<a  href="carts_list" class="btn_grey_small">返回修改购物车</a>
 						<input type="submit" id="btn_confirm_pay" class="btn_pink_big" value="确认订单">
 						<div class="price_sum">
-							应付总额：<span class="total_count">¥<span id="cart_total2"><s:property value="cart.price+5"/></span></span>
+							应付总额：<span class="total_count">¥<span id="cart_total2"><s:property value="cart.price"/></span></span>
 						</div>
 					</div>
 				</div>
