@@ -17,12 +17,18 @@ public class Billing {
 	 * @return
 	 */
 	public static OrderItem orderItem(OrderItem item){
-		item.setNowPrice(item.getGoods().getNowPrice()*item.getCount());
 		item.setPrice(item.getGoods().getNowPrice()*item.getCount());
-		//优惠信息
-		item.setMessagae("");
-		//优惠价格
-		item.setDiscount(0);
+		if(item.getGoods().getDiscount()==1){
+			//未打折商品
+			item.setNowPrice(item.getGoods().getNowPrice()*item.getCount());
+			item.setMessagae("");
+			item.setDiscount(0);
+		}else if(item.getGoods().getDiscount()<1){
+			//打折商品
+			item.setNowPrice(item.getGoods().getDiscountPrice()*item.getCount());
+			item.setMessagae("折扣"+String.valueOf(item.getGoods().getDiscount()));
+			item.setDiscount(item.getPrice()-item.getNowPrice());
+		}
 		return item;
 	}
 	/**

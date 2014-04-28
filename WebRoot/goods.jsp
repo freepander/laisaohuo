@@ -46,7 +46,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                 <div class="info">
                     <p class="price">
                         <em class="yen">¥</em>
-                        <span id="mall_price"><s:property value="goods.nowPrice"/></span>
+                        <s:if test="goods.discount==1"><span id="mall_price"><s:property value="goods.nowPrice"/></span></s:if>
+                        <s:if test="goods.discount<1"><span style="color:#FF9900;text-decoration:line-through;"><s:property value="goods.price"/></span>&nbsp;&nbsp;<span id="mall_price"><s:property value="goods.discountPrice"/></span></s:if> </span>
                         <span class="label">售价</span>
                         <span style="color:#888888;" id="discount"></span>
                     </p>
@@ -119,13 +120,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <div class="product_desc" style="width: 100%;">                    
                         <ul id="new_deal_tabs" class="new_tabs" style="width: 940px;">
                             <li><a href="good_goods?id=<s:property value="id"/>#specs">商品参数</a></li>
-                            <s:if test='{goods.details!=""}'>
+                            <s:if test='!goods.details==""'>
                             <li><a href="good_goods?id=<s:property value="id"/>#details">商品详情</a></li>
                             </s:if>
-                            <s:if test='{goods.usages!=""}'>
+                            <s:if test='!goods.usages==""'>
                             <li><a href="good_goods?id=<s:property value="id"/>#usage">使用方法</a></li>
                             </s:if>
-                            <s:if test='{goods.photos!=""}'>
+                            <s:if test='!goods.photos==""'>
                             <li><a href="good_goods?id=<s:property value="id"/>#photos">商品实拍</a></li>
                             </s:if>
                             <li><a href="good_goods?id=<s:property value="id"/>#reviews">用户口碑</a></li>
@@ -190,7 +191,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     </tbody>
                                 </table>
                             </div>
-                            <s:if test='{goods.details!=""}'>
+                            <s:if test='!goods.details==""'>
                             <div class="deal_contents" id="details">
                                 <div class="block_title" id="title_story">
                                     <img src="fontassets/img/tit_detail.jpg">
@@ -198,7 +199,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                 ${goods.details }
                             </div>
                             </s:if>
-                            <s:if test='{goods.usages!=""}'>
+                            <s:if test='!goods.usages==""'>
                             <div class="deal_contents" id="usage">
                                 <div class="block_title" id="title_usage">
                                     <img src="fontassets/img/tit_usa.jpg">
@@ -206,7 +207,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                 ${goods.usages }
                             </div>
                             </s:if>
-                            <s:if test='{goods.photos!=""}'>
+                            <s:if test='!goods.photos==""'>
                             <div class="deal_contents" id="photos">
                                 <div class="block_title" id="title_real_photo">
                                     <img src="fontassets/img/tit_photo.jpg">
@@ -221,7 +222,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                                     <img src="fontassets/img/deal_reviews2.jpg">
                                 </div>
                                 <div class="description_images">
-                                    用户口碑
                                 </div>
                             </div>
                             <div class="deal_contents" style="width:920px;">

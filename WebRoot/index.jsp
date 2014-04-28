@@ -243,8 +243,7 @@
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
 											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
-										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><s:property value="discountPrice"/>（<s:property value="discount"/>折）</s:if> </span>
-										
+										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><span style="text-decoration:line-through;"><s:property value="price"/></span>&nbsp;&nbsp;<s:property value="discountPrice"/></s:if> </span>										
 									</div>
 									<div class="card-bd">
 										<h2 class="story-title" title=" ">
@@ -294,7 +293,7 @@
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
 											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
-										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><s:property value="discountPrice"/>（<s:property value="discount"/>折）</s:if> </span>
+										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><span style="text-decoration:line-through;"><s:property value="price"/></span>&nbsp;&nbsp;<s:property value="discountPrice"/></s:if> </span>
 										
 									</div>
 									<div class="card-bd">
@@ -347,7 +346,7 @@
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
 											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
-										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><s:property value="discountPrice"/>（<s:property value="discount"/>折）</s:if> </span>
+										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><span style="text-decoration:line-through;"><s:property value="price"/></span>&nbsp;&nbsp;<s:property value="discountPrice"/></s:if> </span>
 									</div>
 									<div class="card-bd">
 										<h2 class="story-title" title=" ">
@@ -396,7 +395,7 @@
 										<a href="good_goods?id=<s:property value="id"/>" target="_blank" title="<s:property value="name"/>">
 											<img class="story-image" width="283" height="283" src="upload/goodslogo/<s:property value="logo"/>" alt="<s:property value="name"/>">
 										</a>
-										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><s:property value="discountPrice"/>（<s:property value="discount"/>折）</s:if> </span>
+										<span class="commodity-price">￥<s:if test="discount==1"><s:property value="nowPrice"/></s:if><s:if test="discount<1"><span style="text-decoration:line-through;"><s:property value="price"/></span>&nbsp;&nbsp;<s:property value="discountPrice"/></s:if> </span>
 										
 									</div>
 									<div class="card-bd">
