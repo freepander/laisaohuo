@@ -47,6 +47,8 @@ public class CartsAction extends ActionSupport {
 	private String telphone;
 	//支付宝表单
 	private String alipay_forms;
+	//付款方式
+	private String payMethod;
 	/**
 	 * 添加一件商品到购物车
 	 * @return
@@ -190,7 +192,12 @@ public class CartsAction extends ActionSupport {
 		this.baseService.save(this.order);
 		//清空购物车
 		session.put("cart", null);
-
+		if(payMethod.equals("1")){
+			//支付宝付款
+			
+		}else if(payMethod.equals("2")){
+			//货到付款
+		}
 		return "pay";
 	}
 	public String addAddress(){
@@ -315,6 +322,12 @@ public class CartsAction extends ActionSupport {
 	}
 	public String getAlipay_forms() {
 		return alipay_forms;
+	}
+	public String getPayMethod() {
+		return payMethod;
+	}
+	public void setPayMethod(String payMethod) {
+		this.payMethod = payMethod;
 	}
 	public void setAlipay_forms(String alipay_forms) {
 		this.alipay_forms = alipay_forms;

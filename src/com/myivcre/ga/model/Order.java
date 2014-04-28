@@ -44,7 +44,7 @@ public class Order {
 	//买家
 	@ManyToOne
 	private ShopUser shopUser;
-	//订单状态	1->待付款		2->待发货		3->待确认收获   4->交易完成
+	//订单状态	1->待付款		2->待发货		3->待确认收获   4->交易完成  5-》待发货  6-》待收货  7->交易完成
 	private int state;
 	//快递
 	private String expressName;
@@ -54,6 +54,8 @@ public class Order {
 	private int integral;
 	//下单时间
 	private Date createDate;
+	//支付方式
+	private int payMethod;
 	public Order(){
 		this.number=String.valueOf(new Date().getTime());
 		this.itemList=new ArrayList<OrderItem>();
@@ -194,6 +196,12 @@ public class Order {
 	}
 	public void setTelphone(String telphone) {
 		this.telphone = telphone;
+	}
+	public int getPayMethod() {
+		return payMethod;
+	}
+	public void setPayMethod(int payMethod) {
+		this.payMethod = payMethod;
 	}
 	
 

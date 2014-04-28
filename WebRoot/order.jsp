@@ -190,12 +190,12 @@
 								<div class="gateway_ul_box" style="border:1px solid #d5d5d5;">
 									<ul class="gatewap_ul">
 										<li style="display:block;padding-left: 20px; height: 48px; width: 100%;border:1px solid #d5d5d5;">
-											<input type="radio" id="pay_method1" name="payMethod" value="" checked>
+											<input type="radio" id="pay_method1" name="payMethod" value="1" checked>
 											<label for="pay_method1">支付宝</label>
 											<label class="tit gateway_desc" for=""><span>担保付款</span></label>
 										</li>
 										<li style="display:block;padding-left: 20px; height: 48px; width: 100%;border:1px solid #d5d5d5;">
-											<input type="radio" id="pay_method2" name="payMethod" value="">
+											<input type="radio" id="pay_method2" name="payMethod" value="2">
 											<label for="pay_method2">货到付款</label>
 											<label class="tit gateway_desc" for=""><span>没有网银也能付</span></label>
 										</li>

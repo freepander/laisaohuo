@@ -55,7 +55,13 @@ public class Billing {
 			money+=item.getNowPrice();
 		}
 		order.setNowPrice(money);
+		money=0;
+		for(OrderItem item:order.getItemList()){
+			money+=item.getPrice();
+		}
 		order.setPrice(money);
+		order.setFreight(0);
+		order.setIntegral((int)order.getNowPrice()/10);
 		return money;
 	}
 
