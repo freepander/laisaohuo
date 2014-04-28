@@ -161,7 +161,7 @@
 					items : [ {
 						id : 'dingdanliebiao',
 						text : '订单列表',
-						href : 'admin/order_list.jsp'
+						href : 'admin/orders_list'
 					}, {
 						id : 'dingdanchaxun',
 						text : '订单查询',

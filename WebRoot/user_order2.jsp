@@ -103,6 +103,37 @@
                 <th>订单状态</th>
                 <th width="90">订单操作</th>
             </tr>
+            <s:iterator value="list">
+            <tr class="order_list_title">
+                <th width="195"><s:property value="number"/></th>
+                <th width="80">
+                	<s:iterator value="itemList">
+                	<s:property value="goods.name"/><br>
+                	</s:iterator>   
+                </th>
+                <th width="40">
+                	<s:iterator value="itemList">
+                	<s:property value="count"/><br>
+                	</s:iterator> 
+                </th>
+                <th width="70">
+                	<s:iterator value="itemList">
+                	<s:property value="goods.nowPrice"/><br>
+                	</s:iterator> 
+                </th>
+                <th width="90"><s:property value="nowPrice"/></th>
+                <th>
+                	<s:if test="state==1">待付款</s:if>
+		          	<s:if test="state==2">待发货</s:if>
+		          	<s:if test="state==3">待收货</s:if>
+		          	<s:if test="state==4">交易完成</s:if>
+		          	<s:if test="state==5">待发货</s:if>
+		          	<s:if test="state==6">待收货</s:if>
+		          	<s:if test="state==7">交易完成</s:if>
+		          	<s:if test="state==10">交易关闭</s:if>
+                </th>
+            </tr>
+            </s:iterator>
             <!-- 
             <tr class="alt">
                 <td rowspan="2" class="order_info_td"><p>订单编号：91201936</p><p>下单时间：2014-01-18 13:08</p></td>

@@ -21,15 +21,12 @@ import com.opensymphony.xwork2.ActionSupport;
 
 @Component("userAction")
 @Scope("prototype")
-public class UserAction extends ActionSupport{
-	@Resource
-	BaseService baseService;
+public class UserAction extends BaseAction{
 	private String username;
 	private String password;
 	private String email;
 	private ShopUser user;
 	private String showMessage;
-	private List list;
 	//收货地址
 	private String addressee;
 	private String province;
@@ -42,22 +39,28 @@ public class UserAction extends ActionSupport{
 	private int addressId;
 	public String order(){
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		System.out.println(this.user.getId());
+		this.list=this.baseService.getByHal("from orders where state!=10 and shopUser.id="+this.user.getId());
 		return "user_order";
 	}
 	public String order2(){
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		this.list=this.baseService.getByHal("from orders where state=1 and shopUser.id="+this.user.getId());
 		return "user_order2";
 	}
 	public String order3(){
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		this.list=this.baseService.getByHal("from orders where state=2 and shopUser.id="+this.user.getId());
 		return "user_order3";
 	}
 	public String order4(){
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		this.list=this.baseService.getByHal("from orders where state=4 or state=7 and shopUser.id="+this.user.getId());
 		return "user_order4";
 	}
 	public String order5(){
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		this.list=this.baseService.getByHal("from orders where state=10 and shopUser.id="+this.user.getId());
 		return "user_order5";
 	}
 	/**

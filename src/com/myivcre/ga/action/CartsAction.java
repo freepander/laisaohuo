@@ -184,21 +184,30 @@ public class CartsAction extends ActionSupport {
 		this.order.setDeliverytime(deliverytime);
 		this.order.setUserMessage(userMessage);
 		this.order.setFreight(5);
-		this.order.setState(1);
+		
 		this.order.setShopUser(this.user);
 		this.order.setIntegral(10);
 		this.order.setCreateDate(new Date());
 		Billing.order(this.order);
-		this.baseService.save(this.order);
 		//清空购物车
 		session.put("cart", null);
 		if(payMethod.equals("1")){
 			//支付宝付款
+			this.order.setPayMethod(1);
+			this.order.setState(1);
 			
 		}else if(payMethod.equals("2")){
 			//货到付款
+			this.order.setPayMethod(2);
+			this.order.setState(5);
+			this.baseService.save(this.order);
+			return "paysSuccess";
 		}
+		this.baseService.save(this.order);
 		return "pay";
+	}
+	public String paySuccess(){
+		return "paySuccess";
 	}
 	public String addAddress(){
 		Map<String, Object> session=ServletActionContext.getContext().getSession();
