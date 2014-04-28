@@ -33,7 +33,7 @@
 			<div id="top_nav">
 				<div class="top_nav_item selected"><a href="index_index" class="nav_link">扫货区</a></div>
 				<div class="top_nav_item">
-					<a href="javascript:void(0)" class="nav_link">会员独享</a>
+					<a href="javascript:void(0)" class="nav_link">社区</a>
 					<div class="header_list" style="display: none;">
 						<a href="#"><span class="newbanner">信息发布</span></a>
 					</div>
