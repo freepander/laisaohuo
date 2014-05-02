@@ -30,7 +30,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<input type="hidden" name="effectId" value="<s:property value="effectId"/>">
 		<input type="hidden" name="method" value="<s:property value="method"/>">
 	</form>
-    <%@include file="pianduan/header1.jsp" %>
+    <%@include file="pianduan/header_common.jsp" %>
 </div>
 <!-- end  heander_container  -->
 <div id="container">

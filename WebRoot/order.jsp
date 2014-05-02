@@ -37,7 +37,7 @@
             <div class="clear"></div>
             <div class="header_logo_all">
                 <div style="float:right;">
-                	<img src="fontassets/img/cart_step1_v1.jpg">
+                	<img src="fontassets/img/cart_step2_v1.jpg">
                 </div>
             </div>
         </div>

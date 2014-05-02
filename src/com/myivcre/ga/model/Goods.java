@@ -104,6 +104,13 @@ public class Goods {
 		this.reviewNumber=0;
 		this.discount=1;
 	}
+	/**
+	 * 出货  减少库存
+	 * @return
+	 */
+	public void deletestock(int c){
+		this.stock=this.stock-c;
+	}
 	public boolean isOnIndex() {
 		return onIndex;
 	}

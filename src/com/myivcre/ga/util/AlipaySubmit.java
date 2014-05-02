@@ -13,11 +13,11 @@ import org.dom4j.DocumentException;
 import org.dom4j.Node;
 import org.dom4j.io.SAXReader;
 
-import com.alipay.util.httpClient.HttpProtocolHandler;
-import com.alipay.util.httpClient.HttpRequest;
-import com.alipay.util.httpClient.HttpResponse;
-import com.alipay.util.httpClient.HttpResultType;
 import com.myivcre.ga.conf.AlipayConfig;
+import com.myivcre.ga.util.httpClient.HttpProtocolHandler;
+import com.myivcre.ga.util.httpClient.HttpRequest;
+import com.myivcre.ga.util.httpClient.HttpResponse;
+import com.myivcre.ga.util.httpClient.HttpResultType;
 
 /* *
  *类名：AlipaySubmit

@@ -52,6 +52,8 @@ public class IndexAction extends ActionSupport {
 		a.add(1);
 		q.add("onIndex=?");
 		a.add(true);
+		q.add("stock>?");
+		a.add(0);
 		this.hufuGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
 		
 		q.clear();
@@ -62,6 +64,8 @@ public class IndexAction extends ActionSupport {
 		a.add(2);
 		q.add("onIndex=?");
 		a.add(true);
+		q.add("stock>?");
+		a.add(0);
 		this.caizhuangGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
 		
 		q.clear();
@@ -72,6 +76,8 @@ public class IndexAction extends ActionSupport {
 		a.add(4);
 		q.add("onIndex=?");
 		a.add(true);
+		q.add("stock>?");
+		a.add(0);
 		this.huliGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
 		
 		q.clear();
@@ -82,6 +88,8 @@ public class IndexAction extends ActionSupport {
 		a.add(7);
 		q.add("onIndex=?");
 		a.add(true);
+		q.add("stock>?");
+		a.add(0);
 		this.nanshiGoodsList=this.baseService.getObjectList("goods", 1, 10, orderby, q, a);
 		
 		this.brandList=this.baseService.getByHal("from brand where deletes=false and visible=true");

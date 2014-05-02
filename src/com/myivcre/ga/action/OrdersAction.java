@@ -72,7 +72,7 @@ public class OrdersAction extends BaseAction {
 	public String change(){
 		this.order=(Order)this.baseService.get(Order.class, id);
 		if(method==3){
-			this.order.setState(3);
+			return "sendGoods";
 		}else if(method==6){
 			this.order.setState(6);
 		}

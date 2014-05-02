@@ -22,6 +22,10 @@
             <img src="fontassets/img/cart_logo_new.jpg">
         </a>
         <div id="user_header">
+            <ul class="login_header">
+				<li class="login_li"><a href="user_order?id=<s:property value="#session.user.id"/>" rel="nofollow">个人中心</a><em>|</em></li>
+				<li class="user">欢迎您，<span style="color: #ED145B;"><s:property value="#session.user.username"/></span><span style="padding:0 5px;">[<a href="user_signOut" style="padding:0;">退出</a>]</span><em>|</em></li>
+            </ul>
             <div class="clear"></div>
             <div class="header_logo_all">
                 <div style="float:right;">

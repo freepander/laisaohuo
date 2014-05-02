@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import javax.annotation.Resource;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,10 +13,10 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.myivcre.ga.model.Address;
+import com.myivcre.ga.model.Order;
 import com.myivcre.ga.model.ShopUser;
 import com.myivcre.ga.service.BaseService;
 import com.opensymphony.xwork2.ActionContext;
-import com.opensymphony.xwork2.ActionSupport;
 
 @Component("userAction")
 @Scope("prototype")
@@ -37,9 +36,20 @@ public class UserAction extends BaseAction{
 	private String telphone;
 	private Address address;
 	private int addressId;
+	//收藏商品的数量
+	private int number;
+	/**
+	 * 货到付款  确认收货
+	 * @return
+	 */
+	public String getGoods(){
+		Order order=(Order) this.baseService.get(Order.class, id);
+		order.setState(7);
+		this.baseService.update(order);
+		return "user_order";
+	}
 	public String order(){
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
-		System.out.println(this.user.getId());
 		this.list=this.baseService.getByHal("from orders where state!=10 and shopUser.id="+this.user.getId());
 		return "user_order";
 	}
@@ -69,6 +79,7 @@ public class UserAction extends BaseAction{
 	 */
 	public String address(){
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		this.user=(ShopUser)this.baseService.get(ShopUser.class, this.user.getId());
 		return "user_address";
 	}
 	/**
@@ -131,7 +142,6 @@ public class UserAction extends BaseAction{
 	 * @return
 	 */
 	public String updateAddress(){
-		System.out.println("updateAddressAction");
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
 		for(Address a: user.getAddressList()){
 			if(a.getId()==addressId){
@@ -151,6 +161,8 @@ public class UserAction extends BaseAction{
 	}
 	public String collection(){
 		this.user=(ShopUser)ActionContext.getContext().getSession().get("user");
+		this.list=this.baseService.getByHal("from collection where shopUser.id="+this.user.getId());
+		this.number=this.list.size();
 		return "user_collection";
 	}
 	public String password(){
@@ -384,6 +396,12 @@ public class UserAction extends BaseAction{
 	}
 	public void setAddressId(int addressId) {
 		this.addressId = addressId;
+	}
+	public int getNumber() {
+		return number;
+	}
+	public void setNumber(int number) {
+		this.number = number;
 	}
 
 }

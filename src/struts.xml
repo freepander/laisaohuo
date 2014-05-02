@@ -35,6 +35,7 @@
 			<result name="pInput">/admin/purchaseShipment_pInput.jsp</result>
 			<result name="sInput">/admin/purchaseShipment_sInput.jsp</result>
 			<result name="discountList">/admin/goods_discountList.jsp</result>
+			<result name="sendGoods">/admin/orders_sendGoods.jsp</result>
 			<interceptor-ref name="login"></interceptor-ref>
 			
 		</action>
@@ -136,7 +137,9 @@
 		<action name="pay_*" class="payAction" method="{1}">
 			<result name="paytoalipay">/paytoalipay.jsp</result>
 		</action>
-		
+		<action name="notify_*" class="notifyAction" method="{1}">
+			<result name="paySuccess">/paySuccess.jsp</result>
+		</action>
 		<action name="file_*" class="fileAction" method="{1}">
 			<result name="a">/index.jsp</result>
 		</action>

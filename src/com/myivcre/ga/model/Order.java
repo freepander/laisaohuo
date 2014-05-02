@@ -56,6 +56,9 @@ public class Order {
 	private Date createDate;
 	//支付方式
 	private int payMethod;
+	//支付宝交易号
+	private String WIDtrade_no;
+	
 	public Order(){
 		this.number=String.valueOf(new Date().getTime());
 		this.itemList=new ArrayList<OrderItem>();
@@ -79,6 +82,12 @@ public class Order {
 	
 	public List<OrderItem> getItemList() {
 		return itemList;
+	}
+	public String getWIDtrade_no() {
+		return WIDtrade_no;
+	}
+	public void setWIDtrade_no(String wIDtrade_no) {
+		WIDtrade_no = wIDtrade_no;
 	}
 	public void setItemList(List<OrderItem> itemList) {
 		this.itemList = itemList;

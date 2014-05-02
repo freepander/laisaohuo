@@ -248,7 +248,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 <div id="header_container">
     <div id="header_container">
-    	<%@include file="pianduan/header2.jsp" %>
+    	<%@include file="pianduan/header_common.jsp" %>
 	</div><!-- end  heander_container  -->
 </div><!-- end  heander_container  -->
 

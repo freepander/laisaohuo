@@ -28,7 +28,7 @@
 </head>
 <body>
 	<div id="header_container">
-		<%@include file="pianduan/header1.jsp" %>
+		<%@include file="pianduan/header_common.jsp" %>
 	</div>
 	<!-- end  heander_container  -->
 	<!--  contanter  -->
