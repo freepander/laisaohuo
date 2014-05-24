@@ -106,6 +106,9 @@
 			<interceptor-ref name="islogin_stack"></interceptor-ref> 
 			 -->
 		</action>
+		<action name="weather_*" class="weatherAction" method="{1}">
+			
+		</action>
 		<action name="user_*" class="userAction" method="{1}">
 			<result name="index_index">/index2.jsp</result>
 			<result name="register">/register.jsp</result>

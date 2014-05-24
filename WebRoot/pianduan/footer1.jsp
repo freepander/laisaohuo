@@ -89,3 +89,15 @@
 				</p>
 			</div>
 		</div>
+<script>
+$(document).ready(function(){
+	$.get("index/weather_getWeather",function(data){
+		console.log(data)
+		var j=JSON.parse(data)
+		//alert(j)
+		//alert(j.city)
+		//var str="城市："+j.
+		//$('#header-weather').html();
+	})
+})
+</script>

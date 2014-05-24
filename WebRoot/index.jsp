@@ -66,9 +66,6 @@
 			<!--  中间分类    -->
 			<div class="mallTopScreen">
 				<div class="mtsCategory" id="mtsCategory">
-					
-					
-					
 					<div class="products_Category">
                     <h2><a href="#">所有分类</a></h2>
                     <ul>            
@@ -254,15 +251,16 @@
 											<span class="info-xiaoliang">销量:<s:property value="salesVolume+salesVolume2"/></span>
 										</div>
 									</div>
-								</div>
-								<div class="card-extra">
-									<div class="card-actions" style="display: none; padding-top:30px;" >
+									<div class="card-extra">
+									<div class="card-actions" >
 										<a class="J_AddToDoulist btn-doulist" href="carts_add?goodsId=<s:property value="id"/>&number=1">加入购物车</a>
-										<a class="J_CommodityLikeBtn btn-carditem-like" href="javascript:void(0)" style="margin-top:-12px;">
+										<a class="J_CommodityLikeBtn btn-carditem-like" href="javascript:void(0)">
 											加入收藏
 										</a>
 									</div>
 								</div>
+								</div>
+								
 							</li>
 							</s:iterator>
 							
@@ -305,15 +303,16 @@
 											<span class="info-xiaoliang">销量:<s:property value="salesVolume+salesVolume2"/></span>
 										</div>
 									</div>
-								</div>
-								<div class="card-extra">
-									<div class="card-actions" style="display: none; padding-top:30px;" >
+									<div class="card-extra">
+									<div class="card-actions">
 										<a class="J_AddToDoulist btn-doulist" href="carts_add?goodsId=<s:property value="id"/>&number=1">加入购物车</a>
-										<a class="J_CommodityLikeBtn btn-carditem-like" href="javascript:void(0)" style="margin-top:-12px;">
+										<a class="J_CommodityLikeBtn btn-carditem-like" href="javascript:void(0)">
 											加入收藏
 										</a>
 									</div>
 								</div>
+								</div>
+								
 							</li>
 							</s:iterator>
 							
@@ -357,15 +356,16 @@
 											<span class="info-xiaoliang">销量:<s:property value="salesVolume+salesVolume2"/></span>
 										</div>
 									</div>
-								</div>
-								<div class="card-extra">
-									<div class="card-actions" style="display: none; padding-top:30px;" >
+									<div class="card-extra">
+									<div class="card-actions" >
 										<a class="J_AddToDoulist btn-doulist" href="carts_add?goodsId=<s:property value="id"/>&number=1">加入购物车</a>
-										<a class="J_CommodityLikeBtn btn-carditem-like" href="javascript:void(0)" style="margin-top:-12px;">
+										<a class="J_CommodityLikeBtn btn-carditem-like" href="javascript:void(0)">
 											加入收藏
 										</a>
 									</div>
 								</div>
+								</div>
+								
 							</li>
 							</s:iterator>
 							
@@ -407,15 +407,16 @@
 											<span class="info-xiaoliang">销量:<s:property value="salesVolume+salesVolume2"/></span>
 										</div>
 									</div>
-								</div>
-								<div class="card-extra">
-									<div class="card-actions" style="display: none; padding-top:30px;" >
-										<a class="J_AddToDoulist btn-doulist" href="carts_add?goodsId=<s:property value="id"/>&number=1">加入购物车</a>
-										<a class="J_CommodityLikeBtn btn-carditem-like" href="javascript:void(0)" style="margin-top:-12px;">
-											加入收藏
-										</a>
+									<div class="card-extra">
+										<div class="card-actions">
+											<a class="J_AddToDoulist btn-doulist" href="carts_add?goodsId=<s:property value="id"/>&number=1">加入购物车</a>
+											<a class="J_CommodityLikeBtn btn-carditem-like" href="javascript:void(0)">
+												加入收藏
+											</a>
+										</div>
 									</div>
 								</div>
+								
 							</li>
 							</s:iterator>
 							
@@ -426,152 +427,7 @@
 				
 			</div>
 			
-			<!-- 护肤心得  -->
-			<!-- 
-			<div class="floor">
-				<div class="floor_head">
-					<h3 style="background: none; color: #000; text-indent: 0; font-size: 20px; line-height: 60px; padding-left: 20px;">护肤心得</h3>
-					<ul class="fh_cate">
-
-					</ul>
-					<a href="http://mall.jumei.com/products/0-1-0.html?from=mall_index_skin" class="more" target="_blank">查看全部</a>
-				</div>
-				<div class="floor_con_koubei koubei">
-					<ul id="skincare_koubei_slider" class="koubei_slider" style="list-style: none; position: relative; overflow: hidden; padding: 0px; width: 1198px; height: 98px; display: block;">
-						<li class="clearfix slide-node slide-node-0" style="">
-							<div class="clearfix item">
-								<a href="http://koubei.jumei.com/user/Ud5b593d0710127db" class="pic fl" target="_blank"> <img src="http://images2.jumei.com/user_avatar/001/084/1084219-64.jpg"> </a>
-								<div class="fl fck_con">
-									<p class="tit">
-										<a target="_blank" title="尊贵身份给予肌肤更好享受" href="#">尊贵身份给予肌肤更好享受</a>
-									</p>
-									<p class="rat">
-										<span style="width:94%"></span>
-									</p>
-									<p class="con">
-										<a target="_blank" href="#">作为海蓝之谜面霜家族中的一员，海蓝之谜精华乳液也蕴含同等...阅读全文</a>
-									</p>
-								</div>
-							</div>
-							<div class="clearfix item">
-								<a href="http://koubei.jumei.com/user/Ud5b593d0710127db" class="pic fl" target="_blank"> <img src="http://images2.jumei.com/user_avatar/001/084/1084219-64.jpg"> </a>
-								<div class="fl fck_con">
-									<p class="tit">
-										<a target="_blank" title="温和美白、快速补水王者" href="http://koubei.jumei.com/review_U22b4325d4682412b.html?from=mall_index_skinkoubei_pos2">温和美白、快速补水王者</a>
-									</p>
-									<p class="rat">
-										<span style="width:94%"></span>
-									</p>
-									<p class="con">
-										<a target="_blank" href="#">使用兰芝臻白修护系列已经有两年多的时间了，起初是邻居家姐...阅读全文</a>
-									</p>
-								</div>
-							</div>
-							<div class="clearfix item">
-								<a href="#" class="pic fl" target="_blank"> <img src="http://images2.jumei.com/user_avatar/011/516/11516539-64.jpg"> </a>
-								<div class="fl fck_con">
-									<p class="tit">
-										<a target="_blank" title="姐妹花报告——八音课堂开课啦~~兰蔻日霜与倩碧黄油的故事" href="#">姐妹花报告——八音课堂开课啦~~兰蔻日霜与倩碧黄油的故事</a>
-									</p>
-									<p class="rat">
-										<span style="width:100%"></span>
-									</p>
-									<p class="con">
-										<a target="_blank" href="#">这篇报告原本是应该昨天写的&nbsp; 由于传错照片 八音就写的水...阅读全文</a>
-									</p>
-								</div>
-							</div>
-							<div class="clearfix item">
-								<a href="http://koubei.jumei.com/user/Ue6afee3a575f5d00" class="pic fl" target="_blank"> <img src="http://images2.jumei.com/user_avatar/005/924/5924304-64.jpg"> </a>
-								<div class="fl fck_con">
-									<p class="tit">
-										<a target="_blank" title="#聚美大咖秀之最In护肤秀#" 专门针对黑头毛孔粗大,肌肤暗黄的超强面膜，达人们的选择！="" href="#">#聚美大咖秀之最In护肤秀# 专门针对黑头毛孔粗大,肌肤暗黄的超强面膜，达人们的选择！</a>
-									</p>
-									<p class="rat">
-										<span style="width:100%"></span>
-									</p>
-									<p class="con">
-										<a target="_blank" href="#">人家晒幸福，我来晒订单，一样幸福 225g欣兰黑里透白冻...阅读全文</a>
-									</p>
-								</div>
-							</div></li>
-					</ul>
-				</div>
-			</div>
-			-->
-			<!--  生活窍门   -->
-			<!-- 
-			<div class="floor">
-				<div class="floor_head">
-					<h3 style="background: none; color: #000; text-indent: 0; font-size: 20px; line-height: 60px; padding-left: 20px;">生活窍门</h3>
-					<ul class="fh_cate">
-
-					</ul>
-					<a href="http://mall.jumei.com/products/0-1-0.html?from=mall_index_skin" class="more" target="_blank">查看全部</a>
-				</div>
-				<div class="floor_con_koubei koubei">
-					<ul id="skincare_koubei_slider" class="koubei_slider" style="list-style: none; position: relative; overflow: hidden; padding: 0px; width: 1198px; height: 98px; display: block;">
-						<li class="clearfix slide-node slide-node-0" style="">
-							<div class="clearfix item">
-								<a href="http://koubei.jumei.com/user/Ud5b593d0710127db" class="pic fl" target="_blank"> <img src="http://images2.jumei.com/user_avatar/001/084/1084219-64.jpg"> </a>
-								<div class="fl fck_con">
-									<p class="tit">
-										<a target="_blank" title="尊贵身份给予肌肤更好享受" href="#">尊贵身份给予肌肤更好享受</a>
-									</p>
-									<p class="rat">
-										<span style="width:94%"></span>
-									</p>
-									<p class="con">
-										<a target="_blank" href="#">作为海蓝之谜面霜家族中的一员，海蓝之谜精华乳液也蕴含同等...阅读全文</a>
-									</p>
-								</div>
-							</div>
-							<div class="clearfix item">
-								<a href="http://koubei.jumei.com/user/Ud5b593d0710127db" class="pic fl" target="_blank"> <img src="http://images2.jumei.com/user_avatar/001/084/1084219-64.jpg"> </a>
-								<div class="fl fck_con">
-									<p class="tit">
-										<a target="_blank" title="温和美白、快速补水王者" href="http://koubei.jumei.com/review_U22b4325d4682412b.html?from=mall_index_skinkoubei_pos2">温和美白、快速补水王者</a>
-									</p>
-									<p class="rat">
-										<span style="width:94%"></span>
-									</p>
-									<p class="con">
-										<a target="_blank" href="#">使用兰芝臻白修护系列已经有两年多的时间了，起初是邻居家姐...阅读全文</a>
-									</p>
-								</div>
-							</div>
-							<div class="clearfix item">
-								<a href="#" class="pic fl" target="_blank"> <img src="http://images2.jumei.com/user_avatar/011/516/11516539-64.jpg"> </a>
-								<div class="fl fck_con">
-									<p class="tit">
-										<a target="_blank" title="姐妹花报告——八音课堂开课啦~~兰蔻日霜与倩碧黄油的故事" href="#">姐妹花报告——八音课堂开课啦~~兰蔻日霜与倩碧黄油的故事</a>
-									</p>
-									<p class="rat">
-										<span style="width:100%"></span>
-									</p>
-									<p class="con">
-										<a target="_blank" href="#">这篇报告原本是应该昨天写的&nbsp; 由于传错照片 八音就写的水...阅读全文</a>
-									</p>
-								</div>
-							</div>
-							<div class="clearfix item">
-								<a href="http://koubei.jumei.com/user/Ue6afee3a575f5d00" class="pic fl" target="_blank"> <img src="http://images2.jumei.com/user_avatar/005/924/5924304-64.jpg"> </a>
-								<div class="fl fck_con">
-									<p class="tit">
-										<a target="_blank" title="#聚美大咖秀之最In护肤秀#" 专门针对黑头毛孔粗大,肌肤暗黄的超强面膜，达人们的选择！="" href="#">#聚美大咖秀之最In护肤秀# 专门针对黑头毛孔粗大,肌肤暗黄的超强面膜，达人们的选择！</a>
-									</p>
-									<p class="rat">
-										<span style="width:100%"></span>
-									</p>
-									<p class="con">
-										<a target="_blank" href="#">人家晒幸福，我来晒订单，一样幸福 225g欣兰黑里透白冻...阅读全文</a>
-									</p>
-								</div>
-							</div></li>
-					</ul>
-				</div>
-			</div>
-			-->
+			
 			
 			<!--  右侧导航  -->
 			<div id="home_nav_bar" style="display: block;">
@@ -662,6 +518,13 @@ $('.products_Category .item').mouseover(function(){
 $('.products_Category .item').mouseout(function(){
 	$(this).children('.moreCategory').hide();
 })
+</script>
+<script>
+$('.card-main').mouseover(function(){
+$(this).find('.card-extra').show()
+})
+$('.card-main').mouseout(function(){
+$(this).find('.card-extra').hide()})
 </script>
 </body>
 </html>

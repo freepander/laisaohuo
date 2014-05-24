@@ -32,6 +32,23 @@
 	快递单号--<s:property value="order.expressNumber" /><br>
 	下单时间--<s:property value="order.createDate" /><br>
 	支付方式--<s:if test="order.payMethod==1">支付宝</s:if><s:if test="order.payMethod==2">货到付款</s:if><br>
+	<h1>商品列表</h1>
+	<table>
+		<tr>
+			<td>商品编号</td>
+			<td>名称</td>
+			<td>数量</td>
+			<td>价格</td>
+		</tr>
+		<s:iterator value="order.itemList">
+		<tr>
+			<td><s:property value="goods.numbers"/></td>
+			<td><s:property value="goods.name"/></td>
+			<td><s:property value="count"/></td>
+			<td><s:property value="price"/></td>
+		</tr>
+		</s:iterator>
+	</table>
 	</div>
 	
 	

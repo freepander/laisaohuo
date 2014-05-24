@@ -1,6 +1,11 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<div id="logo">
+<div id="logo" style="position:relative;">
 	<a href="index_index" id="home" title=" " style="width:184px;background:url(fontassets/img//logo_new_v1.jpg) no-repeat top left;"> </a>
+	<div id="header-weather" style="overflow:hidden;width: 400px;float:left; height: 100px; font-size:14px;position:absolute;left: 200px;">
+		<span id="weather-city" style="display:inline-block;padding-top:56px;padding-left:20px;color:#666;font-size:20px;">哈尔滨</span>
+		<span id="weather-wendu" style="display:inline-block;color:#666;font-size:20px;">气温： 21摄氏度</span>
+		<span id="weather-fengxiang" style="display:inline-block;color:#666;font-size:20px;">风向： 东南风</span>
+	</div>
 	<div id="user_header">			
 		<ul class="login_header">
 			<s:if test="#session.user==null">
